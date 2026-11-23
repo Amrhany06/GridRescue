@@ -1,0 +1,7 @@
+{
+  "check": "syntax",
+  "started_utc": "2026-11-18T11:21:42.866917+00:00",
+  "completed_utc": "2026-11-18T11:21:43.085977+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/syntax.txt"
+}

@@ -1,0 +1,7 @@
+{
+  "check": "notebooks",
+  "started_utc": "2026-11-16T22:08:25.181543+00:00",
+  "completed_utc": "2026-11-16T22:10:31.598330+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/notebooks.txt"
+}

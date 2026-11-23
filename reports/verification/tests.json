@@ -1,0 +1,7 @@
+{
+  "check": "tests",
+  "started_utc": "2026-11-17T16:28:01.996144+00:00",
+  "completed_utc": "2026-11-17T16:30:30.518689+00:00",
+  "exit_code": 1,
+  "log": "reports/verification/tests.txt"
+}

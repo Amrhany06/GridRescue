@@ -1,0 +1,145 @@
+{
+  "status": "READY_FOR_USER_REVIEW_ARROW_LOCAL",
+  "utc": "2026-11-17T17:17:07.319114+00:00",
+  "notebooks": [
+    {
+      "notebook": "task1_eda",
+      "total_cells": 46,
+      "executed_code_cells": 23,
+      "saved_errors": 0,
+      "saved_png_plots": 9,
+      "plots": [
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_01.png",
+          "dimensions": [
+            1199,
+            348
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_02.png",
+          "dimensions": [
+            759,
+            348
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_03.png",
+          "dimensions": [
+            979,
+            348
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_04.png",
+          "dimensions": [
+            539,
+            348
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_05.png",
+          "dimensions": [
+            649,
+            463
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_06.png",
+          "dimensions": [
+            649,
+            463
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_07.png",
+          "dimensions": [
+            697,
+            691
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_08.png",
+          "dimensions": [
+            979,
+            348
+          ]
+        },
+        {
+          "path": "artifacts/notebook_review/windows/task1_eda_09.png",
+          "dimensions": [
+            1199,
+            649
+          ]
+        }
+      ],
+      "largest_plain_text_output_characters": 1955,
+      "sha256": "13ef323ec34446a517f3a83fbc30807362e64c0fb3b3cb62e9576c2b81b77519"
+    },
+    {
+      "notebook": "task2_preprocessing",
+      "total_cells": 35,
+      "executed_code_cells": 17,
+      "saved_errors": 0,
+      "saved_png_plots": 0,
+      "plots": [],
+      "largest_plain_text_output_characters": 4038,
+      "sha256": "57884d5910f81c7bef2df58c1c3d19ffe57768813955a2aeaefe613e1d5784d7"
+    }
+  ],
+  "persistence": "VERIFIED_ARROW_LOCAL_ONLY",
+  "native_hadoop_writer": "BLOCKED; original native integration test retained unchanged",
+  "tests": {
+    "total": 41,
+    "passed": 40,
+    "errors": 1,
+    "native_blocker": "test_preparation_fits_only_training_and_saves_reload",
+    "scope": "Prior full-suite evidence; unchanged native blocker. Not rerun for this notebook-only revision because classifier fitting is prohibited."
+  },
+  "training_configuration_hashes_unchanged": true,
+  "real_data_task3_training_executed": false,
+  "2022_evaluation_executed": false,
+  "focused_notebook_checks": {
+    "markdown_regressions": {
+      "check": "notebook_markdown",
+      "started_utc": "2026-11-17T17:17:06.561806+00:00",
+      "completed_utc": "2026-11-17T17:17:06.805452+00:00",
+      "exit_code": 0,
+      "log": "reports/verification/notebook_markdown.txt"
+    },
+    "markdown_rendering": {
+      "status": "VERIFIED_GFM_MARKDOWN_RENDERING",
+      "renderer": "Marked from existing bundled tools; no dependency installed",
+      "notebooks": [
+        {
+          "notebook": "task1_eda",
+          "before": {
+            "rendered_headings": 23,
+            "expected_headings": 26,
+            "unintended_code_blocks": 15
+          },
+          "after": {
+            "rendered_headings": 27,
+            "expected_headings": 27,
+            "unintended_code_blocks": 0
+          }
+        },
+        {
+          "notebook": "task2_preprocessing",
+          "before": {
+            "rendered_headings": 16,
+            "expected_headings": 22,
+            "unintended_code_blocks": 12
+          },
+          "after": {
+            "rendered_headings": 24,
+            "expected_headings": 24,
+            "unintended_code_blocks": 0
+          }
+        }
+      ]
+    }
+  },
+  "original_native_test_ast_unchanged": true,
+  "user_review_required_before_task3": true
+}

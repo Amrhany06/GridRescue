@@ -1,0 +1,7 @@
+{
+  "check": "notebook_markdown",
+  "started_utc": "2026-11-18T11:21:43.284113+00:00",
+  "completed_utc": "2026-11-18T11:21:43.649319+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/notebook_markdown.txt"
+}

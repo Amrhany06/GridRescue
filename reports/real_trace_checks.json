@@ -1,0 +1,200 @@
+[
+  {
+    "scope": "sample",
+    "category": "positive",
+    "fips": "01073",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 6,
+    "threshold": 206,
+    "future_slots": 12,
+    "future_max": 242,
+    "y": 1
+  },
+  {
+    "scope": "sample",
+    "category": "positive",
+    "fips": "01125",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 5,
+    "threshold": 205,
+    "future_slots": 12,
+    "future_max": 448,
+    "y": 1
+  },
+  {
+    "scope": "sample",
+    "category": "positive",
+    "fips": "12011",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 5,
+    "threshold": 205,
+    "future_slots": 12,
+    "future_max": 208,
+    "y": 1
+  },
+  {
+    "scope": "sample",
+    "category": "negative",
+    "fips": "01117",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 2,
+    "threshold": 202,
+    "future_slots": 12,
+    "future_max": 88,
+    "y": 0
+  },
+  {
+    "scope": "sample",
+    "category": "negative",
+    "fips": "02122",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 25,
+    "threshold": 225,
+    "future_slots": 12,
+    "future_max": 25,
+    "y": 0
+  },
+  {
+    "scope": "sample",
+    "category": "negative",
+    "fips": "04021",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 8,
+    "threshold": 208,
+    "future_slots": 12,
+    "future_max": 11,
+    "y": 0
+  },
+  {
+    "scope": "sample",
+    "category": "incomplete",
+    "fips": "01015",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 1,
+    "threshold": 201,
+    "future_slots": 0,
+    "future_max": null,
+    "y": null
+  },
+  {
+    "scope": "sample",
+    "category": "incomplete",
+    "fips": "01029",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 5,
+    "threshold": 205,
+    "future_slots": 2,
+    "future_max": 6,
+    "y": null
+  },
+  {
+    "scope": "sample",
+    "category": "incomplete",
+    "fips": "01057",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 16,
+    "threshold": 216,
+    "future_slots": 3,
+    "future_max": 16,
+    "y": null
+  },
+  {
+    "scope": "county",
+    "category": "positive",
+    "fips": "12086",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 658,
+    "threshold": 987.0,
+    "future_slots": 12,
+    "future_max": 2043,
+    "y": 1
+  },
+  {
+    "scope": "county",
+    "category": "positive",
+    "fips": "48201",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 18,
+    "threshold": 218,
+    "future_slots": 12,
+    "future_max": 544,
+    "y": 1
+  },
+  {
+    "scope": "county",
+    "category": "positive",
+    "fips": "06037",
+    "timestamp": "2018-01-01 00:15:00",
+    "current": 8,
+    "threshold": 208,
+    "future_slots": 12,
+    "future_max": 2085,
+    "y": 1
+  },
+  {
+    "scope": "county",
+    "category": "negative",
+    "fips": "06037",
+    "timestamp": "2018-01-01 00:00:00",
+    "current": 8,
+    "threshold": 208,
+    "future_slots": 12,
+    "future_max": 17,
+    "y": 0
+  },
+  {
+    "scope": "county",
+    "category": "negative",
+    "fips": "12086",
+    "timestamp": "2018-01-01 00:45:00",
+    "current": 2043,
+    "threshold": 3064.5,
+    "future_slots": 12,
+    "future_max": 2076,
+    "y": 0
+  },
+  {
+    "scope": "county",
+    "category": "negative",
+    "fips": "48201",
+    "timestamp": "2018-01-01 01:30:00",
+    "current": 534,
+    "threshold": 801.0,
+    "future_slots": 12,
+    "future_max": 544,
+    "y": 0
+  },
+  {
+    "scope": "county",
+    "category": "incomplete",
+    "fips": "06037",
+    "timestamp": "2018-01-02 03:45:00",
+    "current": 477,
+    "threshold": 715.5,
+    "future_slots": 11,
+    "future_max": 963,
+    "y": null
+  },
+  {
+    "scope": "county",
+    "category": "incomplete",
+    "fips": "12086",
+    "timestamp": "2018-01-02 03:45:00",
+    "current": 31,
+    "threshold": 231,
+    "future_slots": 11,
+    "future_max": 31,
+    "y": null
+  },
+  {
+    "scope": "county",
+    "category": "incomplete",
+    "fips": "48201",
+    "timestamp": "2018-01-02 03:45:00",
+    "current": 65,
+    "threshold": 265,
+    "future_slots": 11,
+    "future_max": 200,
+    "y": null
+  }
+]

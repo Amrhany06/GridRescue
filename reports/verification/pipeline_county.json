@@ -1,0 +1,7 @@
+{
+  "check": "pipeline_county",
+  "started_utc": "2026-11-17T16:24:33.007942+00:00",
+  "completed_utc": "2026-11-17T16:29:20.795855+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/pipeline_county.txt"
+}

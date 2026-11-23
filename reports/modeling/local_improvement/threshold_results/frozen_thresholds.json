@@ -1,0 +1,34 @@
+{
+  "numeric": {
+    "fixed_050": 0.5,
+    "f2": 0.11824685714277113,
+    "balanced_accuracy": 0.2534558798990943,
+    "accuracy_recall_50": 0.29354417147131795,
+    "accuracy_recall_60": 0.263051204590757,
+    "accuracy_recall_70": 0.2274897835110384
+  },
+  "state": {
+    "fixed_050": 0.5,
+    "f2": 0.12593112659645259,
+    "balanced_accuracy": 0.26382260478187336,
+    "accuracy_recall_50": 0.3133636524172401,
+    "accuracy_recall_60": 0.2712158137410533,
+    "accuracy_recall_70": 0.2250038932102924
+  },
+  "fips": {
+    "fixed_050": 0.5,
+    "f2": 0.13018414736598158,
+    "balanced_accuracy": 0.2700828977365382,
+    "accuracy_recall_50": 0.29978663852026155,
+    "accuracy_recall_60": 0.2563257492463588,
+    "accuracy_recall_70": 0.21753641239451887
+  },
+  "both": {
+    "fixed_050": 0.5,
+    "f2": 0.1333165818221303,
+    "balanced_accuracy": 0.27000690624812157,
+    "accuracy_recall_50": 0.3091647633578728,
+    "accuracy_recall_60": 0.2595886374427905,
+    "accuracy_recall_70": 0.2191847565566006
+  }
+}

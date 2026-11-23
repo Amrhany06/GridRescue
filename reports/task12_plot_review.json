@@ -1,0 +1,17 @@
+{
+  "utc": "2026-11-17T16:48:43.849687+00:00",
+  "status": "VERIFIED_VISUAL_CHART_REVIEW",
+  "plots_reviewed": 9,
+  "method": "All nine saved PNGs inspected with view_image; overlapping heatmap title corrected and reexecuted",
+  "files": {
+    "artifacts/notebook_review/windows/task1_eda_01.png": "eaf5d6ddc579678cb88d6b4145a9bb6de7fe66d26d336ad9efc07b0285fc4afd",
+    "artifacts/notebook_review/windows/task1_eda_02.png": "f315e9c172245d21bd5dcc138988f943e1e6adc954d6c943c800b6caef211ea2",
+    "artifacts/notebook_review/windows/task1_eda_03.png": "ba276b1d5e45ecd8f783014a5bf60d18f8db3db64f53e8aa80c4245b74014d8e",
+    "artifacts/notebook_review/windows/task1_eda_04.png": "2031cad898f96801342b92002d0d7283f70d85cf8ae342335905f3b5b55039ca",
+    "artifacts/notebook_review/windows/task1_eda_05.png": "daf63b081a64b64a4219a47b28fcfa008a99a659784ce361eef2090cc2319927",
+    "artifacts/notebook_review/windows/task1_eda_06.png": "57f226fc3f7b255c74806458c02f02830d9e4bfb5a5acdd25a9fccb8e5ea6a94",
+    "artifacts/notebook_review/windows/task1_eda_07.png": "a4572d046ba41aaa39de746397087003e891b0d8761faea92d98dd99c2bbe02d",
+    "artifacts/notebook_review/windows/task1_eda_08.png": "0f17cd43bf92124dd69bde39c5818265c5d0c238dd42bbd13f7ec17ac1a8f852",
+    "artifacts/notebook_review/windows/task1_eda_09.png": "0e2b736eeb17f5b574f865ce990b5d54064c7ba12d66edcf98c08ea19d428951"
+  }
+}

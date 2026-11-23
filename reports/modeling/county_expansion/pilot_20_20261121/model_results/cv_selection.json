@@ -1,0 +1,11 @@
+{
+  "selected_for_development_comparison": "both",
+  "cv_mean_ap": {
+    "both": 0.4673804761807276,
+    "fips": 0.46361258799673194,
+    "numeric": 0.37474189051307,
+    "state": 0.43293344392251126
+  },
+  "spatial_holdouts_and_2021_used_for_selection": false,
+  "replaces_frozen_model": false
+}

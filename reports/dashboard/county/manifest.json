@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED",
+  "scope": "county",
+  "completed_utc": "2026-11-16T22:14:02.423747+00:00",
+  "source_audit": "reports/memory/county/audit.json",
+  "source_audit_sha256": "ada2e6ad409ce0d35c4f227919f9e8b94b64c86ecc6a38a8a341a1d5a4094e34",
+  "csv_sha256": "0b3a91331eb11267213eeb27f3c5d57f0b878941dad25d21061b551dee3ec95d",
+  "observations": 416940,
+  "county_days": 4383,
+  "geography_withheld_fips": [],
+  "aggregation_key": [
+    "fips_code",
+    "date"
+  ],
+  "2022_accessed": false
+}

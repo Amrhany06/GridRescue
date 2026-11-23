@@ -1,0 +1,216 @@
+{
+  "state": "California",
+  "prefix": "s06",
+  "counts": {
+    "raw": 515051,
+    "invalid": 13425,
+    "exact_duplicates_removed": 0,
+    "conflict_rows": 0,
+    "silver": 501626
+  },
+  "by_county_year_split": [
+    {
+      "fips_code": "06073",
+      "state": "California",
+      "county": "San Diego",
+      "year": 2019,
+      "split": "train",
+      "clean": 31460,
+      "eligible": 27739,
+      "positive": 7679,
+      "complete_future": 27739,
+      "positive_current": 31460
+    },
+    {
+      "fips_code": "06073",
+      "state": "California",
+      "county": "San Diego",
+      "year": 2020,
+      "split": "train",
+      "clean": 31399,
+      "eligible": 27417,
+      "positive": 7179,
+      "complete_future": 27417,
+      "positive_current": 31399
+    },
+    {
+      "fips_code": "06037",
+      "state": "California",
+      "county": "Los Angeles",
+      "year": 2020,
+      "split": "train",
+      "clean": 35011,
+      "eligible": 34773,
+      "positive": 15799,
+      "complete_future": 34773,
+      "positive_current": 35011
+    },
+    {
+      "fips_code": "06065",
+      "state": "California",
+      "county": "Riverside",
+      "year": 2019,
+      "split": "train",
+      "clean": 29974,
+      "eligible": 24530,
+      "positive": 7367,
+      "complete_future": 24530,
+      "positive_current": 29974
+    },
+    {
+      "fips_code": "06037",
+      "state": "California",
+      "county": "Los Angeles",
+      "year": 2021,
+      "split": "validation",
+      "clean": 34823,
+      "eligible": 34476,
+      "positive": 14820,
+      "complete_future": 34476,
+      "positive_current": 34823
+    },
+    {
+      "fips_code": "06071",
+      "state": "California",
+      "county": "San Bernardino",
+      "year": 2021,
+      "split": "validation",
+      "clean": 31236,
+      "eligible": 28079,
+      "positive": 7638,
+      "complete_future": 28079,
+      "positive_current": 31236
+    },
+    {
+      "fips_code": "06073",
+      "state": "California",
+      "county": "San Diego",
+      "year": 2018,
+      "split": "train",
+      "clean": 29897,
+      "eligible": 25735,
+      "positive": 7003,
+      "complete_future": 25735,
+      "positive_current": 29897
+    },
+    {
+      "fips_code": "06065",
+      "state": "California",
+      "county": "Riverside",
+      "year": 2018,
+      "split": "train",
+      "clean": 25418,
+      "eligible": 16791,
+      "positive": 4418,
+      "complete_future": 16791,
+      "positive_current": 25418
+    },
+    {
+      "fips_code": "06037",
+      "state": "California",
+      "county": "Los Angeles",
+      "year": 2018,
+      "split": "train",
+      "clean": 34254,
+      "eligible": 32580,
+      "positive": 14063,
+      "complete_future": 32580,
+      "positive_current": 34254
+    },
+    {
+      "fips_code": "06071",
+      "state": "California",
+      "county": "San Bernardino",
+      "year": 2018,
+      "split": "train",
+      "clean": 26166,
+      "eligible": 17879,
+      "positive": 4971,
+      "complete_future": 17879,
+      "positive_current": 26166
+    },
+    {
+      "fips_code": "06071",
+      "state": "California",
+      "county": "San Bernardino",
+      "year": 2019,
+      "split": "train",
+      "clean": 31096,
+      "eligible": 26211,
+      "positive": 7543,
+      "complete_future": 26211,
+      "positive_current": 31096
+    },
+    {
+      "fips_code": "06065",
+      "state": "California",
+      "county": "Riverside",
+      "year": 2020,
+      "split": "train",
+      "clean": 32277,
+      "eligible": 29422,
+      "positive": 8024,
+      "complete_future": 29422,
+      "positive_current": 32277
+    },
+    {
+      "fips_code": "06073",
+      "state": "California",
+      "county": "San Diego",
+      "year": 2021,
+      "split": "validation",
+      "clean": 31581,
+      "eligible": 27894,
+      "positive": 8244,
+      "complete_future": 27894,
+      "positive_current": 31581
+    },
+    {
+      "fips_code": "06065",
+      "state": "California",
+      "county": "Riverside",
+      "year": 2021,
+      "split": "validation",
+      "clean": 31757,
+      "eligible": 28608,
+      "positive": 7807,
+      "complete_future": 28608,
+      "positive_current": 31757
+    },
+    {
+      "fips_code": "06037",
+      "state": "California",
+      "county": "Los Angeles",
+      "year": 2019,
+      "split": "train",
+      "clean": 34797,
+      "eligible": 34339,
+      "positive": 15828,
+      "complete_future": 34339,
+      "positive_current": 34797
+    },
+    {
+      "fips_code": "06071",
+      "state": "California",
+      "county": "San Bernardino",
+      "year": 2020,
+      "split": "train",
+      "clean": 30480,
+      "eligible": 26546,
+      "positive": 7227,
+      "complete_future": 26546,
+      "positive_current": 30480
+    }
+  ],
+  "quarantine_reasons": [
+    {
+      "reason": "invalid_count",
+      "count": 13303
+    },
+    {
+      "reason": "off_grid_timestamp",
+      "count": 122
+    }
+  ],
+  "seconds": 36.654368900024565
+}

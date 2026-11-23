@@ -1,0 +1,41 @@
+{
+  "scope": "Three fixed counties, all source dates in 2018-2021; 2022 never opened",
+  "county_fips": [
+    "06037",
+    "12086",
+    "48201"
+  ],
+  "selection": "Fixed geographic examples before label inspection; no outcome-based search",
+  "started_utc": "2026-11-16T20:56:19.872918+00:00",
+  "status": "VERIFIED",
+  "files": [
+    {
+      "source": "data/raw/eaglei_outages_2018.csv",
+      "sample": "data/county_coverage/eaglei_outages_2018.csv",
+      "parsed_rows": 21776806,
+      "selected_rows": 104157,
+      "elapsed_seconds": 26.871090799977537
+    },
+    {
+      "source": "data/raw/eaglei_outages_2019.csv",
+      "sample": "data/county_coverage/eaglei_outages_2019.csv",
+      "parsed_rows": 24074122,
+      "selected_rows": 104645,
+      "elapsed_seconds": 34.328209200000856
+    },
+    {
+      "source": "data/raw/eaglei_outages_2020.csv",
+      "sample": "data/county_coverage/eaglei_outages_2020.csv",
+      "parsed_rows": 25545517,
+      "selected_rows": 105030,
+      "elapsed_seconds": 26.608134599984623
+    },
+    {
+      "source": "data/raw/eaglei_outages_2021.csv",
+      "sample": "data/county_coverage/eaglei_outages_2021.csv",
+      "parsed_rows": 24826102,
+      "selected_rows": 104542,
+      "elapsed_seconds": 20.693780800007517
+    }
+  ]
+}

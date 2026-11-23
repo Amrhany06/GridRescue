@@ -1,0 +1,15 @@
+# Focused Task 1/2 review changes
+
+Completed 2026-11-17T17:19:11.866064+00:00; **awaiting user approval**. No classifier training or 2022 modeling access occurred.
+
+- Fixed the shared Markdown template margin: the first heading and later indented text now render as prose/headings. All original navigation links remain, with one additional link to the county summary. Local HTML rendering finds **zero unintended code blocks**, down from 15 in Task 1 and 12 in Task 2. Regression checks also preserve intentional indentation within fenced code.
+- Added a clear two-cohort scope panel and compact measured-count table to both notebooks. The January prefixes are the main teaching/debugging examples; the three counties span all available development-year dates and form the separate experimental cohort. They are not merged or treated as successive cleaning stages.
+- Added one compact Task 2 county summary cell: two split rows and thirteen feature-statistic rows. It cross-checks verified audit counts/nulls and training medians, means and sample standard deviations against the fitted JSON and reload proof. Training: **303,791**, positive **36.53%**; validation: **102,449**, positive **32.91%**. Eligible raw predictor nulls include **802** exact 15-minute lags and **1,296** exact 60-minute lags/deltas. These null counts use eligible train + validation rows; fitted statistics use training only.
+- Explained fold-specific preprocessing using the 2019 validation example: reusing the Task 2 2018?2020 fit would leak later covariate distribution information into an earlier fold. Fold refitting and the three-hour label purge solve separate problems. No CV was executed.
+- Replaced the verbose startup audit dump with the compact scope table; preserved useful calculations, nine charts and worked examples.
+
+Both notebooks were executed fully from fresh Windows kernels: Task 1 **23 code cells**, Task 2 **17 code cells**, no saved errors. See `task12_focused_execution.json` and `task12_clean_kernel_execution.json`. All **30** mapped original Task 1/2 rubric items pass in their documented scopes; three Markdown regression tests, syntax/layout checks and local Markdown rendering checks pass. The full classifier-containing test suite was not rerun for this notebook-only revision; its prior native-Hadoop blocker remains documented. Arrow-local persistence artifacts and verified statistics were reused, not refitted or rewritten.
+
+Final files: `notebooks/task1_eda.ipynb`, `notebooks/task2_preprocessing.ipynb`. Navigation/function guide: `NOTEBOOK_REVIEW_GUIDE.md`; original rubric checks: `TASK1_TASK2_RUBRIC_REVIEW.md`; focused evidence: `task12_focused_validation.json` and `notebook_markdown_rendering.json`.
+
+Before-edit notebooks/reports/scripts are preserved in `artifacts/checkpoints/task12-focused-review-20261117T170616/before-focused-edits.zip` (SHA-256 `6896f26aa3e50b3ffd0e2d03eaa8fabe8c16fc8c5f6f2cff0acb46f3d4ca4e55`). The target, thirteen feature definitions, three models and scientific method remain unchanged. Task 3 remains PAUSED; WSL/Ubuntu and both environments remain preserved.

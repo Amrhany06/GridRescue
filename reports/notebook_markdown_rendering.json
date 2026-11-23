@@ -1,0 +1,32 @@
+{
+  "status": "VERIFIED_GFM_MARKDOWN_RENDERING",
+  "renderer": "Marked from existing bundled tools; no dependency installed",
+  "notebooks": [
+    {
+      "notebook": "task1_eda",
+      "before": {
+        "rendered_headings": 23,
+        "expected_headings": 26,
+        "unintended_code_blocks": 15
+      },
+      "after": {
+        "rendered_headings": 27,
+        "expected_headings": 27,
+        "unintended_code_blocks": 0
+      }
+    },
+    {
+      "notebook": "task2_preprocessing",
+      "before": {
+        "rendered_headings": 16,
+        "expected_headings": 22,
+        "unintended_code_blocks": 12
+      },
+      "after": {
+        "rendered_headings": 24,
+        "expected_headings": 24,
+        "unintended_code_blocks": 0
+      }
+    }
+  ]
+}

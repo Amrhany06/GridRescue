@@ -1,0 +1,9 @@
+{
+  "available_ram": 4107747328,
+  "full_estimated_workspace": 1776609152,
+  "train_before_sampling": 1053328,
+  "validation_rows": 582532,
+  "training_fraction": 1.0,
+  "estimated_bytes_per_training_row": 1000,
+  "fixed_workspace_bytes": 723281152
+}

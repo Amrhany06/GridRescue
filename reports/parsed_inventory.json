@@ -1,0 +1,40 @@
+{
+  "scope": "CSV syntax/shape and record counts only; 2022 sealed from all development analysis",
+  "files": [
+    {
+      "path": "data/raw/eaglei_outages_2018.csv",
+      "csv_parsed_records": 21776806,
+      "physical_data_lines": 21776806,
+      "header_records": 1
+    },
+    {
+      "path": "data/raw/eaglei_outages_2019.csv",
+      "csv_parsed_records": 24074122,
+      "physical_data_lines": 24074122,
+      "header_records": 1
+    },
+    {
+      "path": "data/raw/eaglei_outages_2020.csv",
+      "csv_parsed_records": 25545517,
+      "physical_data_lines": 25545517,
+      "header_records": 1
+    },
+    {
+      "path": "data/raw/eaglei_outages_2021.csv",
+      "csv_parsed_records": 24826102,
+      "physical_data_lines": 24826102,
+      "header_records": 1
+    },
+    {
+      "path": "data/raw/eaglei_outages_2022.csv",
+      "csv_parsed_records": 25796465,
+      "physical_data_lines": 25796465,
+      "header_records": 1
+    }
+  ],
+  "csv_parsed_record_total": 122019012,
+  "header_total": 5,
+  "records_including_headers": 122019017,
+  "supplied_inventory_total": 122019017,
+  "interpretation": "Every supplied annual count equals local parsed data records plus one header. Five headers exactly explain the arithmetic discrepancy. Upstream author counting methodology is not independently verified."
+}

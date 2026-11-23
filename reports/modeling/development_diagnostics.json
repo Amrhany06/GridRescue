@@ -1,0 +1,12 @@
+{
+  "winner": "Random Forest",
+  "2021_brier": 0.20144846766030158,
+  "constant_prevalence_brier": 0.2221145027640922,
+  "2021_false_positives": 9602,
+  "2021_false_negatives": 21728,
+  "local_anchor_utc": "2021-01-01T00:00:00+00:00",
+  "local_anchor_fips": "06037",
+  "local_score": 0.2748735966610068,
+  "2021_ablation_AP_difference": 0.14907837532590656,
+  "holdout_accessed": false
+}

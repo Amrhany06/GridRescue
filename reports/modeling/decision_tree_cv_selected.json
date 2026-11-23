@@ -1,0 +1,79 @@
+{
+  "model": "Decision Tree",
+  "kind": "cv_selected",
+  "parameters": {
+    "max_depth": 12,
+    "min_samples_split": 2,
+    "min_samples_leaf": 10
+  },
+  "classifier_parameters": {
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "random_state": 17,
+    "splitter": "best"
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "fit_seconds": 2.6355569000006653,
+  "warnings": [],
+  "train": {
+    "rows": 303791,
+    "positive": 110987,
+    "prevalence": 0.3653399870305572,
+    "accuracy": 0.7016797732651724,
+    "precision": 0.6317185518722667,
+    "recall": 0.43989836647535296,
+    "f1": 0.5186404848278829,
+    "confusion_matrix": [
+      [
+        164341,
+        28463
+      ],
+      [
+        62164,
+        48823
+      ]
+    ],
+    "roc_auc": 0.7437471903564468,
+    "average_precision": 0.614665957338286,
+    "pr_auc_trapezoid": 0.6185810009751008,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "validation": {
+    "rows": 102449,
+    "positive": 33719,
+    "prevalence": 0.32912961571123195,
+    "accuracy": 0.6758679928549814,
+    "precision": 0.5097338403041826,
+    "recall": 0.3975799994068626,
+    "f1": 0.4467252036854996,
+    "confusion_matrix": [
+      [
+        55836,
+        12894
+      ],
+      [
+        20313,
+        13406
+      ]
+    ],
+    "roc_auc": 0.6545659135413912,
+    "average_precision": 0.46833692409676975,
+    "pr_auc_trapezoid": 0.4621777390596842,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "artifact": "artifacts/modeling/decision_tree_cv_selected.joblib",
+  "artifact_sha256": "f21b6a32040dca0cedf0f1f17951142f30001588f353cceb49808288a5c14920",
+  "predictions": "artifacts/modeling/decision_tree_cv_selected_validation_predictions.parquet",
+  "predictions_sha256": "a6d2c55b1994d1183e87002b5d1a97e90197c5731707d50b9f40a1de2b86022a"
+}

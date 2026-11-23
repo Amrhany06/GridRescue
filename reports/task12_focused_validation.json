@@ -1,0 +1,21 @@
+{
+  "status": "VERIFIED",
+  "utc": "2026-11-17T17:19:11.866064+00:00",
+  "markdown_regression_tests": 3,
+  "markdown_code_blocks_after": 0,
+  "rubric_items_passed": 30,
+  "county_summary_tables": 2,
+  "county_summary_statistic_rows": 13,
+  "county_training_rows": 303791,
+  "county_validation_rows": 102449,
+  "training_prevalence": "36.53%",
+  "validation_prevalence": "32.91%",
+  "source_of_displayed_values": "Executed county summary outputs, cross-checked against verified audit/JSON in the notebook",
+  "science_configuration_hashes_unchanged": true,
+  "classifier_fitting_this_revision": false,
+  "2022_modeling_access": false,
+  "notebook_sha256": {
+    "task1_eda.ipynb": "13ef323ec34446a517f3a83fbc30807362e64c0fb3b3cb62e9576c2b81b77519",
+    "task2_preprocessing.ipynb": "57884d5910f81c7bef2df58c1c3d19ffe57768813955a2aeaefe613e1d5784d7"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "VERIFIED",
+  "completed_utc": "2026-11-17T02:28:02.647393+00:00",
+  "test_exit_code": 0,
+  "health_http_status": 200,
+  "url": "http://127.0.0.1:8501",
+  "verified": [
+    "FIPS-keyed source/audit reconciliation",
+    "default KPIs",
+    "state/county/date/severity filters",
+    "filtered chart Arrow datasets agree with source aggregates",
+    "empty results",
+    "scope switching",
+    "independent-city identity"
+  ],
+  "visual_browser_review": {
+    "status": "BLOCKED",
+    "reason": "Computer Use stopped because it could not determine the Windows browser URL with sufficient confidence; no alternative UI automation used to bypass that policy."
+  },
+  "model_results": "NOT AVAILABLE: scientific approval/training pending",
+  "live_monitoring": false
+}

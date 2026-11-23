@@ -1,0 +1,19 @@
+{
+  "status": "APPROVED_CONDITIONAL_EXPERIMENT",
+  "authority": "Explicit user message approving Decision 2 in this conversation on 2026-11-17",
+  "scope": "University ML experiment only; not confirmation of operational validity",
+  "county_fips": ["06037", "12086", "48201"],
+  "training_years": [2018, 2019, 2020],
+  "validation_years": [2021],
+  "holdout_year": 2022,
+  "horizon_minutes": 180,
+  "required_future_quarter_hours": 12,
+  "minimum_absolute_increase": 200,
+  "minimum_relative_increase": 0.5,
+  "positive_current_count_required": true,
+  "source_policies_unchanged": true,
+  "training_fold_only_preprocessing": true,
+  "time_aware_cv_and_purge_required": true,
+  "holdout_policy": "Choose winner using development only, then evaluate 2022 once; no tuning or repeated evaluation on 2022",
+  "limitations_required": ["complete-case selection", "class distribution changes", "overlapping windows", "three-county generalization limits"]
+}

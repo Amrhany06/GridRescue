@@ -1,0 +1,85 @@
+{
+  "model": "Random Forest",
+  "kind": "cv_selected",
+  "parameters": {
+    "n_estimators": 100,
+    "max_depth": 12,
+    "min_samples_leaf": 10
+  },
+  "classifier_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "fit_seconds": 42.998227599979145,
+  "warnings": [],
+  "train": {
+    "rows": 303791,
+    "positive": 110987,
+    "prevalence": 0.3653399870305572,
+    "accuracy": 0.697969985944284,
+    "precision": 0.6468055873597436,
+    "recall": 0.38174741185904654,
+    "f1": 0.4801237449856084,
+    "confusion_matrix": [
+      [
+        169668,
+        23136
+      ],
+      [
+        68618,
+        42369
+      ]
+    ],
+    "roc_auc": 0.7405677850832437,
+    "average_precision": 0.6131296004610043,
+    "pr_auc_trapezoid": 0.6131259789949675,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "validation": {
+    "rows": 102449,
+    "positive": 33719,
+    "prevalence": 0.32912961571123195,
+    "accuracy": 0.6941893039463538,
+    "precision": 0.5553188533320984,
+    "recall": 0.3556155283371393,
+    "f1": 0.4335768006942436,
+    "confusion_matrix": [
+      [
+        59128,
+        9602
+      ],
+      [
+        21728,
+        11991
+      ]
+    ],
+    "roc_auc": 0.6832266210283122,
+    "average_precision": 0.5236688442307188,
+    "pr_auc_trapezoid": 0.5236521259126325,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "artifact": "artifacts/modeling/random_forest_cv_selected.joblib",
+  "artifact_sha256": "ba0abaee424fe6b6d12ec721154b125f76aeef4b32bf3eb32b4f447d163eeda6",
+  "predictions": "artifacts/modeling/random_forest_cv_selected_validation_predictions.parquet",
+  "predictions_sha256": "e3aac3069df56525f9abc573325ce0be6bb5085d4138cbffb5abc9d8288e88d5"
+}

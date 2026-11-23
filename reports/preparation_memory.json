@@ -1,0 +1,68 @@
+{
+  "mode": "memory",
+  "predictors": [
+    "customers_out_t",
+    "lag_15m",
+    "lag_60m",
+    "delta_60m",
+    "rolling_mean_60m",
+    "rolling_variance_60m",
+    "history_slots_60m",
+    "hour_utc",
+    "weekday_utc",
+    "month_utc",
+    "lag_15m_missing",
+    "lag_60m_missing",
+    "delta_60m_missing"
+  ],
+  "training_rows": 109785,
+  "medians": {
+    "customers_out_t": 12.0,
+    "lag_15m": 12.0,
+    "lag_60m": 13.0,
+    "delta_60m": 0.0,
+    "rolling_mean_60m": 13.4,
+    "rolling_variance_60m": 0.15999999999999998,
+    "history_slots_60m": 5.0,
+    "hour_utc": 10.0,
+    "weekday_utc": 3.0,
+    "month_utc": 1.0,
+    "lag_15m_missing": 0.0,
+    "lag_60m_missing": 0.0,
+    "delta_60m_missing": 0.0
+  },
+  "scaler_mean": [
+    165.96647082934814,
+    163.48442865600944,
+    158.34859042674367,
+    -3.286979095504848,
+    166.98110458320053,
+    34001.64038600701,
+    4.644787539281302,
+    10.517365760349788,
+    3.2397595299904314,
+    1.0,
+    0.04282916609737213,
+    0.13075556770050553,
+    0.13075556770050553
+  ],
+  "scaler_std": [
+    629.8035878703971,
+    628.2735596380597,
+    625.1202449616987,
+    389.77051388069907,
+    606.9423185154535,
+    628334.6556120187,
+    0.949188105748246,
+    6.452510631291603,
+    0.8454231514857264,
+    0.0,
+    0.20247271925443303,
+    0.3371343715913587,
+    0.3371343715913587
+  ],
+  "constant_training_predictors": [
+    "month_utc"
+  ],
+  "spark_pipeline_saved": false
+}

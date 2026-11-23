@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "replay_files_identical": 26,
+  "independent_metric_rows": 32,
+  "independent_oof_target_checks": 15,
+  "no_fit_replay": true,
+  "reloaded_rows_per_model": {
+    "rf_original_state": 585,
+    "rf_history_state": 585,
+    "xgb_original_state": 585,
+    "xgb_history_state": 585,
+    "xgb_history_without_hour_state": 582532
+  },
+  "protected_artifact_count": 16
+}

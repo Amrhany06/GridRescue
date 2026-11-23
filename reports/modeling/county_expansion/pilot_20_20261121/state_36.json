@@ -1,0 +1,216 @@
+{
+  "state": "New York",
+  "prefix": "s36",
+  "counts": {
+    "raw": 498133,
+    "invalid": 2416,
+    "exact_duplicates_removed": 0,
+    "conflict_rows": 0,
+    "silver": 495717
+  },
+  "by_county_year_split": [
+    {
+      "fips_code": "36081",
+      "state": "New York",
+      "county": "Queens",
+      "year": 2018,
+      "split": "train",
+      "clean": 32789,
+      "eligible": 29766,
+      "positive": 1504,
+      "complete_future": 29766,
+      "positive_current": 32789
+    },
+    {
+      "fips_code": "36103",
+      "state": "New York",
+      "county": "Suffolk",
+      "year": 2018,
+      "split": "train",
+      "clean": 32221,
+      "eligible": 28402,
+      "positive": 4101,
+      "complete_future": 28402,
+      "positive_current": 32221
+    },
+    {
+      "fips_code": "36047",
+      "state": "New York",
+      "county": "Kings",
+      "year": 2021,
+      "split": "validation",
+      "clean": 31622,
+      "eligible": 27518,
+      "positive": 718,
+      "complete_future": 27518,
+      "positive_current": 31622
+    },
+    {
+      "fips_code": "36081",
+      "state": "New York",
+      "county": "Queens",
+      "year": 2021,
+      "split": "validation",
+      "clean": 31714,
+      "eligible": 27601,
+      "positive": 1664,
+      "complete_future": 27601,
+      "positive_current": 31714
+    },
+    {
+      "fips_code": "36047",
+      "state": "New York",
+      "county": "Kings",
+      "year": 2019,
+      "split": "train",
+      "clean": 32694,
+      "eligible": 29682,
+      "positive": 650,
+      "complete_future": 29682,
+      "positive_current": 32694
+    },
+    {
+      "fips_code": "36059",
+      "state": "New York",
+      "county": "Nassau",
+      "year": 2019,
+      "split": "train",
+      "clean": 28764,
+      "eligible": 22709,
+      "positive": 2748,
+      "complete_future": 22709,
+      "positive_current": 28764
+    },
+    {
+      "fips_code": "36059",
+      "state": "New York",
+      "county": "Nassau",
+      "year": 2021,
+      "split": "validation",
+      "clean": 27973,
+      "eligible": 21173,
+      "positive": 2410,
+      "complete_future": 21173,
+      "positive_current": 27973
+    },
+    {
+      "fips_code": "36081",
+      "state": "New York",
+      "county": "Queens",
+      "year": 2020,
+      "split": "train",
+      "clean": 30351,
+      "eligible": 25711,
+      "positive": 1490,
+      "complete_future": 25711,
+      "positive_current": 30351
+    },
+    {
+      "fips_code": "36103",
+      "state": "New York",
+      "county": "Suffolk",
+      "year": 2020,
+      "split": "train",
+      "clean": 30199,
+      "eligible": 25230,
+      "positive": 3781,
+      "complete_future": 25230,
+      "positive_current": 30199
+    },
+    {
+      "fips_code": "36103",
+      "state": "New York",
+      "county": "Suffolk",
+      "year": 2021,
+      "split": "validation",
+      "clean": 30279,
+      "eligible": 24935,
+      "positive": 3400,
+      "complete_future": 24935,
+      "positive_current": 30279
+    },
+    {
+      "fips_code": "36047",
+      "state": "New York",
+      "county": "Kings",
+      "year": 2018,
+      "split": "train",
+      "clean": 33628,
+      "eligible": 31007,
+      "positive": 594,
+      "complete_future": 31007,
+      "positive_current": 33628
+    },
+    {
+      "fips_code": "36059",
+      "state": "New York",
+      "county": "Nassau",
+      "year": 2018,
+      "split": "train",
+      "clean": 31265,
+      "eligible": 26371,
+      "positive": 3483,
+      "complete_future": 26371,
+      "positive_current": 31265
+    },
+    {
+      "fips_code": "36059",
+      "state": "New York",
+      "county": "Nassau",
+      "year": 2020,
+      "split": "train",
+      "clean": 28698,
+      "eligible": 22804,
+      "positive": 2928,
+      "complete_future": 22804,
+      "positive_current": 28698
+    },
+    {
+      "fips_code": "36047",
+      "state": "New York",
+      "county": "Kings",
+      "year": 2020,
+      "split": "train",
+      "clean": 30361,
+      "eligible": 25864,
+      "positive": 625,
+      "complete_future": 25864,
+      "positive_current": 30361
+    },
+    {
+      "fips_code": "36081",
+      "state": "New York",
+      "county": "Queens",
+      "year": 2019,
+      "split": "train",
+      "clean": 32185,
+      "eligible": 28756,
+      "positive": 1324,
+      "complete_future": 28756,
+      "positive_current": 32185
+    },
+    {
+      "fips_code": "36103",
+      "state": "New York",
+      "county": "Suffolk",
+      "year": 2019,
+      "split": "train",
+      "clean": 30974,
+      "eligible": 26784,
+      "positive": 3835,
+      "complete_future": 26784,
+      "positive_current": 30974
+    }
+  ],
+  "quarantine_reasons": [
+    {
+      "reason": "invalid_count",
+      "count": 2290
+    },
+    {
+      "reason": "off_grid_timestamp",
+      "count": 126
+    }
+  ],
+  "seconds": 27.15925289998995
+}

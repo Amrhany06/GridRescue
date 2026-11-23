@@ -1,0 +1,85 @@
+--- PAGE 1 ---
+MACHINE LEARNING  /  TASK 03 
+Task 3 for ML  •  Page 1 
+•  MODEL RESEARCH, VALIDATION & COMPARISON 
+Task 3 for ML 
+Objective  Build and compare three ML models from the Task 2 dataset, validate and tune them fairly, report 
+suitable results, and save the selected model with its preprocessing. 
+Workflow  Research  →  Pipeline  →  Default Baselines  →  Validation  →  Tuning  →  Comparison  →  Save 
+01  Model Research & Selection 
+Choose models deliberately before writing training code. 
+Identify the Task — State whether the problem is classification, regression, or clustering, and define the main 
+evaluation goal. 
+Research 3 Algorithms — Find three suitable, different models; briefly explain how each works and why it suits 
+the dataset. 
+Research Summary — Make a small table: model name, reason for choosing it, main strengths/limitations, key 
+hyperparameters, and reference links. 
+02  Build Pipelines & Default Baselines 
+Create a reproducible starting point for a fair comparison. 
+Build a Pipeline — Connect Task 2 preprocessing steps with each estimator; use the same feature definitions 
+and appropriate transforms across models. 
+Train with Defaults — Fit each of the three models using default hyperparameters first (change only essential 
+settings such as random_state). 
+Record Baselines — Keep baseline settings, training time, initial validation metrics, and predictions or cluster 
+assignments for later comparison. 
+Leakage Rule — During cross-validation, refit all learned preprocessing inside each training fold using the 
+pipeline; do not preprocess the entire CV dataset beforehand. 
+03  Pre-Validation & Cross-Validation 
+Evaluate the default models before tuning anything. 
+Validation Plan — For supervised tasks, use a train/validation/test design or K-fold cross-validation on training 
+data; keep the test set untouched. 
+Correct CV Strategy — Use StratifiedKFold for classification where appropriate, KFold for regression, or 
+group/time-aware splits if the data requires them. 
+Report CV Results — Run the same validation strategy for all three models and report the main metric as mean 
+± standard deviation across folds. 
+Check Generalization — Compare train vs. validation results to identify possible underfitting, overfitting, or 
+unstable performance. 
+Clustering Note — No target y is needed. A train/test split or supervised CV is not always suitable; use internal 
+validation and, where useful, stability across seeds/subsamples. 
+
+--- PAGE 2 ---
+MACHINE LEARNING  /  TASK 03 
+Task 3 for ML  •  Page 2 
+04  Hyperparameter Tuning 
+Improve models only after recording a fair default baseline. 
+Choose Parameters — Research a small, sensible search space for each algorithm and state which parameters 
+you will tune and why. 
+Run a Search — Use GridSearchCV, RandomizedSearchCV, or a documented manual search with training -only 
+validation for supervised models. 
+Compare Changes — Record default vs. tuned performance for each model; apply the same evaluation criteria 
+and never tune against the held-out test set. 
+Clustering Note — Tune relevant clustering settings (e.g., number of clusters, eps, min_samples) using valid 
+internal metrics, structure checks, and stability rather than a target-based score. 
+05  Metrics & Diagnostic Results 
+Report metrics that match the learning problem, not one metric for every task.  
+Classification — Show Accuracy, Precision, Recall, F1-score, and Confusion Matrix; include ROC-AUC if 
+suitable, and explain class imbalance. 
+Regression — Show MAE, RMSE, and R²; include actual-vs-predicted and residual plots to check error 
+patterns. 
+Clustering — Show Silhouette Score, Davies–Bouldin Index, cluster counts/sizes, and useful plots; describe 
+noise points when applicable. 
+Metric Note — Some clustering metrics are undefined for a single cluster or certain label configurations. Explain 
+invalid cases rather than reporting a misleading score. 
+06  Compare & Select the Best Model 
+Show evidence for the final choice across all three algorithms. 
+Comparison Table — For each model, present default and tuned settings, the main validation metric, supporting 
+metrics, and training time. 
+Interpret Results — Explain which model generalizes best, how stable it is across folds/runs, and any 
+performance–complexity trade-offs. 
+Choose the Winner — Select using validation/CV or clustering criteria. Do not rank candidates by repeatedly 
+checking the held-out test set. 
+07  Final Evaluation, Save & Reload 
+Deliver a reusable model rather than only notebook results. 
+Final Fit & Test — Refit the chosen supervised pipeline on allowed training data, then evaluate once on the 
+untouched test set; report final metrics. 
+Save Artifacts — Save the complete fitted pipeline (or model plus all required preprocessing), along with feature 
+names, parameters, and metrics (e.g., joblib). 
+Reload Check — Load the saved artifact in a fresh cell and demonstrate valid output on sample input; document 
+the inference method. 
+Clustering Note — If there is no holdout, fit the selected clusterer on the chosen dataset and report 
+unsupervised diagnostics. Some clusterers (e.g., DBSCAN) have no predict() for new samples.  
+Submission Checklist 
+□  Runnable notebook with research summary and three documented model pipelines. 
+□  Default baselines, validation/CV output, tuning experiments, and suitable metrics/plots. 
+□  One comparison table with a justified best-model choice and final results. 
+□  Saved model/pipeline, required metadata, and a successful reload demonstration. 

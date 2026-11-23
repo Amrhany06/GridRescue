@@ -1,0 +1,212 @@
+{
+  "model": "Decision Tree",
+  "parameters": {},
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "folds": [
+    {
+      "name": "2018_H2",
+      "train_rows": 48860,
+      "validation_rows": 50935,
+      "last_training_anchor": "2018-06-30T20:00:00+00:00",
+      "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+      "embargo_seconds": 14400.0,
+      "fit_seconds": 0.41724699997575954,
+      "warnings": [],
+      "train": {
+        "rows": 48860,
+        "positive": 17153,
+        "prevalence": 0.35106426524764633,
+        "accuracy": 0.9997339336880884,
+        "precision": 0.9998250320774524,
+        "recall": 0.9994170116014691,
+        "f1": 0.9996209802035044,
+        "confusion_matrix": [
+          [
+            31704,
+            3
+          ],
+          [
+            10,
+            17143
+          ]
+        ],
+        "roc_auc": 0.9999998308419823,
+        "average_precision": 0.9999995515784051,
+        "pr_auc_trapezoid": 0.9999996874250204,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 50935,
+        "positive": 18980,
+        "prevalence": 0.37263178560910964,
+        "accuracy": 0.5809561205457937,
+        "precision": 0.44370892465949135,
+        "recall": 0.4908851422550053,
+        "f1": 0.46610635849717347,
+        "confusion_matrix": [
+          [
+            20274,
+            11681
+          ],
+          [
+            9663,
+            9317
+          ]
+        ],
+        "roc_auc": 0.5625845651295395,
+        "average_precision": 0.40756852409394284,
+        "pr_auc_trapezoid": 0.5620850232746037,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2019",
+      "train_rows": 99801,
+      "validation_rows": 101349,
+      "last_training_anchor": "2018-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 1.0047442000068258,
+      "warnings": [],
+      "train": {
+        "rows": 99801,
+        "positive": 36135,
+        "prevalence": 0.3620705203354676,
+        "accuracy": 0.9997895812667208,
+        "precision": 0.9998892641603455,
+        "recall": 0.9995295419952954,
+        "f1": 0.9997093707184079,
+        "confusion_matrix": [
+          [
+            63662,
+            4
+          ],
+          [
+            17,
+            36118
+          ]
+        ],
+        "roc_auc": 0.9999998987207919,
+        "average_precision": 0.9999997259400846,
+        "pr_auc_trapezoid": 0.9999998216121159,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 101349,
+        "positive": 36768,
+        "prevalence": 0.36278601663558596,
+        "accuracy": 0.582018569497479,
+        "precision": 0.4277596983315254,
+        "recall": 0.45044604003481287,
+        "f1": 0.43880984553427127,
+        "confusion_matrix": [
+          [
+            42425,
+            22156
+          ],
+          [
+            20206,
+            16562
+          ]
+        ],
+        "roc_auc": 0.5536864073377656,
+        "average_precision": 0.3920657821575385,
+        "pr_auc_trapezoid": 0.5387178722728764,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2020",
+      "train_rows": 201150,
+      "validation_rows": 102641,
+      "last_training_anchor": "2019-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 2.238783600012539,
+      "warnings": [],
+      "train": {
+        "rows": 201150,
+        "positive": 72903,
+        "prevalence": 0.3624310216256525,
+        "accuracy": 0.9997216007954263,
+        "precision": 0.9998764839085981,
+        "recall": 0.9993553077376789,
+        "f1": 0.9996158278908951,
+        "confusion_matrix": [
+          [
+            128238,
+            9
+          ],
+          [
+            47,
+            72856
+          ]
+        ],
+        "roc_auc": 0.999999823949519,
+        "average_precision": 0.9999995210483605,
+        "pr_auc_trapezoid": 0.9999996904368351,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102641,
+        "positive": 38084,
+        "prevalence": 0.3710408121510897,
+        "accuracy": 0.5821163082978537,
+        "precision": 0.4378554441112605,
+        "recall": 0.44475370234219097,
+        "f1": 0.4412776156731972,
+        "confusion_matrix": [
+          [
+            42811,
+            21746
+          ],
+          [
+            21146,
+            16938
+          ]
+        ],
+        "roc_auc": 0.5539606814883107,
+        "average_precision": 0.40077130340667033,
+        "pr_auc_trapezoid": 0.5442483136409948,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    }
+  ],
+  "summary": {
+    "average_precision": {
+      "mean": 0.4001352032193839,
+      "std": 0.0077709214043694165
+    },
+    "pr_auc_trapezoid": {
+      "mean": 0.548350403062825,
+      "std": 0.012211727547849256
+    },
+    "roc_auc": {
+      "mean": 0.556743884651872,
+      "std": 0.005060036354520524
+    },
+    "accuracy": {
+      "mean": 0.5816969994470421,
+      "std": 0.0006434783430784271
+    },
+    "precision": {
+      "mean": 0.4364413557007591,
+      "std": 0.008068097027162385
+    },
+    "recall": {
+      "mean": 0.4620282948773364,
+      "std": 0.025152314158646893
+    },
+    "f1": {
+      "mean": 0.44873127323488066,
+      "std": 0.015097770142262821
+    }
+  },
+  "total_fit_seconds": 3.6607747999951243
+}

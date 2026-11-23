@@ -1,0 +1,35 @@
+[
+  {
+    "notebook": "task1_eda",
+    "dataframe_tables": 18,
+    "styled_tables": 18,
+    "lowest_text_contrast": 8.72876529440009,
+    "images": 17,
+    "loaded_images": 17,
+    "embedded_markdown_images": 7,
+    "png_plot_images": 10,
+    "navigation_links": 6
+  },
+  {
+    "notebook": "task2_preprocessing",
+    "dataframe_tables": 23,
+    "styled_tables": 23,
+    "lowest_text_contrast": 8.72876529440009,
+    "images": 10,
+    "loaded_images": 10,
+    "embedded_markdown_images": 10,
+    "png_plot_images": 0,
+    "navigation_links": 6
+  },
+  {
+    "notebook": "task3_modeling",
+    "dataframe_tables": 23,
+    "styled_tables": 23,
+    "lowest_text_contrast": 8.72876529440009,
+    "images": 6,
+    "loaded_images": 6,
+    "embedded_markdown_images": 2,
+    "png_plot_images": 4,
+    "navigation_links": 11
+  }
+]

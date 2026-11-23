@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED",
+  "fresh_process": true,
+  "pid": 29220,
+  "python": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\.venv\\Scripts\\python.exe",
+  "rows": 100,
+  "features": [
+    "customers_out_t",
+    "lag_15m",
+    "lag_60m",
+    "delta_60m",
+    "rolling_mean_60m",
+    "rolling_variance_60m",
+    "history_slots_60m",
+    "hour_utc",
+    "weekday_utc",
+    "month_utc",
+    "lag_15m_missing",
+    "lag_60m_missing",
+    "delta_60m_missing"
+  ],
+  "maximum_score_error": 0.0,
+  "artifact_sha256": "613e3b445373492f17fea2fd3f62a61fef5f1bc1a8e33e8d8fb6357e97b28d2b",
+  "refit": false,
+  "holdout_accessed": false
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-11-18T11:22:17.197791+00:00",
+  "status": "RECOVERED_VERIFIED_SAVED_TASK1_TASK2_OUTPUTS",
+  "notebooks": [
+    {
+      "name": "task1_eda",
+      "executed_cells": 23,
+      "saved_errors": 0,
+      "sha256": "13ef323ec34446a517f3a83fbc30807362e64c0fb3b3cb62e9576c2b81b77519"
+    },
+    {
+      "name": "task2_preprocessing",
+      "executed_cells": 17,
+      "saved_errors": 0,
+      "sha256": "57884d5910f81c7bef2df58c1c3d19ffe57768813955a2aeaefe613e1d5784d7"
+    }
+  ],
+  "frozen_science_hashes_match": {
+    "src/gridrescue/modeling.py": true,
+    "src/gridrescue/experiment.py": true,
+    "src/gridrescue/final_evaluation.py": true,
+    "reports/target_approval.json": true
+  },
+  "task3_remains_paused": true,
+  "no_model_artifacts_or_final_test": true,
+  "persistence_evidence": "reports/persistence_validation.json (prior full Arrow-local round-trip verification, not rerun)",
+  "fresh_checks": [
+    "pip check",
+    "syntax",
+    "layout",
+    "3 notebook Markdown tests",
+    "notebook schema, execution sequence, saved-error and hash validation",
+    "paused configuration hashes and absence of real model/final-test artifacts"
+  ],
+  "historical_full_suite": "40/41 passed; original native Hadoop integration test failed; not rerun during classifier pause"
+}

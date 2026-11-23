@@ -1,0 +1,11 @@
+{
+  "issue": "SPARK-53759",
+  "upstream": "https://github.com/apache/spark/pull/55225",
+  "package": "pyspark==3.5.3",
+  "scope": ".venv only; explicit close flushes buffered worker results",
+  "before_sha256": "fadab5b8763da9a20457b3655dd295286604be74ef5cf12f92988a2510ce8158",
+  "after_sha256": "5140f178a5904f6025b8e79ff1fd13cc1601a45c5663c42ea38934a7ac955290",
+  "worker_archive_patched": true,
+  "original_archive_sha256": "fcc607c18c704c8ede42f120a4efbd59efc3ad1386aad969664c1731e9d53875",
+  "patched_archive_sha256": "5d8a59684ebe57fcbda830db37c1f768ff0cf05b9e512f22057d6ad891c4bfec"
+}

@@ -1,0 +1,34 @@
+{
+  "checksum_matched_years": [
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "cloud_fit_executed": false,
+  "development": {
+    "archived_feature_sample_checked": 82,
+    "arrow_fold_partitions_exact": 6,
+    "development_rows": 582532,
+    "feature_count": 24,
+    "oof_cutoffs_exact": {
+      "target_40": 0.36248219013214106,
+      "target_50": 0.31280517578124994,
+      "target_60": 0.2670117616653442
+    },
+    "oof_rows_checked": 890035,
+    "training_rows": 1053328
+  },
+  "experimental_models": 4,
+  "nationwide_download_executed": false,
+  "notebook": {
+    "bundle_bytes": 83484,
+    "code_cells_compiled": 13,
+    "embedded_files_checked": 22,
+    "notebook_bytes": 126194,
+    "safe_default_cells_executed": 7
+  },
+  "protected_files": 8,
+  "scope": "local preparation; fixtures and archived predictions only",
+  "status": "PASS"
+}

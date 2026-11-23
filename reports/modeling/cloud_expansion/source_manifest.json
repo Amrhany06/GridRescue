@@ -1,0 +1,12 @@
+{
+  "article_id": 24237376,
+  "version": 4,
+  "doi": "10.6084/m9.figshare.24237376.v4",
+  "metadata_url": "https://api.figshare.com/v2/articles/24237376/versions/4",
+  "files": [
+    {"year": 2018, "id": 42547879, "name": "eaglei_outages_2018.csv", "size": 999210542, "md5": "726543e4a392e220108b035ba4c52e43", "sha256": "85e0a864aa272e75892e181f1da4754ed78f7bf0bef75a279d8ab381baa7db70"},
+    {"year": 2019, "id": 42547885, "name": "eaglei_outages_2019.csv", "size": 1102778792, "md5": "0ff77af0106486eb7bdc6c5051bd916a", "sha256": "4cc277a138b326bd0e1f203558539a9422b40dacdf439e3d5b58ee71d7462d27"},
+    {"year": 2020, "id": 42547894, "name": "eaglei_outages_2020.csv", "size": 1170699724, "md5": "3b1e76e7ff0445da2b9a2fe4819c0e88", "sha256": "2a20b62e5245b1b9d4fcedc1bdbaf691bb1e17f75094975c8c6cb854f52e721a"},
+    {"year": 2021, "id": 42547891, "name": "eaglei_outages_2021.csv", "size": 1141058232, "md5": "b5a5912be793ca22dddcc73ca2c3379d", "sha256": "e3e7ac40a40d92d92488501881ab381b8931833e486941424ac55ea20ffde319"}
+  ]
+}

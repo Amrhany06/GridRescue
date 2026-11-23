@@ -1,0 +1,142 @@
+{
+  "available_local_disk_bytes": 35391336448,
+  "experimental_models": {
+    "rf_history_both": {
+      "bytes": 10855077,
+      "sha256": "957c34e087298519adadadd059a7c875583523b8561236c91599652668f9e42c"
+    },
+    "rf_history_state": {
+      "bytes": 12507611,
+      "sha256": "b4eb0dbe7c377a7a70dd30fa2ac3648626a3eb476ebf077ead1ce1e3a2d2565b"
+    },
+    "xgb_history_state": {
+      "bytes": 197050,
+      "sha256": "353bf2bf9a6a5a43ed38b8fd58c22f56c85fa73be8ee32a27e7830c15ffe0c47"
+    },
+    "xgb_original_state": {
+      "bytes": 190112,
+      "sha256": "b8ef35e59111f1e8db70f096625bc2542d9dc165a73bf066e40028757b1e0a03"
+    }
+  },
+  "measured_utc": "2026-11-22T21:31:44.659944+00:00",
+  "parquet": {
+    "native_county_gold": {
+      "bytes": 20620841,
+      "files": 1,
+      "path": "data/windows/gold/county/features",
+      "rows": 416940
+    },
+    "native_county_label_audit": {
+      "bytes": 26421067,
+      "files": 1,
+      "path": "data/windows/gold/county/label_audit",
+      "rows": 416940
+    },
+    "native_county_silver": {
+      "bytes": 8939849,
+      "files": 1,
+      "path": "data/windows/silver/county",
+      "rows": 416940
+    },
+    "native_sample_gold": {
+      "bytes": 7423245,
+      "files": 1,
+      "path": "data/windows/gold/sample/features",
+      "rows": 333631
+    },
+    "native_sample_silver": {
+      "bytes": 3759630,
+      "files": 1,
+      "path": "data/windows/silver/sample",
+      "rows": 333631
+    },
+    "pilot_augmented_history": {
+      "bytes": 49457933,
+      "files": 9,
+      "path": "artifacts/modeling/local_improvement/history",
+      "rows": 1635860
+    },
+    "pilot_bronze": {
+      "bytes": 11838914,
+      "files": 175,
+      "path": "artifacts/modeling/county_expansion/pilot_20_20261121/bronze",
+      "rows": 2583294
+    },
+    "pilot_labels": {
+      "bytes": 46240430,
+      "files": 30,
+      "path": "artifacts/modeling/county_expansion/pilot_20_20261121/labels",
+      "rows": 2557234
+    },
+    "pilot_silver": {
+      "bytes": 36035218,
+      "files": 80,
+      "path": "artifacts/modeling/county_expansion/pilot_20_20261121/silver",
+      "rows": 2557234
+    }
+  },
+  "protected": {
+    "artifacts/modeling/frozen_development_pipeline.joblib": {
+      "bytes": 8081537,
+      "sha256": "613e3b445373492f17fea2fd3f62a61fef5f1bc1a8e33e8d8fb6357e97b28d2b"
+    },
+    "artifacts/modeling/random_forest_cv_selected.joblib": {
+      "bytes": 7485761,
+      "sha256": "ba0abaee424fe6b6d12ec721154b125f76aeef4b32bf3eb32b4f447d163eeda6"
+    },
+    "artifacts/modeling/random_forest_cv_selected_validation_predictions.parquet": {
+      "bytes": 1420246,
+      "sha256": "e3aac3069df56525f9abc573325ce0be6bb5085d4138cbffb5abc9d8288e88d5"
+    },
+    "notebooks/task1_eda.ipynb": {
+      "bytes": 1819492,
+      "sha256": "84e0b31e8142760cbee6b56d853b1f1e04407374bd6d89a47f8a7b02a2331a3b"
+    },
+    "notebooks/task2_preprocessing.ipynb": {
+      "bytes": 1937874,
+      "sha256": "d432cf543756547b2c1c50bc20674632160b188a82d3380914bde8fc12204f49"
+    },
+    "notebooks/task3_modeling.ipynb": {
+      "bytes": 1010368,
+      "sha256": "939931a2616fcefd76cfbc2ae642c2bd7e61e2004e0023122b588cd3f3183e51"
+    },
+    "reports/modeling/frozen_pipeline.json": {
+      "bytes": 3481,
+      "sha256": "cecc73402f0d2e98e99c9be0c62dff3c17004a89f3237b841f5484ff14622a0f"
+    },
+    "reports/modeling/frozen_selection.json": {
+      "bytes": 840,
+      "sha256": "1aec0eac303a64bb0c33b7001e994c1b65aed2342dd0ac169f588736f9222a6b"
+    }
+  },
+  "raw": [
+    {
+      "md5": "726543e4a392e220108b035ba4c52e43",
+      "path": "data/raw/eaglei_outages_2018.csv",
+      "sha256": "85e0a864aa272e75892e181f1da4754ed78f7bf0bef75a279d8ab381baa7db70",
+      "size": 999210542,
+      "year": 2018
+    },
+    {
+      "md5": "0ff77af0106486eb7bdc6c5051bd916a",
+      "path": "data/raw/eaglei_outages_2019.csv",
+      "sha256": "4cc277a138b326bd0e1f203558539a9422b40dacdf439e3d5b58ee71d7462d27",
+      "size": 1102778792,
+      "year": 2019
+    },
+    {
+      "md5": "3b1e76e7ff0445da2b9a2fe4819c0e88",
+      "path": "data/raw/eaglei_outages_2020.csv",
+      "sha256": "2a20b62e5245b1b9d4fcedc1bdbaf691bb1e17f75094975c8c6cb854f52e721a",
+      "size": 1170699724,
+      "year": 2020
+    },
+    {
+      "md5": "b5a5912be793ca22dddcc73ca2c3379d",
+      "path": "data/raw/eaglei_outages_2021.csv",
+      "sha256": "e3e7ac40a40d92d92488501881ab381b8931833e486941424ac55ea20ffde319",
+      "size": 1141058232,
+      "year": 2021
+    }
+  ]
+}

@@ -1,0 +1,2054 @@
+{
+  "metrics": [
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "all",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7530162688189246,
+      "precision": 0.5457463884430177,
+      "recall": 0.007584714569344369,
+      "f1": 0.014961496149614962,
+      "confusion_matrix": [
+        [
+          136157,
+          283
+        ],
+        [
+          44487,
+          340
+        ]
+      ],
+      "roc_auc": 0.6571178621244551,
+      "average_precision": 0.37713485748472075,
+      "pr_auc_trapezoid": 0.3771116384404283,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "original",
+      "rows": 50935,
+      "positive": 18980,
+      "prevalence": 0.37263178560910964,
+      "accuracy": 0.6296456267792284,
+      "precision": 0.6986301369863014,
+      "recall": 0.010748155953635406,
+      "f1": 0.021170610211706103,
+      "confusion_matrix": [
+        [
+          31867,
+          88
+        ],
+        [
+          18776,
+          204
+        ]
+      ],
+      "roc_auc": 0.6746793798708306,
+      "average_precision": 0.5345883903033323,
+      "pr_auc_trapezoid": 0.5345467057462525,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "seen",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7530162688189246,
+      "precision": 0.5457463884430177,
+      "recall": 0.007584714569344369,
+      "f1": 0.014961496149614962,
+      "confusion_matrix": [
+        [
+          136157,
+          283
+        ],
+        [
+          44487,
+          340
+        ]
+      ],
+      "roc_auc": 0.6571178621244551,
+      "average_precision": 0.37713485748472075,
+      "pr_auc_trapezoid": 0.3771116384404283,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "other_seen",
+      "rows": 130332,
+      "positive": 25847,
+      "prevalence": 0.1983166068195071,
+      "accuracy": 0.8012307031273977,
+      "precision": 0.4108761329305136,
+      "recall": 0.005261732502804968,
+      "f1": 0.010390404156161662,
+      "confusion_matrix": [
+        [
+          104290,
+          195
+        ],
+        [
+          25711,
+          136
+        ]
+      ],
+      "roc_auc": 0.6300247358221918,
+      "average_precision": 0.28580928457909294,
+      "pr_auc_trapezoid": 0.2857613550017308,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_06037",
+      "rows": 16599,
+      "positive": 7186,
+      "prevalence": 0.4329176456413037,
+      "accuracy": 0.573046569070426,
+      "precision": 0.8322147651006712,
+      "recall": 0.017255775118285556,
+      "f1": 0.0338104976141786,
+      "confusion_matrix": [
+        [
+          9388,
+          25
+        ],
+        [
+          7062,
+          124
+        ]
+      ],
+      "roc_auc": 0.7005136378800464,
+      "average_precision": 0.6371407590599559,
+      "pr_auc_trapezoid": 0.6370583145024913,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_06065",
+      "rows": 9693,
+      "positive": 2790,
+      "prevalence": 0.2878365831012071,
+      "accuracy": 0.7135045909419169,
+      "precision": 0.6226415094339622,
+      "recall": 0.011827956989247311,
+      "f1": 0.02321491382342596,
+      "confusion_matrix": [
+        [
+          6883,
+          20
+        ],
+        [
+          2757,
+          33
+        ]
+      ],
+      "roc_auc": 0.6493170077733591,
+      "average_precision": 0.43198249169203373,
+      "pr_auc_trapezoid": 0.4315940512313362,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_06073",
+      "rows": 14147,
+      "positive": 3659,
+      "prevalence": 0.25864140807238284,
+      "accuracy": 0.740510355552414,
+      "precision": 0.4142857142857143,
+      "recall": 0.007925662749385078,
+      "f1": 0.015553767766157146,
+      "confusion_matrix": [
+        [
+          10447,
+          41
+        ],
+        [
+          3630,
+          29
+        ]
+      ],
+      "roc_auc": 0.584676882639361,
+      "average_precision": 0.32440238038150726,
+      "pr_auc_trapezoid": 0.3240333677885069,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_12011",
+      "rows": 17077,
+      "positive": 4056,
+      "prevalence": 0.23751244363764126,
+      "accuracy": 0.7616677402354044,
+      "precision": 0.28125,
+      "recall": 0.0022189349112426036,
+      "f1": 0.004403131115459882,
+      "confusion_matrix": [
+        [
+          12998,
+          23
+        ],
+        [
+          4047,
+          9
+        ]
+      ],
+      "roc_auc": 0.6518718264548226,
+      "average_precision": 0.34344586306840286,
+      "pr_auc_trapezoid": 0.34318990086269346,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_12086",
+      "rows": 17238,
+      "positive": 5749,
+      "prevalence": 0.33350736744401904,
+      "accuracy": 0.6663766098155238,
+      "precision": 0.48214285714285715,
+      "recall": 0.004696468951121934,
+      "f1": 0.009302325581395349,
+      "confusion_matrix": [
+        [
+          11460,
+          29
+        ],
+        [
+          5722,
+          27
+        ]
+      ],
+      "roc_auc": 0.6731661817354515,
+      "average_precision": 0.4818633016214723,
+      "pr_auc_trapezoid": 0.4816803848323681,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_12103",
+      "rows": 14939,
+      "positive": 2537,
+      "prevalence": 0.1698239507329808,
+      "accuracy": 0.829372782649441,
+      "precision": 0.35714285714285715,
+      "recall": 0.005912495072920773,
+      "f1": 0.011632415664986429,
+      "confusion_matrix": [
+        [
+          12375,
+          27
+        ],
+        [
+          2522,
+          15
+        ]
+      ],
+      "roc_auc": 0.6066463557539037,
+      "average_precision": 0.23095941636487374,
+      "pr_auc_trapezoid": 0.23051857778571694,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_42029",
+      "rows": 14040,
+      "positive": 1948,
+      "prevalence": 0.13874643874643874,
+      "accuracy": 0.8604700854700855,
+      "precision": 0.2608695652173913,
+      "recall": 0.003080082135523614,
+      "f1": 0.0060882800608828,
+      "confusion_matrix": [
+        [
+          12075,
+          17
+        ],
+        [
+          1942,
+          6
+        ]
+      ],
+      "roc_auc": 0.6167124512889205,
+      "average_precision": 0.1910994008193027,
+      "pr_auc_trapezoid": 0.19072374263549374,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_42091",
+      "rows": 15171,
+      "positive": 2054,
+      "prevalence": 0.1353898886032562,
+      "accuracy": 0.8640168742996507,
+      "precision": 0.2631578947368421,
+      "recall": 0.0024342745861733205,
+      "f1": 0.00482392667631452,
+      "confusion_matrix": [
+        [
+          13103,
+          14
+        ],
+        [
+          2049,
+          5
+        ]
+      ],
+      "roc_auc": 0.5938516685906536,
+      "average_precision": 0.18353236772535156,
+      "pr_auc_trapezoid": 0.18314077921646255,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_42101",
+      "rows": 17068,
+      "positive": 3093,
+      "prevalence": 0.1812163112256855,
+      "accuracy": 0.8184907429107101,
+      "precision": 0.42857142857142855,
+      "recall": 0.004849660523763337,
+      "f1": 0.00959079283887468,
+      "confusion_matrix": [
+        [
+          13955,
+          20
+        ],
+        [
+          3078,
+          15
+        ]
+      ],
+      "roc_auc": 0.6074424272709974,
+      "average_precision": 0.24749951858191999,
+      "pr_auc_trapezoid": 0.247205229108738,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_48113",
+      "rows": 16264,
+      "positive": 4402,
+      "prevalence": 0.2706591244466306,
+      "accuracy": 0.7292179045745204,
+      "precision": 0.4791666666666667,
+      "recall": 0.005224897773739209,
+      "f1": 0.010337078651685393,
+      "confusion_matrix": [
+        [
+          11837,
+          25
+        ],
+        [
+          4379,
+          23
+        ]
+      ],
+      "roc_auc": 0.6192718132673865,
+      "average_precision": 0.35474135396220136,
+      "pr_auc_trapezoid": 0.3545347639424899,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_48201",
+      "rows": 17098,
+      "positive": 6045,
+      "prevalence": 0.3535501228213826,
+      "accuracy": 0.6475611182594455,
+      "precision": 0.6091954022988506,
+      "recall": 0.008767576509511994,
+      "f1": 0.017286366601435094,
+      "confusion_matrix": [
+        [
+          11019,
+          34
+        ],
+        [
+          5992,
+          53
+        ]
+      ],
+      "roc_auc": 0.6816747445217894,
+      "average_precision": 0.5106099804193642,
+      "pr_auc_trapezoid": 0.5104728572316457,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "group": "county_48339",
+      "rows": 11933,
+      "positive": 1308,
+      "prevalence": 0.10961200033520489,
+      "accuracy": 0.8898013911003101,
+      "precision": 0.1111111111111111,
+      "recall": 0.0007645259938837921,
+      "f1": 0.0015186028853454822,
+      "confusion_matrix": [
+        [
+          10617,
+          8
+        ],
+        [
+          1307,
+          1
+        ]
+      ],
+      "roc_auc": 0.5938502248605864,
+      "average_precision": 0.14758865172412872,
+      "pr_auc_trapezoid": 0.14703737977500606,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "all",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7593384344640779,
+      "precision": 0.5829998620118669,
+      "recall": 0.09425123251611751,
+      "f1": 0.1622690786188885,
+      "confusion_matrix": [
+        [
+          133418,
+          3022
+        ],
+        [
+          40602,
+          4225
+        ]
+      ],
+      "roc_auc": 0.6822901750327852,
+      "average_precision": 0.4231921579531833,
+      "pr_auc_trapezoid": 0.4231671315658095,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "original",
+      "rows": 50935,
+      "positive": 18980,
+      "prevalence": 0.37263178560910964,
+      "accuracy": 0.6534013939334445,
+      "precision": 0.7119565217391305,
+      "recall": 0.11733403582718652,
+      "f1": 0.2014655328387914,
+      "confusion_matrix": [
+        [
+          31054,
+          901
+        ],
+        [
+          16753,
+          2227
+        ]
+      ],
+      "roc_auc": 0.7017163856114178,
+      "average_precision": 0.5742500334485194,
+      "pr_auc_trapezoid": 0.5742064627701582,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "seen",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7593384344640779,
+      "precision": 0.5829998620118669,
+      "recall": 0.09425123251611751,
+      "f1": 0.1622690786188885,
+      "confusion_matrix": [
+        [
+          133418,
+          3022
+        ],
+        [
+          40602,
+          4225
+        ]
+      ],
+      "roc_auc": 0.6822901750327852,
+      "average_precision": 0.4231921579531833,
+      "pr_auc_trapezoid": 0.4231671315658095,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "other_seen",
+      "rows": 130332,
+      "positive": 25847,
+      "prevalence": 0.1983166068195071,
+      "accuracy": 0.8007396495104809,
+      "precision": 0.4850691915513474,
+      "recall": 0.07730104073973769,
+      "f1": 0.13335113128211973,
+      "confusion_matrix": [
+        [
+          102364,
+          2121
+        ],
+        [
+          23849,
+          1998
+        ]
+      ],
+      "roc_auc": 0.6449718482540439,
+      "average_precision": 0.3227691311483605,
+      "pr_auc_trapezoid": 0.32270230805072914,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_06037",
+      "rows": 16599,
+      "positive": 7186,
+      "prevalence": 0.4329176456413037,
+      "accuracy": 0.6466654617748057,
+      "precision": 0.7123111539697846,
+      "recall": 0.3083774005009741,
+      "f1": 0.4304166262018064,
+      "confusion_matrix": [
+        [
+          8518,
+          895
+        ],
+        [
+          4970,
+          2216
+        ]
+      ],
+      "roc_auc": 0.705510709366209,
+      "average_precision": 0.6399499019390376,
+      "pr_auc_trapezoid": 0.6398504780885732,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_06065",
+      "rows": 9693,
+      "positive": 2790,
+      "prevalence": 0.2878365831012071,
+      "accuracy": 0.7321778603115651,
+      "precision": 0.5640686922060766,
+      "recall": 0.3060931899641577,
+      "f1": 0.39684014869888473,
+      "confusion_matrix": [
+        [
+          6243,
+          660
+        ],
+        [
+          1936,
+          854
+        ]
+      ],
+      "roc_auc": 0.6677544229120682,
+      "average_precision": 0.4922154588253014,
+      "pr_auc_trapezoid": 0.49187617118884197,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_06073",
+      "rows": 14147,
+      "positive": 3659,
+      "prevalence": 0.25864140807238284,
+      "accuracy": 0.7190217007139322,
+      "precision": 0.4388544891640867,
+      "recall": 0.30992074337250614,
+      "f1": 0.36328688130706394,
+      "confusion_matrix": [
+        [
+          9038,
+          1450
+        ],
+        [
+          2525,
+          1134
+        ]
+      ],
+      "roc_auc": 0.622101960016669,
+      "average_precision": 0.38504358615755807,
+      "pr_auc_trapezoid": 0.38469885392643205,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_12011",
+      "rows": 17077,
+      "positive": 4056,
+      "prevalence": 0.23751244363764126,
+      "accuracy": 0.7623704397727938,
+      "precision": 0.4166666666666667,
+      "recall": 0.001232741617357002,
+      "f1": 0.0024582104228121925,
+      "confusion_matrix": [
+        [
+          13014,
+          7
+        ],
+        [
+          4051,
+          5
+        ]
+      ],
+      "roc_auc": 0.6556729422975812,
+      "average_precision": 0.34985806290403393,
+      "pr_auc_trapezoid": 0.3495968652683549,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_12086",
+      "rows": 17238,
+      "positive": 5749,
+      "prevalence": 0.33350736744401904,
+      "accuracy": 0.6665506439262096,
+      "precision": 0.5714285714285714,
+      "recall": 0.0006957731779439903,
+      "f1": 0.001389854065323141,
+      "confusion_matrix": [
+        [
+          11486,
+          3
+        ],
+        [
+          5745,
+          4
+        ]
+      ],
+      "roc_auc": 0.6839807415749651,
+      "average_precision": 0.4902390011357681,
+      "pr_auc_trapezoid": 0.49000851107069104,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_12103",
+      "rows": 14939,
+      "positive": 2537,
+      "prevalence": 0.1698239507329808,
+      "accuracy": 0.8301760492670192,
+      "precision": 0.5,
+      "recall": 0.0011824990145841545,
+      "f1": 0.0023594180102241447,
+      "confusion_matrix": [
+        [
+          12399,
+          3
+        ],
+        [
+          2534,
+          3
+        ]
+      ],
+      "roc_auc": 0.6125630778968922,
+      "average_precision": 0.24240752590845183,
+      "pr_auc_trapezoid": 0.24210553070437474,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_42029",
+      "rows": 14040,
+      "positive": 1948,
+      "prevalence": 0.13874643874643874,
+      "accuracy": 0.8612535612535612,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          12092,
+          0
+        ],
+        [
+          1948,
+          0
+        ]
+      ],
+      "roc_auc": 0.592606537762167,
+      "average_precision": 0.16689317670123102,
+      "pr_auc_trapezoid": 0.16660612593417212,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_42091",
+      "rows": 15171,
+      "positive": 2054,
+      "prevalence": 0.1353898886032562,
+      "accuracy": 0.8646101113967438,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13117,
+          0
+        ],
+        [
+          2054,
+          0
+        ]
+      ],
+      "roc_auc": 0.5800006703209426,
+      "average_precision": 0.1663999115840431,
+      "pr_auc_trapezoid": 0.16591728894603475,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_42101",
+      "rows": 17068,
+      "positive": 3093,
+      "prevalence": 0.1812163112256855,
+      "accuracy": 0.8187836887743145,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13975,
+          0
+        ],
+        [
+          3093,
+          0
+        ]
+      ],
+      "roc_auc": 0.5909642351272739,
+      "average_precision": 0.22698211898632353,
+      "pr_auc_trapezoid": 0.2266771173670574,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_48113",
+      "rows": 16264,
+      "positive": 4402,
+      "prevalence": 0.2706591244466306,
+      "accuracy": 0.7293408755533693,
+      "precision": 0.5,
+      "recall": 0.00022716946842344388,
+      "f1": 0.00045413260672116256,
+      "confusion_matrix": [
+        [
+          11861,
+          1
+        ],
+        [
+          4401,
+          1
+        ]
+      ],
+      "roc_auc": 0.6304093221525049,
+      "average_precision": 0.3672460180989019,
+      "pr_auc_trapezoid": 0.3669678635273701,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_48201",
+      "rows": 17098,
+      "positive": 6045,
+      "prevalence": 0.3535501228213826,
+      "accuracy": 0.646683822669318,
+      "precision": 0.7,
+      "recall": 0.0011579818031430935,
+      "f1": 0.0023121387283236996,
+      "confusion_matrix": [
+        [
+          11050,
+          3
+        ],
+        [
+          6038,
+          7
+        ]
+      ],
+      "roc_auc": 0.7000051634814347,
+      "average_precision": 0.543877290164704,
+      "pr_auc_trapezoid": 0.5437448081083257,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "group": "county_48339",
+      "rows": 11933,
+      "positive": 1308,
+      "prevalence": 0.10961200033520489,
+      "accuracy": 0.8904718008882929,
+      "precision": 1.0,
+      "recall": 0.0007645259938837921,
+      "f1": 0.0015278838808250573,
+      "confusion_matrix": [
+        [
+          10625,
+          0
+        ],
+        [
+          1307,
+          1
+        ]
+      ],
+      "roc_auc": 0.591386688253283,
+      "average_precision": 0.15224189324407378,
+      "pr_auc_trapezoid": 0.15181500449473145,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": null
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "all",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7630677398533655,
+      "precision": 0.6047496933883376,
+      "recall": 0.12099850536507016,
+      "f1": 0.20165068034798125,
+      "confusion_matrix": [
+        [
+          132895,
+          3545
+        ],
+        [
+          39403,
+          5424
+        ]
+      ],
+      "roc_auc": 0.6981440356517817,
+      "average_precision": 0.4503260472497629,
+      "pr_auc_trapezoid": 0.4503047819125202,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "original",
+      "rows": 50935,
+      "positive": 18980,
+      "prevalence": 0.37263178560910964,
+      "accuracy": 0.6630018651222146,
+      "precision": 0.6051929987249334,
+      "recall": 0.2750790305584826,
+      "f1": 0.37823740355706886,
+      "confusion_matrix": [
+        [
+          28549,
+          3406
+        ],
+        [
+          13759,
+          5221
+        ]
+      ],
+      "roc_auc": 0.698596082082631,
+      "average_precision": 0.5651170206947642,
+      "pr_auc_trapezoid": 0.5650729777583166,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "seen",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7630677398533655,
+      "precision": 0.6047496933883376,
+      "recall": 0.12099850536507016,
+      "f1": 0.20165068034798125,
+      "confusion_matrix": [
+        [
+          132895,
+          3545
+        ],
+        [
+          39403,
+          5424
+        ]
+      ],
+      "roc_auc": 0.6981440356517817,
+      "average_precision": 0.4503260472497629,
+      "pr_auc_trapezoid": 0.4503047819125202,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "other_seen",
+      "rows": 130332,
+      "positive": 25847,
+      "prevalence": 0.1983166068195071,
+      "accuracy": 0.8021744467974097,
+      "precision": 0.5935672514619883,
+      "recall": 0.007853909544628003,
+      "f1": 0.01550269196991103,
+      "confusion_matrix": [
+        [
+          104346,
+          139
+        ],
+        [
+          25644,
+          203
+        ]
+      ],
+      "roc_auc": 0.65307313601597,
+      "average_precision": 0.3264059962866722,
+      "pr_auc_trapezoid": 0.32634857558625396,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_06037",
+      "rows": 16599,
+      "positive": 7186,
+      "prevalence": 0.4329176456413037,
+      "accuracy": 0.6411832038074583,
+      "precision": 0.5947028025870034,
+      "recall": 0.5374338992485388,
+      "f1": 0.5646198830409357,
+      "confusion_matrix": [
+        [
+          6781,
+          2632
+        ],
+        [
+          3324,
+          3862
+        ]
+      ],
+      "roc_auc": 0.6924803307326838,
+      "average_precision": 0.6302560602012282,
+      "pr_auc_trapezoid": 0.6301560047236678,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_06065",
+      "rows": 9693,
+      "positive": 2790,
+      "prevalence": 0.2878365831012071,
+      "accuracy": 0.7121634168987929,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          6903,
+          0
+        ],
+        [
+          2790,
+          0
+        ]
+      ],
+      "roc_auc": 0.6632743438648305,
+      "average_precision": 0.49060432375521557,
+      "pr_auc_trapezoid": 0.49028942466084297,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_06073",
+      "rows": 14147,
+      "positive": 3659,
+      "prevalence": 0.25864140807238284,
+      "accuracy": 0.7458825192620343,
+      "precision": 0.5935672514619883,
+      "recall": 0.055479639245695545,
+      "f1": 0.10147463134216446,
+      "confusion_matrix": [
+        [
+          10349,
+          139
+        ],
+        [
+          3456,
+          203
+        ]
+      ],
+      "roc_auc": 0.6253653885000654,
+      "average_precision": 0.38265974396709657,
+      "pr_auc_trapezoid": 0.38231469192728024,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_12011",
+      "rows": 17077,
+      "positive": 4056,
+      "prevalence": 0.23751244363764126,
+      "accuracy": 0.7624875563623588,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13021,
+          0
+        ],
+        [
+          4056,
+          0
+        ]
+      ],
+      "roc_auc": 0.6574529431822089,
+      "average_precision": 0.3573992730887094,
+      "pr_auc_trapezoid": 0.35714343845077035,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_12086",
+      "rows": 17238,
+      "positive": 5749,
+      "prevalence": 0.33350736744401904,
+      "accuracy": 0.6771087133078083,
+      "precision": 0.6038592508513053,
+      "recall": 0.0925378326665507,
+      "f1": 0.16048265460030167,
+      "confusion_matrix": [
+        [
+          11140,
+          349
+        ],
+        [
+          5217,
+          532
+        ]
+      ],
+      "roc_auc": 0.684173995921076,
+      "average_precision": 0.5013478519628289,
+      "pr_auc_trapezoid": 0.5011661717981207,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_12103",
+      "rows": 14939,
+      "positive": 2537,
+      "prevalence": 0.1698239507329808,
+      "accuracy": 0.8301760492670192,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          12402,
+          0
+        ],
+        [
+          2537,
+          0
+        ]
+      ],
+      "roc_auc": 0.5931577592765596,
+      "average_precision": 0.2163265823275231,
+      "pr_auc_trapezoid": 0.21601698434648572,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_42029",
+      "rows": 14040,
+      "positive": 1948,
+      "prevalence": 0.13874643874643874,
+      "accuracy": 0.8612535612535612,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          12092,
+          0
+        ],
+        [
+          1948,
+          0
+        ]
+      ],
+      "roc_auc": 0.5970173867223294,
+      "average_precision": 0.17520094648883405,
+      "pr_auc_trapezoid": 0.17483375690287722,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_42091",
+      "rows": 15171,
+      "positive": 2054,
+      "prevalence": 0.1353898886032562,
+      "accuracy": 0.8646101113967438,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13117,
+          0
+        ],
+        [
+          2054,
+          0
+        ]
+      ],
+      "roc_auc": 0.5903331888518278,
+      "average_precision": 0.1827890265260972,
+      "pr_auc_trapezoid": 0.18236295764918026,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_42101",
+      "rows": 17068,
+      "positive": 3093,
+      "prevalence": 0.1812163112256855,
+      "accuracy": 0.8187836887743145,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13975,
+          0
+        ],
+        [
+          3093,
+          0
+        ]
+      ],
+      "roc_auc": 0.617820376902776,
+      "average_precision": 0.2515203691423075,
+      "pr_auc_trapezoid": 0.25115335089461277,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_48113",
+      "rows": 16264,
+      "positive": 4402,
+      "prevalence": 0.2706591244466306,
+      "accuracy": 0.7293408755533693,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          11862,
+          0
+        ],
+        [
+          4402,
+          0
+        ]
+      ],
+      "roc_auc": 0.6329567150046219,
+      "average_precision": 0.3682700749975416,
+      "pr_auc_trapezoid": 0.36795972601687926,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_48201",
+      "rows": 17098,
+      "positive": 6045,
+      "prevalence": 0.3535501228213826,
+      "accuracy": 0.6699613989940344,
+      "precision": 0.6605431309904153,
+      "recall": 0.1368072787427626,
+      "f1": 0.2266684939016034,
+      "confusion_matrix": [
+        [
+          10628,
+          425
+        ],
+        [
+          5218,
+          827
+        ]
+      ],
+      "roc_auc": 0.7094752204151783,
+      "average_precision": 0.5528122370830135,
+      "pr_auc_trapezoid": 0.5526824758830382,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "group": "county_48339",
+      "rows": 11933,
+      "positive": 1308,
+      "prevalence": 0.10961200033520489,
+      "accuracy": 0.8903879996647951,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          10625,
+          0
+        ],
+        [
+          1308,
+          0
+        ]
+      ],
+      "roc_auc": 0.5861687713617556,
+      "average_precision": 0.1474978045073027,
+      "pr_auc_trapezoid": 0.14698844346827453,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": null,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "all",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7652468458130823,
+      "precision": 0.60994005028041,
+      "recall": 0.14071876324536553,
+      "f1": 0.2286791495223767,
+      "confusion_matrix": [
+        [
+          132406,
+          4034
+        ],
+        [
+          38519,
+          6308
+        ]
+      ],
+      "roc_auc": 0.6990902716150419,
+      "average_precision": 0.4557369150930246,
+      "pr_auc_trapezoid": 0.45572174207877697,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "original",
+      "rows": 50935,
+      "positive": 18980,
+      "prevalence": 0.37263178560910964,
+      "accuracy": 0.6667910081476391,
+      "precision": 0.6055730809674027,
+      "recall": 0.3034246575342466,
+      "f1": 0.4042822042822043,
+      "confusion_matrix": [
+        [
+          28204,
+          3751
+        ],
+        [
+          13221,
+          5759
+        ]
+      ],
+      "roc_auc": 0.7012142561185308,
+      "average_precision": 0.5715568413391102,
+      "pr_auc_trapezoid": 0.5715272662540941,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "seen",
+      "rows": 181267,
+      "positive": 44827,
+      "prevalence": 0.2472981844461485,
+      "accuracy": 0.7652468458130823,
+      "precision": 0.60994005028041,
+      "recall": 0.14071876324536553,
+      "f1": 0.2286791495223767,
+      "confusion_matrix": [
+        [
+          132406,
+          4034
+        ],
+        [
+          38519,
+          6308
+        ]
+      ],
+      "roc_auc": 0.6990902716150419,
+      "average_precision": 0.4557369150930246,
+      "pr_auc_trapezoid": 0.45572174207877697,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "other_seen",
+      "rows": 130332,
+      "positive": 25847,
+      "prevalence": 0.1983166068195071,
+      "accuracy": 0.8037243347758033,
+      "precision": 0.6598557692307693,
+      "recall": 0.021240376059117112,
+      "f1": 0.04115596536601822,
+      "confusion_matrix": [
+        [
+          104202,
+          283
+        ],
+        [
+          25298,
+          549
+        ]
+      ],
+      "roc_auc": 0.6525715454195647,
+      "average_precision": 0.3322617351735963,
+      "pr_auc_trapezoid": 0.3322098370055425,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_06037",
+      "rows": 16599,
+      "positive": 7186,
+      "prevalence": 0.4329176456413037,
+      "accuracy": 0.6441351888667992,
+      "precision": 0.5999687353446929,
+      "recall": 0.53409407180629,
+      "f1": 0.5651181624088935,
+      "confusion_matrix": [
+        [
+          6854,
+          2559
+        ],
+        [
+          3348,
+          3838
+        ]
+      ],
+      "roc_auc": 0.6967976304244218,
+      "average_precision": 0.6399697692524708,
+      "pr_auc_trapezoid": 0.6399076913939701,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_06065",
+      "rows": 9693,
+      "positive": 2790,
+      "prevalence": 0.2878365831012071,
+      "accuracy": 0.7295986794594037,
+      "precision": 0.7616099071207431,
+      "recall": 0.08817204301075268,
+      "f1": 0.15804690009637007,
+      "confusion_matrix": [
+        [
+          6826,
+          77
+        ],
+        [
+          2544,
+          246
+        ]
+      ],
+      "roc_auc": 0.6570849669537477,
+      "average_precision": 0.48492946575446805,
+      "pr_auc_trapezoid": 0.48459634683383174,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_06073",
+      "rows": 14147,
+      "positive": 3659,
+      "prevalence": 0.25864140807238284,
+      "accuracy": 0.7479324238354421,
+      "precision": 0.593186372745491,
+      "recall": 0.080896419786827,
+      "f1": 0.14237614237614238,
+      "confusion_matrix": [
+        [
+          10285,
+          203
+        ],
+        [
+          3363,
+          296
+        ]
+      ],
+      "roc_auc": 0.6249363397442833,
+      "average_precision": 0.38319152930708883,
+      "pr_auc_trapezoid": 0.38287753278527226,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_12011",
+      "rows": 17077,
+      "positive": 4056,
+      "prevalence": 0.23751244363764126,
+      "accuracy": 0.7624875563623588,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13021,
+          0
+        ],
+        [
+          4056,
+          0
+        ]
+      ],
+      "roc_auc": 0.6588706481125088,
+      "average_precision": 0.35908650107446494,
+      "pr_auc_trapezoid": 0.35877466968002847,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_12086",
+      "rows": 17238,
+      "positive": 5749,
+      "prevalence": 0.33350736744401904,
+      "accuracy": 0.6874927485787214,
+      "precision": 0.5967914438502674,
+      "recall": 0.1941207166463733,
+      "f1": 0.29295183094894345,
+      "confusion_matrix": [
+        [
+          10735,
+          754
+        ],
+        [
+          4633,
+          1116
+        ]
+      ],
+      "roc_auc": 0.6917638372390383,
+      "average_precision": 0.5147086429811123,
+      "pr_auc_trapezoid": 0.5145911173866515,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_12103",
+      "rows": 14939,
+      "positive": 2537,
+      "prevalence": 0.1698239507329808,
+      "accuracy": 0.8301760492670192,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          12402,
+          0
+        ],
+        [
+          2537,
+          0
+        ]
+      ],
+      "roc_auc": 0.5943389711006343,
+      "average_precision": 0.2190422563931454,
+      "pr_auc_trapezoid": 0.21877784294308567,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_42029",
+      "rows": 14040,
+      "positive": 1948,
+      "prevalence": 0.13874643874643874,
+      "accuracy": 0.8612535612535612,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          12092,
+          0
+        ],
+        [
+          1948,
+          0
+        ]
+      ],
+      "roc_auc": 0.5848007082592662,
+      "average_precision": 0.16330576743353803,
+      "pr_auc_trapezoid": 0.163019272162767,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_42091",
+      "rows": 15171,
+      "positive": 2054,
+      "prevalence": 0.1353898886032562,
+      "accuracy": 0.8646101113967438,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13117,
+          0
+        ],
+        [
+          2054,
+          0
+        ]
+      ],
+      "roc_auc": 0.5828519283307398,
+      "average_precision": 0.1703586232407528,
+      "pr_auc_trapezoid": 0.17005316242044785,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_42101",
+      "rows": 17068,
+      "positive": 3093,
+      "prevalence": 0.1812163112256855,
+      "accuracy": 0.8187836887743145,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          13975,
+          0
+        ],
+        [
+          3093,
+          0
+        ]
+      ],
+      "roc_auc": 0.6064491867203166,
+      "average_precision": 0.24423732837249568,
+      "pr_auc_trapezoid": 0.24389855749797099,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_48113",
+      "rows": 16264,
+      "positive": 4402,
+      "prevalence": 0.2706591244466306,
+      "accuracy": 0.7295868175110674,
+      "precision": 0.7,
+      "recall": 0.0015901862789641072,
+      "f1": 0.003173164097914778,
+      "confusion_matrix": [
+        [
+          11859,
+          3
+        ],
+        [
+          4395,
+          7
+        ]
+      ],
+      "roc_auc": 0.6356626400485793,
+      "average_precision": 0.3697519634201206,
+      "pr_auc_trapezoid": 0.3695040321461194,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_48201",
+      "rows": 17098,
+      "positive": 6045,
+      "prevalence": 0.3535501228213826,
+      "accuracy": 0.6679143759504036,
+      "precision": 0.6476267095736122,
+      "recall": 0.13316790736145576,
+      "f1": 0.22091108671789242,
+      "confusion_matrix": [
+        [
+          10615,
+          438
+        ],
+        [
+          5240,
+          805
+        ]
+      ],
+      "roc_auc": 0.7087927578356392,
+      "average_precision": 0.5536077853382464,
+      "pr_auc_trapezoid": 0.5534714646293235,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "group": "county_48339",
+      "rows": 11933,
+      "positive": 1308,
+      "prevalence": 0.10961200033520489,
+      "accuracy": 0.8903879996647951,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "confusion_matrix": [
+        [
+          10625,
+          0
+        ],
+        [
+          1308,
+          0
+        ]
+      ],
+      "roc_auc": 0.5843017449181508,
+      "average_precision": 0.14522626085414714,
+      "pr_auc_trapezoid": 0.1446080190267666,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax",
+      "unknown_states": 0,
+      "unknown_fips": 0
+    }
+  ],
+  "fits": [
+    {
+      "period": "2018_H2",
+      "variant": "numeric",
+      "validation_start": "2018-07-01T00:00:00+00:00",
+      "validation_end_exclusive": "2019-01-01T00:00:00+00:00",
+      "last_train_utc": "2018-06-30T20:00:00+00:00",
+      "train_rows": 163273,
+      "training_seconds": 9.290476200025296,
+      "warnings": [],
+      "memory": {
+        "start_rss": 757215232,
+        "peak_rss": 865996800,
+        "min_available_ram": 3038400512
+      },
+      "complexity": {
+        "trees": 100,
+        "max_depth": 12,
+        "mean_depth": 12.0,
+        "total_nodes": 236204,
+        "total_leaves": "118152",
+        "encoded_feature_count": 13,
+        "candidate_features_per_split": 3
+      },
+      "train_metrics": {
+        "rows": 163273,
+        "positive": 38443,
+        "prevalence": 0.23545227931133744,
+        "accuracy": 0.7671690971562966,
+        "precision": 0.9385245901639344,
+        "recall": 0.011913742423848295,
+        "f1": 0.023528807377154452,
+        "confusion_matrix": [
+          [
+            124800,
+            30
+          ],
+          [
+            37985,
+            458
+          ]
+        ],
+        "roc_auc": 0.7769148335521915,
+        "average_precision": 0.5124792770253339,
+        "pr_auc_trapezoid": 0.5124671773158314,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "validation_start": "2018-07-01T00:00:00+00:00",
+      "validation_end_exclusive": "2019-01-01T00:00:00+00:00",
+      "last_train_utc": "2018-06-30T20:00:00+00:00",
+      "train_rows": 163273,
+      "training_seconds": 12.225738400011323,
+      "warnings": [],
+      "memory": {
+        "start_rss": 761745408,
+        "peak_rss": 852279296,
+        "min_available_ram": 2775638016
+      },
+      "complexity": {
+        "trees": 100,
+        "max_depth": 12,
+        "mean_depth": 12.0,
+        "total_nodes": 259338,
+        "total_leaves": "129719",
+        "encoded_feature_count": 17,
+        "candidate_features_per_split": 4
+      },
+      "train_metrics": {
+        "rows": 163273,
+        "positive": 38443,
+        "prevalence": 0.23545227931133744,
+        "accuracy": 0.7851941227269665,
+        "precision": 0.7984770674694528,
+        "recall": 0.11729053403740602,
+        "f1": 0.20453617600362894,
+        "confusion_matrix": [
+          [
+            123692,
+            1138
+          ],
+          [
+            33934,
+            4509
+          ]
+        ],
+        "roc_auc": 0.8170416294943998,
+        "average_precision": 0.5815522775213969,
+        "pr_auc_trapezoid": 0.5815432234890954,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "validation_start": "2018-07-01T00:00:00+00:00",
+      "validation_end_exclusive": "2019-01-01T00:00:00+00:00",
+      "last_train_utc": "2018-06-30T20:00:00+00:00",
+      "train_rows": 163273,
+      "training_seconds": 11.994096400012495,
+      "warnings": [],
+      "memory": {
+        "start_rss": 763850752,
+        "peak_rss": 862257152,
+        "min_available_ram": 2718285824
+      },
+      "complexity": {
+        "trees": 100,
+        "max_depth": 12,
+        "mean_depth": 12.0,
+        "total_nodes": 185464,
+        "total_leaves": "92782",
+        "encoded_feature_count": 25,
+        "candidate_features_per_split": 5
+      },
+      "train_metrics": {
+        "rows": 163273,
+        "positive": 38443,
+        "prevalence": 0.23545227931133744,
+        "accuracy": 0.7914352036160296,
+        "precision": 0.8507510386705017,
+        "recall": 0.13849075254272558,
+        "f1": 0.23820496185767656,
+        "confusion_matrix": [
+          [
+            123896,
+            934
+          ],
+          [
+            33119,
+            5324
+          ]
+        ],
+        "roc_auc": 0.8078120491455718,
+        "average_precision": 0.5897091321152184,
+        "pr_auc_trapezoid": 0.5897015518029962,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "period": "2018_H2",
+      "variant": "both",
+      "validation_start": "2018-07-01T00:00:00+00:00",
+      "validation_end_exclusive": "2019-01-01T00:00:00+00:00",
+      "last_train_utc": "2018-06-30T20:00:00+00:00",
+      "train_rows": 163273,
+      "training_seconds": 10.519690199987963,
+      "warnings": [],
+      "memory": {
+        "start_rss": 765231104,
+        "peak_rss": 874385408,
+        "min_available_ram": 2221051904
+      },
+      "complexity": {
+        "trees": 100,
+        "max_depth": 12,
+        "mean_depth": 12.0,
+        "total_nodes": 204362,
+        "total_leaves": "102231",
+        "encoded_feature_count": 29,
+        "candidate_features_per_split": 5
+      },
+      "train_metrics": {
+        "rows": 163273,
+        "positive": 38443,
+        "prevalence": 0.23545227931133744,
+        "accuracy": 0.7927520165612195,
+        "precision": 0.8247073755464673,
+        "recall": 0.15212132247743412,
+        "f1": 0.25686300346993457,
+        "confusion_matrix": [
+          [
+            123587,
+            1243
+          ],
+          [
+            32595,
+            5848
+          ]
+        ],
+        "roc_auc": 0.8169017314058266,
+        "average_precision": 0.5944387439127945,
+        "pr_auc_trapezoid": 0.594430857743267,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    }
+  ]
+}

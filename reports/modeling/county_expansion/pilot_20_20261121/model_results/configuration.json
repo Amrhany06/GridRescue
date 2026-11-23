@@ -1,0 +1,82 @@
+{
+  "variants": {
+    "numeric": [],
+    "state": [
+      "state"
+    ],
+    "fips": [
+      "fips_code"
+    ],
+    "both": [
+      "state",
+      "fips_code"
+    ]
+  },
+  "features": [
+    "customers_out_t",
+    "lag_15m",
+    "lag_60m",
+    "delta_60m",
+    "rolling_mean_60m",
+    "rolling_variance_60m",
+    "history_slots_60m",
+    "hour_utc",
+    "weekday_utc",
+    "month_utc",
+    "lag_15m_missing",
+    "lag_60m_missing",
+    "delta_60m_missing"
+  ],
+  "forest": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "threshold": 0.5,
+  "tie_class": 0,
+  "temporal_purge_hours": 3,
+  "primary_metric": "average_precision",
+  "seen_training_counties": [
+    "06037",
+    "06065",
+    "06073",
+    "12011",
+    "12086",
+    "12103",
+    "42029",
+    "42091",
+    "42101",
+    "48113",
+    "48201",
+    "48339"
+  ],
+  "cohort_sha256": "15f315173030239a03881b9aa09421538ddfc79fb8a8343558fab7b752524f1a",
+  "audit_sha256": "71ca2d4db38df2c2a2f40adddce3eaf6d6e4215d125f72fa03fd0f365176bbc7",
+  "protected_hashes": {
+    "notebooks/task1_eda.ipynb": "84e0b31e8142760cbee6b56d853b1f1e04407374bd6d89a47f8a7b02a2331a3b",
+    "notebooks/task2_preprocessing.ipynb": "d432cf543756547b2c1c50bc20674632160b188a82d3380914bde8fc12204f49",
+    "notebooks/task3_modeling.ipynb": "939931a2616fcefd76cfbc2ae642c2bd7e61e2004e0023122b588cd3f3183e51",
+    "artifacts/modeling/random_forest_cv_selected.joblib": "ba0abaee424fe6b6d12ec721154b125f76aeef4b32bf3eb32b4f447d163eeda6",
+    "artifacts/modeling/random_forest_cv_selected_validation_predictions.parquet": "e3aac3069df56525f9abc573325ce0be6bb5085d4138cbffb5abc9d8288e88d5",
+    "artifacts/modeling/frozen_development_pipeline.joblib": "613e3b445373492f17fea2fd3f62a61fef5f1bc1a8e33e8d8fb6357e97b28d2b",
+    "reports/modeling/frozen_selection.json": "1aec0eac303a64bb0c33b7001e994c1b65aed2342dd0ac169f588736f9222a6b",
+    "reports/modeling/frozen_pipeline.json": "cecc73402f0d2e98e99c9be0c62dff3c17004a89f3237b841f5484ff14622a0f"
+  },
+  "train_frame_bytes": 243777908
+}

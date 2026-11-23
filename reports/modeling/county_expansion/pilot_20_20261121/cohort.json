@@ -1,0 +1,423 @@
+{
+  "inputs": [
+    {
+      "year": 2018,
+      "path": "data/raw/eaglei_outages_2018.csv",
+      "bytes": 999210542,
+      "sha256": "85e0a864aa272e75892e181f1da4754ed78f7bf0bef75a279d8ab381baa7db70"
+    },
+    {
+      "year": 2019,
+      "path": "data/raw/eaglei_outages_2019.csv",
+      "bytes": 1102778792,
+      "sha256": "4cc277a138b326bd0e1f203558539a9422b40dacdf439e3d5b58ee71d7462d27"
+    },
+    {
+      "year": 2020,
+      "path": "data/raw/eaglei_outages_2020.csv",
+      "bytes": 1170699724,
+      "sha256": "2a20b62e5245b1b9d4fcedc1bdbaf691bb1e17f75094975c8c6cb854f52e721a"
+    },
+    {
+      "year": 2021,
+      "path": "data/raw/eaglei_outages_2021.csv",
+      "bytes": 1141058232,
+      "sha256": "e3e7ac40a40d92d92488501881ab381b8931833e486941424ac55ea20ffde319"
+    }
+  ],
+  "county_selection": [
+    {
+      "fips_code": "06037",
+      "county": "Los Angeles",
+      "state": "California",
+      "annual_coverage": {
+        "2018": 0.977568493150685,
+        "2019": 0.9930650684931507,
+        "2020": 0.9964423952641166,
+        "2021": 0.9938070776255707
+      },
+      "min_annual_coverage": 0.977568493150685,
+      "min_month_coverage": 0.9502688172043011,
+      "clean": 138885,
+      "role": "seen",
+      "original": true
+    },
+    {
+      "fips_code": "06073",
+      "county": "San Diego",
+      "state": "California",
+      "annual_coverage": {
+        "2018": 0.8532248858447489,
+        "2019": 0.8978310502283106,
+        "2020": 0.8936418488160291,
+        "2021": 0.9012842465753425
+      },
+      "min_annual_coverage": 0.8532248858447489,
+      "min_month_coverage": 0.6458333333333334,
+      "clean": 124337,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "06071",
+      "county": "San Bernardino",
+      "state": "California",
+      "annual_coverage": {
+        "2018": 0.7467465753424658,
+        "2019": 0.8874429223744292,
+        "2020": 0.8674863387978142,
+        "2021": 0.8914383561643836
+      },
+      "min_annual_coverage": 0.7467465753424658,
+      "min_month_coverage": 0.44548611111111114,
+      "clean": 118978,
+      "role": "unseen_county",
+      "original": false
+    },
+    {
+      "fips_code": "06065",
+      "county": "Riverside",
+      "state": "California",
+      "annual_coverage": {
+        "2018": 0.7253995433789955,
+        "2019": 0.8554223744292238,
+        "2020": 0.9186304644808743,
+        "2021": 0.9063070776255707
+      },
+      "min_annual_coverage": 0.7253995433789955,
+      "min_month_coverage": 0.42291666666666666,
+      "clean": 119426,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "12086",
+      "county": "Miami-Dade",
+      "state": "Florida",
+      "annual_coverage": {
+        "2018": 0.9895262557077625,
+        "2019": 0.9895262557077625,
+        "2020": 0.9939947632058288,
+        "2021": 0.9919235159817351
+      },
+      "min_annual_coverage": 0.9895262557077625,
+      "min_month_coverage": 0.9583333333333334,
+      "clean": 139028,
+      "role": "seen",
+      "original": true
+    },
+    {
+      "fips_code": "12011",
+      "county": "Broward",
+      "state": "Florida",
+      "annual_coverage": {
+        "2018": 0.9868436073059361,
+        "2019": 0.9860445205479452,
+        "2020": 0.9907502276867031,
+        "2021": 0.9864155251141552
+      },
+      "min_annual_coverage": 0.9860445205479452,
+      "min_month_coverage": 0.9516129032258065,
+      "clean": 138505,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "12099",
+      "county": "Palm Beach",
+      "state": "Florida",
+      "annual_coverage": {
+        "2018": 0.9649543378995433,
+        "2019": 0.9640981735159817,
+        "2020": 0.9684653916211293,
+        "2021": 0.9658390410958904
+      },
+      "min_annual_coverage": 0.9640981735159817,
+      "min_month_coverage": 0.9186827956989247,
+      "clean": 135465,
+      "role": "unseen_county",
+      "original": false
+    },
+    {
+      "fips_code": "12103",
+      "county": "Pinellas",
+      "state": "Florida",
+      "annual_coverage": {
+        "2018": 0.9169520547945206,
+        "2019": 0.9120433789954338,
+        "2020": 0.8799806466302368,
+        "2021": 0.8740296803652968
+      },
+      "min_annual_coverage": 0.8740296803652968,
+      "min_month_coverage": 0.6696908602150538,
+      "clean": 125633,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "48201",
+      "county": "Harris",
+      "state": "Texas",
+      "annual_coverage": {
+        "2018": 0.9886986301369863,
+        "2019": 0.9912956621004566,
+        "2020": 0.9934255464480874,
+        "2021": 0.9915239726027397
+      },
+      "min_annual_coverage": 0.9886986301369863,
+      "min_month_coverage": 0.9428763440860215,
+      "clean": 139027,
+      "role": "seen",
+      "original": true
+    },
+    {
+      "fips_code": "48439",
+      "county": "Tarrant",
+      "state": "Texas",
+      "annual_coverage": {
+        "2018": 0.9608447488584475,
+        "2019": 0.9624714611872146,
+        "2020": 0.9587887067395264,
+        "2021": 0.9710616438356164
+      },
+      "min_annual_coverage": 0.9587887067395264,
+      "min_month_coverage": 0.826867816091954,
+      "clean": 135107,
+      "role": "unseen_county",
+      "original": false
+    },
+    {
+      "fips_code": "48113",
+      "county": "Dallas",
+      "state": "Texas",
+      "annual_coverage": {
+        "2018": 0.9684646118721462,
+        "2019": 0.9718892694063926,
+        "2020": 0.9524704007285975,
+        "2021": 0.9781963470319635
+      },
+      "min_annual_coverage": 0.9524704007285975,
+      "min_month_coverage": 0.7891522988505747,
+      "clean": 135732,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "48339",
+      "county": "Montgomery",
+      "state": "Texas",
+      "annual_coverage": {
+        "2018": 0.8200057077625571,
+        "2019": 0.8357876712328767,
+        "2020": 0.8271004098360656,
+        "2021": 0.9222602739726027
+      },
+      "min_annual_coverage": 0.8200057077625571,
+      "min_month_coverage": 0.6901881720430108,
+      "clean": 119396,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "42101",
+      "county": "Philadelphia",
+      "state": "Pennsylvania",
+      "annual_coverage": {
+        "2018": 0.984703196347032,
+        "2019": 0.9926655251141553,
+        "2020": 0.9513035063752276,
+        "2021": 0.9934646118721461
+      },
+      "min_annual_coverage": 0.9513035063752276,
+      "min_month_coverage": 0.5991263440860215,
+      "clean": 137523,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "42091",
+      "county": "Montgomery",
+      "state": "Pennsylvania",
+      "annual_coverage": {
+        "2018": 0.9124143835616438,
+        "2019": 0.9041095890410958,
+        "2020": 0.8143499544626593,
+        "2021": 0.8809931506849316
+      },
+      "min_annual_coverage": 0.8143499544626593,
+      "min_month_coverage": 0.5719086021505376,
+      "clean": 123134,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "42017",
+      "county": "Bucks",
+      "state": "Pennsylvania",
+      "annual_coverage": {
+        "2018": 0.8516267123287671,
+        "2019": 0.8571632420091324,
+        "2020": 0.7901297814207651,
+        "2021": 0.8209189497716894
+      },
+      "min_annual_coverage": 0.7901297814207651,
+      "min_month_coverage": 0.5883736559139785,
+      "clean": 116403,
+      "role": "unseen_county",
+      "original": false
+    },
+    {
+      "fips_code": "42029",
+      "county": "Chester",
+      "state": "Pennsylvania",
+      "annual_coverage": {
+        "2018": 0.838013698630137,
+        "2019": 0.8757990867579909,
+        "2020": 0.7564036885245902,
+        "2021": 0.8079052511415525
+      },
+      "min_annual_coverage": 0.7564036885245902,
+      "min_month_coverage": 0.5073924731182796,
+      "clean": 114938,
+      "role": "seen",
+      "original": false
+    },
+    {
+      "fips_code": "36047",
+      "county": "Kings",
+      "state": "New York",
+      "annual_coverage": {
+        "2018": 0.9597031963470319,
+        "2019": 0.9330479452054794,
+        "2020": 0.8640994990892532,
+        "2021": 0.9024543378995433
+      },
+      "min_annual_coverage": 0.8640994990892532,
+      "min_month_coverage": 0.6942204301075269,
+      "clean": 128305,
+      "role": "unseen_state",
+      "original": false
+    },
+    {
+      "fips_code": "36081",
+      "county": "Queens",
+      "state": "New York",
+      "annual_coverage": {
+        "2018": 0.9357591324200913,
+        "2019": 0.9185216894977168,
+        "2020": 0.8638148907103825,
+        "2021": 0.9050799086757991
+      },
+      "min_annual_coverage": 0.8638148907103825,
+      "min_month_coverage": 0.7584005376344086,
+      "clean": 127039,
+      "role": "unseen_state",
+      "original": false
+    },
+    {
+      "fips_code": "36103",
+      "county": "Suffolk",
+      "state": "New York",
+      "annual_coverage": {
+        "2018": 0.9195490867579909,
+        "2019": 0.8839611872146119,
+        "2020": 0.8594888433515483,
+        "2021": 0.8641267123287671
+      },
+      "min_annual_coverage": 0.8594888433515483,
+      "min_month_coverage": 0.719758064516129,
+      "clean": 123673,
+      "role": "unseen_state",
+      "original": false
+    },
+    {
+      "fips_code": "36059",
+      "county": "Nassau",
+      "state": "New York",
+      "annual_coverage": {
+        "2018": 0.8922659817351598,
+        "2019": 0.8208904109589041,
+        "2020": 0.8167691256830601,
+        "2021": 0.7983162100456621
+      },
+      "min_annual_coverage": 0.7983162100456621,
+      "min_month_coverage": 0.5416666666666666,
+      "clean": 116700,
+      "role": "unseen_state",
+      "original": false
+    }
+  ],
+  "qualified_per_state": {
+    "California": 5,
+    "Florida": 13,
+    "Texas": 12,
+    "Illinois": 1,
+    "New York": 5,
+    "Pennsylvania": 7,
+    "Ohio": 4,
+    "North Carolina": 4,
+    "Washington": 1
+  },
+  "state_order": {
+    "California": "06",
+    "Florida": "12",
+    "Texas": "48",
+    "Illinois": "17",
+    "New York": "36",
+    "Pennsylvania": "42",
+    "Ohio": "39",
+    "North Carolina": "37",
+    "Washington": "53"
+  },
+  "min_annual_coverage": 0.65,
+  "min_monthly_coverage": 0.4,
+  "coverage_attempts": [
+    {
+      "annual": 0.9,
+      "month": 0.8,
+      "qualified_per_state": {
+        "California": 1,
+        "Florida": 3,
+        "Texas": 2,
+        "Illinois": 1,
+        "New York": 0,
+        "Pennsylvania": 0,
+        "Ohio": 1,
+        "North Carolina": 0,
+        "Washington": 1
+      }
+    },
+    {
+      "annual": 0.75,
+      "month": 0.5,
+      "qualified_per_state": {
+        "California": 2,
+        "Florida": 10,
+        "Texas": 10,
+        "Illinois": 1,
+        "New York": 4,
+        "Pennsylvania": 4,
+        "Ohio": 2,
+        "North Carolina": 1,
+        "Washington": 1
+      }
+    },
+    {
+      "annual": 0.65,
+      "month": 0.4,
+      "qualified_per_state": {
+        "California": 5,
+        "Florida": 13,
+        "Texas": 12,
+        "Illinois": 1,
+        "New York": 5,
+        "Pennsylvania": 7,
+        "Ohio": 4,
+        "North Carolina": 4,
+        "Washington": 1
+      }
+    }
+  ],
+  "spatial_seed": 17,
+  "label_fields_read_for_selection": false
+}

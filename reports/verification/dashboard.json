@@ -1,0 +1,7 @@
+{
+  "check": "dashboard",
+  "started_utc": "2026-11-17T02:27:53.975074+00:00",
+  "completed_utc": "2026-11-17T02:28:02.666835+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/dashboard.txt"
+}

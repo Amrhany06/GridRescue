@@ -1,0 +1,368 @@
+{
+  "status": "VERIFIED",
+  "data_and_versions": {
+    "data": [
+      [
+        "part-00000.parquet",
+        "88b214f2e4c0bc7ffda1f9b1750f10f28e0f9b1885d88a0194a9fa84936504b7"
+      ]
+    ],
+    "data_path": "data/windows/gold/county/label_audit",
+    "code": [
+      [
+        "modeling.py",
+        "4711c44d762a8ce2c6a04e0ecc6769246cd40c87f701f51cda503429dd00f876"
+      ],
+      [
+        "experiment.py",
+        "3e423baf4e5b79513d77e5424e5e82f7d1ec3bd9672375a76d0e78fc049b2de6"
+      ]
+    ],
+    "approval": "b304efbd16ce05d0ca37288ea2d17a1f81d10ade0b63721aeee0cfd8a0c77842",
+    "models": [
+      "Logistic Regression",
+      "Decision Tree",
+      "Random Forest"
+    ],
+    "features": [
+      "customers_out_t",
+      "lag_15m",
+      "lag_60m",
+      "delta_60m",
+      "rolling_mean_60m",
+      "rolling_variance_60m",
+      "history_slots_60m",
+      "hour_utc",
+      "weekday_utc",
+      "month_utc",
+      "lag_15m_missing",
+      "lag_60m_missing",
+      "delta_60m_missing"
+    ],
+    "search": {
+      "Logistic Regression": [
+        {
+          "C": 0.1
+        },
+        {
+          "C": 10.0
+        }
+      ],
+      "Decision Tree": [
+        {
+          "max_depth": 12,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 20,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 12,
+          "min_samples_split": 20,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 12,
+          "min_samples_split": 2,
+          "min_samples_leaf": 10
+        }
+      ],
+      "Random Forest": [
+        {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "min_samples_leaf": 5
+        },
+        {
+          "n_estimators": 200,
+          "max_depth": 12,
+          "min_samples_leaf": 5
+        },
+        {
+          "n_estimators": 100,
+          "max_depth": 20,
+          "min_samples_leaf": 5
+        },
+        {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "min_samples_leaf": 10
+        }
+      ]
+    },
+    "versions": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.5",
+      "pandas": "2.3.3",
+      "joblib": "1.6.0"
+    }
+  },
+  "frozen_classifier": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "features": [
+    "customers_out_t",
+    "lag_15m",
+    "lag_60m",
+    "delta_60m",
+    "rolling_mean_60m",
+    "rolling_variance_60m",
+    "history_slots_60m",
+    "hour_utc",
+    "weekday_utc",
+    "month_utc",
+    "lag_15m_missing",
+    "lag_60m_missing",
+    "delta_60m_missing"
+  ],
+  "county_to_state": [
+    {
+      "fips_code": "06037",
+      "state": "California"
+    },
+    {
+      "fips_code": "12086",
+      "state": "Florida"
+    },
+    {
+      "fips_code": "48201",
+      "state": "Texas"
+    }
+  ],
+  "partitions": [
+    {
+      "period": "2021",
+      "train_rows": 303791,
+      "evaluation_rows": 102449,
+      "last_train_utc": "2020-12-30T21:00:00+00:00",
+      "first_evaluation_utc": "2021-01-01T00:00:00+00:00",
+      "last_evaluation_utc": "2021-12-30T21:00:00+00:00"
+    },
+    {
+      "period": "2018_H2",
+      "train_rows": 48860,
+      "evaluation_rows": 50935,
+      "last_train_utc": "2018-06-30T20:00:00+00:00",
+      "first_evaluation_utc": "2018-07-01T00:00:00+00:00",
+      "last_evaluation_utc": "2018-12-30T21:00:00+00:00"
+    },
+    {
+      "period": "2019",
+      "train_rows": 99801,
+      "evaluation_rows": 101349,
+      "last_train_utc": "2018-12-30T21:00:00+00:00",
+      "first_evaluation_utc": "2019-01-01T00:00:00+00:00",
+      "last_evaluation_utc": "2019-12-30T21:00:00+00:00"
+    },
+    {
+      "period": "2020",
+      "train_rows": 201150,
+      "evaluation_rows": 102641,
+      "last_train_utc": "2019-12-30T21:00:00+00:00",
+      "first_evaluation_utc": "2020-01-01T00:00:00+00:00",
+      "last_evaluation_utc": "2020-12-30T21:00:00+00:00"
+    }
+  ],
+  "fits": [
+    {
+      "period": "2021",
+      "variant": "baseline",
+      "train_rows": 303791,
+      "training_seconds": 22.683224800013704,
+      "warnings": [],
+      "learned_categories": [],
+      "feature_count": 13,
+      "features_sampled_per_split": 3,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2021",
+      "variant": "state",
+      "train_rows": 303791,
+      "training_seconds": 24.53697159999865,
+      "warnings": [],
+      "learned_categories": [
+        "California",
+        "Florida",
+        "Texas"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2021",
+      "variant": "fips",
+      "train_rows": 303791,
+      "training_seconds": 21.914225899992744,
+      "warnings": [],
+      "learned_categories": [
+        "06037",
+        "12086",
+        "48201"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "baseline",
+      "train_rows": 48860,
+      "training_seconds": 4.315319899993483,
+      "warnings": [],
+      "learned_categories": [],
+      "feature_count": 13,
+      "features_sampled_per_split": 3,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "state",
+      "train_rows": 48860,
+      "training_seconds": 4.836105399997905,
+      "warnings": [],
+      "learned_categories": [
+        "California",
+        "Florida",
+        "Texas"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2018_H2",
+      "variant": "fips",
+      "train_rows": 48860,
+      "training_seconds": 4.597610600001644,
+      "warnings": [],
+      "learned_categories": [
+        "06037",
+        "12086",
+        "48201"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2019",
+      "variant": "baseline",
+      "train_rows": 99801,
+      "training_seconds": 9.482121500012,
+      "warnings": [],
+      "learned_categories": [],
+      "feature_count": 13,
+      "features_sampled_per_split": 3,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2019",
+      "variant": "state",
+      "train_rows": 99801,
+      "training_seconds": 10.487826500000665,
+      "warnings": [],
+      "learned_categories": [
+        "California",
+        "Florida",
+        "Texas"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2019",
+      "variant": "fips",
+      "train_rows": 99801,
+      "training_seconds": 10.056182400003308,
+      "warnings": [],
+      "learned_categories": [
+        "06037",
+        "12086",
+        "48201"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2020",
+      "variant": "baseline",
+      "train_rows": 201150,
+      "training_seconds": 15.01670780000859,
+      "warnings": [],
+      "learned_categories": [],
+      "feature_count": 13,
+      "features_sampled_per_split": 3,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2020",
+      "variant": "state",
+      "train_rows": 201150,
+      "training_seconds": 11.694175200012978,
+      "warnings": [],
+      "learned_categories": [
+        "California",
+        "Florida",
+        "Texas"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    },
+    {
+      "period": "2020",
+      "variant": "fips",
+      "train_rows": 201150,
+      "training_seconds": 12.089710600004764,
+      "warnings": [],
+      "learned_categories": [
+        "06037",
+        "12086",
+        "48201"
+      ],
+      "feature_count": 16,
+      "features_sampled_per_split": 4,
+      "unseen_evaluation_rows": 0
+    }
+  ],
+  "encoder": "Dense one-hot, training partition only, unknown category encoded as all zeros",
+  "threshold": 0.5,
+  "threshold_tie_predicts": 0,
+  "protected_hashes": {
+    "reports\\modeling\\frozen_selection.json": "1aec0eac303a64bb0c33b7001e994c1b65aed2342dd0ac169f588736f9222a6b",
+    "reports\\modeling\\random_forest_cv_selected.json": "9198a6196295f35ee75a7f2120f735442a87088754d8df161351d4a95aac9bb3",
+    "reports\\modeling\\frozen_pipeline.json": "cecc73402f0d2e98e99c9be0c62dff3c17004a89f3237b841f5484ff14622a0f",
+    "notebooks\\task1_eda.ipynb": "84e0b31e8142760cbee6b56d853b1f1e04407374bd6d89a47f8a7b02a2331a3b",
+    "notebooks\\task2_preprocessing.ipynb": "d432cf543756547b2c1c50bc20674632160b188a82d3380914bde8fc12204f49",
+    "notebooks\\task3_modeling.ipynb": "939931a2616fcefd76cfbc2ae642c2bd7e61e2004e0023122b588cd3f3183e51",
+    "artifacts\\modeling\\frozen_development_pipeline.joblib": "613e3b445373492f17fea2fd3f62a61fef5f1bc1a8e33e8d8fb6357e97b28d2b",
+    "artifacts\\modeling\\random_forest_cv_selected.joblib": "ba0abaee424fe6b6d12ec721154b125f76aeef4b32bf3eb32b4f447d163eeda6",
+    "artifacts\\modeling\\random_forest_cv_selected_validation_predictions.parquet": "e3aac3069df56525f9abc573325ce0be6bb5085d4138cbffb5abc9d8288e88d5"
+  },
+  "holdout_accessed": false
+}

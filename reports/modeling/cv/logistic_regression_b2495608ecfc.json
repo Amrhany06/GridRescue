@@ -1,0 +1,214 @@
+{
+  "model": "Logistic Regression",
+  "parameters": {
+    "C": 10.0
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "folds": [
+    {
+      "name": "2018_H2",
+      "train_rows": 48860,
+      "validation_rows": 50935,
+      "last_training_anchor": "2018-06-30T20:00:00+00:00",
+      "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+      "embargo_seconds": 14400.0,
+      "fit_seconds": 0.1161949000088498,
+      "warnings": [],
+      "train": {
+        "rows": 48860,
+        "positive": 17153,
+        "prevalence": 0.35106426524764633,
+        "accuracy": 0.6499386000818665,
+        "precision": 0.5133079847908745,
+        "recall": 0.05509240366116714,
+        "f1": 0.09950510687585554,
+        "confusion_matrix": [
+          [
+            30811,
+            896
+          ],
+          [
+            16208,
+            945
+          ]
+        ],
+        "roc_auc": 0.6119901949908556,
+        "average_precision": 0.44172746044105743,
+        "pr_auc_trapezoid": 0.44165152644442995,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 50935,
+        "positive": 18980,
+        "prevalence": 0.37263178560910964,
+        "accuracy": 0.5719642681849416,
+        "precision": 0.4384272997032641,
+        "recall": 0.5293466807165438,
+        "f1": 0.47961619247660875,
+        "confusion_matrix": [
+          [
+            19086,
+            12869
+          ],
+          [
+            8933,
+            10047
+          ]
+        ],
+        "roc_auc": 0.5866694948886729,
+        "average_precision": 0.4216158758869757,
+        "pr_auc_trapezoid": 0.4215411728510408,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2019",
+      "train_rows": 99801,
+      "validation_rows": 101349,
+      "last_training_anchor": "2018-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 0.2676694999972824,
+      "warnings": [],
+      "train": {
+        "rows": 99801,
+        "positive": 36135,
+        "prevalence": 0.3620705203354676,
+        "accuracy": 0.6341619823448663,
+        "precision": 0.43366266760762173,
+        "recall": 0.03401134634011346,
+        "f1": 0.06307577818265801,
+        "confusion_matrix": [
+          [
+            62061,
+            1605
+          ],
+          [
+            34906,
+            1229
+          ]
+        ],
+        "roc_auc": 0.6105554799004218,
+        "average_precision": 0.4313822358068376,
+        "pr_auc_trapezoid": 0.43135092914892625,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 101349,
+        "positive": 36768,
+        "prevalence": 0.36278601663558596,
+        "accuracy": 0.6311359756879693,
+        "precision": 0.3784530386740331,
+        "recall": 0.026082463011314186,
+        "f1": 0.04880158770546028,
+        "confusion_matrix": [
+          [
+            63006,
+            1575
+          ],
+          [
+            35809,
+            959
+          ]
+        ],
+        "roc_auc": 0.6029077617968079,
+        "average_precision": 0.4238833444049517,
+        "pr_auc_trapezoid": 0.4238421275069308,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2020",
+      "train_rows": 201150,
+      "validation_rows": 102641,
+      "last_training_anchor": "2019-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 0.4436225000245031,
+      "warnings": [],
+      "train": {
+        "rows": 201150,
+        "positive": 72903,
+        "prevalence": 0.3624310216256525,
+        "accuracy": 0.6359234402187423,
+        "precision": 0.4567546380977267,
+        "recall": 0.02397706541568934,
+        "f1": 0.045562361527433856,
+        "confusion_matrix": [
+          [
+            126168,
+            2079
+          ],
+          [
+            71155,
+            1748
+          ]
+        ],
+        "roc_auc": 0.6069859264553473,
+        "average_precision": 0.4275104491267158,
+        "pr_auc_trapezoid": 0.4274936460829829,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102641,
+        "positive": 38084,
+        "prevalence": 0.3710408121510897,
+        "accuracy": 0.6281310587387107,
+        "precision": 0.47686445291235713,
+        "recall": 0.023001785526730385,
+        "f1": 0.043886676185466295,
+        "confusion_matrix": [
+          [
+            63596,
+            961
+          ],
+          [
+            37208,
+            876
+          ]
+        ],
+        "roc_auc": 0.6186744755463353,
+        "average_precision": 0.4474146135567118,
+        "pr_auc_trapezoid": 0.44738733542004433,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    }
+  ],
+  "summary": {
+    "average_precision": {
+      "mean": 0.43097127794954637,
+      "std": 0.014285405762084903
+    },
+    "pr_auc_trapezoid": {
+      "mean": 0.4309235452593386,
+      "std": 0.014304400998431478
+    },
+    "roc_auc": {
+      "mean": 0.6027505774106053,
+      "std": 0.01600306929694377
+    },
+    "accuracy": {
+      "mean": 0.6104104342038739,
+      "std": 0.0333292385546754
+    },
+    "precision": {
+      "mean": 0.4312482637632181,
+      "std": 0.04959693065975055
+    },
+    "recall": {
+      "mean": 0.19281030975152946,
+      "std": 0.2914531169505094
+    },
+    "f1": {
+      "mean": 0.19076815212251177,
+      "std": 0.25016181143634586
+    }
+  },
+  "total_fit_seconds": 0.8274869000306353
+}

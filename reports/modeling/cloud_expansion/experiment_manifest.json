@@ -1,0 +1,13 @@
+{
+  "protocol": "GridRescue cloud expansion 1",
+  "splits": {"training_years": [2018, 2019, 2020], "development_year": 2021, "purge_hours": 3},
+  "folds": [["2018_H2", "2018-07-01", "2019-01-01"], ["2019", "2019-01-01", "2020-01-01"], ["2020", "2020-01-01", "2021-01-01"]],
+  "target": {"required_future_slots": 12, "minutes": 180, "minimum_absolute_increase": 200, "minimum_relative_increase": 0.5, "positive_current_count_required": true},
+  "features": ["customers_out_t", "lag_15m", "lag_60m", "delta_60m", "rolling_mean_60m", "rolling_variance_60m", "history_slots_60m", "hour_utc", "weekday_utc", "month_utc", "lag_15m_missing", "lag_60m_missing", "delta_60m_missing", "lag_120m", "lag_180m", "delta_180m", "rolling_max_180m", "reporting_coverage_180m", "trend_30m", "relative_growth_180m", "lag_120m_missing", "lag_180m_missing", "trend_30m_missing", "relative_growth_180m_missing"],
+  "preprocessing": {"imputer": "training median", "numeric": "training StandardScaler", "geography": "training State one-hot, unknown all-zero", "fips_in_model": false},
+  "xgboost": {"max_depth": 6, "tree_method": "hist", "device": "cpu", "n_jobs": 2, "random_state": 17, "n_estimators": 120, "learning_rate": 0.1, "max_bin": 128, "min_child_weight": 10, "subsample": 0.85, "reg_lambda": 1.0, "objective": "binary:logistic", "eval_metric": "logloss"},
+  "recall_targets": [40, 50, 60],
+  "threshold_rule": "Highest pooled chronological OOF cutoff attaining the target using strict > and float64 scores; tied scores move together",
+  "expansion": {"max_candidates": 160, "min_annual_coverage": 0.65, "min_month_coverage": 0.40, "tier_b_tolerance_rows": 200000, "tier_c_cap_rows": 8000000, "withheld_state_fips_prefix": "36"},
+  "benchmark": {"variant": "xgb_history_state", "train_rows": 1053328, "development_rows": 582532, "development_positives": 118355, "threshold": 0.2670107781887054, "average_precision": 0.4111679018199954, "recall": 0.5644881923028178, "precision": 0.33998961863759886, "accuracy": 0.6888737442749926, "false_positive_rows_per_1000": 222.6418462848393}
+}

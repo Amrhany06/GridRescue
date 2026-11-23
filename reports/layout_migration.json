@@ -1,0 +1,62 @@
+[
+  {
+    "previous_path": "eaglei_outages_2018.csv",
+    "path": "data/raw/eaglei_outages_2018.csv",
+    "bytes": 999210542,
+    "sha256": "85e0a864aa272e75892e181f1da4754ed78f7bf0bef75a279d8ab381baa7db70"
+  },
+  {
+    "previous_path": "eaglei_outages_2019.csv",
+    "path": "data/raw/eaglei_outages_2019.csv",
+    "bytes": 1102778792,
+    "sha256": "4cc277a138b326bd0e1f203558539a9422b40dacdf439e3d5b58ee71d7462d27"
+  },
+  {
+    "previous_path": "eaglei_outages_2020.csv",
+    "path": "data/raw/eaglei_outages_2020.csv",
+    "bytes": 1170699724,
+    "sha256": "2a20b62e5245b1b9d4fcedc1bdbaf691bb1e17f75094975c8c6cb854f52e721a"
+  },
+  {
+    "previous_path": "eaglei_outages_2021.csv",
+    "path": "data/raw/eaglei_outages_2021.csv",
+    "bytes": 1141058232,
+    "sha256": "e3e7ac40a40d92d92488501881ab381b8931833e486941424ac55ea20ffde319"
+  },
+  {
+    "previous_path": "eaglei_outages_2022.csv",
+    "path": "data/raw/eaglei_outages_2022.csv",
+    "bytes": 1187596176,
+    "sha256": "ff8b58ae30fcbaf290f820bcd4f1420e536994bc9f0a87bb80991130478461b0"
+  },
+  {
+    "previous_path": "Task 1 for ML (1).pdf",
+    "path": "docs/requirements/Task 1 for ML (1).pdf",
+    "bytes": 63354,
+    "sha256": "af4e31982e8e2f094981a5f30e8ef4dc5435ee025ee33e4aa61a77933b3cacdd"
+  },
+  {
+    "previous_path": "Task 2 for ML.pdf",
+    "path": "docs/requirements/Task 2 for ML.pdf",
+    "bytes": 90976,
+    "sha256": "e8aca62e16fc2f4199838c3ab24fba8959a451a44d1cb5f89fdbf6d9a70b36a0"
+  },
+  {
+    "previous_path": "Task 3 for ML.pdf",
+    "path": "docs/requirements/Task 3 for ML.pdf",
+    "bytes": 132487,
+    "sha256": "bc5713ea792e52d361c2fe972fb0457f29fdde358bbf3baf72ac416db1af1dbe"
+  },
+  {
+    "previous_path": "GridRescue_Complete_Explainer_And_Codex_Kit (2)/GridRescue_Complete_Project_Explained.md",
+    "path": "docs/GridRescue_Complete_Project_Explained.md",
+    "bytes": 29446,
+    "sha256": "0ec6e3170a9923dc171e725a7efb716cba701d7de3769b62c24f3c51b6a1dbc9"
+  },
+  {
+    "previous_path": "GridRescue_Complete_Explainer_And_Codex_Kit (2)/GridRescue_Codex_Copy_Paste_Prompt.md",
+    "path": "GridRescue_Codex_Copy_Paste_Prompt.md",
+    "bytes": 6100,
+    "sha256": "c651e6e0c54520ed4dbb1e58e72c7d141ec2b593e61ac6db71ca7c73367fe419"
+  }
+]

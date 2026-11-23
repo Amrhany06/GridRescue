@@ -1,0 +1,7 @@
+{
+  "status": "APPROVED",
+  "authority": "Explicit user message approving Decision 1 in this conversation on 2026-11-17",
+  "allowed": ["Official Microsoft WSL 2", "Ubuntu 24.04", "Linux Python and OpenJDK prerequisites", "Separate project-local .venv-linux"],
+  "prohibited": ["Automatic reboot", "Unofficial Hadoop binaries", "Discarding the Windows environment or working notebooks"],
+  "installation_verified": false
+}

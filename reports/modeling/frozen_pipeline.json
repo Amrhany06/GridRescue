@@ -1,0 +1,117 @@
+{
+  "selection": {
+    "frozen": true,
+    "utc": "2026-11-21T14:39:48.998348+00:00",
+    "model": "Random Forest",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 12,
+      "min_samples_leaf": 10
+    },
+    "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+    "features": [
+      "customers_out_t",
+      "lag_15m",
+      "lag_60m",
+      "delta_60m",
+      "rolling_mean_60m",
+      "rolling_variance_60m",
+      "history_slots_60m",
+      "hour_utc",
+      "weekday_utc",
+      "month_utc",
+      "lag_15m_missing",
+      "lag_60m_missing",
+      "delta_60m_missing"
+    ],
+    "selection_rule": "Highest 2021 average precision among training-CV-selected configurations; model-order tie break",
+    "validation_average_precision": 0.5236688442307188,
+    "test_inspected_for_selection": false,
+    "final_evaluation_limit": 1
+  },
+  "features": [
+    "customers_out_t",
+    "lag_15m",
+    "lag_60m",
+    "delta_60m",
+    "rolling_mean_60m",
+    "rolling_variance_60m",
+    "history_slots_60m",
+    "hour_utc",
+    "weekday_utc",
+    "month_utc",
+    "lag_15m_missing",
+    "lag_60m_missing",
+    "delta_60m_missing"
+  ],
+  "development_rows": 406240,
+  "fit_seconds": 50.57186859997455,
+  "warnings": [],
+  "decision_threshold": 0.5,
+  "ties_predict": 0,
+  "classifier_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": 12,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 10,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "target": {
+    "status": "APPROVED_CONDITIONAL_EXPERIMENT",
+    "authority": "Explicit user message approving Decision 2 in this conversation on 2026-11-17",
+    "scope": "University ML experiment only; not confirmation of operational validity",
+    "county_fips": [
+      "06037",
+      "12086",
+      "48201"
+    ],
+    "training_years": [
+      2018,
+      2019,
+      2020
+    ],
+    "validation_years": [
+      2021
+    ],
+    "holdout_year": 2022,
+    "horizon_minutes": 180,
+    "required_future_quarter_hours": 12,
+    "minimum_absolute_increase": 200,
+    "minimum_relative_increase": 0.5,
+    "positive_current_count_required": true,
+    "source_policies_unchanged": true,
+    "training_fold_only_preprocessing": true,
+    "time_aware_cv_and_purge_required": true,
+    "holdout_policy": "Choose winner using development only, then evaluate 2022 once; no tuning or repeated evaluation on 2022",
+    "limitations_required": [
+      "complete-case selection",
+      "class distribution changes",
+      "overlapping windows",
+      "three-county generalization limits"
+    ]
+  },
+  "artifact": "artifacts/modeling/frozen_development_pipeline.joblib",
+  "artifact_sha256": "613e3b445373492f17fea2fd3f62a61fef5f1bc1a8e33e8d8fb6357e97b28d2b",
+  "reload_sample": "artifacts/modeling/development_reload_sample.parquet",
+  "reload_sample_sha256": "058490a670150f3f50bedfd88572d3efaa953b9ab91c2007cdc211fa3aea6338",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "joblib": "1.6.0",
+    "pandas": "2.3.3",
+    "numpy": "2.5.5"
+  }
+}

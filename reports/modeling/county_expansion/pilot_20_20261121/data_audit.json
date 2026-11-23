@@ -1,0 +1,1235 @@
+{
+  "status": "VERIFIED",
+  "inputs": [
+    {
+      "year": 2018,
+      "path": "data/raw/eaglei_outages_2018.csv",
+      "bytes": 999210542,
+      "sha256": "85e0a864aa272e75892e181f1da4754ed78f7bf0bef75a279d8ab381baa7db70"
+    },
+    {
+      "year": 2019,
+      "path": "data/raw/eaglei_outages_2019.csv",
+      "bytes": 1102778792,
+      "sha256": "4cc277a138b326bd0e1f203558539a9422b40dacdf439e3d5b58ee71d7462d27"
+    },
+    {
+      "year": 2020,
+      "path": "data/raw/eaglei_outages_2020.csv",
+      "bytes": 1170699724,
+      "sha256": "2a20b62e5245b1b9d4fcedc1bdbaf691bb1e17f75094975c8c6cb854f52e721a"
+    },
+    {
+      "year": 2021,
+      "path": "data/raw/eaglei_outages_2021.csv",
+      "bytes": 1141058232,
+      "sha256": "e3e7ac40a40d92d92488501881ab381b8931833e486941424ac55ea20ffde319"
+    }
+  ],
+  "scope": "2018\u20132021 selected counties",
+  "writer": "Native Spark Parquet",
+  "raw_by_year": [
+    {
+      "year": 2018,
+      "county_counts": {
+        "48339": 29355,
+        "12086": 34718,
+        "42029": 29413,
+        "48201": 34758,
+        "06065": 27993,
+        "36047": 33740,
+        "36081": 32872,
+        "12099": 33857,
+        "42091": 32012,
+        "42101": 34545,
+        "06037": 34681,
+        "06073": 31211,
+        "12103": 32179,
+        "36103": 32259,
+        "42017": 29885,
+        "36059": 31305,
+        "48113": 33981,
+        "48439": 33729,
+        "06071": 28748,
+        "12011": 34625
+      },
+      "raw": 645866,
+      "seconds": 17.981727500009583
+    },
+    {
+      "year": 2019,
+      "county_counts": {
+        "48339": 29672,
+        "48201": 34896,
+        "12086": 34874,
+        "42029": 30748,
+        "06065": 31075,
+        "36047": 32809,
+        "36081": 32298,
+        "12099": 33983,
+        "42091": 31737,
+        "42101": 34805,
+        "06037": 34875,
+        "06073": 31601,
+        "12103": 32025,
+        "36103": 31338,
+        "42017": 30141,
+        "36059": 29611,
+        "48113": 34083,
+        "48439": 33773,
+        "06071": 32247,
+        "12011": 34752
+      },
+      "raw": 651343,
+      "seconds": 11.316585099993972
+    },
+    {
+      "year": 2020,
+      "county_counts": {
+        "48339": 29650,
+        "48201": 35026,
+        "12086": 34979,
+        "42029": 27610,
+        "06065": 32574,
+        "36047": 30517,
+        "36081": 30491,
+        "12099": 34081,
+        "42091": 29557,
+        "42101": 34551,
+        "06037": 35025,
+        "06073": 31744,
+        "12103": 31937,
+        "36103": 30233,
+        "42017": 28535,
+        "36059": 28732,
+        "48113": 33988,
+        "48439": 34143,
+        "06071": 31324,
+        "12011": 34864
+      },
+      "raw": 639561,
+      "seconds": 23.600282799976412
+    },
+    {
+      "year": 2021,
+      "county_counts": {
+        "48339": 32419,
+        "48201": 34755,
+        "12086": 34876,
+        "42029": 28370,
+        "06065": 32467,
+        "36047": 31797,
+        "36081": 31865,
+        "12099": 33962,
+        "42091": 30926,
+        "42101": 34815,
+        "06037": 34911,
+        "06073": 31951,
+        "12103": 30691,
+        "36103": 30286,
+        "42017": 28815,
+        "36059": 27980,
+        "48113": 34286,
+        "48439": 34045,
+        "06071": 32624,
+        "12011": 34683
+      },
+      "raw": 646524,
+      "seconds": 22.543908099993132
+    }
+  ],
+  "state_audits": [
+    {
+      "state": "California",
+      "prefix": "s06",
+      "counts": {
+        "raw": 515051,
+        "invalid": 13425,
+        "exact_duplicates_removed": 0,
+        "conflict_rows": 0,
+        "silver": 501626
+      },
+      "by_county_year_split": [
+        {
+          "fips_code": "06073",
+          "state": "California",
+          "county": "San Diego",
+          "year": 2019,
+          "split": "train",
+          "clean": 31460,
+          "eligible": 27739,
+          "positive": 7679,
+          "complete_future": 27739,
+          "positive_current": 31460
+        },
+        {
+          "fips_code": "06073",
+          "state": "California",
+          "county": "San Diego",
+          "year": 2020,
+          "split": "train",
+          "clean": 31399,
+          "eligible": 27417,
+          "positive": 7179,
+          "complete_future": 27417,
+          "positive_current": 31399
+        },
+        {
+          "fips_code": "06037",
+          "state": "California",
+          "county": "Los Angeles",
+          "year": 2020,
+          "split": "train",
+          "clean": 35011,
+          "eligible": 34773,
+          "positive": 15799,
+          "complete_future": 34773,
+          "positive_current": 35011
+        },
+        {
+          "fips_code": "06065",
+          "state": "California",
+          "county": "Riverside",
+          "year": 2019,
+          "split": "train",
+          "clean": 29974,
+          "eligible": 24530,
+          "positive": 7367,
+          "complete_future": 24530,
+          "positive_current": 29974
+        },
+        {
+          "fips_code": "06037",
+          "state": "California",
+          "county": "Los Angeles",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34823,
+          "eligible": 34476,
+          "positive": 14820,
+          "complete_future": 34476,
+          "positive_current": 34823
+        },
+        {
+          "fips_code": "06071",
+          "state": "California",
+          "county": "San Bernardino",
+          "year": 2021,
+          "split": "validation",
+          "clean": 31236,
+          "eligible": 28079,
+          "positive": 7638,
+          "complete_future": 28079,
+          "positive_current": 31236
+        },
+        {
+          "fips_code": "06073",
+          "state": "California",
+          "county": "San Diego",
+          "year": 2018,
+          "split": "train",
+          "clean": 29897,
+          "eligible": 25735,
+          "positive": 7003,
+          "complete_future": 25735,
+          "positive_current": 29897
+        },
+        {
+          "fips_code": "06065",
+          "state": "California",
+          "county": "Riverside",
+          "year": 2018,
+          "split": "train",
+          "clean": 25418,
+          "eligible": 16791,
+          "positive": 4418,
+          "complete_future": 16791,
+          "positive_current": 25418
+        },
+        {
+          "fips_code": "06037",
+          "state": "California",
+          "county": "Los Angeles",
+          "year": 2018,
+          "split": "train",
+          "clean": 34254,
+          "eligible": 32580,
+          "positive": 14063,
+          "complete_future": 32580,
+          "positive_current": 34254
+        },
+        {
+          "fips_code": "06071",
+          "state": "California",
+          "county": "San Bernardino",
+          "year": 2018,
+          "split": "train",
+          "clean": 26166,
+          "eligible": 17879,
+          "positive": 4971,
+          "complete_future": 17879,
+          "positive_current": 26166
+        },
+        {
+          "fips_code": "06071",
+          "state": "California",
+          "county": "San Bernardino",
+          "year": 2019,
+          "split": "train",
+          "clean": 31096,
+          "eligible": 26211,
+          "positive": 7543,
+          "complete_future": 26211,
+          "positive_current": 31096
+        },
+        {
+          "fips_code": "06065",
+          "state": "California",
+          "county": "Riverside",
+          "year": 2020,
+          "split": "train",
+          "clean": 32277,
+          "eligible": 29422,
+          "positive": 8024,
+          "complete_future": 29422,
+          "positive_current": 32277
+        },
+        {
+          "fips_code": "06073",
+          "state": "California",
+          "county": "San Diego",
+          "year": 2021,
+          "split": "validation",
+          "clean": 31581,
+          "eligible": 27894,
+          "positive": 8244,
+          "complete_future": 27894,
+          "positive_current": 31581
+        },
+        {
+          "fips_code": "06065",
+          "state": "California",
+          "county": "Riverside",
+          "year": 2021,
+          "split": "validation",
+          "clean": 31757,
+          "eligible": 28608,
+          "positive": 7807,
+          "complete_future": 28608,
+          "positive_current": 31757
+        },
+        {
+          "fips_code": "06037",
+          "state": "California",
+          "county": "Los Angeles",
+          "year": 2019,
+          "split": "train",
+          "clean": 34797,
+          "eligible": 34339,
+          "positive": 15828,
+          "complete_future": 34339,
+          "positive_current": 34797
+        },
+        {
+          "fips_code": "06071",
+          "state": "California",
+          "county": "San Bernardino",
+          "year": 2020,
+          "split": "train",
+          "clean": 30480,
+          "eligible": 26546,
+          "positive": 7227,
+          "complete_future": 26546,
+          "positive_current": 30480
+        }
+      ],
+      "quarantine_reasons": [
+        {
+          "reason": "invalid_count",
+          "count": 13303
+        },
+        {
+          "reason": "off_grid_timestamp",
+          "count": 122
+        }
+      ],
+      "seconds": 36.654368900024565
+    },
+    {
+      "state": "Florida",
+      "prefix": "s12",
+      "counts": {
+        "raw": 541086,
+        "invalid": 2455,
+        "exact_duplicates_removed": 0,
+        "conflict_rows": 0,
+        "silver": 538631
+      },
+      "by_county_year_split": [
+        {
+          "fips_code": "12011",
+          "state": "Florida",
+          "county": "Broward",
+          "year": 2020,
+          "split": "train",
+          "clean": 34811,
+          "eligible": 33685,
+          "positive": 8083,
+          "complete_future": 33685,
+          "positive_current": 34811
+        },
+        {
+          "fips_code": "12103",
+          "state": "Florida",
+          "county": "Pinellas",
+          "year": 2019,
+          "split": "train",
+          "clean": 31958,
+          "eligible": 26936,
+          "positive": 4057,
+          "complete_future": 26936,
+          "positive_current": 31958
+        },
+        {
+          "fips_code": "12099",
+          "state": "Florida",
+          "county": "Palm Beach",
+          "year": 2018,
+          "split": "train",
+          "clean": 33812,
+          "eligible": 31215,
+          "positive": 6023,
+          "complete_future": 31215,
+          "positive_current": 33812
+        },
+        {
+          "fips_code": "12099",
+          "state": "Florida",
+          "county": "Palm Beach",
+          "year": 2021,
+          "split": "validation",
+          "clean": 33843,
+          "eligible": 31857,
+          "positive": 5481,
+          "complete_future": 31857,
+          "positive_current": 33843
+        },
+        {
+          "fips_code": "12011",
+          "state": "Florida",
+          "county": "Broward",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34564,
+          "eligible": 33576,
+          "positive": 7225,
+          "complete_future": 33576,
+          "positive_current": 34564
+        },
+        {
+          "fips_code": "12086",
+          "state": "Florida",
+          "county": "Miami-Dade",
+          "year": 2020,
+          "split": "train",
+          "clean": 34925,
+          "eligible": 34047,
+          "positive": 10338,
+          "complete_future": 34047,
+          "positive_current": 34925
+        },
+        {
+          "fips_code": "12099",
+          "state": "Florida",
+          "county": "Palm Beach",
+          "year": 2019,
+          "split": "train",
+          "clean": 33782,
+          "eligible": 30509,
+          "positive": 4972,
+          "complete_future": 30509,
+          "positive_current": 33782
+        },
+        {
+          "fips_code": "12011",
+          "state": "Florida",
+          "county": "Broward",
+          "year": 2019,
+          "split": "train",
+          "clean": 34551,
+          "eligible": 32529,
+          "positive": 7325,
+          "complete_future": 32529,
+          "positive_current": 34551
+        },
+        {
+          "fips_code": "12103",
+          "state": "Florida",
+          "county": "Pinellas",
+          "year": 2020,
+          "split": "train",
+          "clean": 30919,
+          "eligible": 25864,
+          "positive": 4065,
+          "complete_future": 25864,
+          "positive_current": 30919
+        },
+        {
+          "fips_code": "12086",
+          "state": "Florida",
+          "county": "Miami-Dade",
+          "year": 2019,
+          "split": "train",
+          "clean": 34673,
+          "eligible": 32854,
+          "positive": 9664,
+          "complete_future": 32854,
+          "positive_current": 34673
+        },
+        {
+          "fips_code": "12103",
+          "state": "Florida",
+          "county": "Pinellas",
+          "year": 2018,
+          "split": "train",
+          "clean": 32130,
+          "eligible": 27797,
+          "positive": 4001,
+          "complete_future": 27797,
+          "positive_current": 32130
+        },
+        {
+          "fips_code": "12103",
+          "state": "Florida",
+          "county": "Pinellas",
+          "year": 2021,
+          "split": "validation",
+          "clean": 30626,
+          "eligible": 24971,
+          "positive": 4388,
+          "complete_future": 24971,
+          "positive_current": 30626
+        },
+        {
+          "fips_code": "12011",
+          "state": "Florida",
+          "county": "Broward",
+          "year": 2018,
+          "split": "train",
+          "clean": 34579,
+          "eligible": 33364,
+          "positive": 7845,
+          "complete_future": 33364,
+          "positive_current": 34579
+        },
+        {
+          "fips_code": "12086",
+          "state": "Florida",
+          "county": "Miami-Dade",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34757,
+          "eligible": 34057,
+          "positive": 10113,
+          "complete_future": 34057,
+          "positive_current": 34757
+        },
+        {
+          "fips_code": "12086",
+          "state": "Florida",
+          "county": "Miami-Dade",
+          "year": 2018,
+          "split": "train",
+          "clean": 34673,
+          "eligible": 33686,
+          "positive": 10863,
+          "complete_future": 33686,
+          "positive_current": 34673
+        },
+        {
+          "fips_code": "12099",
+          "state": "Florida",
+          "county": "Palm Beach",
+          "year": 2020,
+          "split": "train",
+          "clean": 34028,
+          "eligible": 31745,
+          "positive": 6222,
+          "complete_future": 31745,
+          "positive_current": 34028
+        }
+      ],
+      "quarantine_reasons": [
+        {
+          "reason": "invalid_count",
+          "count": 2329
+        },
+        {
+          "reason": "off_grid_timestamp",
+          "count": 126
+        }
+      ],
+      "seconds": 28.61522700000205
+    },
+    {
+      "state": "Texas",
+      "prefix": "s48",
+      "counts": {
+        "raw": 532559,
+        "invalid": 3297,
+        "exact_duplicates_removed": 0,
+        "conflict_rows": 0,
+        "silver": 529262
+      },
+      "by_county_year_split": [
+        {
+          "fips_code": "48339",
+          "state": "Texas",
+          "county": "Montgomery",
+          "year": 2020,
+          "split": "train",
+          "clean": 29061,
+          "eligible": 22423,
+          "positive": 3168,
+          "complete_future": 22423,
+          "positive_current": 29061
+        },
+        {
+          "fips_code": "48201",
+          "state": "Texas",
+          "county": "Harris",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34743,
+          "eligible": 33916,
+          "positive": 8786,
+          "complete_future": 33916,
+          "positive_current": 34743
+        },
+        {
+          "fips_code": "48439",
+          "state": "Texas",
+          "county": "Tarrant",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34026,
+          "eligible": 31779,
+          "positive": 7077,
+          "complete_future": 31779,
+          "positive_current": 34026
+        },
+        {
+          "fips_code": "48113",
+          "state": "Texas",
+          "county": "Dallas",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34276,
+          "eligible": 32556,
+          "positive": 8425,
+          "complete_future": 32556,
+          "positive_current": 34276
+        },
+        {
+          "fips_code": "48439",
+          "state": "Texas",
+          "county": "Tarrant",
+          "year": 2018,
+          "split": "train",
+          "clean": 33668,
+          "eligible": 30741,
+          "positive": 7381,
+          "complete_future": 30741,
+          "positive_current": 33668
+        },
+        {
+          "fips_code": "48439",
+          "state": "Texas",
+          "county": "Tarrant",
+          "year": 2019,
+          "split": "train",
+          "clean": 33725,
+          "eligible": 30874,
+          "positive": 6428,
+          "complete_future": 30874,
+          "positive_current": 33725
+        },
+        {
+          "fips_code": "48201",
+          "state": "Texas",
+          "county": "Harris",
+          "year": 2019,
+          "split": "train",
+          "clean": 34735,
+          "eligible": 34156,
+          "positive": 11276,
+          "complete_future": 34156,
+          "positive_current": 34735
+        },
+        {
+          "fips_code": "48201",
+          "state": "Texas",
+          "county": "Harris",
+          "year": 2020,
+          "split": "train",
+          "clean": 34905,
+          "eligible": 33821,
+          "positive": 11947,
+          "complete_future": 33821,
+          "positive_current": 34905
+        },
+        {
+          "fips_code": "48339",
+          "state": "Texas",
+          "county": "Montgomery",
+          "year": 2019,
+          "split": "train",
+          "clean": 29286,
+          "eligible": 23019,
+          "positive": 3426,
+          "complete_future": 23019,
+          "positive_current": 29286
+        },
+        {
+          "fips_code": "48113",
+          "state": "Texas",
+          "county": "Dallas",
+          "year": 2020,
+          "split": "train",
+          "clean": 33466,
+          "eligible": 30866,
+          "positive": 7216,
+          "complete_future": 30866,
+          "positive_current": 33466
+        },
+        {
+          "fips_code": "48113",
+          "state": "Texas",
+          "county": "Dallas",
+          "year": 2018,
+          "split": "train",
+          "clean": 33935,
+          "eligible": 31687,
+          "positive": 8558,
+          "complete_future": 31687,
+          "positive_current": 33935
+        },
+        {
+          "fips_code": "48339",
+          "state": "Texas",
+          "county": "Montgomery",
+          "year": 2021,
+          "split": "validation",
+          "clean": 32316,
+          "eligible": 28485,
+          "positive": 5806,
+          "complete_future": 28485,
+          "positive_current": 32316
+        },
+        {
+          "fips_code": "48439",
+          "state": "Texas",
+          "county": "Tarrant",
+          "year": 2020,
+          "split": "train",
+          "clean": 33688,
+          "eligible": 31047,
+          "positive": 6616,
+          "complete_future": 31047,
+          "positive_current": 33688
+        },
+        {
+          "fips_code": "48113",
+          "state": "Texas",
+          "county": "Dallas",
+          "year": 2019,
+          "split": "train",
+          "clean": 34055,
+          "eligible": 32004,
+          "positive": 7583,
+          "complete_future": 32004,
+          "positive_current": 34055
+        },
+        {
+          "fips_code": "48339",
+          "state": "Texas",
+          "county": "Montgomery",
+          "year": 2018,
+          "split": "train",
+          "clean": 28733,
+          "eligible": 21895,
+          "positive": 2419,
+          "complete_future": 21895,
+          "positive_current": 28733
+        },
+        {
+          "fips_code": "48201",
+          "state": "Texas",
+          "county": "Harris",
+          "year": 2018,
+          "split": "train",
+          "clean": 34644,
+          "eligible": 33535,
+          "positive": 11209,
+          "complete_future": 33535,
+          "positive_current": 34644
+        }
+      ],
+      "quarantine_reasons": [
+        {
+          "reason": "invalid_count",
+          "count": 3166
+        },
+        {
+          "reason": "off_grid_timestamp",
+          "count": 131
+        }
+      ],
+      "seconds": 27.998997699993197
+    },
+    {
+      "state": "Pennsylvania",
+      "prefix": "s42",
+      "counts": {
+        "raw": 496465,
+        "invalid": 4467,
+        "exact_duplicates_removed": 0,
+        "conflict_rows": 0,
+        "silver": 491998
+      },
+      "by_county_year_split": [
+        {
+          "fips_code": "42029",
+          "state": "Pennsylvania",
+          "county": "Chester",
+          "year": 2018,
+          "split": "train",
+          "clean": 29364,
+          "eligible": 25247,
+          "positive": 3245,
+          "complete_future": 25247,
+          "positive_current": 29364
+        },
+        {
+          "fips_code": "42101",
+          "state": "Pennsylvania",
+          "county": "Philadelphia",
+          "year": 2018,
+          "split": "train",
+          "clean": 34504,
+          "eligible": 33359,
+          "positive": 5729,
+          "complete_future": 33359,
+          "positive_current": 34504
+        },
+        {
+          "fips_code": "42017",
+          "state": "Pennsylvania",
+          "county": "Bucks",
+          "year": 2018,
+          "split": "train",
+          "clean": 29841,
+          "eligible": 25419,
+          "positive": 2893,
+          "complete_future": 25419,
+          "positive_current": 29841
+        },
+        {
+          "fips_code": "42091",
+          "state": "Pennsylvania",
+          "county": "Montgomery",
+          "year": 2019,
+          "split": "train",
+          "clean": 31680,
+          "eligible": 28768,
+          "positive": 3518,
+          "complete_future": 28768,
+          "positive_current": 31680
+        },
+        {
+          "fips_code": "42017",
+          "state": "Pennsylvania",
+          "county": "Bucks",
+          "year": 2019,
+          "split": "train",
+          "clean": 30035,
+          "eligible": 26406,
+          "positive": 3385,
+          "complete_future": 26406,
+          "positive_current": 30035
+        },
+        {
+          "fips_code": "42017",
+          "state": "Pennsylvania",
+          "county": "Bucks",
+          "year": 2021,
+          "split": "validation",
+          "clean": 28765,
+          "eligible": 24813,
+          "positive": 2869,
+          "complete_future": 24813,
+          "positive_current": 28765
+        },
+        {
+          "fips_code": "42017",
+          "state": "Pennsylvania",
+          "county": "Bucks",
+          "year": 2020,
+          "split": "train",
+          "clean": 27762,
+          "eligible": 23264,
+          "positive": 2664,
+          "complete_future": 23264,
+          "positive_current": 27762
+        },
+        {
+          "fips_code": "42101",
+          "state": "Pennsylvania",
+          "county": "Philadelphia",
+          "year": 2020,
+          "split": "train",
+          "clean": 33425,
+          "eligible": 32260,
+          "positive": 4658,
+          "complete_future": 32260,
+          "positive_current": 33425
+        },
+        {
+          "fips_code": "42029",
+          "state": "Pennsylvania",
+          "county": "Chester",
+          "year": 2019,
+          "split": "train",
+          "clean": 30688,
+          "eligible": 27136,
+          "positive": 3437,
+          "complete_future": 27136,
+          "positive_current": 30688
+        },
+        {
+          "fips_code": "42091",
+          "state": "Pennsylvania",
+          "county": "Montgomery",
+          "year": 2018,
+          "split": "train",
+          "clean": 31971,
+          "eligible": 28884,
+          "positive": 3921,
+          "complete_future": 28884,
+          "positive_current": 31971
+        },
+        {
+          "fips_code": "42029",
+          "state": "Pennsylvania",
+          "county": "Chester",
+          "year": 2020,
+          "split": "train",
+          "clean": 26577,
+          "eligible": 21719,
+          "positive": 2509,
+          "complete_future": 21719,
+          "positive_current": 26577
+        },
+        {
+          "fips_code": "42091",
+          "state": "Pennsylvania",
+          "county": "Montgomery",
+          "year": 2020,
+          "split": "train",
+          "clean": 28613,
+          "eligible": 24069,
+          "positive": 3167,
+          "complete_future": 24069,
+          "positive_current": 28613
+        },
+        {
+          "fips_code": "42101",
+          "state": "Pennsylvania",
+          "county": "Philadelphia",
+          "year": 2019,
+          "split": "train",
+          "clean": 34783,
+          "eligible": 34392,
+          "positive": 5512,
+          "complete_future": 34392,
+          "positive_current": 34783
+        },
+        {
+          "fips_code": "42091",
+          "state": "Pennsylvania",
+          "county": "Montgomery",
+          "year": 2021,
+          "split": "validation",
+          "clean": 30870,
+          "eligible": 27595,
+          "positive": 3554,
+          "complete_future": 27595,
+          "positive_current": 30870
+        },
+        {
+          "fips_code": "42101",
+          "state": "Pennsylvania",
+          "county": "Philadelphia",
+          "year": 2021,
+          "split": "validation",
+          "clean": 34811,
+          "eligible": 34438,
+          "positive": 5091,
+          "complete_future": 34438,
+          "positive_current": 34811
+        },
+        {
+          "fips_code": "42029",
+          "state": "Pennsylvania",
+          "county": "Chester",
+          "year": 2021,
+          "split": "validation",
+          "clean": 28309,
+          "eligible": 24205,
+          "positive": 2839,
+          "complete_future": 24205,
+          "positive_current": 28309
+        }
+      ],
+      "quarantine_reasons": [
+        {
+          "reason": "invalid_count",
+          "count": 4349
+        },
+        {
+          "reason": "off_grid_timestamp",
+          "count": 118
+        }
+      ],
+      "seconds": 25.721950700011803
+    },
+    {
+      "state": "New York",
+      "prefix": "s36",
+      "counts": {
+        "raw": 498133,
+        "invalid": 2416,
+        "exact_duplicates_removed": 0,
+        "conflict_rows": 0,
+        "silver": 495717
+      },
+      "by_county_year_split": [
+        {
+          "fips_code": "36081",
+          "state": "New York",
+          "county": "Queens",
+          "year": 2018,
+          "split": "train",
+          "clean": 32789,
+          "eligible": 29766,
+          "positive": 1504,
+          "complete_future": 29766,
+          "positive_current": 32789
+        },
+        {
+          "fips_code": "36103",
+          "state": "New York",
+          "county": "Suffolk",
+          "year": 2018,
+          "split": "train",
+          "clean": 32221,
+          "eligible": 28402,
+          "positive": 4101,
+          "complete_future": 28402,
+          "positive_current": 32221
+        },
+        {
+          "fips_code": "36047",
+          "state": "New York",
+          "county": "Kings",
+          "year": 2021,
+          "split": "validation",
+          "clean": 31622,
+          "eligible": 27518,
+          "positive": 718,
+          "complete_future": 27518,
+          "positive_current": 31622
+        },
+        {
+          "fips_code": "36081",
+          "state": "New York",
+          "county": "Queens",
+          "year": 2021,
+          "split": "validation",
+          "clean": 31714,
+          "eligible": 27601,
+          "positive": 1664,
+          "complete_future": 27601,
+          "positive_current": 31714
+        },
+        {
+          "fips_code": "36047",
+          "state": "New York",
+          "county": "Kings",
+          "year": 2019,
+          "split": "train",
+          "clean": 32694,
+          "eligible": 29682,
+          "positive": 650,
+          "complete_future": 29682,
+          "positive_current": 32694
+        },
+        {
+          "fips_code": "36059",
+          "state": "New York",
+          "county": "Nassau",
+          "year": 2019,
+          "split": "train",
+          "clean": 28764,
+          "eligible": 22709,
+          "positive": 2748,
+          "complete_future": 22709,
+          "positive_current": 28764
+        },
+        {
+          "fips_code": "36059",
+          "state": "New York",
+          "county": "Nassau",
+          "year": 2021,
+          "split": "validation",
+          "clean": 27973,
+          "eligible": 21173,
+          "positive": 2410,
+          "complete_future": 21173,
+          "positive_current": 27973
+        },
+        {
+          "fips_code": "36081",
+          "state": "New York",
+          "county": "Queens",
+          "year": 2020,
+          "split": "train",
+          "clean": 30351,
+          "eligible": 25711,
+          "positive": 1490,
+          "complete_future": 25711,
+          "positive_current": 30351
+        },
+        {
+          "fips_code": "36103",
+          "state": "New York",
+          "county": "Suffolk",
+          "year": 2020,
+          "split": "train",
+          "clean": 30199,
+          "eligible": 25230,
+          "positive": 3781,
+          "complete_future": 25230,
+          "positive_current": 30199
+        },
+        {
+          "fips_code": "36103",
+          "state": "New York",
+          "county": "Suffolk",
+          "year": 2021,
+          "split": "validation",
+          "clean": 30279,
+          "eligible": 24935,
+          "positive": 3400,
+          "complete_future": 24935,
+          "positive_current": 30279
+        },
+        {
+          "fips_code": "36047",
+          "state": "New York",
+          "county": "Kings",
+          "year": 2018,
+          "split": "train",
+          "clean": 33628,
+          "eligible": 31007,
+          "positive": 594,
+          "complete_future": 31007,
+          "positive_current": 33628
+        },
+        {
+          "fips_code": "36059",
+          "state": "New York",
+          "county": "Nassau",
+          "year": 2018,
+          "split": "train",
+          "clean": 31265,
+          "eligible": 26371,
+          "positive": 3483,
+          "complete_future": 26371,
+          "positive_current": 31265
+        },
+        {
+          "fips_code": "36059",
+          "state": "New York",
+          "county": "Nassau",
+          "year": 2020,
+          "split": "train",
+          "clean": 28698,
+          "eligible": 22804,
+          "positive": 2928,
+          "complete_future": 22804,
+          "positive_current": 28698
+        },
+        {
+          "fips_code": "36047",
+          "state": "New York",
+          "county": "Kings",
+          "year": 2020,
+          "split": "train",
+          "clean": 30361,
+          "eligible": 25864,
+          "positive": 625,
+          "complete_future": 25864,
+          "positive_current": 30361
+        },
+        {
+          "fips_code": "36081",
+          "state": "New York",
+          "county": "Queens",
+          "year": 2019,
+          "split": "train",
+          "clean": 32185,
+          "eligible": 28756,
+          "positive": 1324,
+          "complete_future": 28756,
+          "positive_current": 32185
+        },
+        {
+          "fips_code": "36103",
+          "state": "New York",
+          "county": "Suffolk",
+          "year": 2019,
+          "split": "train",
+          "clean": 30974,
+          "eligible": 26784,
+          "positive": 3835,
+          "complete_future": 26784,
+          "positive_current": 30974
+        }
+      ],
+      "quarantine_reasons": [
+        {
+          "reason": "invalid_count",
+          "count": 2290
+        },
+        {
+          "reason": "off_grid_timestamp",
+          "count": 126
+        }
+      ],
+      "seconds": 27.15925289998995
+    }
+  ],
+  "counts": {
+    "raw": 2583294,
+    "invalid": 26060,
+    "exact_duplicates_removed": 0,
+    "conflict_rows": 0,
+    "silver": 2557234
+  },
+  "seconds": 221.6073064999946,
+  "free_bytes_before": 1443205120,
+  "free_bytes_after": 1294811136,
+  "spark_version": "3.5.3",
+  "shuffle_partitions": 16
+}

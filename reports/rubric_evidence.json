@@ -1,0 +1,375 @@
+{
+  "items": [
+    {
+      "phase": "task1_eda",
+      "item": "Read Data",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-003` (execution 2)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Random Sample Data",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-005` (execution 3)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Size of Data",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-007` (execution 4)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Information: types, non-null counts, memory",
+      "status": "FAIL",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-009` (execution 5)",
+      "limitation": "Allocated Spark cache, Python RSS and bounded pandas memory are distinct measurements."
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Column names",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-011` (execution 6)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Descriptive statistics",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-013` (execution 7)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Unique values",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-015` (execution 8)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Candidate class balance",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-017` (execution 9)",
+      "limitation": "Candidate y remains unapproved; cohort-specific evidence."
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Missing values and absent rows",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-019` (execution 10)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Duplicates and conflict reconciliation",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-021` (execution 11)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Outlier detection",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-023` (execution 12)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Outlier treatment comparison",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-025` (execution 13)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Univariate analysis",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-027` (execution 14)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Feature versus provisional target",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-029` (execution 15)",
+      "limitation": "Candidate y remains unapproved; cohort-specific evidence."
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Feature-to-feature analysis",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-031` (execution 16)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Correlation analysis",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-033` (execution 17)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Grouped statistical summaries",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-035` (execution 18)",
+      "limitation": ""
+    },
+    {
+      "phase": "task1_eda",
+      "item": "Written observations and concise findings",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb cell `task1_eda-037` (execution 19)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Feature list, types, identifiers and exclusions",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-003` (execution 2)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Create safe features",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-005` (execution 3)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Review changes and exact-time lag check",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-007` (execution 4)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "X and candidate y definitions",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-009` (execution 5)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Chronological split and sealed test design",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-014` (execution 8)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Leakage prevention",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-014` (execution 8)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Training-only missing-value handling",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-017` (execution 9)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Categorical encoding decision",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-003` (execution 2)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Training-only scaling",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-017` (execution 9)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Processed shape and examples",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-019` (execution 10)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Feature validation and consistent dimensions",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-021` (execution 11)",
+      "limitation": ""
+    },
+    {
+      "phase": "task2_preprocessing",
+      "item": "Save and reload preparation",
+      "status": "FAIL",
+      "evidence": "notebooks/task2_preprocessing.ipynb cell `task2_preprocessing-023` (execution 12)",
+      "limitation": "Blocked until real persisted processed data and fitted preparation reload successfully."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Problem and research summary",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Three preprocessing/model pipelines",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Default baselines first",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Identical chronological CV and embargo",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Fold metrics mean and standard deviation",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Bounded development-only tuning",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Default-versus-tuned comparison",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Classification diagnostics",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Development-only winner selection",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Once-only 2022 evaluation",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Task 3",
+      "item": "Complete model save and fresh-process reload",
+      "status": "FAIL",
+      "evidence": "notebooks/task3_modeling.ipynb; no predictive execution evidence",
+      "limitation": "Scientific target approval required before training; no scores invented."
+    },
+    {
+      "phase": "Big Data",
+      "item": "Documented collection/source",
+      "status": "PASS",
+      "evidence": "reports/source_manifest.json",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "Cleaning/preparation",
+      "status": "PASS",
+      "evidence": "reports/memory/county/audit.json",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "Real PySpark transforms, aggregates, joins and time windows",
+      "status": "PASS",
+      "evidence": "notebooks/task2_preprocessing.ipynb",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "EDA with actual plots and interpretations",
+      "status": "PASS",
+      "evidence": "notebooks/task1_eda.ipynb",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "Project-specific analysis",
+      "status": "FAIL",
+      "evidence": "reports/TARGET_DECISION.md",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "Interactive dashboard: source, title, KPIs, charts, filters, findings",
+      "status": "FAIL",
+      "evidence": "reports/dashboard_verification.json",
+      "limitation": "No model results available until Task 3 is approved and executed."
+    },
+    {
+      "phase": "Big Data",
+      "item": "Meaningful measured performance comparison",
+      "status": "FAIL",
+      "evidence": "reports/performance_comparison.json",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "Concise report",
+      "status": "PASS",
+      "evidence": "reports/FINAL_REPORT.md",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "Demo/presentation plan",
+      "status": "FAIL",
+      "evidence": "docs/DEMO_PLAN.md",
+      "limitation": ""
+    },
+    {
+      "phase": "Big Data",
+      "item": "README setup and reproduction",
+      "status": "PASS",
+      "evidence": "README.md",
+      "limitation": ""
+    }
+  ],
+  "original_pdfs": [
+    {
+      "path": "docs/requirements/Task 1 for ML (1).pdf",
+      "sha256": "af4e31982e8e2f094981a5f30e8ef4dc5435ee025ee33e4aa61a77933b3cacdd"
+    },
+    {
+      "path": "docs/requirements/Task 2 for ML.pdf",
+      "sha256": "e8aca62e16fc2f4199838c3ab24fba8959a451a44d1cb5f89fdbf6d9a70b36a0"
+    },
+    {
+      "path": "docs/requirements/Task 3 for ML.pdf",
+      "sha256": "bc5713ea792e52d361c2fe972fb0457f29fdde358bbf3baf72ac416db1af1dbe"
+    }
+  ]
+}

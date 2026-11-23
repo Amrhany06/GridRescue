@@ -1,0 +1,360 @@
+{
+  "counties": [
+    {
+      "county": "Los Angeles",
+      "fips_code": "06037",
+      "original": true,
+      "role": "seen",
+      "state": "California"
+    },
+    {
+      "county": "San Diego",
+      "fips_code": "06073",
+      "original": false,
+      "role": "seen",
+      "state": "California"
+    },
+    {
+      "county": "San Bernardino",
+      "fips_code": "06071",
+      "original": false,
+      "role": "unseen_county",
+      "state": "California"
+    },
+    {
+      "county": "Riverside",
+      "fips_code": "06065",
+      "original": false,
+      "role": "seen",
+      "state": "California"
+    },
+    {
+      "county": "Miami-Dade",
+      "fips_code": "12086",
+      "original": true,
+      "role": "seen",
+      "state": "Florida"
+    },
+    {
+      "county": "Broward",
+      "fips_code": "12011",
+      "original": false,
+      "role": "seen",
+      "state": "Florida"
+    },
+    {
+      "county": "Palm Beach",
+      "fips_code": "12099",
+      "original": false,
+      "role": "unseen_county",
+      "state": "Florida"
+    },
+    {
+      "county": "Pinellas",
+      "fips_code": "12103",
+      "original": false,
+      "role": "seen",
+      "state": "Florida"
+    },
+    {
+      "county": "Harris",
+      "fips_code": "48201",
+      "original": true,
+      "role": "seen",
+      "state": "Texas"
+    },
+    {
+      "county": "Tarrant",
+      "fips_code": "48439",
+      "original": false,
+      "role": "unseen_county",
+      "state": "Texas"
+    },
+    {
+      "county": "Dallas",
+      "fips_code": "48113",
+      "original": false,
+      "role": "seen",
+      "state": "Texas"
+    },
+    {
+      "county": "Montgomery",
+      "fips_code": "48339",
+      "original": false,
+      "role": "seen",
+      "state": "Texas"
+    },
+    {
+      "county": "Philadelphia",
+      "fips_code": "42101",
+      "original": false,
+      "role": "seen",
+      "state": "Pennsylvania"
+    },
+    {
+      "county": "Montgomery",
+      "fips_code": "42091",
+      "original": false,
+      "role": "seen",
+      "state": "Pennsylvania"
+    },
+    {
+      "county": "Bucks",
+      "fips_code": "42017",
+      "original": false,
+      "role": "unseen_county",
+      "state": "Pennsylvania"
+    },
+    {
+      "county": "Chester",
+      "fips_code": "42029",
+      "original": false,
+      "role": "seen",
+      "state": "Pennsylvania"
+    },
+    {
+      "county": "Kings",
+      "fips_code": "36047",
+      "original": false,
+      "role": "unseen_state",
+      "state": "New York"
+    },
+    {
+      "county": "Queens",
+      "fips_code": "36081",
+      "original": false,
+      "role": "unseen_state",
+      "state": "New York"
+    },
+    {
+      "county": "Suffolk",
+      "fips_code": "36103",
+      "original": false,
+      "role": "unseen_state",
+      "state": "New York"
+    },
+    {
+      "county": "Nassau",
+      "fips_code": "36059",
+      "original": false,
+      "role": "unseen_state",
+      "state": "New York"
+    }
+  ],
+  "folds": {
+    "2018_H2": {
+      "train": {
+        "positive": 38443,
+        "rows": 163273,
+        "sha256": "df23557c28022118cfd154be5b76c0d8c6ad3400bfa7835f71d7c84edf92e628"
+      },
+      "validation": {
+        "positive": 44827,
+        "rows": 181267,
+        "sha256": "99e6fb2e0122e7f4ff0a1a060638f5ab6959d61bfd291c2a8eef9ab7614b4385"
+      }
+    },
+    "2019": {
+      "train": {
+        "positive": 83274,
+        "rows": 344560,
+        "sha256": "0f767c8592ea4d2e8a0a2748d0081c30743b6115db2c315220a2550058a61544"
+      },
+      "validation": {
+        "positive": 86672,
+        "rows": 358402,
+        "sha256": "66540793a0693d0ad150c99351a174442121a861b07eb3beb00276ee0bc501bb"
+      }
+    },
+    "2020": {
+      "train": {
+        "positive": 169946,
+        "rows": 702962,
+        "sha256": "a400fccb8412368d801af3b591b03d5fe2f2c5a257c88680d571f7e021b076e0"
+      },
+      "validation": {
+        "positive": 86153,
+        "rows": 350366,
+        "sha256": "2b4f26a58ded66417f0dcf5ab6a87cf69e83de38ff4145d29a782d9822ca2e71"
+      }
+    }
+  },
+  "train": {
+    "by_county": {
+      "06037": {
+        "positive": 45690,
+        "rows": 101692,
+        "sha256": "f4433fea4621d17e2ee0ec0dacbba3834cda140a9f14cda9f499812aeca17796"
+      },
+      "06065": {
+        "positive": 19809,
+        "rows": 70743,
+        "sha256": "8f818609f27fed3164d4bbf23c2aa7ae17c0281bc39b7ef824a34961425187cd"
+      },
+      "06073": {
+        "positive": 21861,
+        "rows": 80891,
+        "sha256": "8ac55fa5b9a3aefa1c7d43f9b0e5832af4d3088841d6d65e512de50cc1c925d9"
+      },
+      "12011": {
+        "positive": 23253,
+        "rows": 99578,
+        "sha256": "281723b3332e5bd7d3a4a726daf0a8c777172412f9247f9107819dea04a5ed81"
+      },
+      "12086": {
+        "positive": 30865,
+        "rows": 100587,
+        "sha256": "a805776aefa01598611b60ee36f99de09237dad2d4887f62da62fc80775eec9e"
+      },
+      "12103": {
+        "positive": 12123,
+        "rows": 80597,
+        "sha256": "796578143249c4497642d9350bc0fa89e46ea937b241c78cef7f0a86eca84d78"
+      },
+      "42029": {
+        "positive": 9191,
+        "rows": 74102,
+        "sha256": "b75bf861dd167b1ab6d3a8b7d7ec7a5ce1383978c0482529bf91447e02abf583"
+      },
+      "42091": {
+        "positive": 10606,
+        "rows": 81721,
+        "sha256": "1da01e5c739bc477be902ac5ce1d83dbbe379c8473a3a5a1e7a347246e0e739e"
+      },
+      "42101": {
+        "positive": 15899,
+        "rows": 100011,
+        "sha256": "6ea729da0ae9760ea54c71f390a64764b226da5d1329a7c68d20e1bb2ac5a08f"
+      },
+      "48113": {
+        "positive": 23357,
+        "rows": 94557,
+        "sha256": "d6b707fd65b2d8e0dba74bb81529a0cd48b6ab3cd660e50a4f9e8b8ec1d7d776"
+      },
+      "48201": {
+        "positive": 34432,
+        "rows": 101512,
+        "sha256": "76e0fc0d778278826d2b463e437ef19d75f58b367be356be1c283c2bbbf97bc5"
+      },
+      "48339": {
+        "positive": 9013,
+        "rows": 67337,
+        "sha256": "8d9769dc7bfbaf457ca82d791ceff3b5c9c1e4340cd5157f0916073c5a8d3764"
+      }
+    },
+    "overall": {
+      "positive": 256099,
+      "rows": 1053328,
+      "sha256": "e713ac87da73080efe6d7c7d44c66f4584a8014f427d4c997a4f0b4e02c62832"
+    }
+  },
+  "validation": {
+    "by_county": {
+      "06037": {
+        "positive": 14820,
+        "rows": 34476,
+        "sha256": "d1e8e4cb13ee2e40b7272392e92ad1ea42311f7f198960abc088a517d083c947"
+      },
+      "06065": {
+        "positive": 7807,
+        "rows": 28608,
+        "sha256": "8416a19b91a5b47bffbcd251479053a0dfe91c4b4be5ce29ca3a558944781bd5"
+      },
+      "06071": {
+        "positive": 7638,
+        "rows": 28079,
+        "sha256": "bf8d048b70895b7dea7ab88b18df160b382f69f3310df86878d8de74b920dc8f"
+      },
+      "06073": {
+        "positive": 8244,
+        "rows": 27894,
+        "sha256": "95080281aadaeca3d0e4197d05fa46e2897de0858aabdbd270a6df93b940b29b"
+      },
+      "12011": {
+        "positive": 7225,
+        "rows": 33576,
+        "sha256": "b63668bbb9e61d50541a1fcafcd3e66348a5e600eaa84c71a373ccbc957d7cba"
+      },
+      "12086": {
+        "positive": 10113,
+        "rows": 34057,
+        "sha256": "326599fbf041374776c474772f10a788c6835e3829c6a6b56656043c06ce96f3"
+      },
+      "12099": {
+        "positive": 5481,
+        "rows": 31857,
+        "sha256": "3899e7fd2a4e06ed2349533ae9be272d1bcd38dd5f9174dacc0f3bc23fd03ce2"
+      },
+      "12103": {
+        "positive": 4388,
+        "rows": 24971,
+        "sha256": "a9f5470ae0dc948a9430b1c6c0f0eeebc192b7c5e2a3b648c6ff879d1648031d"
+      },
+      "36047": {
+        "positive": 718,
+        "rows": 27518,
+        "sha256": "8c45ee6f207f812cb376e4bcd95294450d6afe09e8e810d708fe4f09a741f6dd"
+      },
+      "36059": {
+        "positive": 2410,
+        "rows": 21173,
+        "sha256": "ad5e0d9f1f6f254886e6f69f0de90a0abd8fefcecf3724a05a45cd215e43f9e2"
+      },
+      "36081": {
+        "positive": 1664,
+        "rows": 27601,
+        "sha256": "0ca4596c885b224a3352a3a769ad5f36faab6ae7af7ea0f2d4745ee5c1424594"
+      },
+      "36103": {
+        "positive": 3400,
+        "rows": 24935,
+        "sha256": "7a0412c8be5f816f8d585c63b2b501116c8440d9a6260a0972c85dc203f1548f"
+      },
+      "42017": {
+        "positive": 2869,
+        "rows": 24813,
+        "sha256": "8c3019500cf476c28bb2b6fdafb5a01dbdc0b94204b14a81a0c0029461b96e3c"
+      },
+      "42029": {
+        "positive": 2839,
+        "rows": 24205,
+        "sha256": "e069542314ca241558963fc7a5a6f44d566b657fb4d66dd9e1671effb37498a5"
+      },
+      "42091": {
+        "positive": 3554,
+        "rows": 27595,
+        "sha256": "dba35e17e0636b7a85f42e622bb2cd8d7824a393fb8dd6a1c26c11e16434d3cd"
+      },
+      "42101": {
+        "positive": 5091,
+        "rows": 34438,
+        "sha256": "619179187a09c1131445843cafd2483f737c652df03028bfc7bb509e3f5d67c1"
+      },
+      "48113": {
+        "positive": 8425,
+        "rows": 32556,
+        "sha256": "352f97a361642b01f9cf7e746c0507dcbac565077617349fbe39e69696044985"
+      },
+      "48201": {
+        "positive": 8786,
+        "rows": 33916,
+        "sha256": "460c3724dd18f4f89c2f783bcb3971ff8b14d4efe72df8d8fbbaa70b6436c81e"
+      },
+      "48339": {
+        "positive": 5806,
+        "rows": 28485,
+        "sha256": "27d58df6c206151ce5a562c3eec619a33519ed4483d028a39f919384dcf2f2df"
+      },
+      "48439": {
+        "positive": 7077,
+        "rows": 31779,
+        "sha256": "4675fe08c9a5221356b2579362383e014b1025aa4f891b38d235abb68b7351f0"
+      }
+    },
+    "overall": {
+      "positive": 118355,
+      "rows": 582532,
+      "sha256": "94e1fa07c6a749b5b430a940bd2a3c3663d579aa27385f41e7f088e0038a14ce"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+﻿{
+    "started_utc":  "2026-11-17T02:32:53.8052251Z",
+    "status":  "INSTALL_COMMANDS_COMPLETED; LINUX_EXECUTION_NOT_YET_VERIFIED",
+    "automatic_reboot":  false,
+    "commands":  [
+                     {
+                         "arguments":  [
+                                           "--install",
+                                           "--no-distribution"
+                                       ],
+                         "exit_code":  0,
+                         "output":  "The operation completed successfully. \r\n\r\nThe operation completed successfully. \r\n\r\nDownloading: Windows Subsystem for Linux 3.0.5\r\n\r\n\r\nInstalling: Windows Subsystem for Linux 3.0.5\r\n\r\n\r\nWindows Subsystem for Linux 3.0.5 has been installed.\r\n\r\n\r\n\r\n"
+                     },
+                     {
+                         "arguments":  [
+                                           "--install",
+                                           "--distribution",
+                                           "Ubuntu-24.04",
+                                           "--no-launch"
+                                       ],
+                         "exit_code":  0,
+                         "output":  "Downloading: Ubuntu 24.04 LTS\r\n\r\nInstalling: Ubuntu 24.04 LTS\r\n\r\nDistribution successfully installed. It can be launched via \u0027wsl.exe -d Ubuntu-24.04\u0027\r\n\r\n\r\n"
+                     }
+                 ],
+    "completed_utc":  "2026-11-17T02:37:13.9433794Z"
+}

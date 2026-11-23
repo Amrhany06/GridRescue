@@ -1,0 +1,216 @@
+{
+  "model": "Decision Tree",
+  "parameters": {
+    "max_depth": 12,
+    "min_samples_split": 2,
+    "min_samples_leaf": 10
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "folds": [
+    {
+      "name": "2018_H2",
+      "train_rows": 48860,
+      "validation_rows": 50935,
+      "last_training_anchor": "2018-06-30T20:00:00+00:00",
+      "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+      "embargo_seconds": 14400.0,
+      "fit_seconds": 0.34060590001172386,
+      "warnings": [],
+      "train": {
+        "rows": 48860,
+        "positive": 17153,
+        "prevalence": 0.35106426524764633,
+        "accuracy": 0.7519238641015146,
+        "precision": 0.7023158571888067,
+        "recall": 0.5091820672768612,
+        "f1": 0.5903545236405421,
+        "confusion_matrix": [
+          [
+            28005,
+            3702
+          ],
+          [
+            8419,
+            8734
+          ]
+        ],
+        "roc_auc": 0.8117107391425592,
+        "average_precision": 0.7097735883402416,
+        "pr_auc_trapezoid": 0.7130493179478938,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 50935,
+        "positive": 18980,
+        "prevalence": 0.37263178560910964,
+        "accuracy": 0.6207126730146265,
+        "precision": 0.4905301972177217,
+        "recall": 0.46259220231822973,
+        "f1": 0.4761517394723284,
+        "confusion_matrix": [
+          [
+            22836,
+            9119
+          ],
+          [
+            10200,
+            8780
+          ]
+        ],
+        "roc_auc": 0.6129376688668652,
+        "average_precision": 0.45838598949624604,
+        "pr_auc_trapezoid": 0.4831345151142886,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2019",
+      "train_rows": 99801,
+      "validation_rows": 101349,
+      "last_training_anchor": "2018-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 0.7394763999909628,
+      "warnings": [],
+      "train": {
+        "rows": 99801,
+        "positive": 36135,
+        "prevalence": 0.3620705203354676,
+        "accuracy": 0.7330086872877025,
+        "precision": 0.6665964394817234,
+        "recall": 0.5253632212536322,
+        "f1": 0.5876125916983935,
+        "confusion_matrix": [
+          [
+            54171,
+            9495
+          ],
+          [
+            17151,
+            18984
+          ]
+        ],
+        "roc_auc": 0.7927658478477415,
+        "average_precision": 0.6820272029403074,
+        "pr_auc_trapezoid": 0.6855426686509437,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 101349,
+        "positive": 36768,
+        "prevalence": 0.36278601663558596,
+        "accuracy": 0.6454429742770033,
+        "precision": 0.5139839034205231,
+        "recall": 0.41685704960835507,
+        "f1": 0.4603532167958191,
+        "confusion_matrix": [
+          [
+            50088,
+            14493
+          ],
+          [
+            21441,
+            15327
+          ]
+        ],
+        "roc_auc": 0.633755759359095,
+        "average_precision": 0.4733106799779975,
+        "pr_auc_trapezoid": 0.47294111908387515,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2020",
+      "train_rows": 201150,
+      "validation_rows": 102641,
+      "last_training_anchor": "2019-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 1.5622749000031035,
+      "warnings": [],
+      "train": {
+        "rows": 201150,
+        "positive": 72903,
+        "prevalence": 0.3624310216256525,
+        "accuracy": 0.7149589858314691,
+        "precision": 0.6406156847867325,
+        "recall": 0.4863997366363524,
+        "f1": 0.5529565868263473,
+        "confusion_matrix": [
+          [
+            108354,
+            19893
+          ],
+          [
+            37443,
+            35460
+          ]
+        ],
+        "roc_auc": 0.7637417710236296,
+        "average_precision": 0.6382967331714307,
+        "pr_auc_trapezoid": 0.6423220762393518,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102641,
+        "positive": 38084,
+        "prevalence": 0.3710408121510897,
+        "accuracy": 0.6472364844457867,
+        "precision": 0.5321431019121377,
+        "recall": 0.40775653817876273,
+        "f1": 0.46171914488746174,
+        "confusion_matrix": [
+          [
+            50904,
+            13653
+          ],
+          [
+            22555,
+            15529
+          ]
+        ],
+        "roc_auc": 0.6460396680618068,
+        "average_precision": 0.49715829168343834,
+        "pr_auc_trapezoid": 0.49264769824579296,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    }
+  ],
+  "summary": {
+    "average_precision": {
+      "mean": 0.4762849870525606,
+      "std": 0.019556526561587732
+    },
+    "pr_auc_trapezoid": {
+      "mean": 0.4829077774813189,
+      "std": 0.009855245965062815
+    },
+    "roc_auc": {
+      "mean": 0.6309110320959224,
+      "std": 0.01673334821776136
+    },
+    "accuracy": {
+      "mean": 0.6377973772458055,
+      "std": 0.014822938598049017
+    },
+    "precision": {
+      "mean": 0.5122190675167941,
+      "std": 0.02086251287841316
+    },
+    "recall": {
+      "mean": 0.4290685967017825,
+      "std": 0.029386713446987466
+    },
+    "f1": {
+      "mean": 0.4660747003852031,
+      "std": 0.008753655091473132
+    }
+  },
+  "total_fit_seconds": 2.64235720000579
+}

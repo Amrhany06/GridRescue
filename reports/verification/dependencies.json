@@ -1,0 +1,7 @@
+{
+  "check": "dependencies",
+  "started_utc": "2026-11-18T11:21:39.050559+00:00",
+  "completed_utc": "2026-11-18T11:21:42.864554+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/dependencies.txt"
+}

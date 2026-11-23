@@ -1,0 +1,47 @@
+--- PAGE 1 ---
+MACHINE LEARNING   /   TASK 01 
+Task 1 for ML  •  Page 1 
+•  DATA PREPARATION & EXPLORATION 
+Task 1 for ML 
+Objective  Understand the dataset, prepare it for analysis, identify outliers, and perform exploratory data 
+analysis (EDA). 
+01  Data Understanding 
+Explore the dataset before changing any values. 
+Read Data — Load the dataset and confirm that it can be accessed correctly.  
+Random Sample Data — Display a random selection of rows to inspect representative records.  
+Size of Data — Report the number of rows and columns (dataset shape). 
+Information of Data — Review data types, non-null counts, and memory usage. 
+Check Names of Columns — List all column names and identify unclear or inconsistent names.  
+Check Description — Generate descriptive statistics for the relevant features.  
+Number of Unique Values — Count unique values in each column and investigate high -cardinality fields. 
+Check Balance of Data — Inspect the target-class distribution, if the task is classification. 
+02  Data Cleaning 
+Identify data-quality problems and explain each cleaning decision. 
+Missing Values — Find missing values and choose a justified handling method (e.g., imputation or removal).  
+Duplicate Rows — Detect duplicate records; remove genuine duplicates when appropriate.  
+Outlier Detection — Use appropriate plots or statistical techniques to identify potential outliers.  
+Outlier Treatment Techniques — Compare possible actions such as keeping, capping, transforming, or 
+removing values; justify your choice. 
+ 
+
+--- PAGE 2 ---
+MACHINE LEARNING   /   TASK 01 
+Task 1 for ML  •  Page 2 
+EXPLORATORY DATA ANALYSIS  •  EDA 
+03  Exploratory Data Analysis (EDA) 
+Investigate patterns, relationships, and distributions using tables and appropriate visualizations. 
+1.  Univariate Analysis 
+Analyze each feature individually (distribution, central tendency, spread, and unusual patterns).  
+2.  Feature vs. Target Analysis 
+Compare each important feature with the target to identify meaningful associations.  
+3.  Feature-to-Feature Analysis 
+Explore relationships between predictors and note possible overlap or interactions.  
+4.  Correlation Analysis 
+Calculate and visualize correlations where suitable; interpret direction and strength.  
+5.  GroupBy / Statistical Summary Analysis 
+Group by relevant categories and compare counts, averages, medians, or other statistics.  
+Submission Checklist 
+☐  Organize the notebook using the sections and subsections above.  
+☐  Include executable code, relevant outputs/plots, and short written observations.  
+☐  Document all cleaning and outlier-treatment decisions. 
+☐  Finish with a concise summary of the main findings from the dataset.  

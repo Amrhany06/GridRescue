@@ -1,0 +1,101 @@
+[
+  {
+    "example_type": "positive",
+    "fips_code": "12086",
+    "timestamp": "2018-01-01 00:00:00",
+    "customers_out_t": 658,
+    "escalation_threshold": 987.0,
+    "future_slots": 12,
+    "future_max": 2043,
+    "candidate_y": 1,
+    "split": "train"
+  },
+  {
+    "example_type": "positive",
+    "fips_code": "48201",
+    "timestamp": "2018-01-01 00:00:00",
+    "customers_out_t": 18,
+    "escalation_threshold": 218.0,
+    "future_slots": 12,
+    "future_max": 544,
+    "candidate_y": 1,
+    "split": "train"
+  },
+  {
+    "example_type": "positive",
+    "fips_code": "06037",
+    "timestamp": "2018-01-01 00:15:00",
+    "customers_out_t": 8,
+    "escalation_threshold": 208.0,
+    "future_slots": 12,
+    "future_max": 2085,
+    "candidate_y": 1,
+    "split": "train"
+  },
+  {
+    "example_type": "negative",
+    "fips_code": "06037",
+    "timestamp": "2018-01-01 00:00:00",
+    "customers_out_t": 8,
+    "escalation_threshold": 208.0,
+    "future_slots": 12,
+    "future_max": 17,
+    "candidate_y": 0,
+    "split": "train"
+  },
+  {
+    "example_type": "negative",
+    "fips_code": "12086",
+    "timestamp": "2018-01-01 00:45:00",
+    "customers_out_t": 2043,
+    "escalation_threshold": 3064.5,
+    "future_slots": 12,
+    "future_max": 2076,
+    "candidate_y": 0,
+    "split": "train"
+  },
+  {
+    "example_type": "negative",
+    "fips_code": "48201",
+    "timestamp": "2018-01-01 01:30:00",
+    "customers_out_t": 534,
+    "escalation_threshold": 801.0,
+    "future_slots": 12,
+    "future_max": 544,
+    "candidate_y": 0,
+    "split": "train"
+  },
+  {
+    "example_type": "incomplete",
+    "fips_code": "06037",
+    "timestamp": "2018-01-02 03:45:00",
+    "customers_out_t": 477,
+    "escalation_threshold": 715.5,
+    "future_slots": 11,
+    "future_max": 963,
+    "candidate_y": null,
+    "split": "train"
+  },
+  {
+    "example_type": "incomplete",
+    "fips_code": "12086",
+    "timestamp": "2018-01-02 03:45:00",
+    "customers_out_t": 31,
+    "escalation_threshold": 231.0,
+    "future_slots": 11,
+    "future_max": 31,
+    "candidate_y": null,
+    "split": "train"
+  },
+  {
+    "example_type": "incomplete",
+    "fips_code": "48201",
+    "timestamp": "2018-01-02 03:45:00",
+    "customers_out_t": 65,
+    "escalation_threshold": 265.0,
+    "future_slots": 11,
+    "future_max": 200,
+    "candidate_y": null,
+    "split": "train"
+  }
+]

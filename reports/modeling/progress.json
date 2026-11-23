@@ -1,0 +1,34 @@
+{
+  "utc": "2026-11-21T14:39:49.063756+00:00",
+  "stage": "development_complete",
+  "detail": {
+    "frozen": true,
+    "utc": "2026-11-21T14:39:48.998348+00:00",
+    "model": "Random Forest",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 12,
+      "min_samples_leaf": 10
+    },
+    "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+    "features": [
+      "customers_out_t",
+      "lag_15m",
+      "lag_60m",
+      "delta_60m",
+      "rolling_mean_60m",
+      "rolling_variance_60m",
+      "history_slots_60m",
+      "hour_utc",
+      "weekday_utc",
+      "month_utc",
+      "lag_15m_missing",
+      "lag_60m_missing",
+      "delta_60m_missing"
+    ],
+    "selection_rule": "Highest 2021 average precision among training-CV-selected configurations; model-order tie break",
+    "validation_average_precision": 0.5236688442307188,
+    "test_inspected_for_selection": false,
+    "final_evaluation_limit": 1
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "state": "Florida",
+  "prefix": "s12",
+  "counts": {
+    "raw": 541086,
+    "invalid": 2455,
+    "exact_duplicates_removed": 0,
+    "conflict_rows": 0,
+    "silver": 538631
+  },
+  "by_county_year_split": [
+    {
+      "fips_code": "12011",
+      "state": "Florida",
+      "county": "Broward",
+      "year": 2020,
+      "split": "train",
+      "clean": 34811,
+      "eligible": 33685,
+      "positive": 8083,
+      "complete_future": 33685,
+      "positive_current": 34811
+    },
+    {
+      "fips_code": "12103",
+      "state": "Florida",
+      "county": "Pinellas",
+      "year": 2019,
+      "split": "train",
+      "clean": 31958,
+      "eligible": 26936,
+      "positive": 4057,
+      "complete_future": 26936,
+      "positive_current": 31958
+    },
+    {
+      "fips_code": "12099",
+      "state": "Florida",
+      "county": "Palm Beach",
+      "year": 2018,
+      "split": "train",
+      "clean": 33812,
+      "eligible": 31215,
+      "positive": 6023,
+      "complete_future": 31215,
+      "positive_current": 33812
+    },
+    {
+      "fips_code": "12099",
+      "state": "Florida",
+      "county": "Palm Beach",
+      "year": 2021,
+      "split": "validation",
+      "clean": 33843,
+      "eligible": 31857,
+      "positive": 5481,
+      "complete_future": 31857,
+      "positive_current": 33843
+    },
+    {
+      "fips_code": "12011",
+      "state": "Florida",
+      "county": "Broward",
+      "year": 2021,
+      "split": "validation",
+      "clean": 34564,
+      "eligible": 33576,
+      "positive": 7225,
+      "complete_future": 33576,
+      "positive_current": 34564
+    },
+    {
+      "fips_code": "12086",
+      "state": "Florida",
+      "county": "Miami-Dade",
+      "year": 2020,
+      "split": "train",
+      "clean": 34925,
+      "eligible": 34047,
+      "positive": 10338,
+      "complete_future": 34047,
+      "positive_current": 34925
+    },
+    {
+      "fips_code": "12099",
+      "state": "Florida",
+      "county": "Palm Beach",
+      "year": 2019,
+      "split": "train",
+      "clean": 33782,
+      "eligible": 30509,
+      "positive": 4972,
+      "complete_future": 30509,
+      "positive_current": 33782
+    },
+    {
+      "fips_code": "12011",
+      "state": "Florida",
+      "county": "Broward",
+      "year": 2019,
+      "split": "train",
+      "clean": 34551,
+      "eligible": 32529,
+      "positive": 7325,
+      "complete_future": 32529,
+      "positive_current": 34551
+    },
+    {
+      "fips_code": "12103",
+      "state": "Florida",
+      "county": "Pinellas",
+      "year": 2020,
+      "split": "train",
+      "clean": 30919,
+      "eligible": 25864,
+      "positive": 4065,
+      "complete_future": 25864,
+      "positive_current": 30919
+    },
+    {
+      "fips_code": "12086",
+      "state": "Florida",
+      "county": "Miami-Dade",
+      "year": 2019,
+      "split": "train",
+      "clean": 34673,
+      "eligible": 32854,
+      "positive": 9664,
+      "complete_future": 32854,
+      "positive_current": 34673
+    },
+    {
+      "fips_code": "12103",
+      "state": "Florida",
+      "county": "Pinellas",
+      "year": 2018,
+      "split": "train",
+      "clean": 32130,
+      "eligible": 27797,
+      "positive": 4001,
+      "complete_future": 27797,
+      "positive_current": 32130
+    },
+    {
+      "fips_code": "12103",
+      "state": "Florida",
+      "county": "Pinellas",
+      "year": 2021,
+      "split": "validation",
+      "clean": 30626,
+      "eligible": 24971,
+      "positive": 4388,
+      "complete_future": 24971,
+      "positive_current": 30626
+    },
+    {
+      "fips_code": "12011",
+      "state": "Florida",
+      "county": "Broward",
+      "year": 2018,
+      "split": "train",
+      "clean": 34579,
+      "eligible": 33364,
+      "positive": 7845,
+      "complete_future": 33364,
+      "positive_current": 34579
+    },
+    {
+      "fips_code": "12086",
+      "state": "Florida",
+      "county": "Miami-Dade",
+      "year": 2021,
+      "split": "validation",
+      "clean": 34757,
+      "eligible": 34057,
+      "positive": 10113,
+      "complete_future": 34057,
+      "positive_current": 34757
+    },
+    {
+      "fips_code": "12086",
+      "state": "Florida",
+      "county": "Miami-Dade",
+      "year": 2018,
+      "split": "train",
+      "clean": 34673,
+      "eligible": 33686,
+      "positive": 10863,
+      "complete_future": 33686,
+      "positive_current": 34673
+    },
+    {
+      "fips_code": "12099",
+      "state": "Florida",
+      "county": "Palm Beach",
+      "year": 2020,
+      "split": "train",
+      "clean": 34028,
+      "eligible": 31745,
+      "positive": 6222,
+      "complete_future": 31745,
+      "positive_current": 34028
+    }
+  ],
+  "quarantine_reasons": [
+    {
+      "reason": "invalid_count",
+      "count": 2329
+    },
+    {
+      "reason": "off_grid_timestamp",
+      "count": 126
+    }
+  ],
+  "seconds": 28.61522700000205
+}

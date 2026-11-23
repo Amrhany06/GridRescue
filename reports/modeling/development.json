@@ -1,0 +1,5030 @@
+{
+  "status": "VERIFIED_DEVELOPMENT",
+  "utc": "2026-11-21T14:39:49.003349+00:00",
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "inputs": {
+    "data": [
+      [
+        "part-00000.parquet",
+        "88b214f2e4c0bc7ffda1f9b1750f10f28e0f9b1885d88a0194a9fa84936504b7"
+      ]
+    ],
+    "data_path": "data/windows/gold/county/label_audit",
+    "code": [
+      [
+        "modeling.py",
+        "4711c44d762a8ce2c6a04e0ecc6769246cd40c87f701f51cda503429dd00f876"
+      ],
+      [
+        "experiment.py",
+        "3e423baf4e5b79513d77e5424e5e82f7d1ec3bd9672375a76d0e78fc049b2de6"
+      ]
+    ],
+    "approval": "b304efbd16ce05d0ca37288ea2d17a1f81d10ade0b63721aeee0cfd8a0c77842",
+    "models": [
+      "Logistic Regression",
+      "Decision Tree",
+      "Random Forest"
+    ],
+    "features": [
+      "customers_out_t",
+      "lag_15m",
+      "lag_60m",
+      "delta_60m",
+      "rolling_mean_60m",
+      "rolling_variance_60m",
+      "history_slots_60m",
+      "hour_utc",
+      "weekday_utc",
+      "month_utc",
+      "lag_15m_missing",
+      "lag_60m_missing",
+      "delta_60m_missing"
+    ],
+    "search": {
+      "Logistic Regression": [
+        {
+          "C": 0.1
+        },
+        {
+          "C": 10.0
+        }
+      ],
+      "Decision Tree": [
+        {
+          "max_depth": 12,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 20,
+          "min_samples_split": 2,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 12,
+          "min_samples_split": 20,
+          "min_samples_leaf": 1
+        },
+        {
+          "max_depth": 12,
+          "min_samples_split": 2,
+          "min_samples_leaf": 10
+        }
+      ],
+      "Random Forest": [
+        {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "min_samples_leaf": 5
+        },
+        {
+          "n_estimators": 200,
+          "max_depth": 12,
+          "min_samples_leaf": 5
+        },
+        {
+          "n_estimators": 100,
+          "max_depth": 20,
+          "min_samples_leaf": 5
+        },
+        {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "min_samples_leaf": 10
+        }
+      ]
+    },
+    "versions": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.5",
+      "pandas": "2.3.3",
+      "joblib": "1.6.0"
+    }
+  },
+  "rows": {
+    "train": 303791,
+    "validation": 102449
+  },
+  "default_baselines": [
+    {
+      "model": "Logistic Regression",
+      "kind": "default",
+      "parameters": {},
+      "classifier_parameters": {
+        "C": 1.0,
+        "class_weight": null,
+        "dual": false,
+        "fit_intercept": true,
+        "intercept_scaling": 1,
+        "l1_ratio": 0.0,
+        "max_iter": 100,
+        "n_jobs": null,
+        "penalty": "deprecated",
+        "random_state": 17,
+        "solver": "lbfgs",
+        "tol": 0.0001,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+      "fit_seconds": 0.7736390999925788,
+      "warnings": [],
+      "train": {
+        "rows": 303791,
+        "positive": 110987,
+        "prevalence": 0.3653399870305572,
+        "accuracy": 0.6292681481676548,
+        "precision": 0.40976200969590126,
+        "recall": 0.033508428915098164,
+        "f1": 0.061950809158525105,
+        "confusion_matrix": [
+          [
+            187447,
+            5357
+          ],
+          [
+            107268,
+            3719
+          ]
+        ],
+        "roc_auc": 0.6109763216018298,
+        "average_precision": 0.4331775942983875,
+        "pr_auc_trapezoid": 0.43316759128840043,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102449,
+        "positive": 33719,
+        "prevalence": 0.32912961571123195,
+        "accuracy": 0.6612558443713458,
+        "precision": 0.329996548153262,
+        "recall": 0.028351967733325423,
+        "f1": 0.05221760978807079,
+        "confusion_matrix": [
+          [
+            66789,
+            1941
+          ],
+          [
+            32763,
+            956
+          ]
+        ],
+        "roc_auc": 0.5928950249454924,
+        "average_precision": 0.37874336528926744,
+        "pr_auc_trapezoid": 0.378711471453996,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "artifact": "artifacts/modeling/logistic_regression_default.joblib",
+      "artifact_sha256": "0519026bf161eff15671ff96acc0ed3628553b8d85d8ac021c5f76db52129518",
+      "predictions": "artifacts/modeling/logistic_regression_default_validation_predictions.parquet",
+      "predictions_sha256": "a1a710f03efd71bfc297b65aaeb1588ac5cff0935c0ccd79fd7663803b449fd8"
+    },
+    {
+      "model": "Decision Tree",
+      "kind": "default",
+      "parameters": {},
+      "classifier_parameters": {
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "random_state": 17,
+        "splitter": "best"
+      },
+      "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+      "fit_seconds": 3.0248472999955993,
+      "warnings": [],
+      "train": {
+        "rows": 303791,
+        "positive": 110987,
+        "prevalence": 0.3653399870305572,
+        "accuracy": 0.9997136189024691,
+        "precision": 0.9998647795907329,
+        "recall": 0.9993512753745935,
+        "f1": 0.9996079615351685,
+        "confusion_matrix": [
+          [
+            192789,
+            15
+          ],
+          [
+            72,
+            110915
+          ]
+        ],
+        "roc_auc": 0.9999998115309376,
+        "average_precision": 0.9999995142304845,
+        "pr_auc_trapezoid": 0.9999996727335659,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102449,
+        "positive": 33719,
+        "prevalence": 0.32912961571123195,
+        "accuracy": 0.5892004802389481,
+        "precision": 0.39419842694924256,
+        "recall": 0.46226163290726296,
+        "f1": 0.4255255255255255,
+        "confusion_matrix": [
+          [
+            44776,
+            23954
+          ],
+          [
+            18132,
+            15587
+          ]
+        ],
+        "roc_auc": 0.5567858081473562,
+        "average_precision": 0.35921565815088596,
+        "pr_auc_trapezoid": 0.5166162248884854,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "artifact": "artifacts/modeling/decision_tree_default.joblib",
+      "artifact_sha256": "59a388dabfb21761fdc55347850f9d73fe6ac3a2eab803e621aa51d89a482693",
+      "predictions": "artifacts/modeling/decision_tree_default_validation_predictions.parquet",
+      "predictions_sha256": "34bb59309d92303877fd86697442fdff9d4aa366721f209781e7707211f61ed2"
+    },
+    {
+      "model": "Random Forest",
+      "kind": "default",
+      "parameters": {},
+      "classifier_parameters": {
+        "bootstrap": true,
+        "ccp_alpha": 0.0,
+        "class_weight": null,
+        "criterion": "gini",
+        "max_depth": null,
+        "max_features": "sqrt",
+        "max_leaf_nodes": null,
+        "max_samples": null,
+        "min_impurity_decrease": 0.0,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "min_weight_fraction_leaf": 0.0,
+        "monotonic_cst": null,
+        "n_estimators": 100,
+        "n_jobs": 2,
+        "oob_score": false,
+        "random_state": 17,
+        "verbose": 0,
+        "warm_start": false
+      },
+      "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+      "fit_seconds": 29.15496250000433,
+      "warnings": [],
+      "train": {
+        "rows": 303791,
+        "positive": 110987,
+        "prevalence": 0.3653399870305572,
+        "accuracy": 0.9997136189024691,
+        "precision": 0.9996395746981438,
+        "recall": 0.9995765269806374,
+        "f1": 0.9996080498452473,
+        "confusion_matrix": [
+          [
+            192764,
+            40
+          ],
+          [
+            47,
+            110940
+          ]
+        ],
+        "roc_auc": 0.999988393754564,
+        "average_precision": 0.99997988277626,
+        "pr_auc_trapezoid": 0.999979725432295,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102449,
+        "positive": 33719,
+        "prevalence": 0.32912961571123195,
+        "accuracy": 0.6724516588741716,
+        "precision": 0.5031583872728691,
+        "recall": 0.38269225065986534,
+        "f1": 0.4347342710351217,
+        "confusion_matrix": [
+          [
+            55988,
+            12742
+          ],
+          [
+            20815,
+            12904
+          ]
+        ],
+        "roc_auc": 0.6528130928474875,
+        "average_precision": 0.47988457266220025,
+        "pr_auc_trapezoid": 0.4818299813037807,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "artifact": "artifacts/modeling/random_forest_default.joblib",
+      "artifact_sha256": "f346e24da645040eab89e49529e6a49e1329b1032bed10a26bb5259b6ee43bc9",
+      "predictions": "artifacts/modeling/random_forest_default_validation_predictions.parquet",
+      "predictions_sha256": "e32ffd630241ffecdf93a11992b5efb4bd190b360f0e74a1c7236df9d3ea49fa"
+    }
+  ],
+  "default_cv": [
+    {
+      "model": "Logistic Regression",
+      "parameters": {},
+      "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+      "folds": [
+        {
+          "name": "2018_H2",
+          "train_rows": 48860,
+          "validation_rows": 50935,
+          "last_training_anchor": "2018-06-30T20:00:00+00:00",
+          "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+          "embargo_seconds": 14400.0,
+          "fit_seconds": 0.11551040000631474,
+          "warnings": [],
+          "train": {
+            "rows": 48860,
+            "positive": 17153,
+            "prevalence": 0.35106426524764633,
+            "accuracy": 0.6498772001637331,
+            "precision": 0.5125408942202835,
+            "recall": 0.054800909461901706,
+            "f1": 0.09901511560541423,
+            "confusion_matrix": [
+              [
+                30813,
+                894
+              ],
+              [
+                16213,
+                940
+              ]
+            ],
+            "roc_auc": 0.6119946464208643,
+            "average_precision": 0.4416952634337401,
+            "pr_auc_trapezoid": 0.441619360315184,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 50935,
+            "positive": 18980,
+            "prevalence": 0.37263178560910964,
+            "accuracy": 0.5720624325120252,
+            "precision": 0.43851224516523335,
+            "recall": 0.5292413066385669,
+            "f1": 0.47962374961205145,
+            "confusion_matrix": [
+              [
+                19093,
+                12862
+              ],
+              [
+                8935,
+                10045
+              ]
+            ],
+            "roc_auc": 0.5866565931180554,
+            "average_precision": 0.42159475613588593,
+            "pr_auc_trapezoid": 0.4215200741514939,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        },
+        {
+          "name": "2019",
+          "train_rows": 99801,
+          "validation_rows": 101349,
+          "last_training_anchor": "2018-12-30T21:00:00+00:00",
+          "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+          "embargo_seconds": 97200.0,
+          "fit_seconds": 0.3479817999759689,
+          "warnings": [],
+          "train": {
+            "rows": 99801,
+            "positive": 36135,
+            "prevalence": 0.3620705203354676,
+            "accuracy": 0.6344525605955852,
+            "precision": 0.4396941258255127,
+            "recall": 0.0350076103500761,
+            "f1": 0.06485184045934585,
+            "confusion_matrix": [
+              [
+                62054,
+                1612
+              ],
+              [
+                34870,
+                1265
+              ]
+            ],
+            "roc_auc": 0.6105709456267097,
+            "average_precision": 0.431819246864789,
+            "pr_auc_trapezoid": 0.43178792016742673,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 101349,
+            "positive": 36768,
+            "prevalence": 0.36278601663558596,
+            "accuracy": 0.6311261087923906,
+            "precision": 0.38019417475728157,
+            "recall": 0.026626414273281114,
+            "f1": 0.0497674300383804,
+            "confusion_matrix": [
+              [
+                62985,
+                1596
+              ],
+              [
+                35789,
+                979
+              ]
+            ],
+            "roc_auc": 0.6028870914635521,
+            "average_precision": 0.424062712003502,
+            "pr_auc_trapezoid": 0.4240215208680953,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        },
+        {
+          "name": "2020",
+          "train_rows": 201150,
+          "validation_rows": 102641,
+          "last_training_anchor": "2019-12-30T21:00:00+00:00",
+          "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+          "embargo_seconds": 97200.0,
+          "fit_seconds": 0.4355724999913946,
+          "warnings": [],
+          "train": {
+            "rows": 201150,
+            "positive": 72903,
+            "prevalence": 0.3624310216256525,
+            "accuracy": 0.6359234402187423,
+            "precision": 0.4567546380977267,
+            "recall": 0.02397706541568934,
+            "f1": 0.045562361527433856,
+            "confusion_matrix": [
+              [
+                126168,
+                2079
+              ],
+              [
+                71155,
+                1748
+              ]
+            ],
+            "roc_auc": 0.6069855469735086,
+            "average_precision": 0.4275050202534477,
+            "pr_auc_trapezoid": 0.42748821656679425,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 102641,
+            "positive": 38084,
+            "prevalence": 0.3710408121510897,
+            "accuracy": 0.6281505441295389,
+            "precision": 0.477408818726184,
+            "recall": 0.023028043272765465,
+            "f1": 0.043936775130883496,
+            "confusion_matrix": [
+              [
+                63597,
+                960
+              ],
+              [
+                37207,
+                877
+              ]
+            ],
+            "roc_auc": 0.6186742847864968,
+            "average_precision": 0.4474103958435375,
+            "pr_auc_trapezoid": 0.44738311447887297,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        }
+      ],
+      "summary": {
+        "average_precision": {
+          "mean": 0.4310226213276418,
+          "std": 0.01424577364445347
+        },
+        "pr_auc_trapezoid": {
+          "mean": 0.43097490316615406,
+          "std": 0.014264864450149068
+        },
+        "roc_auc": {
+          "mean": 0.6027393231227014,
+          "std": 0.01600935731238963
+        },
+        "accuracy": {
+          "mean": 0.6104463618113182,
+          "std": 0.033274735425027034
+        },
+        "precision": {
+          "mean": 0.4320384128828996,
+          "std": 0.04892958847992649
+        },
+        "recall": {
+          "mean": 0.1929652547282045,
+          "std": 0.2912291612884601
+        },
+        "f1": {
+          "mean": 0.19110931826043845,
+          "std": 0.24987783406651146
+        }
+      },
+      "total_fit_seconds": 0.8990646999736782
+    },
+    {
+      "model": "Decision Tree",
+      "parameters": {},
+      "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+      "folds": [
+        {
+          "name": "2018_H2",
+          "train_rows": 48860,
+          "validation_rows": 50935,
+          "last_training_anchor": "2018-06-30T20:00:00+00:00",
+          "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+          "embargo_seconds": 14400.0,
+          "fit_seconds": 0.41724699997575954,
+          "warnings": [],
+          "train": {
+            "rows": 48860,
+            "positive": 17153,
+            "prevalence": 0.35106426524764633,
+            "accuracy": 0.9997339336880884,
+            "precision": 0.9998250320774524,
+            "recall": 0.9994170116014691,
+            "f1": 0.9996209802035044,
+            "confusion_matrix": [
+              [
+                31704,
+                3
+              ],
+              [
+                10,
+                17143
+              ]
+            ],
+            "roc_auc": 0.9999998308419823,
+            "average_precision": 0.9999995515784051,
+            "pr_auc_trapezoid": 0.9999996874250204,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 50935,
+            "positive": 18980,
+            "prevalence": 0.37263178560910964,
+            "accuracy": 0.5809561205457937,
+            "precision": 0.44370892465949135,
+            "recall": 0.4908851422550053,
+            "f1": 0.46610635849717347,
+            "confusion_matrix": [
+              [
+                20274,
+                11681
+              ],
+              [
+                9663,
+                9317
+              ]
+            ],
+            "roc_auc": 0.5625845651295395,
+            "average_precision": 0.40756852409394284,
+            "pr_auc_trapezoid": 0.5620850232746037,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        },
+        {
+          "name": "2019",
+          "train_rows": 99801,
+          "validation_rows": 101349,
+          "last_training_anchor": "2018-12-30T21:00:00+00:00",
+          "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+          "embargo_seconds": 97200.0,
+          "fit_seconds": 1.0047442000068258,
+          "warnings": [],
+          "train": {
+            "rows": 99801,
+            "positive": 36135,
+            "prevalence": 0.3620705203354676,
+            "accuracy": 0.9997895812667208,
+            "precision": 0.9998892641603455,
+            "recall": 0.9995295419952954,
+            "f1": 0.9997093707184079,
+            "confusion_matrix": [
+              [
+                63662,
+                4
+              ],
+              [
+                17,
+                36118
+              ]
+            ],
+            "roc_auc": 0.9999998987207919,
+            "average_precision": 0.9999997259400846,
+            "pr_auc_trapezoid": 0.9999998216121159,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 101349,
+            "positive": 36768,
+            "prevalence": 0.36278601663558596,
+            "accuracy": 0.582018569497479,
+            "precision": 0.4277596983315254,
+            "recall": 0.45044604003481287,
+            "f1": 0.43880984553427127,
+            "confusion_matrix": [
+              [
+                42425,
+                22156
+              ],
+              [
+                20206,
+                16562
+              ]
+            ],
+            "roc_auc": 0.5536864073377656,
+            "average_precision": 0.3920657821575385,
+            "pr_auc_trapezoid": 0.5387178722728764,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        },
+        {
+          "name": "2020",
+          "train_rows": 201150,
+          "validation_rows": 102641,
+          "last_training_anchor": "2019-12-30T21:00:00+00:00",
+          "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+          "embargo_seconds": 97200.0,
+          "fit_seconds": 2.238783600012539,
+          "warnings": [],
+          "train": {
+            "rows": 201150,
+            "positive": 72903,
+            "prevalence": 0.3624310216256525,
+            "accuracy": 0.9997216007954263,
+            "precision": 0.9998764839085981,
+            "recall": 0.9993553077376789,
+            "f1": 0.9996158278908951,
+            "confusion_matrix": [
+              [
+                128238,
+                9
+              ],
+              [
+                47,
+                72856
+              ]
+            ],
+            "roc_auc": 0.999999823949519,
+            "average_precision": 0.9999995210483605,
+            "pr_auc_trapezoid": 0.9999996904368351,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 102641,
+            "positive": 38084,
+            "prevalence": 0.3710408121510897,
+            "accuracy": 0.5821163082978537,
+            "precision": 0.4378554441112605,
+            "recall": 0.44475370234219097,
+            "f1": 0.4412776156731972,
+            "confusion_matrix": [
+              [
+                42811,
+                21746
+              ],
+              [
+                21146,
+                16938
+              ]
+            ],
+            "roc_auc": 0.5539606814883107,
+            "average_precision": 0.40077130340667033,
+            "pr_auc_trapezoid": 0.5442483136409948,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        }
+      ],
+      "summary": {
+        "average_precision": {
+          "mean": 0.4001352032193839,
+          "std": 0.0077709214043694165
+        },
+        "pr_auc_trapezoid": {
+          "mean": 0.548350403062825,
+          "std": 0.012211727547849256
+        },
+        "roc_auc": {
+          "mean": 0.556743884651872,
+          "std": 0.005060036354520524
+        },
+        "accuracy": {
+          "mean": 0.5816969994470421,
+          "std": 0.0006434783430784271
+        },
+        "precision": {
+          "mean": 0.4364413557007591,
+          "std": 0.008068097027162385
+        },
+        "recall": {
+          "mean": 0.4620282948773364,
+          "std": 0.025152314158646893
+        },
+        "f1": {
+          "mean": 0.44873127323488066,
+          "std": 0.015097770142262821
+        }
+      },
+      "total_fit_seconds": 3.6607747999951243
+    },
+    {
+      "model": "Random Forest",
+      "parameters": {},
+      "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+      "folds": [
+        {
+          "name": "2018_H2",
+          "train_rows": 48860,
+          "validation_rows": 50935,
+          "last_training_anchor": "2018-06-30T20:00:00+00:00",
+          "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+          "embargo_seconds": 14400.0,
+          "fit_seconds": 4.626856900023995,
+          "warnings": [],
+          "train": {
+            "rows": 48860,
+            "positive": 17153,
+            "prevalence": 0.35106426524764633,
+            "accuracy": 0.9997339336880884,
+            "precision": 0.9995919319109245,
+            "recall": 0.9996502069608815,
+            "f1": 0.9996210685865858,
+            "confusion_matrix": [
+              [
+                31700,
+                7
+              ],
+              [
+                6,
+                17147
+              ]
+            ],
+            "roc_auc": 0.9999911247200942,
+            "average_precision": 0.9999820482176051,
+            "pr_auc_trapezoid": 0.9999819158865524,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 50935,
+            "positive": 18980,
+            "prevalence": 0.37263178560910964,
+            "accuracy": 0.6347305389221557,
+            "precision": 0.5106843694797424,
+            "recall": 0.4721812434141201,
+            "f1": 0.4906786388896493,
+            "confusion_matrix": [
+              [
+                23368,
+                8587
+              ],
+              [
+                10018,
+                8962
+              ]
+            ],
+            "roc_auc": 0.6422390820930184,
+            "average_precision": 0.500978044053354,
+            "pr_auc_trapezoid": 0.5024661675917586,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        },
+        {
+          "name": "2019",
+          "train_rows": 99801,
+          "validation_rows": 101349,
+          "last_training_anchor": "2018-12-30T21:00:00+00:00",
+          "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+          "embargo_seconds": 97200.0,
+          "fit_seconds": 9.193601200007834,
+          "warnings": [],
+          "train": {
+            "rows": 99801,
+            "positive": 36135,
+            "prevalence": 0.3620705203354676,
+            "accuracy": 0.9997895812667208,
+            "precision": 0.9996955944210759,
+            "recall": 0.9997232599972325,
+            "f1": 0.9997094270177527,
+            "confusion_matrix": [
+              [
+                63655,
+                11
+              ],
+              [
+                10,
+                36125
+              ]
+            ],
+            "roc_auc": 0.999994178401569,
+            "average_precision": 0.9999889246755984,
+            "pr_auc_trapezoid": 0.9999888452032257,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 101349,
+            "positive": 36768,
+            "prevalence": 0.36278601663558596,
+            "accuracy": 0.6541949106552606,
+            "precision": 0.5331458726551366,
+            "recall": 0.37644147084421237,
+            "f1": 0.44129509477275264,
+            "confusion_matrix": [
+              [
+                52461,
+                12120
+              ],
+              [
+                22927,
+                13841
+              ]
+            ],
+            "roc_auc": 0.6467634791680303,
+            "average_precision": 0.5028423860434581,
+            "pr_auc_trapezoid": 0.504617864666036,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        },
+        {
+          "name": "2020",
+          "train_rows": 201150,
+          "validation_rows": 102641,
+          "last_training_anchor": "2019-12-30T21:00:00+00:00",
+          "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+          "embargo_seconds": 97200.0,
+          "fit_seconds": 24.945465400000103,
+          "warnings": [],
+          "train": {
+            "rows": 201150,
+            "positive": 72903,
+            "prevalence": 0.3624310216256525,
+            "accuracy": 0.9997166293810589,
+            "precision": 0.9995199956113885,
+            "recall": 0.9996982291538071,
+            "f1": 0.9996091044376934,
+            "confusion_matrix": [
+              [
+                128212,
+                35
+              ],
+              [
+                22,
+                72881
+              ]
+            ],
+            "roc_auc": 0.9999890924106143,
+            "average_precision": 0.9999821166177791,
+            "pr_auc_trapezoid": 0.9999820475398898,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          },
+          "validation": {
+            "rows": 102641,
+            "positive": 38084,
+            "prevalence": 0.3710408121510897,
+            "accuracy": 0.6481815259009558,
+            "precision": 0.537677118741168,
+            "recall": 0.36965654868186115,
+            "f1": 0.4381097608414894,
+            "confusion_matrix": [
+              [
+                52452,
+                12105
+              ],
+              [
+                24006,
+                14078
+              ]
+            ],
+            "roc_auc": 0.6454980408866975,
+            "average_precision": 0.5088290037206582,
+            "pr_auc_trapezoid": 0.5104194516569619,
+            "decision_threshold": 0.5,
+            "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+          }
+        }
+      ],
+      "summary": {
+        "average_precision": {
+          "mean": 0.5042164779391568,
+          "std": 0.004101888385582657
+        },
+        "pr_auc_trapezoid": {
+          "mean": 0.5058344946382521,
+          "std": 0.00411385746258003
+        },
+        "roc_auc": {
+          "mean": 0.6448335340492487,
+          "std": 0.0023342491781847725
+        },
+        "accuracy": {
+          "mean": 0.6457023251594574,
+          "std": 0.009966206348385928
+        },
+        "precision": {
+          "mean": 0.5271691202920157,
+          "std": 0.014454871316622007
+        },
+        "recall": {
+          "mean": 0.4060930876467312,
+          "std": 0.05733447515882817
+        },
+        "f1": {
+          "mean": 0.45669449816796376,
+          "std": 0.029474191312178648
+        }
+      },
+      "total_fit_seconds": 38.76592350003193
+    }
+  ],
+  "searches": [
+    {
+      "model": "Logistic Regression",
+      "candidates": [
+        {
+          "model": "Logistic Regression",
+          "parameters": {},
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.11551040000631474,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.6498772001637331,
+                "precision": 0.5125408942202835,
+                "recall": 0.054800909461901706,
+                "f1": 0.09901511560541423,
+                "confusion_matrix": [
+                  [
+                    30813,
+                    894
+                  ],
+                  [
+                    16213,
+                    940
+                  ]
+                ],
+                "roc_auc": 0.6119946464208643,
+                "average_precision": 0.4416952634337401,
+                "pr_auc_trapezoid": 0.441619360315184,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.5720624325120252,
+                "precision": 0.43851224516523335,
+                "recall": 0.5292413066385669,
+                "f1": 0.47962374961205145,
+                "confusion_matrix": [
+                  [
+                    19093,
+                    12862
+                  ],
+                  [
+                    8935,
+                    10045
+                  ]
+                ],
+                "roc_auc": 0.5866565931180554,
+                "average_precision": 0.42159475613588593,
+                "pr_auc_trapezoid": 0.4215200741514939,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.3479817999759689,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.6344525605955852,
+                "precision": 0.4396941258255127,
+                "recall": 0.0350076103500761,
+                "f1": 0.06485184045934585,
+                "confusion_matrix": [
+                  [
+                    62054,
+                    1612
+                  ],
+                  [
+                    34870,
+                    1265
+                  ]
+                ],
+                "roc_auc": 0.6105709456267097,
+                "average_precision": 0.431819246864789,
+                "pr_auc_trapezoid": 0.43178792016742673,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6311261087923906,
+                "precision": 0.38019417475728157,
+                "recall": 0.026626414273281114,
+                "f1": 0.0497674300383804,
+                "confusion_matrix": [
+                  [
+                    62985,
+                    1596
+                  ],
+                  [
+                    35789,
+                    979
+                  ]
+                ],
+                "roc_auc": 0.6028870914635521,
+                "average_precision": 0.424062712003502,
+                "pr_auc_trapezoid": 0.4240215208680953,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.4355724999913946,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.6359234402187423,
+                "precision": 0.4567546380977267,
+                "recall": 0.02397706541568934,
+                "f1": 0.045562361527433856,
+                "confusion_matrix": [
+                  [
+                    126168,
+                    2079
+                  ],
+                  [
+                    71155,
+                    1748
+                  ]
+                ],
+                "roc_auc": 0.6069855469735086,
+                "average_precision": 0.4275050202534477,
+                "pr_auc_trapezoid": 0.42748821656679425,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6281505441295389,
+                "precision": 0.477408818726184,
+                "recall": 0.023028043272765465,
+                "f1": 0.043936775130883496,
+                "confusion_matrix": [
+                  [
+                    63597,
+                    960
+                  ],
+                  [
+                    37207,
+                    877
+                  ]
+                ],
+                "roc_auc": 0.6186742847864968,
+                "average_precision": 0.4474103958435375,
+                "pr_auc_trapezoid": 0.44738311447887297,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.4310226213276418,
+              "std": 0.01424577364445347
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.43097490316615406,
+              "std": 0.014264864450149068
+            },
+            "roc_auc": {
+              "mean": 0.6027393231227014,
+              "std": 0.01600935731238963
+            },
+            "accuracy": {
+              "mean": 0.6104463618113182,
+              "std": 0.033274735425027034
+            },
+            "precision": {
+              "mean": 0.4320384128828996,
+              "std": 0.04892958847992649
+            },
+            "recall": {
+              "mean": 0.1929652547282045,
+              "std": 0.2912291612884601
+            },
+            "f1": {
+              "mean": 0.19110931826043845,
+              "std": 0.24987783406651146
+            }
+          },
+          "total_fit_seconds": 0.8990646999736782
+        },
+        {
+          "model": "Logistic Regression",
+          "parameters": {
+            "C": 0.1
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.13067450001835823,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.6499386000818665,
+                "precision": 0.5135734072022161,
+                "recall": 0.05404302454381158,
+                "f1": 0.09779512606815065,
+                "confusion_matrix": [
+                  [
+                    30829,
+                    878
+                  ],
+                  [
+                    16226,
+                    927
+                  ]
+                ],
+                "roc_auc": 0.6120078940677921,
+                "average_precision": 0.44138756097332715,
+                "pr_auc_trapezoid": 0.4413116357749943,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.572337292627859,
+                "precision": 0.43871616598889324,
+                "recall": 0.528609062170706,
+                "f1": 0.47948577026930156,
+                "confusion_matrix": [
+                  [
+                    19119,
+                    12836
+                  ],
+                  [
+                    8947,
+                    10033
+                  ]
+                ],
+                "roc_auc": 0.5865561670545992,
+                "average_precision": 0.42144261901177826,
+                "pr_auc_trapezoid": 0.42136801381297345,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.2432381999969948,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.6341820222242263,
+                "precision": 0.43466107617051014,
+                "recall": 0.03442645634426456,
+                "f1": 0.06379977947021566,
+                "confusion_matrix": [
+                  [
+                    62048,
+                    1618
+                  ],
+                  [
+                    34891,
+                    1244
+                  ]
+                ],
+                "roc_auc": 0.6105324660477429,
+                "average_precision": 0.4313229042231268,
+                "pr_auc_trapezoid": 0.4312916067388545,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6310570405233401,
+                "precision": 0.3779342723004695,
+                "recall": 0.02627284595300261,
+                "f1": 0.049130302105584375,
+                "confusion_matrix": [
+                  [
+                    62991,
+                    1590
+                  ],
+                  [
+                    35802,
+                    966
+                  ]
+                ],
+                "roc_auc": 0.6028586645963755,
+                "average_precision": 0.42370088279089946,
+                "pr_auc_trapezoid": 0.42365964223972247,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.4382968999852892,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.6359632115336813,
+                "precision": 0.45755584756898815,
+                "recall": 0.02388104741917342,
+                "f1": 0.045392918600406736,
+                "confusion_matrix": [
+                  [
+                    126183,
+                    2064
+                  ],
+                  [
+                    71162,
+                    1741
+                  ]
+                ],
+                "roc_auc": 0.6069806999165837,
+                "average_precision": 0.42746597509892803,
+                "pr_auc_trapezoid": 0.42744916524883386,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6282577137790941,
+                "precision": 0.48028477546549836,
+                "recall": 0.023028043272765465,
+                "f1": 0.043948884991230265,
+                "confusion_matrix": [
+                  [
+                    63608,
+                    949
+                  ],
+                  [
+                    37207,
+                    877
+                  ]
+                ],
+                "roc_auc": 0.6186590756550705,
+                "average_precision": 0.4473706664305433,
+                "pr_auc_trapezoid": 0.4473434258289709,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.43083805607774034,
+              "std": 0.014362114838429203
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.43079036062722226,
+              "std": 0.014381094043624677
+            },
+            "roc_auc": {
+              "mean": 0.6026913024353484,
+              "std": 0.01605210866902728
+            },
+            "accuracy": {
+              "mean": 0.6105506823100978,
+              "std": 0.033123351593856466
+            },
+            "precision": {
+              "mean": 0.43231173791828703,
+              "std": 0.05147493466452699
+            },
+            "recall": {
+              "mean": 0.19263665046549136,
+              "std": 0.2909651667405776
+            },
+            "f1": {
+              "mean": 0.1908549857887054,
+              "std": 0.24997501691817423
+            }
+          },
+          "total_fit_seconds": 0.8122096000006422
+        },
+        {
+          "model": "Logistic Regression",
+          "parameters": {
+            "C": 10.0
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.1161949000088498,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.6499386000818665,
+                "precision": 0.5133079847908745,
+                "recall": 0.05509240366116714,
+                "f1": 0.09950510687585554,
+                "confusion_matrix": [
+                  [
+                    30811,
+                    896
+                  ],
+                  [
+                    16208,
+                    945
+                  ]
+                ],
+                "roc_auc": 0.6119901949908556,
+                "average_precision": 0.44172746044105743,
+                "pr_auc_trapezoid": 0.44165152644442995,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.5719642681849416,
+                "precision": 0.4384272997032641,
+                "recall": 0.5293466807165438,
+                "f1": 0.47961619247660875,
+                "confusion_matrix": [
+                  [
+                    19086,
+                    12869
+                  ],
+                  [
+                    8933,
+                    10047
+                  ]
+                ],
+                "roc_auc": 0.5866694948886729,
+                "average_precision": 0.4216158758869757,
+                "pr_auc_trapezoid": 0.4215411728510408,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.2676694999972824,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.6341619823448663,
+                "precision": 0.43366266760762173,
+                "recall": 0.03401134634011346,
+                "f1": 0.06307577818265801,
+                "confusion_matrix": [
+                  [
+                    62061,
+                    1605
+                  ],
+                  [
+                    34906,
+                    1229
+                  ]
+                ],
+                "roc_auc": 0.6105554799004218,
+                "average_precision": 0.4313822358068376,
+                "pr_auc_trapezoid": 0.43135092914892625,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6311359756879693,
+                "precision": 0.3784530386740331,
+                "recall": 0.026082463011314186,
+                "f1": 0.04880158770546028,
+                "confusion_matrix": [
+                  [
+                    63006,
+                    1575
+                  ],
+                  [
+                    35809,
+                    959
+                  ]
+                ],
+                "roc_auc": 0.6029077617968079,
+                "average_precision": 0.4238833444049517,
+                "pr_auc_trapezoid": 0.4238421275069308,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.4436225000245031,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.6359234402187423,
+                "precision": 0.4567546380977267,
+                "recall": 0.02397706541568934,
+                "f1": 0.045562361527433856,
+                "confusion_matrix": [
+                  [
+                    126168,
+                    2079
+                  ],
+                  [
+                    71155,
+                    1748
+                  ]
+                ],
+                "roc_auc": 0.6069859264553473,
+                "average_precision": 0.4275104491267158,
+                "pr_auc_trapezoid": 0.4274936460829829,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6281310587387107,
+                "precision": 0.47686445291235713,
+                "recall": 0.023001785526730385,
+                "f1": 0.043886676185466295,
+                "confusion_matrix": [
+                  [
+                    63596,
+                    961
+                  ],
+                  [
+                    37208,
+                    876
+                  ]
+                ],
+                "roc_auc": 0.6186744755463353,
+                "average_precision": 0.4474146135567118,
+                "pr_auc_trapezoid": 0.44738733542004433,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.43097127794954637,
+              "std": 0.014285405762084903
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.4309235452593386,
+              "std": 0.014304400998431478
+            },
+            "roc_auc": {
+              "mean": 0.6027505774106053,
+              "std": 0.01600306929694377
+            },
+            "accuracy": {
+              "mean": 0.6104104342038739,
+              "std": 0.0333292385546754
+            },
+            "precision": {
+              "mean": 0.4312482637632181,
+              "std": 0.04959693065975055
+            },
+            "recall": {
+              "mean": 0.19281030975152946,
+              "std": 0.2914531169505094
+            },
+            "f1": {
+              "mean": 0.19076815212251177,
+              "std": 0.25016181143634586
+            }
+          },
+          "total_fit_seconds": 0.8274869000306353
+        }
+      ],
+      "selected_parameters": {},
+      "selected_cv": {
+        "average_precision": {
+          "mean": 0.4310226213276418,
+          "std": 0.01424577364445347
+        },
+        "pr_auc_trapezoid": {
+          "mean": 0.43097490316615406,
+          "std": 0.014264864450149068
+        },
+        "roc_auc": {
+          "mean": 0.6027393231227014,
+          "std": 0.01600935731238963
+        },
+        "accuracy": {
+          "mean": 0.6104463618113182,
+          "std": 0.033274735425027034
+        },
+        "precision": {
+          "mean": 0.4320384128828996,
+          "std": 0.04892958847992649
+        },
+        "recall": {
+          "mean": 0.1929652547282045,
+          "std": 0.2912291612884601
+        },
+        "f1": {
+          "mean": 0.19110931826043845,
+          "std": 0.24987783406651146
+        }
+      }
+    },
+    {
+      "model": "Decision Tree",
+      "candidates": [
+        {
+          "model": "Decision Tree",
+          "parameters": {},
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.41724699997575954,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.9997339336880884,
+                "precision": 0.9998250320774524,
+                "recall": 0.9994170116014691,
+                "f1": 0.9996209802035044,
+                "confusion_matrix": [
+                  [
+                    31704,
+                    3
+                  ],
+                  [
+                    10,
+                    17143
+                  ]
+                ],
+                "roc_auc": 0.9999998308419823,
+                "average_precision": 0.9999995515784051,
+                "pr_auc_trapezoid": 0.9999996874250204,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.5809561205457937,
+                "precision": 0.44370892465949135,
+                "recall": 0.4908851422550053,
+                "f1": 0.46610635849717347,
+                "confusion_matrix": [
+                  [
+                    20274,
+                    11681
+                  ],
+                  [
+                    9663,
+                    9317
+                  ]
+                ],
+                "roc_auc": 0.5625845651295395,
+                "average_precision": 0.40756852409394284,
+                "pr_auc_trapezoid": 0.5620850232746037,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 1.0047442000068258,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.9997895812667208,
+                "precision": 0.9998892641603455,
+                "recall": 0.9995295419952954,
+                "f1": 0.9997093707184079,
+                "confusion_matrix": [
+                  [
+                    63662,
+                    4
+                  ],
+                  [
+                    17,
+                    36118
+                  ]
+                ],
+                "roc_auc": 0.9999998987207919,
+                "average_precision": 0.9999997259400846,
+                "pr_auc_trapezoid": 0.9999998216121159,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.582018569497479,
+                "precision": 0.4277596983315254,
+                "recall": 0.45044604003481287,
+                "f1": 0.43880984553427127,
+                "confusion_matrix": [
+                  [
+                    42425,
+                    22156
+                  ],
+                  [
+                    20206,
+                    16562
+                  ]
+                ],
+                "roc_auc": 0.5536864073377656,
+                "average_precision": 0.3920657821575385,
+                "pr_auc_trapezoid": 0.5387178722728764,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 2.238783600012539,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.9997216007954263,
+                "precision": 0.9998764839085981,
+                "recall": 0.9993553077376789,
+                "f1": 0.9996158278908951,
+                "confusion_matrix": [
+                  [
+                    128238,
+                    9
+                  ],
+                  [
+                    47,
+                    72856
+                  ]
+                ],
+                "roc_auc": 0.999999823949519,
+                "average_precision": 0.9999995210483605,
+                "pr_auc_trapezoid": 0.9999996904368351,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.5821163082978537,
+                "precision": 0.4378554441112605,
+                "recall": 0.44475370234219097,
+                "f1": 0.4412776156731972,
+                "confusion_matrix": [
+                  [
+                    42811,
+                    21746
+                  ],
+                  [
+                    21146,
+                    16938
+                  ]
+                ],
+                "roc_auc": 0.5539606814883107,
+                "average_precision": 0.40077130340667033,
+                "pr_auc_trapezoid": 0.5442483136409948,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.4001352032193839,
+              "std": 0.0077709214043694165
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.548350403062825,
+              "std": 0.012211727547849256
+            },
+            "roc_auc": {
+              "mean": 0.556743884651872,
+              "std": 0.005060036354520524
+            },
+            "accuracy": {
+              "mean": 0.5816969994470421,
+              "std": 0.0006434783430784271
+            },
+            "precision": {
+              "mean": 0.4364413557007591,
+              "std": 0.008068097027162385
+            },
+            "recall": {
+              "mean": 0.4620282948773364,
+              "std": 0.025152314158646893
+            },
+            "f1": {
+              "mean": 0.44873127323488066,
+              "std": 0.015097770142262821
+            }
+          },
+          "total_fit_seconds": 3.6607747999951243
+        },
+        {
+          "model": "Decision Tree",
+          "parameters": {
+            "max_depth": 12,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.30877300002612174,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.7693000409332788,
+                "precision": 0.7362796303736441,
+                "recall": 0.5341922695738355,
+                "f1": 0.6191634569903371,
+                "confusion_matrix": [
+                  [
+                    28425,
+                    3282
+                  ],
+                  [
+                    7990,
+                    9163
+                  ]
+                ],
+                "roc_auc": 0.8324661613037793,
+                "average_precision": 0.750246536951748,
+                "pr_auc_trapezoid": 0.7541034547277102,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6170216943162855,
+                "precision": 0.4856379789611381,
+                "recall": 0.46944151738672285,
+                "f1": 0.4774024164813674,
+                "confusion_matrix": [
+                  [
+                    22518,
+                    9437
+                  ],
+                  [
+                    10070,
+                    8910
+                  ]
+                ],
+                "roc_auc": 0.6050289692153036,
+                "average_precision": 0.44698169448421515,
+                "pr_auc_trapezoid": 0.48556339634630946,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.6868813000037335,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.7422771314916684,
+                "precision": 0.6793908909253773,
+                "recall": 0.5457312854573129,
+                "f1": 0.6052700234803027,
+                "confusion_matrix": [
+                  [
+                    54360,
+                    9306
+                  ],
+                  [
+                    16415,
+                    19720
+                  ]
+                ],
+                "roc_auc": 0.8042296372859901,
+                "average_precision": 0.7081350213413173,
+                "pr_auc_trapezoid": 0.7119681508123668,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6456501790841548,
+                "precision": 0.514159848961611,
+                "recall": 0.422187771975631,
+                "f1": 0.46365686464851624,
+                "confusion_matrix": [
+                  [
+                    49913,
+                    14668
+                  ],
+                  [
+                    21245,
+                    15523
+                  ]
+                ],
+                "roc_auc": 0.6334383881269242,
+                "average_precision": 0.46578954249562005,
+                "pr_auc_trapezoid": 0.47052195937076846,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 1.5479428000107873,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.7205418841660453,
+                "precision": 0.6513639991293623,
+                "recall": 0.4925860389833066,
+                "f1": 0.560955988596868,
+                "confusion_matrix": [
+                  [
+                    109026,
+                    19221
+                  ],
+                  [
+                    36992,
+                    35911
+                  ]
+                ],
+                "roc_auc": 0.7705140302831348,
+                "average_precision": 0.6559055767894661,
+                "pr_auc_trapezoid": 0.6604450145038977,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6477138765210784,
+                "precision": 0.533229760055239,
+                "recall": 0.405550887511816,
+                "f1": 0.46070784053453445,
+                "confusion_matrix": [
+                  [
+                    51037,
+                    13520
+                  ],
+                  [
+                    22639,
+                    15445
+                  ]
+                ],
+                "roc_auc": 0.6451620640027095,
+                "average_precision": 0.4894536679910241,
+                "pr_auc_trapezoid": 0.4868811657168009,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.4674083016569531,
+              "std": 0.021282208985619173
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.4809888404779596,
+              "std": 0.009088499827392174
+            },
+            "roc_auc": {
+              "mean": 0.6278764737816458,
+              "std": 0.0206365571908661
+            },
+            "accuracy": {
+              "mean": 0.6367952499738395,
+              "std": 0.01715546091728759
+            },
+            "precision": {
+              "mean": 0.5110091959926627,
+              "std": 0.023951813449617197
+            },
+            "recall": {
+              "mean": 0.43239339229138996,
+              "std": 0.033145424434982855
+            },
+            "f1": {
+              "mean": 0.4672557072214727,
+              "std": 0.008910160908189933
+            }
+          },
+          "total_fit_seconds": 2.5435971000406425
+        },
+        {
+          "model": "Decision Tree",
+          "parameters": {
+            "max_depth": 20,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.4741754000133369,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.9440032746623005,
+                "precision": 0.9354273633343401,
+                "recall": 0.9028158339649041,
+                "f1": 0.9188323246707013,
+                "confusion_matrix": [
+                  [
+                    30638,
+                    1069
+                  ],
+                  [
+                    1667,
+                    15486
+                  ]
+                ],
+                "roc_auc": 0.989963441109551,
+                "average_precision": 0.9828655355623921,
+                "pr_auc_trapezoid": 0.983158914571556,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.5807401590262099,
+                "precision": 0.44226187582048915,
+                "recall": 0.4792413066385669,
+                "f1": 0.4600096088198852,
+                "confusion_matrix": [
+                  [
+                    20484,
+                    11471
+                  ],
+                  [
+                    9884,
+                    9096
+                  ]
+                ],
+                "roc_auc": 0.5603149433500976,
+                "average_precision": 0.41150842755079386,
+                "pr_auc_trapezoid": 0.5461868104273842,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 1.1790211999905296,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.9143595755553552,
+                "precision": 0.8986244364813316,
+                "recall": 0.8605507126055071,
+                "f1": 0.8791755608645867,
+                "confusion_matrix": [
+                  [
+                    60158,
+                    3508
+                  ],
+                  [
+                    5039,
+                    31096
+                  ]
+                ],
+                "roc_auc": 0.9780894591073482,
+                "average_precision": 0.9646752698943548,
+                "pr_auc_trapezoid": 0.9652130013698883,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6020779682088624,
+                "precision": 0.45221032289234236,
+                "recall": 0.45822454308093996,
+                "f1": 0.4551975683890577,
+                "confusion_matrix": [
+                  [
+                    44172,
+                    20409
+                  ],
+                  [
+                    19920,
+                    16848
+                  ]
+                ],
+                "roc_auc": 0.5644067727557686,
+                "average_precision": 0.39980067308396466,
+                "pr_auc_trapezoid": 0.4871962092387825,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 2.4748154999979306,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.8893214019388516,
+                "precision": 0.8614973872819166,
+                "recall": 0.8276888468238618,
+                "f1": 0.8442547833082654,
+                "confusion_matrix": [
+                  [
+                    118546,
+                    9701
+                  ],
+                  [
+                    12562,
+                    60341
+                  ]
+                ],
+                "roc_auc": 0.96436903084433,
+                "average_precision": 0.9432420510772406,
+                "pr_auc_trapezoid": 0.9436011557513797,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6024006001500375,
+                "precision": 0.4633128768303187,
+                "recall": 0.45197458250183803,
+                "f1": 0.45757350204689246,
+                "confusion_matrix": [
+                  [
+                    44618,
+                    19939
+                  ],
+                  [
+                    20871,
+                    17213
+                  ]
+                ],
+                "roc_auc": 0.5779684613936342,
+                "average_precision": 0.4105480788302932,
+                "pr_auc_trapezoid": 0.4794615439278857,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.4072857264883506,
+              "std": 0.006500006597390782
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.5042815211980174,
+              "std": 0.036496523271615275
+            },
+            "roc_auc": {
+              "mean": 0.5675633924998335,
+              "std": 0.009240392902081262
+            },
+            "accuracy": {
+              "mean": 0.59507290912837,
+              "std": 0.01241357389959043
+            },
+            "precision": {
+              "mean": 0.45259502518105005,
+              "std": 0.010530771945454131
+            },
+            "recall": {
+              "mean": 0.4631468107404483,
+              "std": 0.01428426058537856
+            },
+            "f1": {
+              "mean": 0.4575935597519451,
+              "std": 0.002406082918485663
+            }
+          },
+          "total_fit_seconds": 4.128012100001797
+        },
+        {
+          "model": "Decision Tree",
+          "parameters": {
+            "max_depth": 12,
+            "min_samples_split": 20,
+            "min_samples_leaf": 1
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.35865199999534525,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.7584936553417929,
+                "precision": 0.7170193789021325,
+                "recall": 0.5155366408208477,
+                "f1": 0.5998100793596961,
+                "confusion_matrix": [
+                  [
+                    28217,
+                    3490
+                  ],
+                  [
+                    8310,
+                    8843
+                  ]
+                ],
+                "roc_auc": 0.8170892598925048,
+                "average_precision": 0.7238528922632481,
+                "pr_auc_trapezoid": 0.727542316739784,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6158633552566997,
+                "precision": 0.4841226834290669,
+                "recall": 0.4707060063224447,
+                "f1": 0.4773200833466902,
+                "confusion_matrix": [
+                  [
+                    22435,
+                    9520
+                  ],
+                  [
+                    10046,
+                    8934
+                  ]
+                ],
+                "roc_auc": 0.607298575331254,
+                "average_precision": 0.45430992866256975,
+                "pr_auc_trapezoid": 0.48111324414563167,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.7485445000056643,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.7358944299155319,
+                "precision": 0.6687843110175051,
+                "recall": 0.5360453853604539,
+                "f1": 0.5951027681341977,
+                "confusion_matrix": [
+                  [
+                    54073,
+                    9593
+                  ],
+                  [
+                    16765,
+                    19370
+                  ]
+                ],
+                "roc_auc": 0.795039990095328,
+                "average_precision": 0.6899496041152093,
+                "pr_auc_trapezoid": 0.6935844719969952,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.645146967409644,
+                "precision": 0.5132760898282694,
+                "recall": 0.42270452567449956,
+                "f1": 0.46360816131726523,
+                "confusion_matrix": [
+                  [
+                    49843,
+                    14738
+                  ],
+                  [
+                    21226,
+                    15542
+                  ]
+                ],
+                "roc_auc": 0.6345043139451283,
+                "average_precision": 0.47162396375205273,
+                "pr_auc_trapezoid": 0.47278359408382953,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 1.6092143999994732,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.7169823514789958,
+                "precision": 0.6447549659272147,
+                "recall": 0.4879771751505425,
+                "f1": 0.5555165171495717,
+                "confusion_matrix": [
+                  [
+                    108646,
+                    19601
+                  ],
+                  [
+                    37328,
+                    35575
+                  ]
+                ],
+                "roc_auc": 0.7650459170495392,
+                "average_precision": 0.6442343573671228,
+                "pr_auc_trapezoid": 0.6483751308924827,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6477528473027347,
+                "precision": 0.533257473880211,
+                "recall": 0.4060760424325176,
+                "f1": 0.46105686815234403,
+                "confusion_matrix": [
+                  [
+                    51021,
+                    13536
+                  ],
+                  [
+                    22619,
+                    15465
+                  ]
+                ],
+                "roc_auc": 0.646562102722808,
+                "average_precision": 0.494201067357911,
+                "pr_auc_trapezoid": 0.49005265347716687,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.47337831992417784,
+              "std": 0.020003351238898508
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.4813164972355427,
+              "std": 0.008636323693943617
+            },
+            "roc_auc": {
+              "mean": 0.6294549973330634,
+              "std": 0.020112877578643096
+            },
+            "accuracy": {
+              "mean": 0.6362543899896927,
+              "std": 0.017707156056688003
+            },
+            "precision": {
+              "mean": 0.5102187490458492,
+              "std": 0.024709662232906982
+            },
+            "recall": {
+              "mean": 0.43316219147648727,
+              "std": 0.033560097416766646
+            },
+            "f1": {
+              "mean": 0.4673283709387665,
+              "std": 0.008746600015739585
+            }
+          },
+          "total_fit_seconds": 2.716410900000483
+        },
+        {
+          "model": "Decision Tree",
+          "parameters": {
+            "max_depth": 12,
+            "min_samples_split": 2,
+            "min_samples_leaf": 10
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 0.34060590001172386,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.7519238641015146,
+                "precision": 0.7023158571888067,
+                "recall": 0.5091820672768612,
+                "f1": 0.5903545236405421,
+                "confusion_matrix": [
+                  [
+                    28005,
+                    3702
+                  ],
+                  [
+                    8419,
+                    8734
+                  ]
+                ],
+                "roc_auc": 0.8117107391425592,
+                "average_precision": 0.7097735883402416,
+                "pr_auc_trapezoid": 0.7130493179478938,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6207126730146265,
+                "precision": 0.4905301972177217,
+                "recall": 0.46259220231822973,
+                "f1": 0.4761517394723284,
+                "confusion_matrix": [
+                  [
+                    22836,
+                    9119
+                  ],
+                  [
+                    10200,
+                    8780
+                  ]
+                ],
+                "roc_auc": 0.6129376688668652,
+                "average_precision": 0.45838598949624604,
+                "pr_auc_trapezoid": 0.4831345151142886,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 0.7394763999909628,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.7330086872877025,
+                "precision": 0.6665964394817234,
+                "recall": 0.5253632212536322,
+                "f1": 0.5876125916983935,
+                "confusion_matrix": [
+                  [
+                    54171,
+                    9495
+                  ],
+                  [
+                    17151,
+                    18984
+                  ]
+                ],
+                "roc_auc": 0.7927658478477415,
+                "average_precision": 0.6820272029403074,
+                "pr_auc_trapezoid": 0.6855426686509437,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6454429742770033,
+                "precision": 0.5139839034205231,
+                "recall": 0.41685704960835507,
+                "f1": 0.4603532167958191,
+                "confusion_matrix": [
+                  [
+                    50088,
+                    14493
+                  ],
+                  [
+                    21441,
+                    15327
+                  ]
+                ],
+                "roc_auc": 0.633755759359095,
+                "average_precision": 0.4733106799779975,
+                "pr_auc_trapezoid": 0.47294111908387515,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 1.5622749000031035,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.7149589858314691,
+                "precision": 0.6406156847867325,
+                "recall": 0.4863997366363524,
+                "f1": 0.5529565868263473,
+                "confusion_matrix": [
+                  [
+                    108354,
+                    19893
+                  ],
+                  [
+                    37443,
+                    35460
+                  ]
+                ],
+                "roc_auc": 0.7637417710236296,
+                "average_precision": 0.6382967331714307,
+                "pr_auc_trapezoid": 0.6423220762393518,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6472364844457867,
+                "precision": 0.5321431019121377,
+                "recall": 0.40775653817876273,
+                "f1": 0.46171914488746174,
+                "confusion_matrix": [
+                  [
+                    50904,
+                    13653
+                  ],
+                  [
+                    22555,
+                    15529
+                  ]
+                ],
+                "roc_auc": 0.6460396680618068,
+                "average_precision": 0.49715829168343834,
+                "pr_auc_trapezoid": 0.49264769824579296,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.4762849870525606,
+              "std": 0.019556526561587732
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.4829077774813189,
+              "std": 0.009855245965062815
+            },
+            "roc_auc": {
+              "mean": 0.6309110320959224,
+              "std": 0.01673334821776136
+            },
+            "accuracy": {
+              "mean": 0.6377973772458055,
+              "std": 0.014822938598049017
+            },
+            "precision": {
+              "mean": 0.5122190675167941,
+              "std": 0.02086251287841316
+            },
+            "recall": {
+              "mean": 0.4290685967017825,
+              "std": 0.029386713446987466
+            },
+            "f1": {
+              "mean": 0.4660747003852031,
+              "std": 0.008753655091473132
+            }
+          },
+          "total_fit_seconds": 2.64235720000579
+        }
+      ],
+      "selected_parameters": {
+        "max_depth": 12,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10
+      },
+      "selected_cv": {
+        "average_precision": {
+          "mean": 0.4762849870525606,
+          "std": 0.019556526561587732
+        },
+        "pr_auc_trapezoid": {
+          "mean": 0.4829077774813189,
+          "std": 0.009855245965062815
+        },
+        "roc_auc": {
+          "mean": 0.6309110320959224,
+          "std": 0.01673334821776136
+        },
+        "accuracy": {
+          "mean": 0.6377973772458055,
+          "std": 0.014822938598049017
+        },
+        "precision": {
+          "mean": 0.5122190675167941,
+          "std": 0.02086251287841316
+        },
+        "recall": {
+          "mean": 0.4290685967017825,
+          "std": 0.029386713446987466
+        },
+        "f1": {
+          "mean": 0.4660747003852031,
+          "std": 0.008753655091473132
+        }
+      }
+    },
+    {
+      "model": "Random Forest",
+      "candidates": [
+        {
+          "model": "Random Forest",
+          "parameters": {},
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 4.626856900023995,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.9997339336880884,
+                "precision": 0.9995919319109245,
+                "recall": 0.9996502069608815,
+                "f1": 0.9996210685865858,
+                "confusion_matrix": [
+                  [
+                    31700,
+                    7
+                  ],
+                  [
+                    6,
+                    17147
+                  ]
+                ],
+                "roc_auc": 0.9999911247200942,
+                "average_precision": 0.9999820482176051,
+                "pr_auc_trapezoid": 0.9999819158865524,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6347305389221557,
+                "precision": 0.5106843694797424,
+                "recall": 0.4721812434141201,
+                "f1": 0.4906786388896493,
+                "confusion_matrix": [
+                  [
+                    23368,
+                    8587
+                  ],
+                  [
+                    10018,
+                    8962
+                  ]
+                ],
+                "roc_auc": 0.6422390820930184,
+                "average_precision": 0.500978044053354,
+                "pr_auc_trapezoid": 0.5024661675917586,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 9.193601200007834,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.9997895812667208,
+                "precision": 0.9996955944210759,
+                "recall": 0.9997232599972325,
+                "f1": 0.9997094270177527,
+                "confusion_matrix": [
+                  [
+                    63655,
+                    11
+                  ],
+                  [
+                    10,
+                    36125
+                  ]
+                ],
+                "roc_auc": 0.999994178401569,
+                "average_precision": 0.9999889246755984,
+                "pr_auc_trapezoid": 0.9999888452032257,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6541949106552606,
+                "precision": 0.5331458726551366,
+                "recall": 0.37644147084421237,
+                "f1": 0.44129509477275264,
+                "confusion_matrix": [
+                  [
+                    52461,
+                    12120
+                  ],
+                  [
+                    22927,
+                    13841
+                  ]
+                ],
+                "roc_auc": 0.6467634791680303,
+                "average_precision": 0.5028423860434581,
+                "pr_auc_trapezoid": 0.504617864666036,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 24.945465400000103,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.9997166293810589,
+                "precision": 0.9995199956113885,
+                "recall": 0.9996982291538071,
+                "f1": 0.9996091044376934,
+                "confusion_matrix": [
+                  [
+                    128212,
+                    35
+                  ],
+                  [
+                    22,
+                    72881
+                  ]
+                ],
+                "roc_auc": 0.9999890924106143,
+                "average_precision": 0.9999821166177791,
+                "pr_auc_trapezoid": 0.9999820475398898,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6481815259009558,
+                "precision": 0.537677118741168,
+                "recall": 0.36965654868186115,
+                "f1": 0.4381097608414894,
+                "confusion_matrix": [
+                  [
+                    52452,
+                    12105
+                  ],
+                  [
+                    24006,
+                    14078
+                  ]
+                ],
+                "roc_auc": 0.6454980408866975,
+                "average_precision": 0.5088290037206582,
+                "pr_auc_trapezoid": 0.5104194516569619,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.5042164779391568,
+              "std": 0.004101888385582657
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.5058344946382521,
+              "std": 0.00411385746258003
+            },
+            "roc_auc": {
+              "mean": 0.6448335340492487,
+              "std": 0.0023342491781847725
+            },
+            "accuracy": {
+              "mean": 0.6457023251594574,
+              "std": 0.009966206348385928
+            },
+            "precision": {
+              "mean": 0.5271691202920157,
+              "std": 0.014454871316622007
+            },
+            "recall": {
+              "mean": 0.4060930876467312,
+              "std": 0.05733447515882817
+            },
+            "f1": {
+              "mean": 0.45669449816796376,
+              "std": 0.029474191312178648
+            }
+          },
+          "total_fit_seconds": 38.76592350003193
+        },
+        {
+          "model": "Random Forest",
+          "parameters": {
+            "n_estimators": 100,
+            "max_depth": 12,
+            "min_samples_leaf": 5
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 3.2102141000214033,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.7651043798608268,
+                "precision": 0.768140589569161,
+                "recall": 0.4739695680055967,
+                "f1": 0.5862205717994016,
+                "confusion_matrix": [
+                  [
+                    29253,
+                    2454
+                  ],
+                  [
+                    9023,
+                    8130
+                  ]
+                ],
+                "roc_auc": 0.8496809884798776,
+                "average_precision": 0.7562670867913419,
+                "pr_auc_trapezoid": 0.7562570675409247,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6548149602434475,
+                "precision": 0.5416616998450352,
+                "recall": 0.47881981032665966,
+                "f1": 0.5083058336596007,
+                "confusion_matrix": [
+                  [
+                    24265,
+                    7690
+                  ],
+                  [
+                    9892,
+                    9088
+                  ]
+                ],
+                "roc_auc": 0.6646667938432256,
+                "average_precision": 0.5235927057220289,
+                "pr_auc_trapezoid": 0.5235420748350441,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 5.925104299996747,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.7354034528712137,
+                "precision": 0.7150689777148921,
+                "recall": 0.44754393247543933,
+                "f1": 0.5505267995438375,
+                "confusion_matrix": [
+                  [
+                    57222,
+                    6444
+                  ],
+                  [
+                    19963,
+                    16172
+                  ]
+                ],
+                "roc_auc": 0.8048471207523006,
+                "average_precision": 0.6925991744738055,
+                "pr_auc_trapezoid": 0.6925914772983397,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6769874394419284,
+                "precision": 0.5935136639910917,
+                "recall": 0.347911227154047,
+                "f1": 0.43867560569949077,
+                "confusion_matrix": [
+                  [
+                    55820,
+                    8761
+                  ],
+                  [
+                    23976,
+                    12792
+                  ]
+                ],
+                "roc_auc": 0.6800454741688369,
+                "average_precision": 0.5478808710684615,
+                "pr_auc_trapezoid": 0.5478631363433152,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 21.433347000012873,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.7116132239622173,
+                "precision": 0.6712820276921662,
+                "recall": 0.40034017804479927,
+                "f1": 0.5015595329134481,
+                "confusion_matrix": [
+                  [
+                    113955,
+                    14292
+                  ],
+                  [
+                    43717,
+                    29186
+                  ]
+                ],
+                "roc_auc": 0.7661681336742009,
+                "average_precision": 0.6416098346729685,
+                "pr_auc_trapezoid": 0.6416051468044561,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6663224247620346,
+                "precision": 0.584311656333817,
+                "recall": 0.34893918706018273,
+                "f1": 0.43694412020977524,
+                "confusion_matrix": [
+                  [
+                    55103,
+                    9454
+                  ],
+                  [
+                    24795,
+                    13289
+                  ]
+                ],
+                "roc_auc": 0.6760160536451613,
+                "average_precision": 0.5466184957530025,
+                "pr_auc_trapezoid": 0.546595692276451,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.5393640241811642,
+              "std": 0.013672939051786528
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.5393336344849368,
+              "std": 0.01369056685268165
+            },
+            "roc_auc": {
+              "mean": 0.6735761072190746,
+              "std": 0.007974393773884375
+            },
+            "accuracy": {
+              "mean": 0.6660416081491368,
+              "std": 0.011088906705772495
+            },
+            "precision": {
+              "mean": 0.573162340056648,
+              "std": 0.02766562825126591
+            },
+            "recall": {
+              "mean": 0.39189007484696314,
+              "std": 0.07528511378964411
+            },
+            "f1": {
+              "mean": 0.4613085198562889,
+              "std": 0.04071007417145656
+            }
+          },
+          "total_fit_seconds": 30.568665400031023
+        },
+        {
+          "model": "Random Forest",
+          "parameters": {
+            "n_estimators": 200,
+            "max_depth": 12,
+            "min_samples_leaf": 5
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 8.521431400004076,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.7645108473188702,
+                "precision": 0.7717778419482144,
+                "recall": 0.46744009794205094,
+                "f1": 0.5822380364534167,
+                "confusion_matrix": [
+                  [
+                    29336,
+                    2371
+                  ],
+                  [
+                    9135,
+                    8018
+                  ]
+                ],
+                "roc_auc": 0.8515381771139642,
+                "average_precision": 0.7594162278754243,
+                "pr_auc_trapezoid": 0.7594064613883031,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6533621282026112,
+                "precision": 0.5390376223611275,
+                "recall": 0.4816122233930453,
+                "f1": 0.5087094440425177,
+                "confusion_matrix": [
+                  [
+                    24138,
+                    7817
+                  ],
+                  [
+                    9839,
+                    9141
+                  ]
+                ],
+                "roc_auc": 0.6639749283560143,
+                "average_precision": 0.5229624828337855,
+                "pr_auc_trapezoid": 0.5229144652024496,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 18.878620400006184,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.7355136722076933,
+                "precision": 0.7171266776653141,
+                "recall": 0.4450809464508095,
+                "f1": 0.5492640278679007,
+                "confusion_matrix": [
+                  [
+                    57322,
+                    6344
+                  ],
+                  [
+                    20052,
+                    16083
+                  ]
+                ],
+                "roc_auc": 0.8054096213448164,
+                "average_precision": 0.6933637970164652,
+                "pr_auc_trapezoid": 0.6933562732562473,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6768690366949847,
+                "precision": 0.5938711636380624,
+                "recall": 0.3457626196692776,
+                "f1": 0.4370605930382467,
+                "confusion_matrix": [
+                  [
+                    55887,
+                    8694
+                  ],
+                  [
+                    24055,
+                    12713
+                  ]
+                ],
+                "roc_auc": 0.6805105804614331,
+                "average_precision": 0.5485984321472581,
+                "pr_auc_trapezoid": 0.5485814364870615,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 38.32563080001273,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.7117375093214019,
+                "precision": 0.6741612383553968,
+                "recall": 0.39607423562816346,
+                "f1": 0.4989890611229198,
+                "confusion_matrix": [
+                  [
+                    114291,
+                    13956
+                  ],
+                  [
+                    44028,
+                    28875
+                  ]
+                ],
+                "roc_auc": 0.766822887927425,
+                "average_precision": 0.6427669469601839,
+                "pr_auc_trapezoid": 0.6427623151453443,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6661275708537524,
+                "precision": 0.5851828696467646,
+                "recall": 0.34408150404369287,
+                "f1": 0.43335482910858675,
+                "confusion_matrix": [
+                  [
+                    55268,
+                    9289
+                  ],
+                  [
+                    24980,
+                    13104
+                  ]
+                ],
+                "roc_auc": 0.6763029627466113,
+                "average_precision": 0.5475946079318444,
+                "pr_auc_trapezoid": 0.5475727029882176,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.5397185076376294,
+              "std": 0.014519820631954611
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.5396895348925762,
+              "std": 0.014536389102847273
+            },
+            "roc_auc": {
+              "mean": 0.6735961571880196,
+              "std": 0.008593721247915657
+            },
+            "accuracy": {
+              "mean": 0.6654529119171161,
+              "std": 0.011767967548722778
+            },
+            "precision": {
+              "mean": 0.5726972185486515,
+              "std": 0.029471985422604107
+            },
+            "recall": {
+              "mean": 0.3904854490353386,
+              "std": 0.0789225778283182
+            },
+            "f1": {
+              "mean": 0.4597082887297837,
+              "std": 0.042476676989409164
+            }
+          },
+          "total_fit_seconds": 65.72568260002299
+        },
+        {
+          "model": "Random Forest",
+          "parameters": {
+            "n_estimators": 100,
+            "max_depth": 20,
+            "min_samples_leaf": 5
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 5.832597200002056,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.9012689316414245,
+                "precision": 0.9369816403204083,
+                "recall": 0.7705940651781029,
+                "f1": 0.8456813819577735,
+                "confusion_matrix": [
+                  [
+                    30818,
+                    889
+                  ],
+                  [
+                    3935,
+                    13218
+                  ]
+                ],
+                "roc_auc": 0.9745613094122053,
+                "average_precision": 0.9558224140235821,
+                "pr_auc_trapezoid": 0.9558211228218101,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6430548738588397,
+                "precision": 0.5226179018286814,
+                "recall": 0.4863540569020021,
+                "f1": 0.5038342930436919,
+                "confusion_matrix": [
+                  [
+                    23523,
+                    8432
+                  ],
+                  [
+                    9749,
+                    9231
+                  ]
+                ],
+                "roc_auc": 0.6548752798612512,
+                "average_precision": 0.5152590880595731,
+                "pr_auc_trapezoid": 0.5152128471179436,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 12.959989199996926,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.8722257292011102,
+                "precision": 0.9000787051295213,
+                "recall": 0.7279092292790923,
+                "f1": 0.8048899905137856,
+                "confusion_matrix": [
+                  [
+                    60746,
+                    2920
+                  ],
+                  [
+                    9832,
+                    26303
+                  ]
+                ],
+                "roc_auc": 0.9570372755865195,
+                "average_precision": 0.9261991585326893,
+                "pr_auc_trapezoid": 0.9261979723065451,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6679000286139972,
+                "precision": 0.5637660953005823,
+                "recall": 0.37391209747606613,
+                "f1": 0.4496189946691958,
+                "confusion_matrix": [
+                  [
+                    53943,
+                    10638
+                  ],
+                  [
+                    23020,
+                    13748
+                  ]
+                ],
+                "roc_auc": 0.6666094930774151,
+                "average_precision": 0.5309343425130914,
+                "pr_auc_trapezoid": 0.5309155386790065,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 29.881237599998713,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.8420482227193636,
+                "precision": 0.8661622006587733,
+                "recall": 0.6672976420723427,
+                "f1": 0.7538351876530202,
+                "confusion_matrix": [
+                  [
+                    120730,
+                    7517
+                  ],
+                  [
+                    24255,
+                    48648
+                  ]
+                ],
+                "roc_auc": 0.9375301179550276,
+                "average_precision": 0.8892009934442446,
+                "pr_auc_trapezoid": 0.8891999839688801,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.662045381475239,
+                "precision": 0.5690187789610601,
+                "recall": 0.3675821867450898,
+                "f1": 0.44663880292250263,
+                "confusion_matrix": [
+                  [
+                    53954,
+                    10603
+                  ],
+                  [
+                    24085,
+                    13999
+                  ]
+                ],
+                "roc_auc": 0.6665809408628931,
+                "average_precision": 0.5372504169206123,
+                "pr_auc_trapezoid": 0.5372305523717218,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.5278146158310922,
+              "std": 0.011322727462779292
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.5277863127228907,
+              "std": 0.011337498730932028
+            },
+            "roc_auc": {
+              "mean": 0.6626885712671865,
+              "std": 0.006766523904693265
+            },
+            "accuracy": {
+              "mean": 0.6576667613160253,
+              "std": 0.01298844350089475
+            },
+            "precision": {
+              "mean": 0.5518009253634413,
+              "std": 0.02540933526053022
+            },
+            "recall": {
+              "mean": 0.40928278037438603,
+              "std": 0.06682067937145457
+            },
+            "f1": {
+              "mean": 0.4666973635451301,
+              "std": 0.032196025145157674
+            }
+          },
+          "total_fit_seconds": 48.673823999997694
+        },
+        {
+          "model": "Random Forest",
+          "parameters": {
+            "n_estimators": 100,
+            "max_depth": 12,
+            "min_samples_leaf": 10
+          },
+          "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+          "folds": [
+            {
+              "name": "2018_H2",
+              "train_rows": 48860,
+              "validation_rows": 50935,
+              "last_training_anchor": "2018-06-30T20:00:00+00:00",
+              "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+              "embargo_seconds": 14400.0,
+              "fit_seconds": 4.626094200008083,
+              "warnings": [],
+              "train": {
+                "rows": 48860,
+                "positive": 17153,
+                "prevalence": 0.35106426524764633,
+                "accuracy": 0.7553213262382317,
+                "precision": 0.7573267326732673,
+                "recall": 0.44592782603626185,
+                "f1": 0.5613326973177265,
+                "confusion_matrix": [
+                  [
+                    29256,
+                    2451
+                  ],
+                  [
+                    9504,
+                    7649
+                  ]
+                ],
+                "roc_auc": 0.8340861232854779,
+                "average_precision": 0.7322440575398965,
+                "pr_auc_trapezoid": 0.7322323574558887,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 50935,
+                "positive": 18980,
+                "prevalence": 0.37263178560910964,
+                "accuracy": 0.6539903798959458,
+                "precision": 0.5401325914525867,
+                "recall": 0.4807692307692308,
+                "f1": 0.508724981881028,
+                "confusion_matrix": [
+                  [
+                    24186,
+                    7769
+                  ],
+                  [
+                    9855,
+                    9125
+                  ]
+                ],
+                "roc_auc": 0.6645683347845421,
+                "average_precision": 0.524220895647977,
+                "pr_auc_trapezoid": 0.5241693807047696,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2019",
+              "train_rows": 99801,
+              "validation_rows": 101349,
+              "last_training_anchor": "2018-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 10.127951100002974,
+              "warnings": [],
+              "train": {
+                "rows": 99801,
+                "positive": 36135,
+                "prevalence": 0.3620705203354676,
+                "accuracy": 0.7287502129237182,
+                "precision": 0.7052350330585998,
+                "recall": 0.43096720630967206,
+                "f1": 0.5349983681742446,
+                "confusion_matrix": [
+                  [
+                    57157,
+                    6509
+                  ],
+                  [
+                    20562,
+                    15573
+                  ]
+                ],
+                "roc_auc": 0.7936624244283781,
+                "average_precision": 0.6762944027779995,
+                "pr_auc_trapezoid": 0.6762857220936207,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 101349,
+                "positive": 36768,
+                "prevalence": 0.36278601663558596,
+                "accuracy": 0.6773229138916023,
+                "precision": 0.595409097310238,
+                "recall": 0.3449738903394256,
+                "f1": 0.43684455235832,
+                "confusion_matrix": [
+                  [
+                    55962,
+                    8619
+                  ],
+                  [
+                    24084,
+                    12684
+                  ]
+                ],
+                "roc_auc": 0.6813291598969451,
+                "average_precision": 0.5486344673191709,
+                "pr_auc_trapezoid": 0.5486160039367387,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            },
+            {
+              "name": "2020",
+              "train_rows": 201150,
+              "validation_rows": 102641,
+              "last_training_anchor": "2019-12-30T21:00:00+00:00",
+              "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+              "embargo_seconds": 97200.0,
+              "fit_seconds": 26.190693599986844,
+              "warnings": [],
+              "train": {
+                "rows": 201150,
+                "positive": 72903,
+                "prevalence": 0.3624310216256525,
+                "accuracy": 0.7085657469550087,
+                "precision": 0.6645390234347996,
+                "recall": 0.39558042878893873,
+                "f1": 0.49594153052450557,
+                "confusion_matrix": [
+                  [
+                    113689,
+                    14558
+                  ],
+                  [
+                    44064,
+                    28839
+                  ]
+                ],
+                "roc_auc": 0.7598912143691056,
+                "average_precision": 0.633943471208297,
+                "pr_auc_trapezoid": 0.6339384003076179,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              },
+              "validation": {
+                "rows": 102641,
+                "positive": 38084,
+                "prevalence": 0.3710408121510897,
+                "accuracy": 0.6668972437914673,
+                "precision": 0.5857936018330836,
+                "recall": 0.34907047579035816,
+                "f1": 0.43746092336042647,
+                "confusion_matrix": [
+                  [
+                    55157,
+                    9400
+                  ],
+                  [
+                    24790,
+                    13294
+                  ]
+                ],
+                "roc_auc": 0.6764267095486324,
+                "average_precision": 0.5480109679463327,
+                "pr_auc_trapezoid": 0.5479855506513247,
+                "decision_threshold": 0.5,
+                "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+              }
+            }
+          ],
+          "summary": {
+            "average_precision": {
+              "mean": 0.5402887769711602,
+              "std": 0.013918685122126543
+            },
+            "pr_auc_trapezoid": {
+              "mean": 0.5402569784309443,
+              "std": 0.013935833964484843
+            },
+            "roc_auc": {
+              "mean": 0.6741080680767065,
+              "std": 0.008617620803832124
+            },
+            "accuracy": {
+              "mean": 0.6660701791930052,
+              "std": 0.011688233936405385
+            },
+            "precision": {
+              "mean": 0.5737784301986361,
+              "std": 0.02953212296824698
+            },
+            "recall": {
+              "mean": 0.3916045322996715,
+              "std": 0.07724605551718979
+            },
+            "f1": {
+              "mean": 0.46101015253325817,
+              "std": 0.0413234035755546
+            }
+          },
+          "total_fit_seconds": 40.9447388999979
+        }
+      ],
+      "selected_parameters": {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "min_samples_leaf": 10
+      },
+      "selected_cv": {
+        "average_precision": {
+          "mean": 0.5402887769711602,
+          "std": 0.013918685122126543
+        },
+        "pr_auc_trapezoid": {
+          "mean": 0.5402569784309443,
+          "std": 0.013935833964484843
+        },
+        "roc_auc": {
+          "mean": 0.6741080680767065,
+          "std": 0.008617620803832124
+        },
+        "accuracy": {
+          "mean": 0.6660701791930052,
+          "std": 0.011688233936405385
+        },
+        "precision": {
+          "mean": 0.5737784301986361,
+          "std": 0.02953212296824698
+        },
+        "recall": {
+          "mean": 0.3916045322996715,
+          "std": 0.07724605551718979
+        },
+        "f1": {
+          "mean": 0.46101015253325817,
+          "std": 0.0413234035755546
+        }
+      }
+    }
+  ],
+  "selected": [
+    {
+      "model": "Logistic Regression",
+      "parameters": {},
+      "cv": {
+        "model": "Logistic Regression",
+        "parameters": {},
+        "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+        "folds": [
+          {
+            "name": "2018_H2",
+            "train_rows": 48860,
+            "validation_rows": 50935,
+            "last_training_anchor": "2018-06-30T20:00:00+00:00",
+            "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+            "embargo_seconds": 14400.0,
+            "fit_seconds": 0.11551040000631474,
+            "warnings": [],
+            "train": {
+              "rows": 48860,
+              "positive": 17153,
+              "prevalence": 0.35106426524764633,
+              "accuracy": 0.6498772001637331,
+              "precision": 0.5125408942202835,
+              "recall": 0.054800909461901706,
+              "f1": 0.09901511560541423,
+              "confusion_matrix": [
+                [
+                  30813,
+                  894
+                ],
+                [
+                  16213,
+                  940
+                ]
+              ],
+              "roc_auc": 0.6119946464208643,
+              "average_precision": 0.4416952634337401,
+              "pr_auc_trapezoid": 0.441619360315184,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 50935,
+              "positive": 18980,
+              "prevalence": 0.37263178560910964,
+              "accuracy": 0.5720624325120252,
+              "precision": 0.43851224516523335,
+              "recall": 0.5292413066385669,
+              "f1": 0.47962374961205145,
+              "confusion_matrix": [
+                [
+                  19093,
+                  12862
+                ],
+                [
+                  8935,
+                  10045
+                ]
+              ],
+              "roc_auc": 0.5866565931180554,
+              "average_precision": 0.42159475613588593,
+              "pr_auc_trapezoid": 0.4215200741514939,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          },
+          {
+            "name": "2019",
+            "train_rows": 99801,
+            "validation_rows": 101349,
+            "last_training_anchor": "2018-12-30T21:00:00+00:00",
+            "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+            "embargo_seconds": 97200.0,
+            "fit_seconds": 0.3479817999759689,
+            "warnings": [],
+            "train": {
+              "rows": 99801,
+              "positive": 36135,
+              "prevalence": 0.3620705203354676,
+              "accuracy": 0.6344525605955852,
+              "precision": 0.4396941258255127,
+              "recall": 0.0350076103500761,
+              "f1": 0.06485184045934585,
+              "confusion_matrix": [
+                [
+                  62054,
+                  1612
+                ],
+                [
+                  34870,
+                  1265
+                ]
+              ],
+              "roc_auc": 0.6105709456267097,
+              "average_precision": 0.431819246864789,
+              "pr_auc_trapezoid": 0.43178792016742673,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 101349,
+              "positive": 36768,
+              "prevalence": 0.36278601663558596,
+              "accuracy": 0.6311261087923906,
+              "precision": 0.38019417475728157,
+              "recall": 0.026626414273281114,
+              "f1": 0.0497674300383804,
+              "confusion_matrix": [
+                [
+                  62985,
+                  1596
+                ],
+                [
+                  35789,
+                  979
+                ]
+              ],
+              "roc_auc": 0.6028870914635521,
+              "average_precision": 0.424062712003502,
+              "pr_auc_trapezoid": 0.4240215208680953,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          },
+          {
+            "name": "2020",
+            "train_rows": 201150,
+            "validation_rows": 102641,
+            "last_training_anchor": "2019-12-30T21:00:00+00:00",
+            "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+            "embargo_seconds": 97200.0,
+            "fit_seconds": 0.4355724999913946,
+            "warnings": [],
+            "train": {
+              "rows": 201150,
+              "positive": 72903,
+              "prevalence": 0.3624310216256525,
+              "accuracy": 0.6359234402187423,
+              "precision": 0.4567546380977267,
+              "recall": 0.02397706541568934,
+              "f1": 0.045562361527433856,
+              "confusion_matrix": [
+                [
+                  126168,
+                  2079
+                ],
+                [
+                  71155,
+                  1748
+                ]
+              ],
+              "roc_auc": 0.6069855469735086,
+              "average_precision": 0.4275050202534477,
+              "pr_auc_trapezoid": 0.42748821656679425,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 102641,
+              "positive": 38084,
+              "prevalence": 0.3710408121510897,
+              "accuracy": 0.6281505441295389,
+              "precision": 0.477408818726184,
+              "recall": 0.023028043272765465,
+              "f1": 0.043936775130883496,
+              "confusion_matrix": [
+                [
+                  63597,
+                  960
+                ],
+                [
+                  37207,
+                  877
+                ]
+              ],
+              "roc_auc": 0.6186742847864968,
+              "average_precision": 0.4474103958435375,
+              "pr_auc_trapezoid": 0.44738311447887297,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          }
+        ],
+        "summary": {
+          "average_precision": {
+            "mean": 0.4310226213276418,
+            "std": 0.01424577364445347
+          },
+          "pr_auc_trapezoid": {
+            "mean": 0.43097490316615406,
+            "std": 0.014264864450149068
+          },
+          "roc_auc": {
+            "mean": 0.6027393231227014,
+            "std": 0.01600935731238963
+          },
+          "accuracy": {
+            "mean": 0.6104463618113182,
+            "std": 0.033274735425027034
+          },
+          "precision": {
+            "mean": 0.4320384128828996,
+            "std": 0.04892958847992649
+          },
+          "recall": {
+            "mean": 0.1929652547282045,
+            "std": 0.2912291612884601
+          },
+          "f1": {
+            "mean": 0.19110931826043845,
+            "std": 0.24987783406651146
+          }
+        },
+        "total_fit_seconds": 0.8990646999736782
+      },
+      "full_fit": {
+        "model": "Logistic Regression",
+        "kind": "default",
+        "parameters": {},
+        "classifier_parameters": {
+          "C": 1.0,
+          "class_weight": null,
+          "dual": false,
+          "fit_intercept": true,
+          "intercept_scaling": 1,
+          "l1_ratio": 0.0,
+          "max_iter": 100,
+          "n_jobs": null,
+          "penalty": "deprecated",
+          "random_state": 17,
+          "solver": "lbfgs",
+          "tol": 0.0001,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+        "fit_seconds": 0.7736390999925788,
+        "warnings": [],
+        "train": {
+          "rows": 303791,
+          "positive": 110987,
+          "prevalence": 0.3653399870305572,
+          "accuracy": 0.6292681481676548,
+          "precision": 0.40976200969590126,
+          "recall": 0.033508428915098164,
+          "f1": 0.061950809158525105,
+          "confusion_matrix": [
+            [
+              187447,
+              5357
+            ],
+            [
+              107268,
+              3719
+            ]
+          ],
+          "roc_auc": 0.6109763216018298,
+          "average_precision": 0.4331775942983875,
+          "pr_auc_trapezoid": 0.43316759128840043,
+          "decision_threshold": 0.5,
+          "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+        },
+        "validation": {
+          "rows": 102449,
+          "positive": 33719,
+          "prevalence": 0.32912961571123195,
+          "accuracy": 0.6612558443713458,
+          "precision": 0.329996548153262,
+          "recall": 0.028351967733325423,
+          "f1": 0.05221760978807079,
+          "confusion_matrix": [
+            [
+              66789,
+              1941
+            ],
+            [
+              32763,
+              956
+            ]
+          ],
+          "roc_auc": 0.5928950249454924,
+          "average_precision": 0.37874336528926744,
+          "pr_auc_trapezoid": 0.378711471453996,
+          "decision_threshold": 0.5,
+          "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+        },
+        "artifact": "artifacts/modeling/logistic_regression_default.joblib",
+        "artifact_sha256": "0519026bf161eff15671ff96acc0ed3628553b8d85d8ac021c5f76db52129518",
+        "predictions": "artifacts/modeling/logistic_regression_default_validation_predictions.parquet",
+        "predictions_sha256": "a1a710f03efd71bfc297b65aaeb1588ac5cff0935c0ccd79fd7663803b449fd8"
+      }
+    },
+    {
+      "model": "Decision Tree",
+      "parameters": {
+        "max_depth": 12,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10
+      },
+      "cv": {
+        "model": "Decision Tree",
+        "parameters": {
+          "max_depth": 12,
+          "min_samples_split": 2,
+          "min_samples_leaf": 10
+        },
+        "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+        "folds": [
+          {
+            "name": "2018_H2",
+            "train_rows": 48860,
+            "validation_rows": 50935,
+            "last_training_anchor": "2018-06-30T20:00:00+00:00",
+            "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+            "embargo_seconds": 14400.0,
+            "fit_seconds": 0.34060590001172386,
+            "warnings": [],
+            "train": {
+              "rows": 48860,
+              "positive": 17153,
+              "prevalence": 0.35106426524764633,
+              "accuracy": 0.7519238641015146,
+              "precision": 0.7023158571888067,
+              "recall": 0.5091820672768612,
+              "f1": 0.5903545236405421,
+              "confusion_matrix": [
+                [
+                  28005,
+                  3702
+                ],
+                [
+                  8419,
+                  8734
+                ]
+              ],
+              "roc_auc": 0.8117107391425592,
+              "average_precision": 0.7097735883402416,
+              "pr_auc_trapezoid": 0.7130493179478938,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 50935,
+              "positive": 18980,
+              "prevalence": 0.37263178560910964,
+              "accuracy": 0.6207126730146265,
+              "precision": 0.4905301972177217,
+              "recall": 0.46259220231822973,
+              "f1": 0.4761517394723284,
+              "confusion_matrix": [
+                [
+                  22836,
+                  9119
+                ],
+                [
+                  10200,
+                  8780
+                ]
+              ],
+              "roc_auc": 0.6129376688668652,
+              "average_precision": 0.45838598949624604,
+              "pr_auc_trapezoid": 0.4831345151142886,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          },
+          {
+            "name": "2019",
+            "train_rows": 99801,
+            "validation_rows": 101349,
+            "last_training_anchor": "2018-12-30T21:00:00+00:00",
+            "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+            "embargo_seconds": 97200.0,
+            "fit_seconds": 0.7394763999909628,
+            "warnings": [],
+            "train": {
+              "rows": 99801,
+              "positive": 36135,
+              "prevalence": 0.3620705203354676,
+              "accuracy": 0.7330086872877025,
+              "precision": 0.6665964394817234,
+              "recall": 0.5253632212536322,
+              "f1": 0.5876125916983935,
+              "confusion_matrix": [
+                [
+                  54171,
+                  9495
+                ],
+                [
+                  17151,
+                  18984
+                ]
+              ],
+              "roc_auc": 0.7927658478477415,
+              "average_precision": 0.6820272029403074,
+              "pr_auc_trapezoid": 0.6855426686509437,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 101349,
+              "positive": 36768,
+              "prevalence": 0.36278601663558596,
+              "accuracy": 0.6454429742770033,
+              "precision": 0.5139839034205231,
+              "recall": 0.41685704960835507,
+              "f1": 0.4603532167958191,
+              "confusion_matrix": [
+                [
+                  50088,
+                  14493
+                ],
+                [
+                  21441,
+                  15327
+                ]
+              ],
+              "roc_auc": 0.633755759359095,
+              "average_precision": 0.4733106799779975,
+              "pr_auc_trapezoid": 0.47294111908387515,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          },
+          {
+            "name": "2020",
+            "train_rows": 201150,
+            "validation_rows": 102641,
+            "last_training_anchor": "2019-12-30T21:00:00+00:00",
+            "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+            "embargo_seconds": 97200.0,
+            "fit_seconds": 1.5622749000031035,
+            "warnings": [],
+            "train": {
+              "rows": 201150,
+              "positive": 72903,
+              "prevalence": 0.3624310216256525,
+              "accuracy": 0.7149589858314691,
+              "precision": 0.6406156847867325,
+              "recall": 0.4863997366363524,
+              "f1": 0.5529565868263473,
+              "confusion_matrix": [
+                [
+                  108354,
+                  19893
+                ],
+                [
+                  37443,
+                  35460
+                ]
+              ],
+              "roc_auc": 0.7637417710236296,
+              "average_precision": 0.6382967331714307,
+              "pr_auc_trapezoid": 0.6423220762393518,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 102641,
+              "positive": 38084,
+              "prevalence": 0.3710408121510897,
+              "accuracy": 0.6472364844457867,
+              "precision": 0.5321431019121377,
+              "recall": 0.40775653817876273,
+              "f1": 0.46171914488746174,
+              "confusion_matrix": [
+                [
+                  50904,
+                  13653
+                ],
+                [
+                  22555,
+                  15529
+                ]
+              ],
+              "roc_auc": 0.6460396680618068,
+              "average_precision": 0.49715829168343834,
+              "pr_auc_trapezoid": 0.49264769824579296,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          }
+        ],
+        "summary": {
+          "average_precision": {
+            "mean": 0.4762849870525606,
+            "std": 0.019556526561587732
+          },
+          "pr_auc_trapezoid": {
+            "mean": 0.4829077774813189,
+            "std": 0.009855245965062815
+          },
+          "roc_auc": {
+            "mean": 0.6309110320959224,
+            "std": 0.01673334821776136
+          },
+          "accuracy": {
+            "mean": 0.6377973772458055,
+            "std": 0.014822938598049017
+          },
+          "precision": {
+            "mean": 0.5122190675167941,
+            "std": 0.02086251287841316
+          },
+          "recall": {
+            "mean": 0.4290685967017825,
+            "std": 0.029386713446987466
+          },
+          "f1": {
+            "mean": 0.4660747003852031,
+            "std": 0.008753655091473132
+          }
+        },
+        "total_fit_seconds": 2.64235720000579
+      },
+      "full_fit": {
+        "model": "Decision Tree",
+        "kind": "cv_selected",
+        "parameters": {
+          "max_depth": 12,
+          "min_samples_split": 2,
+          "min_samples_leaf": 10
+        },
+        "classifier_parameters": {
+          "ccp_alpha": 0.0,
+          "class_weight": null,
+          "criterion": "gini",
+          "max_depth": 12,
+          "max_features": null,
+          "max_leaf_nodes": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 10,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "random_state": 17,
+          "splitter": "best"
+        },
+        "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+        "fit_seconds": 2.6355569000006653,
+        "warnings": [],
+        "train": {
+          "rows": 303791,
+          "positive": 110987,
+          "prevalence": 0.3653399870305572,
+          "accuracy": 0.7016797732651724,
+          "precision": 0.6317185518722667,
+          "recall": 0.43989836647535296,
+          "f1": 0.5186404848278829,
+          "confusion_matrix": [
+            [
+              164341,
+              28463
+            ],
+            [
+              62164,
+              48823
+            ]
+          ],
+          "roc_auc": 0.7437471903564468,
+          "average_precision": 0.614665957338286,
+          "pr_auc_trapezoid": 0.6185810009751008,
+          "decision_threshold": 0.5,
+          "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+        },
+        "validation": {
+          "rows": 102449,
+          "positive": 33719,
+          "prevalence": 0.32912961571123195,
+          "accuracy": 0.6758679928549814,
+          "precision": 0.5097338403041826,
+          "recall": 0.3975799994068626,
+          "f1": 0.4467252036854996,
+          "confusion_matrix": [
+            [
+              55836,
+              12894
+            ],
+            [
+              20313,
+              13406
+            ]
+          ],
+          "roc_auc": 0.6545659135413912,
+          "average_precision": 0.46833692409676975,
+          "pr_auc_trapezoid": 0.4621777390596842,
+          "decision_threshold": 0.5,
+          "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+        },
+        "artifact": "artifacts/modeling/decision_tree_cv_selected.joblib",
+        "artifact_sha256": "f21b6a32040dca0cedf0f1f17951142f30001588f353cceb49808288a5c14920",
+        "predictions": "artifacts/modeling/decision_tree_cv_selected_validation_predictions.parquet",
+        "predictions_sha256": "a6d2c55b1994d1183e87002b5d1a97e90197c5731707d50b9f40a1de2b86022a"
+      }
+    },
+    {
+      "model": "Random Forest",
+      "parameters": {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "min_samples_leaf": 10
+      },
+      "cv": {
+        "model": "Random Forest",
+        "parameters": {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "min_samples_leaf": 10
+        },
+        "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+        "folds": [
+          {
+            "name": "2018_H2",
+            "train_rows": 48860,
+            "validation_rows": 50935,
+            "last_training_anchor": "2018-06-30T20:00:00+00:00",
+            "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+            "embargo_seconds": 14400.0,
+            "fit_seconds": 4.626094200008083,
+            "warnings": [],
+            "train": {
+              "rows": 48860,
+              "positive": 17153,
+              "prevalence": 0.35106426524764633,
+              "accuracy": 0.7553213262382317,
+              "precision": 0.7573267326732673,
+              "recall": 0.44592782603626185,
+              "f1": 0.5613326973177265,
+              "confusion_matrix": [
+                [
+                  29256,
+                  2451
+                ],
+                [
+                  9504,
+                  7649
+                ]
+              ],
+              "roc_auc": 0.8340861232854779,
+              "average_precision": 0.7322440575398965,
+              "pr_auc_trapezoid": 0.7322323574558887,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 50935,
+              "positive": 18980,
+              "prevalence": 0.37263178560910964,
+              "accuracy": 0.6539903798959458,
+              "precision": 0.5401325914525867,
+              "recall": 0.4807692307692308,
+              "f1": 0.508724981881028,
+              "confusion_matrix": [
+                [
+                  24186,
+                  7769
+                ],
+                [
+                  9855,
+                  9125
+                ]
+              ],
+              "roc_auc": 0.6645683347845421,
+              "average_precision": 0.524220895647977,
+              "pr_auc_trapezoid": 0.5241693807047696,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          },
+          {
+            "name": "2019",
+            "train_rows": 99801,
+            "validation_rows": 101349,
+            "last_training_anchor": "2018-12-30T21:00:00+00:00",
+            "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+            "embargo_seconds": 97200.0,
+            "fit_seconds": 10.127951100002974,
+            "warnings": [],
+            "train": {
+              "rows": 99801,
+              "positive": 36135,
+              "prevalence": 0.3620705203354676,
+              "accuracy": 0.7287502129237182,
+              "precision": 0.7052350330585998,
+              "recall": 0.43096720630967206,
+              "f1": 0.5349983681742446,
+              "confusion_matrix": [
+                [
+                  57157,
+                  6509
+                ],
+                [
+                  20562,
+                  15573
+                ]
+              ],
+              "roc_auc": 0.7936624244283781,
+              "average_precision": 0.6762944027779995,
+              "pr_auc_trapezoid": 0.6762857220936207,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 101349,
+              "positive": 36768,
+              "prevalence": 0.36278601663558596,
+              "accuracy": 0.6773229138916023,
+              "precision": 0.595409097310238,
+              "recall": 0.3449738903394256,
+              "f1": 0.43684455235832,
+              "confusion_matrix": [
+                [
+                  55962,
+                  8619
+                ],
+                [
+                  24084,
+                  12684
+                ]
+              ],
+              "roc_auc": 0.6813291598969451,
+              "average_precision": 0.5486344673191709,
+              "pr_auc_trapezoid": 0.5486160039367387,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          },
+          {
+            "name": "2020",
+            "train_rows": 201150,
+            "validation_rows": 102641,
+            "last_training_anchor": "2019-12-30T21:00:00+00:00",
+            "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+            "embargo_seconds": 97200.0,
+            "fit_seconds": 26.190693599986844,
+            "warnings": [],
+            "train": {
+              "rows": 201150,
+              "positive": 72903,
+              "prevalence": 0.3624310216256525,
+              "accuracy": 0.7085657469550087,
+              "precision": 0.6645390234347996,
+              "recall": 0.39558042878893873,
+              "f1": 0.49594153052450557,
+              "confusion_matrix": [
+                [
+                  113689,
+                  14558
+                ],
+                [
+                  44064,
+                  28839
+                ]
+              ],
+              "roc_auc": 0.7598912143691056,
+              "average_precision": 0.633943471208297,
+              "pr_auc_trapezoid": 0.6339384003076179,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            },
+            "validation": {
+              "rows": 102641,
+              "positive": 38084,
+              "prevalence": 0.3710408121510897,
+              "accuracy": 0.6668972437914673,
+              "precision": 0.5857936018330836,
+              "recall": 0.34907047579035816,
+              "f1": 0.43746092336042647,
+              "confusion_matrix": [
+                [
+                  55157,
+                  9400
+                ],
+                [
+                  24790,
+                  13294
+                ]
+              ],
+              "roc_auc": 0.6764267095486324,
+              "average_precision": 0.5480109679463327,
+              "pr_auc_trapezoid": 0.5479855506513247,
+              "decision_threshold": 0.5,
+              "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+            }
+          }
+        ],
+        "summary": {
+          "average_precision": {
+            "mean": 0.5402887769711602,
+            "std": 0.013918685122126543
+          },
+          "pr_auc_trapezoid": {
+            "mean": 0.5402569784309443,
+            "std": 0.013935833964484843
+          },
+          "roc_auc": {
+            "mean": 0.6741080680767065,
+            "std": 0.008617620803832124
+          },
+          "accuracy": {
+            "mean": 0.6660701791930052,
+            "std": 0.011688233936405385
+          },
+          "precision": {
+            "mean": 0.5737784301986361,
+            "std": 0.02953212296824698
+          },
+          "recall": {
+            "mean": 0.3916045322996715,
+            "std": 0.07724605551718979
+          },
+          "f1": {
+            "mean": 0.46101015253325817,
+            "std": 0.0413234035755546
+          }
+        },
+        "total_fit_seconds": 40.9447388999979
+      },
+      "full_fit": {
+        "model": "Random Forest",
+        "kind": "cv_selected",
+        "parameters": {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "min_samples_leaf": 10
+        },
+        "classifier_parameters": {
+          "bootstrap": true,
+          "ccp_alpha": 0.0,
+          "class_weight": null,
+          "criterion": "gini",
+          "max_depth": 12,
+          "max_features": "sqrt",
+          "max_leaf_nodes": null,
+          "max_samples": null,
+          "min_impurity_decrease": 0.0,
+          "min_samples_leaf": 10,
+          "min_samples_split": 2,
+          "min_weight_fraction_leaf": 0.0,
+          "monotonic_cst": null,
+          "n_estimators": 100,
+          "n_jobs": 2,
+          "oob_score": false,
+          "random_state": 17,
+          "verbose": 0,
+          "warm_start": false
+        },
+        "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+        "fit_seconds": 42.998227599979145,
+        "warnings": [],
+        "train": {
+          "rows": 303791,
+          "positive": 110987,
+          "prevalence": 0.3653399870305572,
+          "accuracy": 0.697969985944284,
+          "precision": 0.6468055873597436,
+          "recall": 0.38174741185904654,
+          "f1": 0.4801237449856084,
+          "confusion_matrix": [
+            [
+              169668,
+              23136
+            ],
+            [
+              68618,
+              42369
+            ]
+          ],
+          "roc_auc": 0.7405677850832437,
+          "average_precision": 0.6131296004610043,
+          "pr_auc_trapezoid": 0.6131259789949675,
+          "decision_threshold": 0.5,
+          "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+        },
+        "validation": {
+          "rows": 102449,
+          "positive": 33719,
+          "prevalence": 0.32912961571123195,
+          "accuracy": 0.6941893039463538,
+          "precision": 0.5553188533320984,
+          "recall": 0.3556155283371393,
+          "f1": 0.4335768006942436,
+          "confusion_matrix": [
+            [
+              59128,
+              9602
+            ],
+            [
+              21728,
+              11991
+            ]
+          ],
+          "roc_auc": 0.6832266210283122,
+          "average_precision": 0.5236688442307188,
+          "pr_auc_trapezoid": 0.5236521259126325,
+          "decision_threshold": 0.5,
+          "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+        },
+        "artifact": "artifacts/modeling/random_forest_cv_selected.joblib",
+        "artifact_sha256": "ba0abaee424fe6b6d12ec721154b125f76aeef4b32bf3eb32b4f447d163eeda6",
+        "predictions": "artifacts/modeling/random_forest_cv_selected_validation_predictions.parquet",
+        "predictions_sha256": "e3aac3069df56525f9abc573325ce0be6bb5085d4138cbffb5abc9d8288e88d5"
+      }
+    }
+  ],
+  "comparison": [
+    {
+      "model": "Logistic Regression",
+      "version": "default",
+      "parameters": {},
+      "cv_average_precision_mean": 0.4310226213276418,
+      "cv_average_precision_std": 0.01424577364445347,
+      "fit_seconds": 0.7736390999925788,
+      "train_average_precision": 0.4331775942983875,
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.6612558443713458,
+      "precision": 0.329996548153262,
+      "recall": 0.028351967733325423,
+      "f1": 0.05221760978807079,
+      "confusion_matrix": [
+        [
+          66789,
+          1941
+        ],
+        [
+          32763,
+          956
+        ]
+      ],
+      "roc_auc": 0.5928950249454924,
+      "average_precision": 0.37874336528926744,
+      "pr_auc_trapezoid": 0.378711471453996,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    {
+      "model": "Logistic Regression",
+      "version": "CV selected",
+      "parameters": {},
+      "cv_average_precision_mean": 0.4310226213276418,
+      "cv_average_precision_std": 0.01424577364445347,
+      "fit_seconds": 0.7736390999925788,
+      "train_average_precision": 0.4331775942983875,
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.6612558443713458,
+      "precision": 0.329996548153262,
+      "recall": 0.028351967733325423,
+      "f1": 0.05221760978807079,
+      "confusion_matrix": [
+        [
+          66789,
+          1941
+        ],
+        [
+          32763,
+          956
+        ]
+      ],
+      "roc_auc": 0.5928950249454924,
+      "average_precision": 0.37874336528926744,
+      "pr_auc_trapezoid": 0.378711471453996,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    {
+      "model": "Decision Tree",
+      "version": "default",
+      "parameters": {},
+      "cv_average_precision_mean": 0.4001352032193839,
+      "cv_average_precision_std": 0.0077709214043694165,
+      "fit_seconds": 3.0248472999955993,
+      "train_average_precision": 0.9999995142304845,
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.5892004802389481,
+      "precision": 0.39419842694924256,
+      "recall": 0.46226163290726296,
+      "f1": 0.4255255255255255,
+      "confusion_matrix": [
+        [
+          44776,
+          23954
+        ],
+        [
+          18132,
+          15587
+        ]
+      ],
+      "roc_auc": 0.5567858081473562,
+      "average_precision": 0.35921565815088596,
+      "pr_auc_trapezoid": 0.5166162248884854,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    {
+      "model": "Decision Tree",
+      "version": "CV selected",
+      "parameters": {
+        "max_depth": 12,
+        "min_samples_split": 2,
+        "min_samples_leaf": 10
+      },
+      "cv_average_precision_mean": 0.4762849870525606,
+      "cv_average_precision_std": 0.019556526561587732,
+      "fit_seconds": 2.6355569000006653,
+      "train_average_precision": 0.614665957338286,
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.6758679928549814,
+      "precision": 0.5097338403041826,
+      "recall": 0.3975799994068626,
+      "f1": 0.4467252036854996,
+      "confusion_matrix": [
+        [
+          55836,
+          12894
+        ],
+        [
+          20313,
+          13406
+        ]
+      ],
+      "roc_auc": 0.6545659135413912,
+      "average_precision": 0.46833692409676975,
+      "pr_auc_trapezoid": 0.4621777390596842,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    {
+      "model": "Random Forest",
+      "version": "default",
+      "parameters": {},
+      "cv_average_precision_mean": 0.5042164779391568,
+      "cv_average_precision_std": 0.004101888385582657,
+      "fit_seconds": 29.15496250000433,
+      "train_average_precision": 0.99997988277626,
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.6724516588741716,
+      "precision": 0.5031583872728691,
+      "recall": 0.38269225065986534,
+      "f1": 0.4347342710351217,
+      "confusion_matrix": [
+        [
+          55988,
+          12742
+        ],
+        [
+          20815,
+          12904
+        ]
+      ],
+      "roc_auc": 0.6528130928474875,
+      "average_precision": 0.47988457266220025,
+      "pr_auc_trapezoid": 0.4818299813037807,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    {
+      "model": "Random Forest",
+      "version": "CV selected",
+      "parameters": {
+        "n_estimators": 100,
+        "max_depth": 12,
+        "min_samples_leaf": 10
+      },
+      "cv_average_precision_mean": 0.5402887769711602,
+      "cv_average_precision_std": 0.013918685122126543,
+      "fit_seconds": 42.998227599979145,
+      "train_average_precision": 0.6131296004610043,
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.6941893039463538,
+      "precision": 0.5553188533320984,
+      "recall": 0.3556155283371393,
+      "f1": 0.4335768006942436,
+      "confusion_matrix": [
+        [
+          59128,
+          9602
+        ],
+        [
+          21728,
+          11991
+        ]
+      ],
+      "roc_auc": 0.6832266210283122,
+      "average_precision": 0.5236688442307188,
+      "pr_auc_trapezoid": 0.5236521259126325,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    }
+  ],
+  "frozen_selection": {
+    "frozen": true,
+    "utc": "2026-11-21T14:39:48.998348+00:00",
+    "model": "Random Forest",
+    "parameters": {
+      "n_estimators": 100,
+      "max_depth": 12,
+      "min_samples_leaf": 10
+    },
+    "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+    "features": [
+      "customers_out_t",
+      "lag_15m",
+      "lag_60m",
+      "delta_60m",
+      "rolling_mean_60m",
+      "rolling_variance_60m",
+      "history_slots_60m",
+      "hour_utc",
+      "weekday_utc",
+      "month_utc",
+      "lag_15m_missing",
+      "lag_60m_missing",
+      "delta_60m_missing"
+    ],
+    "selection_rule": "Highest 2021 average precision among training-CV-selected configurations; model-order tie break",
+    "validation_average_precision": 0.5236688442307188,
+    "test_inspected_for_selection": false,
+    "final_evaluation_limit": 1
+  },
+  "primary_metric": "average_precision; trapezoidal PR-AUC reported separately",
+  "limitations": [
+    "Three-county retrospective complete-case cohort",
+    "99.80% overlapping eligible windows; folds are not independent event samples",
+    "Numeric calendar encoding is a baseline; no target-driven feature selection",
+    "2022 has not been used in model selection or tuning"
+  ]
+}

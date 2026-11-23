@@ -1,0 +1,216 @@
+{
+  "model": "Decision Tree",
+  "parameters": {
+    "max_depth": 12,
+    "min_samples_split": 2,
+    "min_samples_leaf": 1
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "folds": [
+    {
+      "name": "2018_H2",
+      "train_rows": 48860,
+      "validation_rows": 50935,
+      "last_training_anchor": "2018-06-30T20:00:00+00:00",
+      "first_validation_anchor": "2018-07-01T00:00:00+00:00",
+      "embargo_seconds": 14400.0,
+      "fit_seconds": 0.30877300002612174,
+      "warnings": [],
+      "train": {
+        "rows": 48860,
+        "positive": 17153,
+        "prevalence": 0.35106426524764633,
+        "accuracy": 0.7693000409332788,
+        "precision": 0.7362796303736441,
+        "recall": 0.5341922695738355,
+        "f1": 0.6191634569903371,
+        "confusion_matrix": [
+          [
+            28425,
+            3282
+          ],
+          [
+            7990,
+            9163
+          ]
+        ],
+        "roc_auc": 0.8324661613037793,
+        "average_precision": 0.750246536951748,
+        "pr_auc_trapezoid": 0.7541034547277102,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 50935,
+        "positive": 18980,
+        "prevalence": 0.37263178560910964,
+        "accuracy": 0.6170216943162855,
+        "precision": 0.4856379789611381,
+        "recall": 0.46944151738672285,
+        "f1": 0.4774024164813674,
+        "confusion_matrix": [
+          [
+            22518,
+            9437
+          ],
+          [
+            10070,
+            8910
+          ]
+        ],
+        "roc_auc": 0.6050289692153036,
+        "average_precision": 0.44698169448421515,
+        "pr_auc_trapezoid": 0.48556339634630946,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2019",
+      "train_rows": 99801,
+      "validation_rows": 101349,
+      "last_training_anchor": "2018-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2019-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 0.6868813000037335,
+      "warnings": [],
+      "train": {
+        "rows": 99801,
+        "positive": 36135,
+        "prevalence": 0.3620705203354676,
+        "accuracy": 0.7422771314916684,
+        "precision": 0.6793908909253773,
+        "recall": 0.5457312854573129,
+        "f1": 0.6052700234803027,
+        "confusion_matrix": [
+          [
+            54360,
+            9306
+          ],
+          [
+            16415,
+            19720
+          ]
+        ],
+        "roc_auc": 0.8042296372859901,
+        "average_precision": 0.7081350213413173,
+        "pr_auc_trapezoid": 0.7119681508123668,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 101349,
+        "positive": 36768,
+        "prevalence": 0.36278601663558596,
+        "accuracy": 0.6456501790841548,
+        "precision": 0.514159848961611,
+        "recall": 0.422187771975631,
+        "f1": 0.46365686464851624,
+        "confusion_matrix": [
+          [
+            49913,
+            14668
+          ],
+          [
+            21245,
+            15523
+          ]
+        ],
+        "roc_auc": 0.6334383881269242,
+        "average_precision": 0.46578954249562005,
+        "pr_auc_trapezoid": 0.47052195937076846,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    },
+    {
+      "name": "2020",
+      "train_rows": 201150,
+      "validation_rows": 102641,
+      "last_training_anchor": "2019-12-30T21:00:00+00:00",
+      "first_validation_anchor": "2020-01-01T00:00:00+00:00",
+      "embargo_seconds": 97200.0,
+      "fit_seconds": 1.5479428000107873,
+      "warnings": [],
+      "train": {
+        "rows": 201150,
+        "positive": 72903,
+        "prevalence": 0.3624310216256525,
+        "accuracy": 0.7205418841660453,
+        "precision": 0.6513639991293623,
+        "recall": 0.4925860389833066,
+        "f1": 0.560955988596868,
+        "confusion_matrix": [
+          [
+            109026,
+            19221
+          ],
+          [
+            36992,
+            35911
+          ]
+        ],
+        "roc_auc": 0.7705140302831348,
+        "average_precision": 0.6559055767894661,
+        "pr_auc_trapezoid": 0.6604450145038977,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      },
+      "validation": {
+        "rows": 102641,
+        "positive": 38084,
+        "prevalence": 0.3710408121510897,
+        "accuracy": 0.6477138765210784,
+        "precision": 0.533229760055239,
+        "recall": 0.405550887511816,
+        "f1": 0.46070784053453445,
+        "confusion_matrix": [
+          [
+            51037,
+            13520
+          ],
+          [
+            22639,
+            15445
+          ]
+        ],
+        "roc_auc": 0.6451620640027095,
+        "average_precision": 0.4894536679910241,
+        "pr_auc_trapezoid": 0.4868811657168009,
+        "decision_threshold": 0.5,
+        "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+      }
+    }
+  ],
+  "summary": {
+    "average_precision": {
+      "mean": 0.4674083016569531,
+      "std": 0.021282208985619173
+    },
+    "pr_auc_trapezoid": {
+      "mean": 0.4809888404779596,
+      "std": 0.009088499827392174
+    },
+    "roc_auc": {
+      "mean": 0.6278764737816458,
+      "std": 0.0206365571908661
+    },
+    "accuracy": {
+      "mean": 0.6367952499738395,
+      "std": 0.01715546091728759
+    },
+    "precision": {
+      "mean": 0.5110091959926627,
+      "std": 0.023951813449617197
+    },
+    "recall": {
+      "mean": 0.43239339229138996,
+      "std": 0.033145424434982855
+    },
+    "f1": {
+      "mean": 0.4672557072214727,
+      "std": 0.008910160908189933
+    }
+  },
+  "total_fit_seconds": 2.5435971000406425
+}

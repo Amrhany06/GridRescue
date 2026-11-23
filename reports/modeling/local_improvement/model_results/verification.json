@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "observations_2021": 582532,
+  "reloaded_rows_per_model": 585,
+  "checked_oof_candidate_folds": 18,
+  "verified_metric_rows": 36,
+  "protected_official_artifacts": 8,
+  "protected_prior_forests": 4,
+  "python": "3.12.14",
+  "scikit_learn": "1.9.1",
+  "xgboost": "3.2.0",
+  "available_ram_after": 4444762112,
+  "disk_free_after": 8077385728,
+  "complexity": {
+    "rf_history_state": {
+      "nodes": 429896,
+      "leaves": 214998,
+      "trees": 100,
+      "depth_limit": 12,
+      "file_bytes": 12507611
+    },
+    "rf_history_both": {
+      "nodes": 374852,
+      "leaves": 187476,
+      "trees": 100,
+      "depth_limit": 12,
+      "file_bytes": 10855077
+    },
+    "xgb_original_state": {
+      "nodes": 13826,
+      "leaves": 6973,
+      "trees": 120,
+      "depth_limit": 6,
+      "file_bytes": 190112
+    },
+    "xgb_history_state": {
+      "nodes": 14116,
+      "leaves": 7118,
+      "trees": 120,
+      "depth_limit": 6,
+      "file_bytes": 197050
+    }
+  }
+}

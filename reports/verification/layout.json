@@ -1,0 +1,7 @@
+{
+  "check": "layout",
+  "started_utc": "2026-11-18T11:21:43.087201+00:00",
+  "completed_utc": "2026-11-18T11:21:43.282120+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/layout.txt"
+}

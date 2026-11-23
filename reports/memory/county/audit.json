@@ -1,0 +1,871 @@
+{
+  "scope": "All source dates 2018-2021 for fixed counties 06037, 12086, 48201; geographic examples, not representative; 2022 untouched",
+  "utc": "2026-11-16T21:10:03.594866+00:00",
+  "target_status": "PROVISIONAL_UNAPPROVED; audit only",
+  "timestamp_policy": "Source naive timestamps interpreted as UTC per supplied project documentation; not inferred from strings",
+  "nulls_raw": {
+    "fips_code": 0,
+    "county": 0,
+    "state": 0,
+    "customers_out": 1336,
+    "run_start_time": 0
+  },
+  "unique_raw": {
+    "fips_code": 3,
+    "county": 3,
+    "state": 3,
+    "customers_out": 11679,
+    "run_start_time": 139616
+  },
+  "raw_exact_duplicate_rows": 0,
+  "counts": {
+    "raw": 418374,
+    "invalid": 1434,
+    "exact_duplicates_removed": 0,
+    "conflict_rows": 0,
+    "silver": 416940
+  },
+  "invalid_reasons": [
+    {
+      "reason": "invalid_count",
+      "count": 1336
+    },
+    {
+      "reason": "off_grid_timestamp",
+      "count": 98
+    }
+  ],
+  "year_counts": [
+    {
+      "year": 2018,
+      "count": 103571
+    },
+    {
+      "year": 2019,
+      "count": 104205
+    },
+    {
+      "year": 2020,
+      "count": 104841
+    },
+    {
+      "year": 2021,
+      "count": 104323
+    }
+  ],
+  "gaps": [
+    {
+      "year": 2018,
+      "internal_missing_slots": 1264,
+      "max_gap_seconds": 55800
+    },
+    {
+      "year": 2019,
+      "internal_missing_slots": 630,
+      "max_gap_seconds": 26100
+    },
+    {
+      "year": 2020,
+      "internal_missing_slots": 282,
+      "max_gap_seconds": 14400
+    },
+    {
+      "year": 2021,
+      "internal_missing_slots": 512,
+      "max_gap_seconds": 77400
+    }
+  ],
+  "gap_policy": "Within observed county-year min/max only; leading/trailing unknown periods excluded. No zero filling. Prefix extraction creates edge effects.",
+  "outliers": {
+    "approx_quantiles_25_50_75_99": [
+      90.0,
+      254.0,
+      798.0,
+      9168.0
+    ],
+    "relative_rank_error": 0.001,
+    "iqr_upper_fence": 1860.0,
+    "above_fence": 47945,
+    "max": 455986,
+    "policy": "Retain all valid extreme counts; statistical rarity does not prove error. Log1p for display only; no learned capping."
+  },
+  "coverage_by_county_year": [
+    {
+      "fips_code": "06037",
+      "county": "Los Angeles",
+      "state": "California",
+      "year": 2018,
+      "observed_anchors": 34254,
+      "observed_days": 365,
+      "first": "2018-01-01 00:00:00",
+      "last": "2018-12-31 00:00:00",
+      "eligible": 32580,
+      "positive": 14063,
+      "negative": 18517
+    },
+    {
+      "fips_code": "12086",
+      "county": "Miami-Dade",
+      "state": "Florida",
+      "year": 2018,
+      "observed_anchors": 34673,
+      "observed_days": 365,
+      "first": "2018-01-01 00:00:00",
+      "last": "2018-12-31 00:00:00",
+      "eligible": 33686,
+      "positive": 10863,
+      "negative": 22823
+    },
+    {
+      "fips_code": "48201",
+      "county": "Harris",
+      "state": "Texas",
+      "year": 2018,
+      "observed_anchors": 34644,
+      "observed_days": 365,
+      "first": "2018-01-01 00:00:00",
+      "last": "2018-12-31 00:00:00",
+      "eligible": 33535,
+      "positive": 11209,
+      "negative": 22326
+    },
+    {
+      "fips_code": "06037",
+      "county": "Los Angeles",
+      "state": "California",
+      "year": 2019,
+      "observed_anchors": 34797,
+      "observed_days": 365,
+      "first": "2019-01-01 00:00:00",
+      "last": "2019-12-31 00:00:00",
+      "eligible": 34339,
+      "positive": 15828,
+      "negative": 18511
+    },
+    {
+      "fips_code": "12086",
+      "county": "Miami-Dade",
+      "state": "Florida",
+      "year": 2019,
+      "observed_anchors": 34673,
+      "observed_days": 365,
+      "first": "2019-01-01 00:00:00",
+      "last": "2019-12-31 00:00:00",
+      "eligible": 32854,
+      "positive": 9664,
+      "negative": 23190
+    },
+    {
+      "fips_code": "48201",
+      "county": "Harris",
+      "state": "Texas",
+      "year": 2019,
+      "observed_anchors": 34735,
+      "observed_days": 365,
+      "first": "2019-01-01 00:00:00",
+      "last": "2019-12-31 00:00:00",
+      "eligible": 34156,
+      "positive": 11276,
+      "negative": 22880
+    },
+    {
+      "fips_code": "06037",
+      "county": "Los Angeles",
+      "state": "California",
+      "year": 2020,
+      "observed_anchors": 35011,
+      "observed_days": 366,
+      "first": "2020-01-01 00:00:00",
+      "last": "2020-12-31 00:00:00",
+      "eligible": 34773,
+      "positive": 15799,
+      "negative": 18974
+    },
+    {
+      "fips_code": "12086",
+      "county": "Miami-Dade",
+      "state": "Florida",
+      "year": 2020,
+      "observed_anchors": 34925,
+      "observed_days": 366,
+      "first": "2020-01-01 00:00:00",
+      "last": "2020-12-31 00:00:00",
+      "eligible": 34047,
+      "positive": 10338,
+      "negative": 23709
+    },
+    {
+      "fips_code": "48201",
+      "county": "Harris",
+      "state": "Texas",
+      "year": 2020,
+      "observed_anchors": 34905,
+      "observed_days": 366,
+      "first": "2020-01-01 00:00:00",
+      "last": "2020-12-31 00:00:00",
+      "eligible": 33821,
+      "positive": 11947,
+      "negative": 21874
+    },
+    {
+      "fips_code": "06037",
+      "county": "Los Angeles",
+      "state": "California",
+      "year": 2021,
+      "observed_anchors": 34823,
+      "observed_days": 365,
+      "first": "2021-01-01 00:00:00",
+      "last": "2021-12-31 00:00:00",
+      "eligible": 34476,
+      "positive": 14820,
+      "negative": 19656
+    },
+    {
+      "fips_code": "12086",
+      "county": "Miami-Dade",
+      "state": "Florida",
+      "year": 2021,
+      "observed_anchors": 34757,
+      "observed_days": 365,
+      "first": "2021-01-01 00:00:00",
+      "last": "2021-12-31 00:00:00",
+      "eligible": 34057,
+      "positive": 10113,
+      "negative": 23944
+    },
+    {
+      "fips_code": "48201",
+      "county": "Harris",
+      "state": "Texas",
+      "year": 2021,
+      "observed_anchors": 34743,
+      "observed_days": 365,
+      "first": "2021-01-01 00:00:00",
+      "last": "2021-12-31 00:00:00",
+      "eligible": 33916,
+      "positive": 8786,
+      "negative": 25130
+    }
+  ],
+  "feature_missing_counts": [
+    {
+      "customers_out_t": 0,
+      "lag_15m": 1038,
+      "lag_60m": 1553,
+      "delta_60m": 1553,
+      "rolling_mean_60m": 0,
+      "rolling_variance_60m": 0,
+      "history_slots_60m": 0,
+      "hour_utc": 0,
+      "weekday_utc": 0,
+      "month_utc": 0
+    }
+  ],
+  "label_summary": [
+    {
+      "year": 2018,
+      "future_slots": 0,
+      "candidate_y": null,
+      "split": "train",
+      "count": 28
+    },
+    {
+      "year": 2018,
+      "future_slots": 1,
+      "candidate_y": null,
+      "split": "train",
+      "count": 33
+    },
+    {
+      "year": 2018,
+      "future_slots": 2,
+      "candidate_y": null,
+      "split": "train",
+      "count": 39
+    },
+    {
+      "year": 2018,
+      "future_slots": 3,
+      "candidate_y": null,
+      "split": "train",
+      "count": 78
+    },
+    {
+      "year": 2018,
+      "future_slots": 4,
+      "candidate_y": null,
+      "split": "train",
+      "count": 53
+    },
+    {
+      "year": 2018,
+      "future_slots": 5,
+      "candidate_y": null,
+      "split": "train",
+      "count": 78
+    },
+    {
+      "year": 2018,
+      "future_slots": 6,
+      "candidate_y": null,
+      "split": "train",
+      "count": 70
+    },
+    {
+      "year": 2018,
+      "future_slots": 7,
+      "candidate_y": null,
+      "split": "train",
+      "count": 86
+    },
+    {
+      "year": 2018,
+      "future_slots": 8,
+      "candidate_y": null,
+      "split": "train",
+      "count": 161
+    },
+    {
+      "year": 2018,
+      "future_slots": 9,
+      "candidate_y": null,
+      "split": "train",
+      "count": 209
+    },
+    {
+      "year": 2018,
+      "future_slots": 10,
+      "candidate_y": null,
+      "split": "train",
+      "count": 678
+    },
+    {
+      "year": 2018,
+      "future_slots": 11,
+      "candidate_y": null,
+      "split": "train",
+      "count": 2257
+    },
+    {
+      "year": 2018,
+      "future_slots": 12,
+      "candidate_y": 0,
+      "split": "train",
+      "count": 63666
+    },
+    {
+      "year": 2018,
+      "future_slots": 12,
+      "candidate_y": 1,
+      "split": "train",
+      "count": 36135
+    },
+    {
+      "year": 2019,
+      "future_slots": 0,
+      "candidate_y": null,
+      "split": "train",
+      "count": 15
+    },
+    {
+      "year": 2019,
+      "future_slots": 1,
+      "candidate_y": null,
+      "split": "train",
+      "count": 15
+    },
+    {
+      "year": 2019,
+      "future_slots": 2,
+      "candidate_y": null,
+      "split": "train",
+      "count": 17
+    },
+    {
+      "year": 2019,
+      "future_slots": 3,
+      "candidate_y": null,
+      "split": "train",
+      "count": 28
+    },
+    {
+      "year": 2019,
+      "future_slots": 4,
+      "candidate_y": null,
+      "split": "train",
+      "count": 30
+    },
+    {
+      "year": 2019,
+      "future_slots": 5,
+      "candidate_y": null,
+      "split": "train",
+      "count": 42
+    },
+    {
+      "year": 2019,
+      "future_slots": 6,
+      "candidate_y": null,
+      "split": "train",
+      "count": 56
+    },
+    {
+      "year": 2019,
+      "future_slots": 7,
+      "candidate_y": null,
+      "split": "train",
+      "count": 45
+    },
+    {
+      "year": 2019,
+      "future_slots": 8,
+      "candidate_y": null,
+      "split": "train",
+      "count": 79
+    },
+    {
+      "year": 2019,
+      "future_slots": 9,
+      "candidate_y": null,
+      "split": "train",
+      "count": 128
+    },
+    {
+      "year": 2019,
+      "future_slots": 10,
+      "candidate_y": null,
+      "split": "train",
+      "count": 348
+    },
+    {
+      "year": 2019,
+      "future_slots": 11,
+      "candidate_y": null,
+      "split": "train",
+      "count": 2053
+    },
+    {
+      "year": 2019,
+      "future_slots": 12,
+      "candidate_y": 0,
+      "split": "train",
+      "count": 64581
+    },
+    {
+      "year": 2019,
+      "future_slots": 12,
+      "candidate_y": 1,
+      "split": "train",
+      "count": 36768
+    },
+    {
+      "year": 2020,
+      "future_slots": 0,
+      "candidate_y": null,
+      "split": "train",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "future_slots": 1,
+      "candidate_y": null,
+      "split": "train",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "future_slots": 2,
+      "candidate_y": null,
+      "split": "train",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "future_slots": 3,
+      "candidate_y": null,
+      "split": "train",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "future_slots": 4,
+      "candidate_y": null,
+      "split": "train",
+      "count": 8
+    },
+    {
+      "year": 2020,
+      "future_slots": 5,
+      "candidate_y": null,
+      "split": "train",
+      "count": 7
+    },
+    {
+      "year": 2020,
+      "future_slots": 6,
+      "candidate_y": null,
+      "split": "train",
+      "count": 12
+    },
+    {
+      "year": 2020,
+      "future_slots": 7,
+      "candidate_y": null,
+      "split": "train",
+      "count": 44
+    },
+    {
+      "year": 2020,
+      "future_slots": 8,
+      "candidate_y": null,
+      "split": "train",
+      "count": 56
+    },
+    {
+      "year": 2020,
+      "future_slots": 9,
+      "candidate_y": null,
+      "split": "train",
+      "count": 80
+    },
+    {
+      "year": 2020,
+      "future_slots": 10,
+      "candidate_y": null,
+      "split": "train",
+      "count": 261
+    },
+    {
+      "year": 2020,
+      "future_slots": 11,
+      "candidate_y": null,
+      "split": "train",
+      "count": 1716
+    },
+    {
+      "year": 2020,
+      "future_slots": 12,
+      "candidate_y": 0,
+      "split": "train",
+      "count": 64557
+    },
+    {
+      "year": 2020,
+      "future_slots": 12,
+      "candidate_y": 1,
+      "split": "train",
+      "count": 38084
+    },
+    {
+      "year": 2021,
+      "future_slots": 0,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 9
+    },
+    {
+      "year": 2021,
+      "future_slots": 1,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 11
+    },
+    {
+      "year": 2021,
+      "future_slots": 2,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 14
+    },
+    {
+      "year": 2021,
+      "future_slots": 3,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 26
+    },
+    {
+      "year": 2021,
+      "future_slots": 4,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 21
+    },
+    {
+      "year": 2021,
+      "future_slots": 5,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 42
+    },
+    {
+      "year": 2021,
+      "future_slots": 6,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 36
+    },
+    {
+      "year": 2021,
+      "future_slots": 7,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 65
+    },
+    {
+      "year": 2021,
+      "future_slots": 8,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 70
+    },
+    {
+      "year": 2021,
+      "future_slots": 9,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 163
+    },
+    {
+      "year": 2021,
+      "future_slots": 10,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 165
+    },
+    {
+      "year": 2021,
+      "future_slots": 11,
+      "candidate_y": null,
+      "split": "validation",
+      "count": 1252
+    },
+    {
+      "year": 2021,
+      "future_slots": 12,
+      "candidate_y": 0,
+      "split": "validation",
+      "count": 68730
+    },
+    {
+      "year": 2021,
+      "future_slots": 12,
+      "candidate_y": 1,
+      "split": "validation",
+      "count": 33719
+    }
+  ],
+  "future_gap_summary": [
+    {
+      "year": 2018,
+      "label_complete": true,
+      "largest_future_gap_seconds": 900
+    },
+    {
+      "year": 2021,
+      "label_complete": true,
+      "largest_future_gap_seconds": 900
+    },
+    {
+      "year": 2020,
+      "label_complete": true,
+      "largest_future_gap_seconds": 900
+    },
+    {
+      "year": 2019,
+      "label_complete": true,
+      "largest_future_gap_seconds": 900
+    },
+    {
+      "year": 2019,
+      "label_complete": false,
+      "largest_future_gap_seconds": 10800
+    },
+    {
+      "year": 2020,
+      "label_complete": false,
+      "largest_future_gap_seconds": 10800
+    },
+    {
+      "year": 2021,
+      "label_complete": false,
+      "largest_future_gap_seconds": 10800
+    },
+    {
+      "year": 2018,
+      "label_complete": false,
+      "largest_future_gap_seconds": 10800
+    }
+  ],
+  "selection_bias": [
+    {
+      "year": 2020,
+      "state": "Florida",
+      "all_anchors": 34925,
+      "eligible_anchors": 34047,
+      "mean_current_all": 330.1575375805297,
+      "mean_current_eligible": 327.34305518841603
+    },
+    {
+      "year": 2020,
+      "state": "California",
+      "all_anchors": 35011,
+      "eligible_anchors": 34773,
+      "mean_current_all": 1593.8542172460084,
+      "mean_current_eligible": 1598.4137980617145
+    },
+    {
+      "year": 2018,
+      "state": "Florida",
+      "all_anchors": 34673,
+      "eligible_anchors": 33686,
+      "mean_current_all": 282.7463155769619,
+      "mean_current_eligible": 281.7394763403194
+    },
+    {
+      "year": 2021,
+      "state": "California",
+      "all_anchors": 34823,
+      "eligible_anchors": 34476,
+      "mean_current_all": 1660.8399333773655,
+      "mean_current_eligible": 1663.325617821093
+    },
+    {
+      "year": 2020,
+      "state": "Texas",
+      "all_anchors": 34905,
+      "eligible_anchors": 33821,
+      "mean_current_all": 645.974358974359,
+      "mean_current_eligible": 651.183732000828
+    },
+    {
+      "year": 2021,
+      "state": "Texas",
+      "all_anchors": 34743,
+      "eligible_anchors": 33916,
+      "mean_current_all": 2471.8394496733154,
+      "mean_current_eligible": 2520.2376754334236
+    },
+    {
+      "year": 2018,
+      "state": "California",
+      "all_anchors": 34254,
+      "eligible_anchors": 32580,
+      "mean_current_all": 1816.9649384013546,
+      "mean_current_eligible": 1838.0371700429712
+    },
+    {
+      "year": 2019,
+      "state": "California",
+      "all_anchors": 34797,
+      "eligible_anchors": 34339,
+      "mean_current_all": 1537.7886886800586,
+      "mean_current_eligible": 1548.5589562887678
+    },
+    {
+      "year": 2019,
+      "state": "Florida",
+      "all_anchors": 34673,
+      "eligible_anchors": 32854,
+      "mean_current_all": 279.4681740835809,
+      "mean_current_eligible": 272.70091921836
+    },
+    {
+      "year": 2021,
+      "state": "Florida",
+      "all_anchors": 34757,
+      "eligible_anchors": 34057,
+      "mean_current_all": 286.81183646459704,
+      "mean_current_eligible": 282.1860410488299
+    },
+    {
+      "year": 2018,
+      "state": "Texas",
+      "all_anchors": 34644,
+      "eligible_anchors": 33535,
+      "mean_current_all": 489.1490878651426,
+      "mean_current_eligible": 484.58040852840315
+    },
+    {
+      "year": 2019,
+      "state": "Texas",
+      "all_anchors": 34735,
+      "eligible_anchors": 34156,
+      "mean_current_all": 770.611947603282,
+      "mean_current_eligible": 772.2362103290783
+    }
+  ],
+  "county_eligibility": [
+    {
+      "year": 2021,
+      "observed_counties": 3,
+      "counties_with_eligible_anchors": 3,
+      "eligible_anchors": 102449
+    },
+    {
+      "year": 2019,
+      "observed_counties": 3,
+      "counties_with_eligible_anchors": 3,
+      "eligible_anchors": 101349
+    },
+    {
+      "year": 2020,
+      "observed_counties": 3,
+      "counties_with_eligible_anchors": 3,
+      "eligible_anchors": 102641
+    },
+    {
+      "year": 2018,
+      "observed_counties": 3,
+      "counties_with_eligible_anchors": 3,
+      "eligible_anchors": 99801
+    }
+  ],
+  "splits": [
+    {
+      "split": "validation",
+      "all_anchors": 104323,
+      "complete_candidate_anchors": 102449
+    },
+    {
+      "split": "train",
+      "all_anchors": 312617,
+      "complete_candidate_anchors": 303791
+    }
+  ],
+  "preparation_features": [
+    "customers_out_t",
+    "lag_15m",
+    "lag_60m",
+    "delta_60m",
+    "rolling_mean_60m",
+    "rolling_variance_60m",
+    "history_slots_60m",
+    "hour_utc",
+    "weekday_utc",
+    "month_utc",
+    "lag_15m_missing",
+    "lag_60m_missing",
+    "delta_60m_missing"
+  ],
+  "eligible_preparation_counts": [
+    {
+      "split": "validation",
+      "count": 102449
+    },
+    {
+      "split": "train",
+      "count": 303791
+    }
+  ],
+  "preparation": "NOT FITTED OR SAVED in memory-only audit; Parquet verification remains blocked",
+  "metadata_join": {
+    "purpose": "Reattach unique observed geography for dashboard display only; ambiguous geography withheld",
+    "before": 416940,
+    "after": 416940,
+    "ambiguous_counties": 0
+  },
+  "benchmark": "NOT RUN; memory-only audit does not verify Parquet",
+  "runtime_seconds": 68.23125670000445,
+  "execution": "VERIFIED IN-MEMORY AUDIT ONLY; no storage/preparation verification: county development scope"
+}

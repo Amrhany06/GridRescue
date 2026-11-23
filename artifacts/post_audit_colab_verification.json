@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "local preparation; fixtures and archived predictions only",
+  "notebook": {
+    "code_cells_compiled": 13,
+    "safe_default_cells_executed": 7,
+    "embedded_files_checked": 23,
+    "notebook_bytes": 169575,
+    "bundle_bytes": 115837
+  },
+  "development": {
+    "arrow_fold_partitions_exact": 6,
+    "oof_rows_checked": 890035,
+    "oof_cutoffs_exact": {
+      "target_40": 0.36248219013214106,
+      "target_50": 0.31280517578124994,
+      "target_60": 0.2670117616653442
+    },
+    "archived_feature_sample_checked": 82,
+    "feature_count": 24,
+    "training_rows": 1053328,
+    "development_rows": 582532,
+    "tier_a_parity_feature_rows": {
+      "train": 115,
+      "validation": 147
+    },
+    "tier_a_preprocessing_and_saved_score_reload_rows": 147
+  },
+  "protected_files": 8,
+  "experimental_models": 4,
+  "checksum_matched_years": [
+    2018,
+    2019,
+    2020,
+    2021
+  ],
+  "cloud_fit_executed": false,
+  "nationwide_download_executed": false
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PAUSED_FOR_PERSONAL_TASK1_TASK2_REVIEW",
+  "utc": "2026-11-17T14:51:46.582388+00:00",
+  "authority": "Latest explicit user pause request in this conversation",
+  "allowed_remaining_work": [
+    "Finish already-running Linux environment installation",
+    "Task 2 persistence write/read and preprocessing save/reload verification"
+  ],
+  "forbidden": [
+    "Real-data classifier fitting",
+    "train_development.py execution",
+    "Cross-validation and tuning",
+    "2022 feature/label access or final evaluation",
+    "Target, feature, model or experiment configuration changes pending revised requirements"
+  ],
+  "real_data_training_executed": false,
+  "holdout_evaluation_executed": false,
+  "prior_2022_access": "File inventory, original-byte hash and parsed record integrity count only; no development, features, labels or scores",
+  "evidence_paths": {
+    "reports/modeling/development.json": false,
+    "reports/modeling/frozen_selection.json": false,
+    "reports/modeling/final_evaluation_journal.json": false,
+    "reports/modeling/final_evaluation.json": false,
+    "artifacts/modeling": false,
+    "data/final_test": false
+  },
+  "task3_executed_code_cells": 0,
+  "unit_test_scope": "Earlier classifier unit tests used only tiny synthetic fixtures, not EAGLE-I observations",
+  "installer": "Prior Linux dependency installation completed successfully; environment preserved",
+  "frozen_code_sha256": {
+    "src/gridrescue/modeling.py": "57b3967c99a28b74546982165a24c0171dfbcac8ce8e1b617a7dc48077491a8f",
+    "src/gridrescue/experiment.py": "63c65b17f3855b4ab963c2f7de64f33e21890323b8866b0b86d134c596dda646",
+    "src/gridrescue/final_evaluation.py": "eeda04d23870bfca83fcb685f8cd621e3c3e5f675e05dfca981ede8169fe1a31",
+    "reports/target_approval.json": "b304efbd16ce05d0ca37288ea2d17a1f81d10ade0b63721aeee0cfd8a0c77842"
+  },
+  "models": [
+    "Logistic Regression",
+    "Decision Tree Classifier",
+    "Random Forest Classifier"
+  ],
+  "raw_2022_last_write_utc": "2026-11-11T13:09:42Z (metadata inspected, content not reopened)",
+  "last_observed_utc": "2026-11-17T17:19:11.866064+00:00",
+  "task2_persistence_status": "VERIFIED_ARROW_LOCAL_ONLY; native Windows Hadoop writer remains blocked",
+  "installer_session_at_pause": 76120,
+  "installation_policy": "Do not uninstall WSL/Ubuntu or delete .venv-linux; no further system changes authorized",
+  "review_evidence": "reports/task12_focused_validation.json",
+  "latest_notebook_execution": "reports/task12_focused_execution.json"
+}

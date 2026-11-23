@@ -1,0 +1,75 @@
+{
+  "model": "Decision Tree",
+  "kind": "default",
+  "parameters": {},
+  "classifier_parameters": {
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": null,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "random_state": 17,
+    "splitter": "best"
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "fit_seconds": 3.0248472999955993,
+  "warnings": [],
+  "train": {
+    "rows": 303791,
+    "positive": 110987,
+    "prevalence": 0.3653399870305572,
+    "accuracy": 0.9997136189024691,
+    "precision": 0.9998647795907329,
+    "recall": 0.9993512753745935,
+    "f1": 0.9996079615351685,
+    "confusion_matrix": [
+      [
+        192789,
+        15
+      ],
+      [
+        72,
+        110915
+      ]
+    ],
+    "roc_auc": 0.9999998115309376,
+    "average_precision": 0.9999995142304845,
+    "pr_auc_trapezoid": 0.9999996727335659,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "validation": {
+    "rows": 102449,
+    "positive": 33719,
+    "prevalence": 0.32912961571123195,
+    "accuracy": 0.5892004802389481,
+    "precision": 0.39419842694924256,
+    "recall": 0.46226163290726296,
+    "f1": 0.4255255255255255,
+    "confusion_matrix": [
+      [
+        44776,
+        23954
+      ],
+      [
+        18132,
+        15587
+      ]
+    ],
+    "roc_auc": 0.5567858081473562,
+    "average_precision": 0.35921565815088596,
+    "pr_auc_trapezoid": 0.5166162248884854,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "artifact": "artifacts/modeling/decision_tree_default.joblib",
+  "artifact_sha256": "59a388dabfb21761fdc55347850f9d73fe6ac3a2eab803e621aa51d89a482693",
+  "predictions": "artifacts/modeling/decision_tree_default_validation_predictions.parquet",
+  "predictions_sha256": "34bb59309d92303877fd86697442fdff9d4aa366721f209781e7707211f61ed2"
+}

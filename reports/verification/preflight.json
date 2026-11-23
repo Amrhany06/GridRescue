@@ -1,0 +1,7 @@
+{
+  "check": "preflight",
+  "started_utc": "2026-11-16T21:20:59.230446+00:00",
+  "completed_utc": "2026-11-16T21:21:21.011913+00:00",
+  "exit_code": 1,
+  "log": "reports/verification/preflight.txt"
+}

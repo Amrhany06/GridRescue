@@ -1,0 +1,9 @@
+{
+  "mode": "arrow-local",
+  "python_driver_rss_bytes": 173744128,
+  "spark_cached_block_bytes": 3968840,
+  "spark_cached_disk_bytes": 0,
+  "bounded_pandas_rows": 1000,
+  "bounded_pandas_deep_bytes": 283960,
+  "scope": "Instantaneous local cache allocation and Python RSS; not peak JVM/cluster RAM or whole-source memory"
+}

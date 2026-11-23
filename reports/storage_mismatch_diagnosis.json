@@ -1,0 +1,75 @@
+{
+  "rows_original": 416940,
+  "rows_reloaded": 416940,
+  "schema_equal": true,
+  "joined_rows": 416940,
+  "mismatches_by_column": {
+    "timestamp": 48,
+    "county": 0,
+    "state": 0,
+    "run_start_time": 0,
+    "customers_out_t": 0,
+    "rolling_mean_60m": 0,
+    "rolling_variance_60m": 0,
+    "history_slots_60m": 0,
+    "lag_15m": 0,
+    "lag_60m": 0,
+    "delta_60m": 0,
+    "hour_utc": 0,
+    "weekday_utc": 0,
+    "month_utc": 0
+  },
+  "bounded_examples": {
+    "timestamp": [
+      {
+        "fips_code": "06037",
+        "epoch": 1540497600,
+        "original": "2018-10-25 20:00:00",
+        "reloaded": "2018-10-25 21:00:00"
+      },
+      {
+        "fips_code": "06037",
+        "epoch": 1540499400,
+        "original": "2018-10-25 20:30:00",
+        "reloaded": "2018-10-25 21:30:00"
+      },
+      {
+        "fips_code": "06037",
+        "epoch": 1540500300,
+        "original": "2018-10-25 20:45:00",
+        "reloaded": "2018-10-25 21:45:00"
+      },
+      {
+        "fips_code": "06037",
+        "epoch": 1572552000,
+        "original": "2019-10-31 20:00:00",
+        "reloaded": "2019-10-31 21:00:00"
+      },
+      {
+        "fips_code": "06037",
+        "epoch": 1572554700,
+        "original": "2019-10-31 20:45:00",
+        "reloaded": "2019-10-31 21:45:00"
+      },
+      {
+        "fips_code": "06037",
+        "epoch": 1635451200,
+        "original": "2021-10-28 20:00:00",
+        "reloaded": "2021-10-28 21:00:00"
+      },
+      {
+        "fips_code": "06037",
+        "epoch": 1635453000,
+        "original": "2021-10-28 20:30:00",
+        "reloaded": "2021-10-28 21:30:00"
+      },
+      {
+        "fips_code": "12086",
+        "epoch": 1540500300,
+        "original": "2018-10-25 20:45:00",
+        "reloaded": "2018-10-25 21:45:00"
+      }
+    ]
+  },
+  "2022_accessed": false
+}

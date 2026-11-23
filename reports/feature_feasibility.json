@@ -1,0 +1,152 @@
+{
+  "sample": {
+    "summary": {
+      "feature_rows": 333631,
+      "customers_out_t_min": 1,
+      "customers_out_t_max": 22952,
+      "customers_out_t_missing": 0,
+      "lag_15m_min": 1,
+      "lag_15m_max": 22952,
+      "lag_15m_missing": 25197,
+      "lag_60m_min": 1,
+      "lag_60m_max": 22877,
+      "lag_60m_missing": 76452,
+      "delta_60m_min": -19102,
+      "delta_60m_max": 16138,
+      "delta_60m_missing": 76452,
+      "rolling_mean_60m_min": 1.0,
+      "rolling_mean_60m_max": 22904.0,
+      "rolling_mean_60m_missing": 0,
+      "rolling_variance_60m_min": 0.0,
+      "rolling_variance_60m_max": 54883376.96,
+      "rolling_variance_60m_missing": 0,
+      "history_slots_60m_min": 1,
+      "history_slots_60m_max": 5,
+      "history_slots_60m_missing": 0,
+      "hour_utc_min": 0,
+      "hour_utc_max": 23,
+      "hour_utc_missing": 0,
+      "weekday_utc_min": 2,
+      "weekday_utc_max": 7,
+      "weekday_utc_missing": 0,
+      "month_utc_min": 1,
+      "month_utc_max": 1,
+      "month_utc_missing": 0
+    },
+    "by_year": [
+      {
+        "year": 2018,
+        "observed_months": 1,
+        "observed_hours": 24,
+        "observed_weekdays": 2,
+        "feature_rows": 91529,
+        "missing_exact_15m_lag": 8084,
+        "missing_exact_60m_lag": 23531
+      },
+      {
+        "year": 2019,
+        "observed_months": 1,
+        "observed_hours": 24,
+        "observed_weekdays": 2,
+        "feature_rows": 80971,
+        "missing_exact_15m_lag": 5427,
+        "missing_exact_60m_lag": 16631
+      },
+      {
+        "year": 2020,
+        "observed_months": 1,
+        "observed_hours": 24,
+        "observed_weekdays": 2,
+        "feature_rows": 62513,
+        "missing_exact_15m_lag": 5195,
+        "missing_exact_60m_lag": 16020
+      },
+      {
+        "year": 2021,
+        "observed_months": 1,
+        "observed_hours": 24,
+        "observed_weekdays": 2,
+        "feature_rows": 98618,
+        "missing_exact_15m_lag": 6491,
+        "missing_exact_60m_lag": 20270
+      }
+    ],
+    "fit_performed": false,
+    "2022_accessed": false
+  },
+  "county": {
+    "summary": {
+      "feature_rows": 416940,
+      "customers_out_t_min": 1,
+      "customers_out_t_max": 455986,
+      "customers_out_t_missing": 0,
+      "lag_15m_min": 1,
+      "lag_15m_max": 455986,
+      "lag_15m_missing": 1038,
+      "lag_60m_min": 1,
+      "lag_60m_max": 455986,
+      "lag_60m_missing": 1553,
+      "delta_60m_min": -453078,
+      "delta_60m_max": 453075,
+      "delta_60m_missing": 1553,
+      "rolling_mean_60m_min": 1.0,
+      "rolling_mean_60m_max": 370656.6,
+      "rolling_mean_60m_missing": 0,
+      "rolling_variance_60m_min": 0.0,
+      "rolling_variance_60m_max": 37404352033.59999,
+      "rolling_variance_60m_missing": 0,
+      "history_slots_60m_min": 1,
+      "history_slots_60m_max": 5,
+      "history_slots_60m_missing": 0,
+      "hour_utc_min": 0,
+      "hour_utc_max": 23,
+      "hour_utc_missing": 0,
+      "weekday_utc_min": 1,
+      "weekday_utc_max": 7,
+      "weekday_utc_missing": 0,
+      "month_utc_min": 1,
+      "month_utc_max": 12,
+      "month_utc_missing": 0
+    },
+    "by_year": [
+      {
+        "year": 2018,
+        "observed_months": 12,
+        "observed_hours": 24,
+        "observed_weekdays": 7,
+        "feature_rows": 103571,
+        "missing_exact_15m_lag": 382,
+        "missing_exact_60m_lag": 606
+      },
+      {
+        "year": 2019,
+        "observed_months": 12,
+        "observed_hours": 24,
+        "observed_weekdays": 7,
+        "feature_rows": 104205,
+        "missing_exact_15m_lag": 267,
+        "missing_exact_60m_lag": 389
+      },
+      {
+        "year": 2020,
+        "observed_months": 12,
+        "observed_hours": 24,
+        "observed_weekdays": 7,
+        "feature_rows": 104841,
+        "missing_exact_15m_lag": 211,
+        "missing_exact_60m_lag": 261
+      },
+      {
+        "year": 2021,
+        "observed_months": 12,
+        "observed_hours": 24,
+        "observed_weekdays": 7,
+        "feature_rows": 104323,
+        "missing_exact_15m_lag": 178,
+        "missing_exact_60m_lag": 297
+      }
+    ],
+    "fit_performed": false,
+    "2022_accessed": false
+  }
+}

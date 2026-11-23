@@ -1,0 +1,5 @@
+# Preserve the bytes of notebooks and checksum-pinned review evidence on checkout.
+*.ipynb -text
+*.json -text
+*.csv -text
+*.py -text

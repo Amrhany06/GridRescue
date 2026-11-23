@@ -1,0 +1,80 @@
+{
+  "all_original_rows_identical": true,
+  "original_features_match": true,
+  "original_training_rows_identical": true,
+  "n_rows": 102449,
+  "benchmarks": {
+    "three_county_numeric": {
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.6941893039463538,
+      "precision": 0.5553188533320984,
+      "recall": 0.3556155283371393,
+      "f1": 0.4335768006942436,
+      "confusion_matrix": [
+        [
+          59128,
+          9602
+        ],
+        [
+          21728,
+          11991
+        ]
+      ],
+      "roc_auc": 0.6832266210283122,
+      "average_precision": 0.5236688442307188,
+      "pr_auc_trapezoid": 0.5236521259126325,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    "three_county_state": {
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.706888305400736,
+      "precision": 0.5734474522292994,
+      "recall": 0.42720721255078736,
+      "f1": 0.48964122435799384,
+      "confusion_matrix": [
+        [
+          58015,
+          10715
+        ],
+        [
+          19314,
+          14405
+        ]
+      ],
+      "roc_auc": 0.7158578425271291,
+      "average_precision": 0.5786067733098704,
+      "pr_auc_trapezoid": 0.5785973016798966,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    },
+    "three_county_fips": {
+      "rows": 102449,
+      "positive": 33719,
+      "prevalence": 0.32912961571123195,
+      "accuracy": 0.706888305400736,
+      "precision": 0.5734474522292994,
+      "recall": 0.42720721255078736,
+      "f1": 0.48964122435799384,
+      "confusion_matrix": [
+        [
+          58015,
+          10715
+        ],
+        [
+          19314,
+          14405
+        ]
+      ],
+      "roc_auc": 0.7158578425271291,
+      "average_precision": 0.5786067733098704,
+      "pr_auc_trapezoid": 0.5785973016798966,
+      "decision_threshold": 0.5,
+      "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+    }
+  }
+}

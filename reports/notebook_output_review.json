@@ -1,0 +1,16 @@
+[
+  {
+    "notebook": "task1_eda",
+    "executed_code_cells": 19,
+    "saved_png_plots": 8,
+    "output_blocks": 48,
+    "saved_errors": 0
+  },
+  {
+    "notebook": "task2_preprocessing",
+    "executed_code_cells": 12,
+    "saved_png_plots": 0,
+    "output_blocks": 36,
+    "saved_errors": 0
+  }
+]

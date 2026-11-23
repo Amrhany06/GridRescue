@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "fit_mode": "checkpoint",
+  "fits": {},
+  "folds": [
+    {
+      "name": "2018_H2",
+      "train": 163273,
+      "validation": 181267,
+      "validation_start": "2018-07-01T00:00:00+00:00",
+      "validation_end": "2019-01-01T00:00:00+00:00"
+    },
+    {
+      "name": "2019",
+      "train": 344560,
+      "validation": 358402,
+      "validation_start": "2019-01-01T00:00:00+00:00",
+      "validation_end": "2020-01-01T00:00:00+00:00"
+    },
+    {
+      "name": "2020",
+      "train": 702962,
+      "validation": 350366,
+      "validation_start": "2020-01-01T00:00:00+00:00",
+      "validation_end": "2021-01-01T00:00:00+00:00"
+    }
+  ],
+  "train_rows": 1053328,
+  "oof_rows": 890035,
+  "development_rows": 582532,
+  "development_positive": 118355,
+  "reloaded_rows": {
+    "rf_original_state": 585,
+    "rf_history_state": 585,
+    "xgb_original_state": 585,
+    "xgb_history_state": 585,
+    "xgb_history_without_hour_state": 582532
+  },
+  "protected_artifact_count": 16,
+  "input_sha256": {
+    "notebooks/task1_eda.ipynb": "84e0b31e8142760cbee6b56d853b1f1e04407374bd6d89a47f8a7b02a2331a3b",
+    "notebooks/task2_preprocessing.ipynb": "d432cf543756547b2c1c50bc20674632160b188a82d3380914bde8fc12204f49",
+    "notebooks/task3_modeling.ipynb": "939931a2616fcefd76cfbc2ae642c2bd7e61e2004e0023122b588cd3f3183e51",
+    "artifacts/modeling/random_forest_cv_selected.joblib": "ba0abaee424fe6b6d12ec721154b125f76aeef4b32bf3eb32b4f447d163eeda6",
+    "artifacts/modeling/random_forest_cv_selected_validation_predictions.parquet": "e3aac3069df56525f9abc573325ce0be6bb5085d4138cbffb5abc9d8288e88d5",
+    "artifacts/modeling/frozen_development_pipeline.joblib": "613e3b445373492f17fea2fd3f62a61fef5f1bc1a8e33e8d8fb6357e97b28d2b",
+    "reports/modeling/frozen_selection.json": "1aec0eac303a64bb0c33b7001e994c1b65aed2342dd0ac169f588736f9222a6b",
+    "reports/modeling/frozen_pipeline.json": "cecc73402f0d2e98e99c9be0c62dff3c17004a89f3237b841f5484ff14622a0f",
+    "artifacts/modeling/county_expansion/pilot_20_20261121/models/numeric.joblib": "018c95b9de4780d0351873afbe5237135a878f818680464c0a852c1527934fb4",
+    "artifacts/modeling/county_expansion/pilot_20_20261121/models/state.joblib": "5d3585a28c0a53c7ce06ff8e0565c891892ede83e7f1925c102c3dd4821af70f",
+    "artifacts/modeling/county_expansion/pilot_20_20261121/models/fips.joblib": "bcbb5f39f3824494d55ceb35cf484eee28c991f8fe488fcc2c20928b87181df8",
+    "artifacts/modeling/county_expansion/pilot_20_20261121/models/both.joblib": "239b7f422f444680c487657f5f7c3a81785e7aaae14bc0c73d3b227f1978d3f1",
+    "artifacts/modeling/local_improvement/models/rf_history_state.joblib": "b4eb0dbe7c377a7a70dd30fa2ac3648626a3eb476ebf077ead1ce1e3a2d2565b",
+    "artifacts/modeling/local_improvement/models/rf_history_both.joblib": "957c34e087298519adadadd059a7c875583523b8561236c91599652668f9e42c",
+    "artifacts/modeling/local_improvement/models/xgb_original_state.joblib": "b8ef35e59111f1e8db70f096625bc2542d9dc165a73bf066e40028757b1e0a03",
+    "artifacts/modeling/local_improvement/models/xgb_history_state.joblib": "353bf2bf9a6a5a43ed38b8fd58c22f56c85fa73be8ee32a27e7830c15ffe0c47",
+    "reports/modeling/local_improvement/model_results/selection.json": "438a2e7918c6c9e8f08bf46bb4d344bc7dc625b4cf1b72bd31548af053c50b1d",
+    "reports/modeling/local_improvement/model_results/config.json": "5203de21bf05331bab44806240c3d5f3312179d5174ac9e7873d65b618a13ca3",
+    "reports/modeling/local_improvement/model_results/full_fits.json": "b2339c42dde321f3500aa9be465fff8c5869e9843a3c39a6203db87cb54af14a",
+    "reports/modeling/local_improvement/model_results/permutation_ap.json": "27164e47b1bc166d57807acfc9d9fb5897f2958fe47a21aadb6fd41e3ec92285",
+    "reports/modeling/local_improvement/model_results/predictions_2021.parquet": "9e60d50cf5b330c01fd3c1a97bf1bfba08acae9fdb0a3d52f203abc321e00b8a",
+    "reports/modeling/county_expansion/pilot_20_20261121/model_results/predictions_2018_H2.parquet": "2ee48e93217d5672eecbffecca8860e10f105b07ec71214bef7658537247aef0",
+    "reports/modeling/county_expansion/pilot_20_20261121/model_results/predictions_2019.parquet": "6ba85c2b9d7c414c44680df80922de33f33d2b9e203d6618d8dacca58f6c95ff",
+    "reports/modeling/county_expansion/pilot_20_20261121/model_results/predictions_2020.parquet": "6dbddbd2cc7ce5210f840338e8d38a30f8890841196ad0663b771d1907912465",
+    "reports/modeling/county_expansion/pilot_20_20261121/model_results/predictions_2021.parquet": "fe7b366f66dc513dffa3ced029e893d44af18491f3569b01a21b504659b7703e",
+    "artifacts/modeling/local_improvement/history/audit.json": "6448e17c6553f8ab731d9f5697878c862f9bf49aa2b08c7c91af92230ea0f45b",
+    "reports/modeling/county_expansion/pilot_20_20261121/cohort.json": "15f315173030239a03881b9aa09421538ddfc79fb8a8343558fab7b752524f1a",
+    "reports/modeling/local_improvement/model_results/oof_rf_history_state_2018_H2.parquet": "c80edffa9f90b220da9d7adba9f56db81d21bf880c1c803ec2e1fa3cc565f385",
+    "reports/modeling/local_improvement/model_results/oof_xgb_original_state_depth6_2018_H2.parquet": "66d76e55b709144d88264f65850ab96c350b5acdc492091e3736b6c5be87b1b4",
+    "reports/modeling/local_improvement/model_results/oof_xgb_history_state_depth6_2018_H2.parquet": "674b93c71fb920cf3ac9acd07be0e440125ad282c8d37ef5e6e93fd1b2f0cf34",
+    "reports/modeling/local_improvement/model_results/oof_rf_history_state_2019.parquet": "69b1da7f01341b393edd010ac4d8724e46698288071e4093b34200e6afed1edb",
+    "reports/modeling/local_improvement/model_results/oof_xgb_original_state_depth6_2019.parquet": "24fa38f95f3381c46f4c62f371bed412a35f7537da49ae40493c0ec37290b6e7",
+    "reports/modeling/local_improvement/model_results/oof_xgb_history_state_depth6_2019.parquet": "8484984d49d8ad5af95a6d4df3d06f409f5e3f49205bcf1eaf68340adefcc7a5",
+    "reports/modeling/local_improvement/model_results/oof_rf_history_state_2020.parquet": "796cbbc3ac8d43ed623abfeff27053e33e8562183bfae62ff12068eb66621d72",
+    "reports/modeling/local_improvement/model_results/oof_xgb_original_state_depth6_2020.parquet": "97ccbabf1e80bf925ec3e1deed90e5ca2b4a8334ab9bf708f65508eeb46c746f",
+    "reports/modeling/local_improvement/model_results/oof_xgb_history_state_depth6_2020.parquet": "965aa83427a4fb0d35875e40c63f876944928a023cd3f81696bd686c81378628",
+    "artifacts/modeling/local_improvement/history/s06/split=train/part-00001-9f1a41b2-af95-4774-9650-bb795515a060.c000.snappy.parquet": "af44f83e5fcb681e6c29b4eff12b7db70b6b02363a4ee9ce5b79794af37b0d85",
+    "artifacts/modeling/local_improvement/history/s06/split=validation/part-00000-9f1a41b2-af95-4774-9650-bb795515a060.c000.snappy.parquet": "f28681f056935ed593253a78883fd75a356cc82a7baf80ee738a8e61c87fa165",
+    "artifacts/modeling/local_improvement/history/s12/split=train/part-00001-cd34a968-f237-46b6-bfac-c4496f539175.c000.snappy.parquet": "e80ce0c36394cb22be0ce0aa88653afa20e211ac59868ccb5f822686701d7620",
+    "artifacts/modeling/local_improvement/history/s12/split=validation/part-00000-cd34a968-f237-46b6-bfac-c4496f539175.c000.snappy.parquet": "8f8696272d58cfe26365e737192a4cb852024ac0b8003efa7360bd5a4799dcba",
+    "artifacts/modeling/local_improvement/history/s36/split=validation/part-00000-b096adee-3654-4418-9707-19b5033466ec.c000.snappy.parquet": "aa0bee16e71abd9d0b99a104e06f0419abf47bfb6a6e4cfad07feddde39e5ccf",
+    "artifacts/modeling/local_improvement/history/s42/split=train/part-00001-30ba947a-1266-470a-b198-2aa9c2e0b2e3.c000.snappy.parquet": "5e48d177e30fe8b18c8985b86d4470efe85587067df037ec7d4bf8c46791ebb9",
+    "artifacts/modeling/local_improvement/history/s42/split=validation/part-00000-30ba947a-1266-470a-b198-2aa9c2e0b2e3.c000.snappy.parquet": "d168522bc163c575430ba175d7a56f5761eaf02fa227d9f2867887cd62ddd9ad",
+    "artifacts/modeling/local_improvement/history/s48/split=train/part-00001-9048e8c6-06b5-4e42-8b19-0d9fa5c40876.c000.snappy.parquet": "b161ffdc4cfec2ea7021fadcdae09df5f08e8aebafb2a2194b0f9c771b21754b",
+    "artifacts/modeling/local_improvement/history/s48/split=validation/part-00000-9048e8c6-06b5-4e42-8b19-0d9fa5c40876.c000.snappy.parquet": "7b8647b17072d5de9cd82b5a7105f45a860c3f09921656530cbcdc7bd5e13208"
+  },
+  "ablation_sha256": "6d151beddfa2013f902fac6d01be230ffa84a50d62a85898a8b9dd1254fef456",
+  "xgb_depth": 6,
+  "xgb_settings": {
+    "tree_method": "hist",
+    "device": "cpu",
+    "n_jobs": 2,
+    "random_state": 17,
+    "n_estimators": 120,
+    "learning_rate": 0.1,
+    "max_bin": 128,
+    "min_child_weight": 10,
+    "subsample": 0.85,
+    "reg_lambda": 1.0,
+    "objective": "binary:logistic",
+    "eval_metric": "logloss"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "xgboost": "3.2.0",
+    "scikit_learn": "1.9.1",
+    "pandas": "2.3.3",
+    "numpy": "2.5.5"
+  },
+  "resources_at_start": {
+    "available_ram": 6204219392,
+    "disk_free": 8057290752
+  },
+  "resources_at_end": {
+    "available_ram": 5329195008,
+    "disk_free": 7966355456
+  },
+  "resource_monitor": {
+    "start_rss": 184778752,
+    "peak_rss": 1408659456,
+    "min_available_ram": 4942782464
+  }
+}

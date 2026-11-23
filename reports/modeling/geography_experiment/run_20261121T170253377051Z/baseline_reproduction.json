@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "recorded_ap": 0.5236688442307188,
+  "reproduced_ap": 0.5236688442307188,
+  "ap_delta": 0.0,
+  "absolute_tolerance": 1e-06,
+  "rows_and_labels_identical": true,
+  "max_absolute_score_change": 3.3306690738754696e-16,
+  "training_seconds": 22.683224800013704
+}

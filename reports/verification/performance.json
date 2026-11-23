@@ -1,0 +1,7 @@
+{
+  "check": "performance",
+  "started_utc": "2026-11-17T02:27:21.973879+00:00",
+  "completed_utc": "2026-11-17T02:27:53.974065+00:00",
+  "exit_code": 0,
+  "log": "reports/verification/performance.txt"
+}

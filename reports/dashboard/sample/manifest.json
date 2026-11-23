@@ -1,0 +1,19 @@
+{
+  "status": "VERIFIED",
+  "scope": "sample",
+  "completed_utc": "2026-11-16T22:13:51.899750+00:00",
+  "source_audit": "reports/memory/sample/audit.json",
+  "source_audit_sha256": "30a0a977218dd3a8c7a39400363b546bda0ac39d4ec91844f354caa3bae4ef2a",
+  "csv_sha256": "0833580cf000b2e6b2a74041bd3fa82d62983e0d624d9d4703f55087e958a558",
+  "observations": 333631,
+  "county_days": 12718,
+  "geography_withheld_fips": [
+    "78030",
+    "78010"
+  ],
+  "aggregation_key": [
+    "fips_code",
+    "date"
+  ],
+  "2022_accessed": false
+}

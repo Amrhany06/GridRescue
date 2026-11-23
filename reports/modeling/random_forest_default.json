@@ -1,0 +1,81 @@
+{
+  "model": "Random Forest",
+  "kind": "default",
+  "parameters": {},
+  "classifier_parameters": {
+    "bootstrap": true,
+    "ccp_alpha": 0.0,
+    "class_weight": null,
+    "criterion": "gini",
+    "max_depth": null,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "max_samples": null,
+    "min_impurity_decrease": 0.0,
+    "min_samples_leaf": 1,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "monotonic_cst": null,
+    "n_estimators": 100,
+    "n_jobs": 2,
+    "oob_score": false,
+    "random_state": 17,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "fingerprint": "63bb15fc34d95935348405ffce4441ea3d4d33b0059d4392ceace1a6f5a9a0f4",
+  "fit_seconds": 29.15496250000433,
+  "warnings": [],
+  "train": {
+    "rows": 303791,
+    "positive": 110987,
+    "prevalence": 0.3653399870305572,
+    "accuracy": 0.9997136189024691,
+    "precision": 0.9996395746981438,
+    "recall": 0.9995765269806374,
+    "f1": 0.9996080498452473,
+    "confusion_matrix": [
+      [
+        192764,
+        40
+      ],
+      [
+        47,
+        110940
+      ]
+    ],
+    "roc_auc": 0.999988393754564,
+    "average_precision": 0.99997988277626,
+    "pr_auc_trapezoid": 0.999979725432295,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "validation": {
+    "rows": 102449,
+    "positive": 33719,
+    "prevalence": 0.32912961571123195,
+    "accuracy": 0.6724516588741716,
+    "precision": 0.5031583872728691,
+    "recall": 0.38269225065986534,
+    "f1": 0.4347342710351217,
+    "confusion_matrix": [
+      [
+        55988,
+        12742
+      ],
+      [
+        20815,
+        12904
+      ]
+    ],
+    "roc_auc": 0.6528130928474875,
+    "average_precision": 0.47988457266220025,
+    "pr_auc_trapezoid": 0.4818299813037807,
+    "decision_threshold": 0.5,
+    "tie_rule": "Class 0 at exactly 0.5, matching sklearn binary argmax"
+  },
+  "artifact": "artifacts/modeling/random_forest_default.joblib",
+  "artifact_sha256": "f346e24da645040eab89e49529e6a49e1329b1032bed10a26bb5259b6ee43bc9",
+  "predictions": "artifacts/modeling/random_forest_default_validation_predictions.parquet",
+  "predictions_sha256": "e32ffd630241ffecdf93a11992b5efb4bd190b360f0e74a1c7236df9d3ea49fa"
+}

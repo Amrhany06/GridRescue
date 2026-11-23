@@ -1,0 +1,53 @@
+# GridRescue TA progress summary
+
+GridRescue is one university ML and Big Data project covering four classifiers. The original course comparison evaluated **Logistic Regression, Decision Tree, and Random Forest** and selected **Random Forest**. The later extension introduced **XGBoost**, which is the current experimental champion on the expanded development benchmark. A controlled final model comparison and selection are still pending.
+
+## Objective and data
+
+Given an already-positive county electricity outage report, GridRescue estimates whether any reading in the next three hours will increase by at least the larger of **200 customers** or **50% of the current count**. Both label classes require all 12 exact future quarter-hour reports. Missing readings leave the outcome unknown. The project uses Oak Ridge National Laboratory's EAGLE-I utility-map data from **2018–2021** for development. The **2022 final holdout remains sealed**. [EAGLE-I archive](https://figshare.com/articles/dataset/24237376) · [Dataset paper](https://doi.org/10.1038/s41597-024-03095-5) · [Source and checksums](../reports/source_manifest.json)
+
+| Status | Work and evidence |
+| --- | --- |
+| **COMPLETED** | **Task 1** profiled sources, checked missing reports and duplicates, quarantined invalid or conflicting records, retained plausible valid extremes, and explored distributions, correlations, class balance, geography and reporting coverage. One example from the 400,000-row source prefix was a mean outage count of 117.22 versus a median of 5. [Executed Task 1 and figures](../notebooks/task1_eda.ipynb) |
+| **COMPLETED** | **Task 2** created 13 ordered numeric predictors using exact 15/60-minute lags, past-only rolling history, UTC calendar fields and missing-history flags. Spark preprocessing learned median imputation and scaling from eligible training records and was independently reloaded. Labels crossing partition boundaries were purged. [Executed Task 2](../notebooks/task2_preprocessing.ipynb) · [Persistence checks](../reports/persistence_validation.json) |
+| **VERIFIED** | **Big Data processing** used PySpark ingestion, filters, group-by aggregation, exact-time joins and windows. The full development integrity scan parsed 96,222,547 records. Bronze → Silver → Gold was verified on the 400,000-row prefix and 418,374-row three-county extract, with 333,631 and 416,940 cleaned observations respectively. A subsequent 20-county pilot produced scoped native Parquet. Nationwide feature and label processing remains pending. [Full-source audit](../reports/full_development_audit.json) · [Prefix audit](../reports/windows/sample/audit.json) · [County audit](../reports/windows/county/audit.json) · [Big Data requirements](requirements/bigdata%20requirments.docx) |
+
+## Task 3 · original three-model comparison
+
+**COMPLETED** for development. The executed notebook researched the three algorithms, connected the same predictors to scikit-learn preprocessing and estimator pipelines, and ran the three default baselines before tuning (seed 17 and two local workers for the forest). The search evaluated 13 settings including defaults on three shared expanding folds (2018 H2, 2019, 2020). Each fold refit preprocessing and purged three-hour label windows that crossed its boundary. The main criterion was average precision (AP), a measure of ranking across decision thresholds.
+
+All rows in the table use the same **303,791** eligible 2018–2020 training reports and **102,449** eligible 2021 evaluation reports from Los Angeles, Miami-Dade and Harris. Of the 2021 reports, 33,719 were positive, giving a constant-score AP of 0.3291. Accuracy, precision, recall and F1 use a score strictly above 0.5.
+
+| Classifier | Configuration | CV AP mean ± sample SD | 2021 AP | Accuracy | Precision | Recall | F1 | ROC-AUC | Fit (s) |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Logistic Regression | Default (`C=1`), also the CV choice | 0.4310 ± 0.0142 | 0.378743 | 66.13% | 33.00% | 2.84% | 0.0522 | 0.5929 | 0.77 |
+| Decision Tree | Default | 0.4001 ± 0.0078 | 0.359216 | 58.92% | 39.42% | 46.23% | 0.4255 | 0.5568 | 3.02 |
+| Decision Tree | Depth 12, minimum leaf 10, minimum split 2 | 0.4763 ± 0.0196 | 0.468337 | 67.59% | 50.97% | 39.76% | 0.4467 | 0.6546 | 2.64 |
+| Random Forest | Default | 0.5042 ± 0.0041 | 0.479885 | 67.25% | 50.32% | 38.27% | 0.4347 | 0.6528 | 29.15 |
+| **Random Forest** | **100 trees, depth 12, minimum leaf 10** | **0.5403 ± 0.0139** | **0.523669** | **69.42%** | **55.53%** | **35.56%** | **0.4336** | **0.6832** | **43.00** |
+
+Logistic Regression retained the default after the search over (C=0.1, 1, 10). The tuned tree and forest won their respective training-only searches. **Random Forest was the official selection** because it had the highest 2021 AP among the three CV-selected configurations. The tuned forest narrowed its training-to-2021 AP gap from 0.5201 to 0.0895. At 0.5 it caught 11,991 of 33,719 positives and generated 9,602 false positives. [Executed Task 3 and diagnostics](../notebooks/task3_modeling.ipynb) · [Full CV and search results](../reports/modeling/development.json) · [Comparison CSV](../reports/modeling/comparison.csv)
+
+**VERIFIED** before the final holdout. The frozen Random Forest refit used all 406,240 eligible development reports. The complete fitted pipeline includes the ordered 13 predictors, median imputer and scaler. A fresh process recovered all 100 saved scores and decisions exactly. GitHub includes the metadata and verification record. The fitted joblib file is retained locally. [Selection record](../reports/modeling/frozen_selection.json) · [Pipeline metadata](../reports/modeling/frozen_pipeline.json) · [Reload proof](../reports/modeling/development_reload.json)
+
+## Fourth classifier and geographic extension
+
+| Status | Experiment | Verified development result |
+| --- | --- | --- |
+| **VERIFIED** | Three-county geography check on the original 102,449 rows, with the same expanding CV and 0.5 cutoff | Adding either state or county FIPS to the Random Forest raised 2021 AP from 0.523669 to 0.578607. Each county represented a different state, so the two encodings were equivalent in this run. [Geography experiment](../reports/modeling/geography_experiment/REPORT.md) |
+| **VERIFIED** | Expanded Random Forest pilot, fit on 1,053,328 eligible 2018–2020 reports from 12 counties, scored on 582,532 eligible 2021 reports from 20 counties | On the same 2021 rows, AP was 0.324024 with numeric inputs, 0.400952 with state, 0.394356 with FIPS and 0.402954 with both. State helped most in unseen counties within represented states. Transfer to the four New York counties was weak. [Cohort manifest](../reports/modeling/county_expansion/pilot_20_20261121/cohort.json) · [Geographic holdouts](../reports/modeling/county_expansion/GENERALIZATION_REPORT.md) |
+| **VERIFIED** | Random Forest and XGBoost compared on the expanded cohort using original or up-to-three-hour history and three purged chronological folds | At matched 2021 rows, the longer-history state-encoded Random Forest had AP 0.394870, the longer-history state + FIPS forest 0.403314, and original-history state XGBoost 0.406119. Extended-history state XGBoost reached 0.411168. [Model comparison](../reports/modeling/local_improvement/MODEL_COMPARISON.md) · [Historical features](../reports/modeling/local_improvement/FEATURE_COMPARISON.md) |
+
+The **experimental XGBoost champion** used 120 CPU histogram boosting rounds, depth 6, UTC hour and state. Its depth and history choice had the highest mean chronological fold AP among the tested XGBoost settings (0.446991 ± 0.008808). The strict cutoff of 0.2670107781887054 maximized accuracy subject to at least 60% recall on 890,035 earlier OOF scores. Applied to the 582,532 expanded 2021 reports, the archived results were **AP 0.411168, precision 34.00%, recall 56.45%, and accuracy 68.89%**. The 2021 AP baseline was 0.2032. These results cover a different development population, feature set and decision rule from the official Task 3 results. [Selection and cutoff record](../reports/modeling/local_improvement/model_results/selection.json) · [2021 metrics](../reports/modeling/local_improvement/model_results/metrics_2021.csv) · [Precision–recall figure](../reports/modeling/precision_diagnostic/results/precision_recall.png)
+
+## Independent audit and remaining work
+
+**VERIFIED.** The audit reconstructed labels and checked feature timing, preprocessing, artifact hashes and score lineage. A no-fit replay reproduced the benchmark and earlier cutoff, with 32 slices and paired calendar-block intervals. At a descriptive matched recall of 60%, precision was 37.87% in seen counties, 29.65% in unseen counties in represented states, and 12.24% in unseen New York. UTC hour carried strong signal and its underlying cause remains unresolved. The audit found 60,359 clean positive-current 2021 anchors with incomplete future coverage. The evidence describes reported rows and leaves physical incident detection and nationwide transfer unverified. [Independent audit](../reports/modeling/independent_audit/MASTER_REMEDIATION_PLAN.md) · [Replay output](../artifacts/post_audit_evaluation.json) · [Audit implementation](../reports/modeling/precision_diagnostic/post_audit_evaluation.py)
+
+| Status | Remaining deliverable |
+| --- | --- |
+| **PARTIAL** | The historical dashboard and local inference helper are implemented. A validated prediction interface, user-facing explanations, and the course report and demo remain open. The Big Data team roster still needs confirmation. [Dashboard evidence](../reports/dashboard_verification.json) · [Course checklist](../reports/NOTEBOOK_COMPLETION_AUDIT.md#7-big-data-checklist) |
+| **PARTIAL** | The cloud notebook and parity fixtures passed local preparation checks. Tier A Linux execution, checkpoint restore and resource limits still need verification before any larger training run. [Cloud notebook](../notebooks/colab_gridrescue_large_scale.ipynb) · [Local verification](../artifacts/post_audit_colab_verification.json) · [Cloud readiness](../reports/modeling/cloud_expansion/READINESS.md) |
+| **PLANNED** | Agree on the comparison and final selection protocol after TA review. Carry out the separately authorized once-only 2022 evaluation only after the model and protocol are frozen. [Current status](CURRENT_PROJECT_STATUS.md) |
+
+The [README](../README.md#review-and-reproduction) lists the development inputs and local artifacts required for reproduction. The [notebook completion audit](../reports/NOTEBOOK_COMPLETION_AUDIT.md) links the official course rubrics.

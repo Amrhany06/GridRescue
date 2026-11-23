@@ -1,0 +1,216 @@
+{
+  "state": "Pennsylvania",
+  "prefix": "s42",
+  "counts": {
+    "raw": 496465,
+    "invalid": 4467,
+    "exact_duplicates_removed": 0,
+    "conflict_rows": 0,
+    "silver": 491998
+  },
+  "by_county_year_split": [
+    {
+      "fips_code": "42029",
+      "state": "Pennsylvania",
+      "county": "Chester",
+      "year": 2018,
+      "split": "train",
+      "clean": 29364,
+      "eligible": 25247,
+      "positive": 3245,
+      "complete_future": 25247,
+      "positive_current": 29364
+    },
+    {
+      "fips_code": "42101",
+      "state": "Pennsylvania",
+      "county": "Philadelphia",
+      "year": 2018,
+      "split": "train",
+      "clean": 34504,
+      "eligible": 33359,
+      "positive": 5729,
+      "complete_future": 33359,
+      "positive_current": 34504
+    },
+    {
+      "fips_code": "42017",
+      "state": "Pennsylvania",
+      "county": "Bucks",
+      "year": 2018,
+      "split": "train",
+      "clean": 29841,
+      "eligible": 25419,
+      "positive": 2893,
+      "complete_future": 25419,
+      "positive_current": 29841
+    },
+    {
+      "fips_code": "42091",
+      "state": "Pennsylvania",
+      "county": "Montgomery",
+      "year": 2019,
+      "split": "train",
+      "clean": 31680,
+      "eligible": 28768,
+      "positive": 3518,
+      "complete_future": 28768,
+      "positive_current": 31680
+    },
+    {
+      "fips_code": "42017",
+      "state": "Pennsylvania",
+      "county": "Bucks",
+      "year": 2019,
+      "split": "train",
+      "clean": 30035,
+      "eligible": 26406,
+      "positive": 3385,
+      "complete_future": 26406,
+      "positive_current": 30035
+    },
+    {
+      "fips_code": "42017",
+      "state": "Pennsylvania",
+      "county": "Bucks",
+      "year": 2021,
+      "split": "validation",
+      "clean": 28765,
+      "eligible": 24813,
+      "positive": 2869,
+      "complete_future": 24813,
+      "positive_current": 28765
+    },
+    {
+      "fips_code": "42017",
+      "state": "Pennsylvania",
+      "county": "Bucks",
+      "year": 2020,
+      "split": "train",
+      "clean": 27762,
+      "eligible": 23264,
+      "positive": 2664,
+      "complete_future": 23264,
+      "positive_current": 27762
+    },
+    {
+      "fips_code": "42101",
+      "state": "Pennsylvania",
+      "county": "Philadelphia",
+      "year": 2020,
+      "split": "train",
+      "clean": 33425,
+      "eligible": 32260,
+      "positive": 4658,
+      "complete_future": 32260,
+      "positive_current": 33425
+    },
+    {
+      "fips_code": "42029",
+      "state": "Pennsylvania",
+      "county": "Chester",
+      "year": 2019,
+      "split": "train",
+      "clean": 30688,
+      "eligible": 27136,
+      "positive": 3437,
+      "complete_future": 27136,
+      "positive_current": 30688
+    },
+    {
+      "fips_code": "42091",
+      "state": "Pennsylvania",
+      "county": "Montgomery",
+      "year": 2018,
+      "split": "train",
+      "clean": 31971,
+      "eligible": 28884,
+      "positive": 3921,
+      "complete_future": 28884,
+      "positive_current": 31971
+    },
+    {
+      "fips_code": "42029",
+      "state": "Pennsylvania",
+      "county": "Chester",
+      "year": 2020,
+      "split": "train",
+      "clean": 26577,
+      "eligible": 21719,
+      "positive": 2509,
+      "complete_future": 21719,
+      "positive_current": 26577
+    },
+    {
+      "fips_code": "42091",
+      "state": "Pennsylvania",
+      "county": "Montgomery",
+      "year": 2020,
+      "split": "train",
+      "clean": 28613,
+      "eligible": 24069,
+      "positive": 3167,
+      "complete_future": 24069,
+      "positive_current": 28613
+    },
+    {
+      "fips_code": "42101",
+      "state": "Pennsylvania",
+      "county": "Philadelphia",
+      "year": 2019,
+      "split": "train",
+      "clean": 34783,
+      "eligible": 34392,
+      "positive": 5512,
+      "complete_future": 34392,
+      "positive_current": 34783
+    },
+    {
+      "fips_code": "42091",
+      "state": "Pennsylvania",
+      "county": "Montgomery",
+      "year": 2021,
+      "split": "validation",
+      "clean": 30870,
+      "eligible": 27595,
+      "positive": 3554,
+      "complete_future": 27595,
+      "positive_current": 30870
+    },
+    {
+      "fips_code": "42101",
+      "state": "Pennsylvania",
+      "county": "Philadelphia",
+      "year": 2021,
+      "split": "validation",
+      "clean": 34811,
+      "eligible": 34438,
+      "positive": 5091,
+      "complete_future": 34438,
+      "positive_current": 34811
+    },
+    {
+      "fips_code": "42029",
+      "state": "Pennsylvania",
+      "county": "Chester",
+      "year": 2021,
+      "split": "validation",
+      "clean": 28309,
+      "eligible": 24205,
+      "positive": 2839,
+      "complete_future": 24205,
+      "positive_current": 28309
+    }
+  ],
+  "quarantine_reasons": [
+    {
+      "reason": "invalid_count",
+      "count": 4349
+    },
+    {
+      "reason": "off_grid_timestamp",
+      "count": 118
+    }
+  ],
+  "seconds": 25.721950700011803
+}

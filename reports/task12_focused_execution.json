@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-11-17T17:10:48.757301+00:00",
+  "executor_python": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\.venv\\Scripts\\python.exe",
+  "mode": "arrow-local",
+  "clean_kernel_per_notebook": true,
+  "notebooks": [
+    {
+      "name": "task1_eda",
+      "status": "VERIFIED",
+      "executed_code_cells": 23,
+      "completed_utc": "2026-11-17T17:12:03.901141+00:00"
+    },
+    {
+      "name": "task2_preprocessing",
+      "status": "VERIFIED",
+      "executed_code_cells": 17,
+      "completed_utc": "2026-11-17T17:13:19.091726+00:00"
+    }
+  ]
+}

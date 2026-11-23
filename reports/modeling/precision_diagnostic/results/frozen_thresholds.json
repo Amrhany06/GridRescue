@@ -1,0 +1,38 @@
+{
+  "source": [
+    "2018_H2",
+    "2019",
+    "2020"
+  ],
+  "oof_rows": 890035,
+  "comparison": "score > threshold",
+  "selection": "Highest cutoff meeting each pooled OOF recall target. Tied scores move together.",
+  "models": {
+    "rf_original_state": {
+      "target_40": 0.35408450991784857,
+      "target_50": 0.3133636524172401,
+      "target_60": 0.2712158137410533
+    },
+    "rf_history_state": {
+      "target_40": 0.35061256792209217,
+      "target_50": 0.31464600043285684,
+      "target_60": 0.2734727772833702
+    },
+    "xgb_original_state": {
+      "target_40": 0.36179992556571955,
+      "target_50": 0.3124098181724548,
+      "target_60": 0.2663047909736633
+    },
+    "xgb_history_state": {
+      "target_40": 0.36248219013214106,
+      "target_50": 0.31280517578124994,
+      "target_60": 0.2670117616653442,
+      "incumbent": 0.2670107781887054
+    },
+    "xgb_history_without_hour_state": {
+      "target_40": 0.3287987112998962,
+      "target_50": 0.2987517416477203,
+      "target_60": 0.26643463969230646
+    }
+  }
+}

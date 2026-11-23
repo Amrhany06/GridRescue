@@ -1,0 +1,40 @@
+{
+  "utc": "2026-11-21T16:25:38.529982+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "java_home": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.20.101-hotspot\\",
+  "hadoop_home": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\artifacts\\windows-native-hadoop\\hadoop-3.3.4",
+  "java": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)\nOpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)\n",
+  "versions": {
+    "pyspark": "3.5.3",
+    "pandas": "2.3.3",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "scikit-learn": "1.9.1",
+    "streamlit": "1.67.0"
+  },
+  "status": "VERIFIED",
+  "spark_version": "3.5.3",
+  "hadoop_version": "3.3.4",
+  "hadoop_native_library_loaded": true,
+  "winutils": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\artifacts\\windows-native-hadoop\\hadoop-3.3.4\\bin\\winutils.exe",
+  "hadoop_dll": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\artifacts\\windows-native-hadoop\\hadoop-3.3.4\\bin\\hadoop.dll",
+  "spark_python_worker": "VERIFIED",
+  "spark_parquet": "VERIFIED",
+  "parquet_fixture": {
+    "initial_rows": 5,
+    "overwrite_rows": 3,
+    "schema_exact": true
+  },
+  "spark_pipeline_save_reload": "VERIFIED",
+  "development_fixtures": {
+    "status": "VERIFIED",
+    "frozen_model_fixture_rows": 100,
+    "exact_scores": true,
+    "feature_dimension": 13,
+    "synthetic_label_audit_rows": 15,
+    "synthetic_quarantine_rows": 1
+  },
+  "scratch_cleaned": true
+}

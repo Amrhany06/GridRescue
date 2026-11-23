@@ -1,0 +1,481 @@
+[
+  {
+    "anchor": {
+      "example_type": "positive",
+      "fips_code": "01073",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 6,
+      "escalation_threshold": 206.0,
+      "future_slots": 12,
+      "future_max": 242,
+      "candidate_y": 1,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 6
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 6
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 6
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 01:00:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 6
+      },
+      {
+        "timestamp": "2018-01-01 01:30:00",
+        "customers_out": 4
+      },
+      {
+        "timestamp": "2018-01-01 01:45:00",
+        "customers_out": 242
+      },
+      {
+        "timestamp": "2018-01-01 02:00:00",
+        "customers_out": 147
+      },
+      {
+        "timestamp": "2018-01-01 02:15:00",
+        "customers_out": 147
+      },
+      {
+        "timestamp": "2018-01-01 02:30:00",
+        "customers_out": 149
+      },
+      {
+        "timestamp": "2018-01-01 02:45:00",
+        "customers_out": 240
+      },
+      {
+        "timestamp": "2018-01-01 03:00:00",
+        "customers_out": 46
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "positive",
+      "fips_code": "01125",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 5,
+      "escalation_threshold": 205.0,
+      "future_slots": 12,
+      "future_max": 448,
+      "candidate_y": 1,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 5
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 5
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 448
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 448
+      },
+      {
+        "timestamp": "2018-01-01 01:00:00",
+        "customers_out": 448
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 445
+      },
+      {
+        "timestamp": "2018-01-01 01:30:00",
+        "customers_out": 153
+      },
+      {
+        "timestamp": "2018-01-01 01:45:00",
+        "customers_out": 154
+      },
+      {
+        "timestamp": "2018-01-01 02:00:00",
+        "customers_out": 14
+      },
+      {
+        "timestamp": "2018-01-01 02:15:00",
+        "customers_out": 135
+      },
+      {
+        "timestamp": "2018-01-01 02:30:00",
+        "customers_out": 50
+      },
+      {
+        "timestamp": "2018-01-01 02:45:00",
+        "customers_out": 63
+      },
+      {
+        "timestamp": "2018-01-01 03:00:00",
+        "customers_out": 25
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "positive",
+      "fips_code": "12011",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 5,
+      "escalation_threshold": 205.0,
+      "future_slots": 12,
+      "future_max": 208,
+      "candidate_y": 1,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 5
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 4
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 4
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 4
+      },
+      {
+        "timestamp": "2018-01-01 01:00:00",
+        "customers_out": 8
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 208
+      },
+      {
+        "timestamp": "2018-01-01 01:30:00",
+        "customers_out": 208
+      },
+      {
+        "timestamp": "2018-01-01 01:45:00",
+        "customers_out": 207
+      },
+      {
+        "timestamp": "2018-01-01 02:00:00",
+        "customers_out": 6
+      },
+      {
+        "timestamp": "2018-01-01 02:15:00",
+        "customers_out": 5
+      },
+      {
+        "timestamp": "2018-01-01 02:30:00",
+        "customers_out": 4
+      },
+      {
+        "timestamp": "2018-01-01 02:45:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 03:00:00",
+        "customers_out": 11
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "negative",
+      "fips_code": "01117",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 2,
+      "escalation_threshold": 202.0,
+      "future_slots": 12,
+      "future_max": 88,
+      "candidate_y": 0,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 2
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 1
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 1
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 1
+      },
+      {
+        "timestamp": "2018-01-01 01:00:00",
+        "customers_out": 1
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 24
+      },
+      {
+        "timestamp": "2018-01-01 01:30:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 01:45:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 02:00:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 02:15:00",
+        "customers_out": 86
+      },
+      {
+        "timestamp": "2018-01-01 02:30:00",
+        "customers_out": 88
+      },
+      {
+        "timestamp": "2018-01-01 02:45:00",
+        "customers_out": 88
+      },
+      {
+        "timestamp": "2018-01-01 03:00:00",
+        "customers_out": 64
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "negative",
+      "fips_code": "02122",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 25,
+      "escalation_threshold": 225.0,
+      "future_slots": 12,
+      "future_max": 25,
+      "candidate_y": 0,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 01:00:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 01:30:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 01:45:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 02:00:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 02:15:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 02:30:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 02:45:00",
+        "customers_out": 25
+      },
+      {
+        "timestamp": "2018-01-01 03:00:00",
+        "customers_out": 25
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "negative",
+      "fips_code": "04021",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 8,
+      "escalation_threshold": 208.0,
+      "future_slots": 12,
+      "future_max": 11,
+      "candidate_y": 0,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 8
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 8
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 8
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 8
+      },
+      {
+        "timestamp": "2018-01-01 01:00:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 01:30:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 01:45:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 02:00:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 02:15:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 02:30:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 02:45:00",
+        "customers_out": 11
+      },
+      {
+        "timestamp": "2018-01-01 03:00:00",
+        "customers_out": 11
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "incomplete",
+      "fips_code": "01015",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 1,
+      "escalation_threshold": 201.0,
+      "future_slots": 0,
+      "future_max": null,
+      "candidate_y": null,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 1
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "incomplete",
+      "fips_code": "01029",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 5,
+      "escalation_threshold": 205.0,
+      "future_slots": 2,
+      "future_max": 6,
+      "candidate_y": null,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 5
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 6
+      },
+      {
+        "timestamp": "2018-01-01 01:15:00",
+        "customers_out": 1
+      }
+    ]
+  },
+  {
+    "anchor": {
+      "example_type": "incomplete",
+      "fips_code": "01057",
+      "timestamp": "2018-01-01 00:00:00",
+      "customers_out_t": 16,
+      "escalation_threshold": 216.0,
+      "future_slots": 3,
+      "future_max": 16,
+      "candidate_y": null,
+      "split": "train"
+    },
+    "trace": [
+      {
+        "timestamp": "2018-01-01 00:00:00",
+        "customers_out": 16
+      },
+      {
+        "timestamp": "2018-01-01 00:15:00",
+        "customers_out": 16
+      },
+      {
+        "timestamp": "2018-01-01 00:30:00",
+        "customers_out": 16
+      },
+      {
+        "timestamp": "2018-01-01 00:45:00",
+        "customers_out": 16
+      }
+    ]
+  }
+]

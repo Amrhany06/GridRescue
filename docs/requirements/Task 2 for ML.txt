@@ -1,0 +1,31 @@
+--- PAGE 1 ---
+MACHINE LEARNING  /  TASK 02 
+Task 2 for ML  •  Page 1 
+•  FEATURE ENGINEERING & DATA PREPROCESSING 
+Task 2 for ML 
+Objective  Prepare the cleaned dataset from Task 1 for machine learning. Stop before selecting or training any 
+model. 
+01  Feature Engineering 
+Identify candidate features and create safe, useful new ones. 
+Identify Features — List candidate predictors and their types; flag IDs and possible target leakage.  
+Create Features — Add row-wise features such as ratios, counts, or date parts without using the target.  
+Review Changes — Show which features were added, changed, or removed and briefly explain why.  
+02  Data Splitting 
+Identify the inputs and reserve evaluation data where needed. 
+Define Inputs — Use input features (X) and define the target (y) only for supervised tasks.  
+Split the Data — Create train/test splits when needed, using stratification or time/group splits when 
+appropriate. 
+Avoid Leakage — When using a split, fit learned preprocessing and target-based selection on training data 
+only. 
+Clustering Note — Clustering uses X without y; a train/test split is optional, depending on evaluation needs.  
+03  Data Preprocessing 
+When using a split, fit preprocessing on train and apply the same steps to test.  
+Missing Values — Apply suitable imputation if any missing values remain. 
+Categorical Encoding — Encode categorical columns appropriately (e.g., one-hot or ordinal encoding). 
+Feature Scaling — Apply standardization or normalization to numerical features when needed.  
+04  Final Data Checks 
+Confirm the prepared data is ready for the next task. 
+Check Outputs — Display the processed data shape and a few example rows. 
+Validate Features — Check for missing or invalid values and consistent columns across splits, if used.  
+Save Preparation — Keep the processed data and fitted preprocessing steps for future model training.  
+ 

@@ -1,0 +1,8 @@
+{
+  "status": "VERIFIED",
+  "metric_rows_recomputed": 296,
+  "pipelines_reloaded_in_fresh_process": 4,
+  "saved_score_rows_per_pipeline": 100,
+  "protected_canonical_hashes_match": true,
+  "holdout_accessed": false
+}

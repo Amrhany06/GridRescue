@@ -1,0 +1,12 @@
+{
+  "mode": "arrow-local",
+  "transformed_rows": 163386,
+  "vector_dimension": 13,
+  "nonfinite_vectors": 0,
+  "wrong_dimension_vectors": 0,
+  "split_rows": {
+    "validation": 53601,
+    "train": 109785
+  },
+  "fitted_pipeline_reloaded": true
+}

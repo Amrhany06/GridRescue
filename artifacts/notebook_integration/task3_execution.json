@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-11-21T14:33:20.680211+00:00",
+  "executor_python": "C:\\Users\\Amr Hany\\Downloads\\GridRescue\\.venv\\Scripts\\python.exe",
+  "mode": "arrow-local",
+  "clean_kernel_per_notebook": true,
+  "notebooks": [
+    {
+      "name": "task3_modeling",
+      "status": "VERIFIED",
+      "executed_code_cells": 22,
+      "completed_utc": "2026-11-21T14:41:25.959179+00:00"
+    }
+  ]
+}
