@@ -2,7 +2,7 @@
 
 GridRescue is a university machine learning and Big Data project that estimates whether an **already reported county electricity outage** will escalate within the next three hours. The original Task 3 compared **Logistic Regression, Decision Tree, and Random Forest** and selected **Random Forest**. We later added **XGBoost** to the same project as part of a broader geographic and historical-feature study. XGBoost is the current experimental champion on that expanded benchmark. Final model selection across the two stages remains open.
 
-Start with the [TA progress summary](docs/TA_PROGRESS_SUMMARY.md) for the full three-model comparison, the research progression, and the remaining work.
+Start with the [technical project report](docs/PROJECT_TECHNICAL_REPORT.md) for the full three-model comparison, the XGBoost extension, and the remaining work.
 
 ## Data and notebooks
 

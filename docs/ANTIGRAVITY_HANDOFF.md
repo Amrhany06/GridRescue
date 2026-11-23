@@ -69,6 +69,6 @@ Tier B/C require explicit owner authorization after Tier A. The existing tiers t
 
 ## Git and artifact policy
 
-At the time of this handoff, GridRescue had no project-root Git metadata and Git resolved to the parent home directory. The owner subsequently authorized a dedicated project repository for the [TA review snapshot](TA_PROGRESS_SUMMARY.md).
+At the time of this handoff, GridRescue had no project-root Git metadata and Git resolved to the parent home directory. The owner subsequently authorized a dedicated repository for the project. The [technical project report](PROJECT_TECHNICAL_REPORT.md) accompanies that snapshot.
 
 The review snapshot includes executed notebooks, source, tests, small provenance manifests, reference fixtures and review evidence. Raw inputs, generated data stores, fitted models, credentials, virtual environments, wheels and output archives are kept local. The reproduction commands above assume the original workspace and its archived inputs. See the [README](../README.md#review-and-reproduction) for the GitHub snapshot's prerequisites.

@@ -1,4 +1,4 @@
-# GridRescue TA progress summary
+# GridRescue — Technical Project Report
 
 GridRescue is one university ML and Big Data project covering four classifiers. The original course comparison evaluated **Logistic Regression, Decision Tree, and Random Forest** and selected **Random Forest**. The later extension introduced **XGBoost**, which is the current experimental champion on the expanded development benchmark. A controlled final model comparison and selection are still pending.
 

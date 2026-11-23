@@ -1,6 +1,6 @@
 # GridRescue current project status
 
-Post-audit handoff, 23 November 2026. This records the state before GitHub publication. See the [TA progress summary](TA_PROGRESS_SUMMARY.md) for the review snapshot and the [Antigravity handoff](ANTIGRAVITY_HANDOFF.md) for local reproduction steps.
+Post-audit handoff, 23 November 2026. This records the state before GitHub publication. See the [technical project report](PROJECT_TECHNICAL_REPORT.md) for the review snapshot and the [Antigravity handoff](ANTIGRAVITY_HANDOFF.md) for local reproduction steps.
 
 | Status | Work |
 |---|---|
